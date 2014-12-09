@@ -6,7 +6,7 @@ It's a Rails 4.1.8 app.
 Running the app
 ---------------
 
-Make sure you're running Ruby 2.1.5p273 (there's a .ruby-version file that should be
+Make sure you're running Ruby 2.1.5 (there's a .ruby-version file that should be
 read by rvm or rbenv) and then:
 
     bundle
