@@ -1,26 +1,34 @@
-section {
-  &.home-companies {
-    padding: rem-calc(32);
+.home-companies {
+  padding: rem-calc(32);
 
-    ul {
-      margin: 0 auto;
-      li {
-        padding: 0 rem-calc(20);
+  ul {
+    margin: 0 auto;
 
-        span {
-          color: #b9e2eb;
-          font-size: rem-calc(50);
-          width: 100%;
-          text-align: center;
+    li {
+      padding: 0 rem-calc(20);
 
-          &.icon-posco-logo {
-            position: relative;
-            top: 14px;
-            font-size: rem-calc(30);
-          }
+      span {
+        color: #b9e2eb;
+        font-size: rem-calc(50);
+        width: 100%;
+        text-align: center;
+
+        &.icon-posco-logo {
+          position: relative;
+          top: 14px;
+          font-size: rem-calc(30);
         }
       }
     }
   }
+}
 
+section.hero-home {
+  background: asset-url('home-bg.jpg') no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: rem-calc(500);
 }

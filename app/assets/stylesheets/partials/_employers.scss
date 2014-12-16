@@ -1,0 +1,13 @@
+.hero-employers {
+  background: asset-url('employers-bg.jpg') no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 400%;
+  margin-bottom: rem-calc(60);
+
+  .hero-container .hero-text {
+    vertical-align: middle !important;
+  }
+}
