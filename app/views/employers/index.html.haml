@@ -1,0 +1,45 @@
+%section.hero-section
+  .row
+    .columns.large-12
+      %h1.text-center Submit a new job
+
+%section.employer-section
+  .row
+    .columns.large-10.large-offset-1
+      %h2.text-center.secondary-text We do all the leg work
+      %p List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
+
+%section.employer-section.mb--
+  .row
+    .columns.large-10.large-offset-1
+      %fieldset.mb--
+        %form
+          .row
+            .columns.large-5
+              %input{type: 'text', placeholder: 'Company*'}
+            .columns.large-5
+              %input{type: 'text', placeholder: 'Contact Name*'}
+            .columns.large-2
+              %input{type: 'text', placeholder: 'Title'}
+
+          .row
+            .columns.large-7
+              %input{type: 'text', placeholder: 'Email*'}
+            .columns.large-5
+              %input{type: 'text', placeholder: 'Phone'}
+
+          .row
+            .columns.large-6
+              %input{type: 'text', placeholder: 'City'}
+            .columns.large-3
+              %input{type: 'text', placeholder: 'State'}
+            .columns.large-3
+              %input{type: 'text', placeholder: 'Zip Code'}
+
+          .row
+            .columns.large-12
+              %textarea{placeholder: 'About the Position', rows: 8}
+
+          .row
+            .columns.large-12
+              %button.button.submit.small.radius.no-margin.right Submit

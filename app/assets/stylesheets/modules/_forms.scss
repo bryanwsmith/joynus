@@ -1,0 +1,33 @@
+fieldset {
+  border-radius: $global-radius;
+  background: $primary-color;
+  padding: rem-calc(40);
+
+  input[type='text'], textarea {
+    border-radius: $global-radius;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: $primary-color;
+   opacity: 0.4;
+}
+
+:-moz-placeholder {
+   color: $primary-color;
+   opacity: 0.4;
+}
+
+::-moz-placeholder {
+   color: $primary-color;
+   opacity: 0.4;
+}
+
+:-ms-input-placeholder {
+   color: $primary-color;
+   opacity: 0.4;
+}
