@@ -1,2 +1,8 @@
 @import 'foundation_and_overrides';
+
+/* Modules */
+@import 'modules/_footer.scss';
 @import 'modules/_navbar.scss';
+
+/* Partials */
+@import 'partials/_home.scss';

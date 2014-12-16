@@ -20,5 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  paragraph: "I 'm just beginning to learn Spanish . I want to be a missionero in Mexico someday . Or if not in Mexico , a Spanish -speaking of the country. I have a deep love for the Spanish people, and I 've had at an early age . I hope my dream will be realized. God willing."
+  hero-landing: "Opportunity is knocking"
+  hero-tagline: "Let's get Started today"
