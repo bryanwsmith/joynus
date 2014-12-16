@@ -11,4 +11,26 @@ footer {
     line-height: rem-calc(30);
     margin-bottom: 0;
   }
+
+  .social-icons {
+    margin-bottom: 0;
+
+    li {
+      background: $white;
+      border-radius: rem-calc(30);
+      width: rem-calc(30);
+      height: rem-calc(30);
+      transition: all .2s ease;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+
+    a {
+      color: $secondary-color;
+      line-height: rem-calc(30);
+      text-align: center;
+    }
+  }
 }
