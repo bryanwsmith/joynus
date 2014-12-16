@@ -1,5 +1,9 @@
 section {
   &.primary-color-bg {
     background: $primary-color;
+
+    h2, p {
+      color: $white;
+    }
   }
 }
