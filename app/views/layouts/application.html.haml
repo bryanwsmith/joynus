@@ -2,8 +2,35 @@
 %html
 %head
   %title Joynuss Staffing
+  %meta{ charset: 'utf-8'}
+  %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = javascript_include_tag 'vendor/modernizr'
   = csrf_meta_tags
 %body
+  .sticky.contain-to-grid
+    %nav.top-bar{ 'data-topbar' => '', role: 'navigation'}
+      %ul.title-area
+        %li.name
+          %h1
+            = link_to 'Joynuss Staffing', root_url
+        %li.toggle-topbar.menu-icon
+          %a{href: '#'}
+            %span
+
+      %section.top-bar-section
+        %ul.right
+          %li
+            %a{href: '#'} Employers
+          %li
+            %a{href: '#'} Blog
+          %li
+            %a{href: '#'} About
+          %li
+            %a{href: '#'} Contact Us
+          %li
+            %a.button.secondary.radius{href: '#'} Find a Job
+
   = yield
+
+  = javascript_include_tag 'application'
