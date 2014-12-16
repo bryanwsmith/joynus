@@ -1,33 +1,4 @@
 section {
-  &.home-hero {
-    padding: rem-calc(32);
-
-    h1, p {
-      color: $white;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-
-    .circle {
-      background: $white;
-      border: 2px solid $primary-color;
-      border-radius: 100%;
-      margin: 0 auto;
-      position: relative;
-      height: rem-calc(40);
-      width: rem-calc(40);
-
-      span {
-        color: $primary-color;
-        font-size: rem-calc(12);
-        position: absolute;
-        top: 50%;
-        margin-top: -3px;
-        left: 50%;
-        margin-left: -13px;
-      }
-    }
-  }
-
   &.home-companies {
     padding: rem-calc(32);
 
@@ -52,12 +23,4 @@ section {
     }
   }
 
-  &.home-section {
-    padding-top: rem-calc(60);
-    padding-bottom: rem-calc(40);
-
-    h2 {
-      margin-bottom: rem-calc(30);
-    }
-  }
 }
