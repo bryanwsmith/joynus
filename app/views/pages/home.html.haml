@@ -1,14 +1,29 @@
 %section.home-hero
   .row
     .columns.large-12
-      .hero
-        %h1.text-center= t "hero-landing"
-        %p.text-center= t "hero-tagline"
-
-%section.home-companies
+      %h1.text-center= t "hero-landing"
+      %p.text-center= t "hero-tagline"
+      .circle
+        %span.icon-down-cursor
+        
+%section.home-companies.primary-color-bg
   .row
     .columns.large-12
       %p.text-center A Few Companies that choose Joynus Staffing
+
+  .row
+    .columns.large-10.large-offset-1
+      %ul.inline-list.logo-list
+        %li
+          %span.icon-hyundai-logo
+        %li
+          %span.icon-sk-logo
+        %li
+          %span.icon-lg-logo
+        %li
+          %span.icon-kia-logo
+        %li
+          %span.icon-posco-logo
 
 %section.home-life
   .row

@@ -1,7 +1,57 @@
-.hero {
+section {
+  &.home-hero {
+    padding: rem-calc(32);
+    
+    h1, p {
+      color: #ffffff;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    }
 
-  h1, p {
-    color: #ffffff;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    .circle {
+      background: #ffffff;
+      border: 2px solid $primary-color;
+      border-radius: 100%;
+      margin: 0 auto;
+      position: relative;
+      height: rem-calc(40);
+      width: rem-calc(40);
+
+      span {
+        color: $primary-color;
+        font-size: rem-calc(12);
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        left: 50%;
+        margin-left: -13px;
+      }
+    }
   }
+
+  &.home-companies {
+    color: #ffffff;
+    padding: rem-calc(32);
+
+    ul {
+      margin: 0 auto;
+      li {
+        padding: 0 rem-calc(20);
+
+        span {
+          color: #b9e2eb;
+          font-size: rem-calc(50);
+          width: 100%;
+          text-align: center;
+
+          &.icon-posco-logo {
+            position: relative;
+            top: 14px;
+            font-size: rem-calc(30);
+          }
+        }
+      }
+    }
+  }
+
+
 }
