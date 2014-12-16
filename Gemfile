@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.5'
 
 gem 'rails', '4.1.8'
 gem 'pg', '~> 0.17.1'
@@ -7,7 +8,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'haml', '~> 4.0.6'
 gem 'foundation-rails'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'rails_12factor'
 
 gem 'jquery-rails'
 gem 'turbolinks'
