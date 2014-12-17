@@ -2,4 +2,8 @@
   &.submit {
     background: $black;
   }
+
+  &.no-hover:hover {
+    background: transparent;
+  }
 }
