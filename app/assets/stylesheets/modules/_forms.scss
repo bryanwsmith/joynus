@@ -3,12 +3,17 @@ fieldset {
   background: $primary-color;
   padding: rem-calc(40);
 
-  input[type='text'], textarea {
+  input[type='text'], textarea, select {
     border-radius: $global-radius;
+    margin-bottom: rem-calc(30);
   }
 
   textarea {
     resize: none;
+  }
+
+  select {
+    color: $primary-color;
   }
 }
 

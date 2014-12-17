@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   resources :about, only: [:index]
   resources :employers, only: [:index]
+  resources :contact, only: [:index]
 end

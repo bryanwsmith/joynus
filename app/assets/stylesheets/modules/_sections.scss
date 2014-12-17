@@ -7,6 +7,10 @@ section {
     }
   }
 
+  &.light-color-bg {
+    background: $info-color;
+  }
+
   &.hero-section {
     height: rem-calc(300);
     padding: rem-calc(32);
