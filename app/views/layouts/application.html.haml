@@ -7,6 +7,7 @@
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'vendor/modernizr'
   = csrf_meta_tags
+
 %body
   .sticky.contain-to-grid.drop-shadow
     %nav.top-bar{ 'data-topbar' => '', role: 'navigation'}
@@ -31,15 +32,15 @@
           %li.ml-
             = link_to 'Find a Job', jobs_path, class: 'button secondary radius'
 
-  %main{ role: 'main', class: controller_name }
+  %main{ role: 'main', id: controller_name }
     = yield
 
   %footer
     .row
-      .columns.large-9
+      .columns.medium-7
         %p.small &#169; Joynus Staffing #{Time.now.year}. All Rights Reserved.
-      .columns.large-3
-        %ul.inline-list.social-icons
+      .columns.medium-5
+        %ul.inline-list.social-icons.right
           %li
             %a.fa.fa-facebook{href: '#'}
           %li

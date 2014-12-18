@@ -1,6 +1,7 @@
 .button {
   &.submit {
     background: $black;
+    opacity: 0.4;
   }
 
   &.no-hover:hover {
