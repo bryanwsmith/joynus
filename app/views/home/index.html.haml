@@ -1,12 +1,14 @@
-%section.hero-section.hero-home
-  .hero-container
-    .hero-text
-      .row
-        .columns.large-12
-          %h1.text-center= t "hero-landing"
-          %p.text-center= t "hero-tagline"
-          .circle
-            %span.icon-down-cursor
+%section.feature-section
+  .feature
+    %article.feature-static
+      = image_tag('home-bg.jpg')
+    %article.feature-absolute
+      = image_tag('home-bg.jpg')
+      .feature-text
+        %h1.text-center= t 'hero-landing'
+        %p.text-center= t 'hero-tagline'
+        .circle
+          %span.icon-down-cursor
 
 %section.home-companies.primary-color-bg
   .row
@@ -31,13 +33,13 @@
   .row
     .columns.large-6
       %h2 Better Career, better life.
-      %p Joynus Staffing understands that having a great job creates a higher level of satisfaction in life. We do one thing- we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus Staffing is the fastest path to a better life.
+      %p.no-margin Joynus Staffing understands that having a great job creates a higher level of satisfaction in life. We do one thing- we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus Staffing is the fastest path to a better life.
 
 %section.home-section
   .row
     .columns.large-6.large-offset-6
       %h2 We have the right job for you.
-      %p At Joynus Staffing, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose- enabling you to live a better life by connecting you to the right job.
+      %p.no-margin At Joynus Staffing, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose- enabling you to live a better life by connecting you to the right job.
 
 %section.home-section
   .row

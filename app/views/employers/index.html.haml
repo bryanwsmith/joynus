@@ -1,17 +1,19 @@
-%section.hero-section.hero-employers
-  .hero-container
-    .hero-text
-      .row
-        .columns.large-12
-          %h1.text-center Submit a new job
+%section.feature-section.mb-
+  .feature
+    %article.feature-static
+      = image_tag('employers-bg.jpg')
+    %article.feature-absolute
+      = image_tag('employers-bg.jpg')
+      .feature-text
+        %h1.text-center Submit a new job
 
 %section.employer-section
   .row
     .columns.large-10.large-offset-1
-      %h2.text-center.secondary-text We do all the leg work
-      %p List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
+      %h2.text-center.secondary-text.mt-- We do all the leg work
+      %p.mb-- List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
 
-%section.employer-section.mb--
+%section.employer-section.mb--.mt-
   .row
     .columns.large-10.large-offset-1
       %fieldset.mb--
