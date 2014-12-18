@@ -6,7 +6,8 @@
     padding-left: rem-calc(64);
 
     ul {
-      margin-bottom: 0;
+      max-width: rem-calc(900);
+      margin: 0 auto;
 
       li {
         width: 20%;

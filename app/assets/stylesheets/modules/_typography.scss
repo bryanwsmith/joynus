@@ -6,3 +6,8 @@
 h2 {
   margin-bottom: rem-calc(30);
 }
+
+.animated-text {
+  opacity: 0;
+  transition: all .2s ease;
+}

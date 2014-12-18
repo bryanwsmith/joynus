@@ -30,8 +30,9 @@
 %section.content-section#career
   .row
     .columns.medium-6
-      %h2 Better Career, better life.
-      %p.no-margin Joynus Staffing understands that having a great job creates a higher level of satisfaction in life. We do one thing- we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus Staffing is the fastest path to a better life.
+      .animated-text
+        %h2 Better Career, better life.
+        %p.no-margin Joynus Staffing understands that having a great job creates a higher level of satisfaction in life. We do one thing- we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus Staffing is the fastest path to a better life.
 
 %section.content-section#right-job
   .row
@@ -39,19 +40,22 @@
       .right-job-img
         = image_tag('right-job-img.jpg')
     .columns.medium-6
-      %h2 We have the right job for you.
-      %p.no-margin At Joynus Staffing, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose- enabling you to live a better life by connecting you to the right job.
+      .animated-text
+        %h2 We have the right job for you.
+        %p.no-margin At Joynus Staffing, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose- enabling you to live a better life by connecting you to the right job.
 
 %section.content-section.small#best-decision
   .row
     .columns.medium-6
-      %h2 Make your best decisions.
-      %p We work closely with job seekers to identify each person’s strengths and help them find workplaces where they will succeed. Our wide variety of partners enable us to match the right person to the perfect opportunity. At Joynus Staffing, our goal is to help our clients find better jobs with better pay and higher levels of satisfaction.
-      %a.button.secondary.radius.small{href: '#'} Apply Now
+      .animated-text
+        %h2 Make your best decisions.
+        %p We work closely with job seekers to identify each person’s strengths and help them find workplaces where they will succeed. Our wide variety of partners enable us to match the right person to the perfect opportunity. At Joynus Staffing, our goal is to help our clients find better jobs with better pay and higher levels of satisfaction.
+        = link_to 'Apply Now', jobs_path, class: 'button secondary radius small'
 
 %section.content-section.x-small.primary-color-bg#employers
   .row
     .columns.medium-6.medium-offset-6
-      %h2 Employers
-      %p We have over a decade of experience staffing some of the most reputable companies in the world. Joynus Staffing works hard to find employees who will work hard for you and match your businesses needs. We are qualified to service any business of any size in any industry. From small businesses to medium companies, Joynus Staffing is prepared to help you meet your organization’s goals.
-      %a.button.secondary.radius.small{href: '#'} Learn More
+      .animated-text
+        %h2 Employers
+        %p We have over a decade of experience staffing some of the most reputable companies in the world. Joynus Staffing works hard to find employees who will work hard for you and match your businesses needs. We are qualified to service any business of any size in any industry. From small businesses to medium companies, Joynus Staffing is prepared to help you meet your organization’s goals.
+        = link_to 'Learn More', employers_path, class: 'button secondary radius small'
