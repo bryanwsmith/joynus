@@ -1,0 +1,45 @@
+.row
+  .columns.large-12
+    %p.m-b Company Info
+
+.row
+  .columns.large-5
+    = form.text_field :company, placeholder: 'Company *'
+  .columns.large-5
+    = form.text_field :contact_name, placeholder: 'Contact Name *'
+  .columns.large-2
+    = form.text_field :contact_title, placeholder: 'Your Title'
+
+.row
+  .columns.large-7
+    = form.text_field :email, placeholder: 'Email *'
+  .columns.large-5
+    = form.text_field :phone, placeholder: 'Phone'
+
+.row
+  .columns.large-6
+    = form.text_field :city, placeholder: 'City'
+  .columns.large-3
+    = form.text_field :state, placeholder: 'State'
+  .columns.large-3
+    = form.text_field :zip_code, placeholder: 'Zip Code'
+
+.row
+  .columns.large-12
+    %p.m-b About the position
+
+.row
+  .columns.large-5
+    = form.text_field :title, placeholder: 'Job Title *'
+  .columns.large-5
+    = form.text_field :department, placeholder: 'Department *'
+  .columns.large-2
+    = form.text_field :salary, placeholder: 'Salary*'
+
+.row
+  .columns.large-6
+    = form.text_field :language, placeholder: 'Language Requirements *'
+
+.row
+  .columns.large-12
+    = form.text_area :description, placeholder: 'Job Description and Requirements', rows: 8

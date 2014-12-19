@@ -4,9 +4,17 @@ fieldset {
   padding: rem-calc(40);
 
   input[type='text'], textarea, select {
+    border: 3px solid $white;
     border-radius: $global-radius;
+    min-height: rem-calc(50);
     margin-bottom: rem-calc(30);
     display: block;
+    padding-left: rem-calc(15);
+    transition: all .5s ease;
+
+    &:focus {
+      border: 3px solid #23748a;
+    }
   }
 
   textarea {
@@ -28,6 +36,10 @@ fieldset {
     }
 
     input { padding-left: rem-calc(40); }
+  }
+
+  p {
+    color: $white;
   }
 }
 

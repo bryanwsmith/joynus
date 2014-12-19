@@ -3,6 +3,14 @@ class JobsController < ApplicationController
     @jobs = Job.all
   end
 
-  def new
+  def create
+    @job = Job.create(job_params)
+
+    redirect_to employers_path
+  end
+
+  private
+  def job_params
+    params.require(:job).permit(:company, :contact_name, :contact_title, :email, :phone, :city, :state, :zip_code, :description, :title, :salary, :department, :language)
   end
 end

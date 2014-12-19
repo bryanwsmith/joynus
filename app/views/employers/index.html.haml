@@ -17,33 +17,6 @@
   .row
     .columns.large-10.large-offset-1
       %fieldset.mb--
-        %form
-          .row
-            .columns.large-5
-              %input{type: 'text', placeholder: 'Company*'}
-            .columns.large-5
-              %input{type: 'text', placeholder: 'Contact Name*'}
-            .columns.large-2
-              %input{type: 'text', placeholder: 'Title'}
-
-          .row
-            .columns.large-7
-              %input{type: 'text', placeholder: 'Email*'}
-            .columns.large-5
-              %input{type: 'text', placeholder: 'Phone'}
-
-          .row
-            .columns.large-6
-              %input{type: 'text', placeholder: 'City'}
-            .columns.large-3
-              %input{type: 'text', placeholder: 'State'}
-            .columns.large-3
-              %input{type: 'text', placeholder: 'Zip Code'}
-
-          .row
-            .columns.large-12
-              %textarea{placeholder: 'About the Position', rows: 8}
-
-          .row
-            .columns.large-12
-              %button.button.submit.small.radius.no-margin.right Submit
+        = form_for Job.new, :url => jobs_path, :html => {:method => :post} do |form|
+          = render form
+          = form.submit "Submit", class: 'button small no-margin right submit radius'
