@@ -15,6 +15,9 @@
 //= require foundation
 //= require turbolinks
 //= require waypoints
+//= require angular
+//= require angular-resource
+//= require angular-animate
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
