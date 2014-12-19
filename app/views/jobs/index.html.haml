@@ -15,16 +15,39 @@
 
 %section.jobs-section.mb--
   .row
-    .columns.large-10.large-offset-1
+    .columns.large-12
       %fieldset.mb--
-        %form
+        %form{ ng: { controller: 'jobCtrl' } }
           .row
             .columns.large-12
-              %input{type: 'text', placeholder: 'Company*'}
+              .input-prepend
+                %span.fa.fa-search
+                %input.prepend.prepend-search.no-margin{type: 'text', placeholder: 'Search', ng: { model: 'searchJobs' } }
 
           .row
             .columns.large-12
-              %textarea{placeholder: 'About the Position', rows: 8}
+              #jobs-header
+                %table.no-margin
+                  %tbody
+                    %tr
+                      %td{ width: '20%' } Company
+                      %td{ width: '30%' } Title
+                      %td{ width: '20%' } Location
+                      %td{ width: '15%' } Language
+                      %td{ width: '15%' } Posted Date
+
+
+          .row
+            .columns.large-12
+              #jobs-table.mb--
+                %table
+                  %tbody
+                    %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs' } }
+                      %td{ width: '20%' } {{ job.company }}
+                      %td{ width: '30%' } {{ job.title }}
+                      %td{ width: '20%' } {{ job.location }}
+                      %td{ width: '15%' } {{ job.language }}
+                      %td{ width: '15%' } {{ job.posted }}
 
           .row
             .columns.large-12

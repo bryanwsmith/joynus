@@ -1,0 +1,42 @@
+#jobs {
+  #jobs-header {
+    table {
+      background: $primary-color;
+      border-collapse: separate;
+      border-width: 0;
+      padding-left: rem-calc(30);
+      padding-right: rem-calc(30);
+      width: 100%;
+
+      td {
+        color: $white;
+      }
+    }
+  }
+
+  #jobs-table {
+    background: $white;
+    min-height: rem-calc(400);
+    width: 100%;
+    border-radius:6px;
+    -moz-border-radius:6px;
+
+    table {
+      background: $white;
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-collapse: separate;
+      border-width: 0;
+      padding-left: rem-calc(30);
+      padding-right: rem-calc(30);
+      width: 100%;
+
+      td {
+        padding-top: rem-calc(18);
+        padding-bottom: rem-calc(18);
+        background: $white;
+        vertical-align: top;
+      }
+    }
+  }
+}

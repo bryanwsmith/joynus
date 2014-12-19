@@ -13,11 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
 //= require waypoints
 //= require angular
 //= require angular-resource
 //= require angular-animate
-//= require_tree .
+//= require script
+//= require app
+//= require services/JobsService
+//= require controllers/JobsController
 
 $(function(){ $(document).foundation(); });

@@ -6,6 +6,7 @@ fieldset {
   input[type='text'], textarea, select {
     border-radius: $global-radius;
     margin-bottom: rem-calc(30);
+    display: block;
   }
 
   textarea {
@@ -14,6 +15,19 @@ fieldset {
 
   select {
     color: $primary-color;
+  }
+
+  .input-prepend {
+    position: relative;
+
+    .fa {
+      color: #36abca;
+      position: absolute;
+      top: rem-calc(10);
+      left: rem-calc(10);
+    }
+
+    input { padding-left: rem-calc(40); }
   }
 }
 
