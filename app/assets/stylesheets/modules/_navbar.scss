@@ -1,5 +1,6 @@
-.sticky {
-  z-index: 500;
+.sticky-nav {
+  z-index: 1000;
+  position: fixed;
 
   &.drop-shadow {
     -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
