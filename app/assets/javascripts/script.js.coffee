@@ -22,5 +22,7 @@ joynuss = ->
 
   $('.feature-section .feature-static').css('max-height', $(window).height() - 197)
 
+  $(window).resize adjustPusher
+
 $(document).ready ->
   joynuss()

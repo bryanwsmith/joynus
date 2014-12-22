@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require waypoints
+//= require pusher
 //= require angular
 //= require angular-resource
 //= require angular-animate
