@@ -3,7 +3,7 @@ fieldset {
   background: $primary-color;
   padding: rem-calc(40);
 
-  input[type='text'], textarea, select {
+  input[type='text'], textarea, select, input[type='password'] {
     border: 3px solid $white;
     border-radius: $global-radius;
     min-height: rem-calc(50);

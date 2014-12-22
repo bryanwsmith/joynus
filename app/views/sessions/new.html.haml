@@ -1,12 +1,11 @@
-%h1 Log In
+.row
+  .columns.large-6.large-offset-3
+    %fieldset.mt--
+      = form_tag sessions_path do
+        .field
+          = text_field_tag :email, params[:email], placeholder: 'Email'
 
-= form_tag sessions_path do
-  .field
-    = label_tag :email
-    = text_field_tag :email, params[:email]
+        .field
+          = password_field_tag :password, nil, placeholder: 'Password'
 
-  .field
-    = label_tag :password
-    = password_field_tag :password
-
-  .actions= submit_tag 'Log In'
+        = submit_tag 'Log In', class: 'button small no-margin right submit radius'

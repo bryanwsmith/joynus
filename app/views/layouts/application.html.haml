@@ -7,6 +7,7 @@
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
     = csrf_meta_tags
+    = javascript_include_tag 'application'
 
   %body{ 'ng-cloak' => '' }
     .sticky-nav.contain-to-grid.drop-shadow
@@ -51,5 +52,3 @@
               %a.fa.fa-instagram{href: '#'}
             %li
               %a.fa.fa-linkedin{href: '#'}
-
-    = javascript_include_tag 'application'
