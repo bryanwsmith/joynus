@@ -1,0 +1,11 @@
+.blog-post {
+  a, h3 { color: $secondary-color; }
+
+  hr {
+    background: #b9e2eb;
+    border: 0;
+    height: 2px;
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(60);
+  }
+}

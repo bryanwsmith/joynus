@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
+  resources :posts, only: [:index], path: 'blog'
   resources :sessions, only: [:new, :create, :destroy]
   resources :about, only: [:index]
   resources :employers, only: [:index]
