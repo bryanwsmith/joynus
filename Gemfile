@@ -10,6 +10,7 @@ gem 'haml', '~> 4.0.6'
 gem 'foundation-rails'
 gem 'font-awesome-rails'
 gem 'rails_12factor'
+gem 'bcrypt-ruby'
 
 gem 'jquery-rails'
 gem 'turbolinks'
