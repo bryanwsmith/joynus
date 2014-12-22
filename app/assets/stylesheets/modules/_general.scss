@@ -1,3 +1,3 @@
 * { margin: 0; }
 html, body { height: auto; }
-body > main { padding-top: 70px; }
+body > main { padding-top: rem-calc(70); }

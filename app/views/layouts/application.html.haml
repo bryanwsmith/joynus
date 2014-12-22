@@ -9,7 +9,24 @@
     = csrf_meta_tags
     = javascript_include_tag 'application'
 
-  %body{ 'ng-cloak' => '' }
+  %body{ 'ng-cloak' => '', class: ('logged-in' if current_user) }
+    - if current_user
+      .user-nav
+        .user-nav-container
+          %ul.inline-list.left
+            %li
+              %a{href: '#'} View Jobs
+            %li
+              %a{href: '#'} Add Blog Post
+          %a.button.dropdown.tiny.right{ aria: { controls: 'drop1', expanded: false }, data: { dropdown: 'drop1' }, href: '#' }= current_user.email
+          %ul#drop1.f-dropdown{ aria: { hidden: true }, data: { dropdown: { content: '' } }, tabindex: '-1' }
+            %li
+              %a{href: '#'} Edit Profile
+            %li
+              %a{href: '#'} Add User
+            %li
+              = link_to 'Log Out', logout_path
+
     .sticky-nav.contain-to-grid.drop-shadow
       %nav.top-bar{ 'data-topbar' => '', role: 'navigation'}
         %ul.title-area
