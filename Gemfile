@@ -11,7 +11,7 @@ gem 'foundation-rails'
 gem 'font-awesome-rails'
 gem 'rails_12factor'
 gem 'bcrypt-ruby'
-# gem 'foundation-wysihtml5-rails'
+gem 'foundation-wysihtml5-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'

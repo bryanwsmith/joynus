@@ -1,11 +1,24 @@
-.blog-post {
-  a, h3 { color: $secondary-color; }
-
+.blog-posts {
   hr {
     background: #b9e2eb;
     border: 0;
     height: 2px;
     margin-top: rem-calc(60);
     margin-bottom: rem-calc(60);
+  }
+}
+
+.blog-post {
+  margin-top: rem-calc(60);
+  margin-bottom: rem-calc(60);
+
+  .breadcrumb {
+    margin-bottom: rem-calc(30);
+    position: relative;
+
+    .button {
+      position:relative;
+      top: -6px;
+    }
   }
 }

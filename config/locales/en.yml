@@ -20,5 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  date:
+    formats:
+      default: "%Y"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
   hero-landing: "Opportunity is knocking"
   hero-tagline: "Let's get Started today"

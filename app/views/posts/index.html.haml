@@ -7,47 +7,16 @@
       .feature-text
         %h1.text-center News and resources
 
-.blog-post
-  .row
-    .columns.large-8.large-offset-2
-      %h3 9 Futuristic Jobs We Could See By 2030
-      %p October 28, 2014
+- @posts.each do |post|
+  .blog-posts
+    .row
+      .columns.large-8.large-offset-2
+        = link_to post_url(post) do
+          %h3.secondary-text= post.title
+        %p= l post.created_at.to_date, format: :long
 
-      %p With technology moving faster than ever, it's hard to imagine what careers will look like 20 years from now. But The Canadian Scholarship Trust Plan (CST), a not-for-profit foundation dedicated to helping Canadian families save for their children's post-secondary education, wanted to find out.
+        %p.post-content= truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
 
+        = link_to 'View More', post_url(post), class: 'secondary-text'
 
-      %p With help from foresight strategists, CST took a look into the future to find the jobs that may be commonplace by the year 2030.
-
-      = link_to 'View More'
-
-      %hr
-
-.blog-post
-  .row
-    .columns.large-8.large-offset-2
-      %h3 9 Futuristic Jobs We Could See By 2030
-      %p October 28, 2014
-
-      %p With technology moving faster than ever, it's hard to imagine what careers will look like 20 years from now. But The Canadian Scholarship Trust Plan (CST), a not-for-profit foundation dedicated to helping Canadian families save for their children's post-secondary education, wanted to find out.
-
-
-      %p With help from foresight strategists, CST took a look into the future to find the jobs that may be commonplace by the year 2030.
-
-      = link_to 'View More'
-
-      %hr
-
-.blog-post
-  .row
-    .columns.large-8.large-offset-2
-      %h3 9 Futuristic Jobs We Could See By 2030
-      %p October 28, 2014
-
-      %p With technology moving faster than ever, it's hard to imagine what careers will look like 20 years from now. But The Canadian Scholarship Trust Plan (CST), a not-for-profit foundation dedicated to helping Canadian families save for their children's post-secondary education, wanted to find out.
-
-
-      %p With help from foresight strategists, CST took a look into the future to find the jobs that may be commonplace by the year 2030.
-
-      = link_to 'View More'
-
-      %hr
+        %hr

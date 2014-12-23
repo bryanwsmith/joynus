@@ -1,0 +1,14 @@
+.blog-post
+  .row
+    .columns.large-8.large-offset-2
+      .breadcrumb
+        = link_to 'Blog', posts_path
+
+        .right
+          = link_to 'Delete', post_path(@post), action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+          = link_to 'Edit', edit_post_path
+  .row
+    .columns.large-8.large-offset-2
+      %h3= @post.title
+      %p= l @post.created_at.to_date, format: :long
+      %p= @post.raw_post

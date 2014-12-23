@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require waypoints
+//= require foundation-wysihtml5
+//= require foundation-wysihtml5/locales
 //= require pusher
 //= require angular
 //= require angular-resource

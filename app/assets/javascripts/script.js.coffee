@@ -33,5 +33,16 @@ joynuss = ->
       900, 'swing', ->
       window.location.hash = target
 
+  $('#blog-textarea').wysihtml5({
+    "size": 'tiny',
+    "font-styles": true,
+    "emphasis": true,
+    "lists": true,
+    "html": true,
+    "link": true,
+    "image": true,
+    "color": true
+  })
+
 $(document).ready ->
   joynuss()
