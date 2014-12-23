@@ -1,3 +1,39 @@
-table {
+#jobs-header, #users-header {
+  table {
+    background: $primary-color;
+    border-collapse: separate;
+    border-width: 0;
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    width: 100%;
+
+    td {
+      color: $white;
+      line-height: rem-calc(40);
+    }
+  }
+}
+
+#jobs-table, #users-table {
+  background: $white;
+  min-height: rem-calc(400);
   width: 100%;
+  border-radius:6px;
+  -moz-border-radius:6px;
+
+  table {
+    background: $white;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-collapse: separate;
+    border-width: 0;
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    width: 100%;
+
+    td {
+      background: $white;
+      vertical-align: top;
+    }
+  }
 }

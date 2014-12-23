@@ -3,19 +3,29 @@
     .right.mt--
       = link_to 'Add User', new_user_path, class: 'button small radius secondary'
 
-.row
-  .columns.large-10.large-offset-1
-    %table
-      %thead
-        %tr
-          %th{ width: '165' } First Name
-          %th{ width: '165' } Last Name
-          %th Email
-          %th{ width: '70' }
-      %tbody
-        - @users.each do |user|
-          %tr
-            %td= user.try(:first_name)
-            %td= user.try(:last_name)
-            %td= user.email
-            %td.text-center= link_to 'Edit', edit_user_path(user)
+%section.jobs-section.mb--
+  .row
+    .columns.large-12
+      %fieldset.mb--
+        .row
+          .columns.large-12
+            #users-header
+              %table.no-margin
+                %tbody
+                  %tr
+                    %td{ width: '165' } First Name
+                    %td{ width: '165' } Last Name
+                    %td Email
+                    %td{ width: '70' }
+
+        .row
+          .columns.large-12
+            #users-table
+              %table
+                %tbody
+                  - @users.each do |user|
+                    %tr
+                      %td{ width: '165' }= user.try(:first_name)
+                      %td{ width: '165' }= user.try(:last_name)
+                      %td= user.email
+                      %td.text-center{ width: '70' }= link_to 'Edit', edit_user_path(user)
