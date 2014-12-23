@@ -20,12 +20,10 @@
               = link_to 'Add Blog Post', new_post_path
           %a.button.dropdown.tiny.right{ aria: { controls: 'drop1', expanded: false }, data: { dropdown: 'drop1' }, href: '#' }= current_user.email
           %ul#drop1.f-dropdown{ aria: { hidden: true }, data: { dropdown: { content: '' } }, tabindex: '-1' }
-            %li
-              %a{href: '#'} Edit Profile
-            %li
-              %a{href: '#'} Add User
-            %li
-              = link_to 'Log Out', logout_path
+            %li= link_to 'Edit Profile', edit_user_path(current_user.id)
+            - if current_user.admin?
+              %li= link_to 'Manage Users', users_path
+            %li= link_to 'Log Out', logout_path
 
     .sticky-nav.contain-to-grid.drop-shadow
       %nav.top-bar{ 'data-topbar' => '', role: 'navigation'}
@@ -39,16 +37,11 @@
 
         %section.top-bar-section
           %ul.right
-            %li
-              = link_to 'Employers', employers_path
-            %li
-              = link_to 'Blog', posts_path
-            %li
-              = link_to 'About', about_index_path
-            %li
-              = link_to 'Contact Us', contact_index_path
-            %li.ml-
-              = link_to 'Find a Job', jobs_path, class: 'button secondary radius'
+            %li= link_to 'Employers', employers_path
+            %li= link_to 'Blog', posts_path
+            %li= link_to 'About', about_index_path
+            %li= link_to 'Contact Us', contact_index_path
+            %li.ml-= link_to 'Find a Job', jobs_path, class: 'button secondary radius'
 
     %main{ role: 'main', id: controller_name }
       = yield

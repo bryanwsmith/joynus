@@ -17,4 +17,12 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to login_url, alert: "Not authorized" if current_user.nil?
   end
+
+  def authorize_if_admin
+    redirect_to root_url, alert: "Not authorized" if current_user.nil? || !current_user.admin?
+  end
+
+  def authorize_if_admin_or_current_user
+    redirect_to root_url, alert: "Not authorized" if current_user.nil? || current_user.id != User.find(params[:id]).id && !current_user.admin?
+  end
 end

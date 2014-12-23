@@ -1255,6 +1255,7 @@ $include-html-global-classes: $include-html-classes;
 // $switch-paddle-transition-ease: ease-out;
 // $switch-positive-color: scale-color($success-color, $lightness: 94%);
 // $switch-negative-color: $white-smoke;
+   $switch-active-color: $secondary-color !default;
 
 // Outline Style for tabbing through switches
 // $switch-label-outline: 1px dotted $jumbo;

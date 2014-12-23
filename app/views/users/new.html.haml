@@ -1,0 +1,6 @@
+.row
+  .columns.large-10.large-offset-1
+    %fieldset.mb--
+      = form_for @user do |form|
+        = render form
+        = form.submit "Submit", class: 'button small no-margin right submit radius'

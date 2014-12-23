@@ -1,0 +1,23 @@
+.row
+  .columns.large-6
+    = form.text_field :first_name, placeholder: 'First Name'
+  .columns.large-6
+    = form.text_field :last_name, placeholder: 'Last Name'
+
+.row
+  .columns.large-12
+    = form.email_field :email, placeholder: 'Email'
+
+.row
+  .columns.large-6
+    = form.password_field :password, placeholder: 'Password'
+  .columns.large-6
+    = form.password_field :password_confirmation, placeholder: 'Password Confirmation'
+
+- if current_user.admin?
+  .row
+    .columns.large-12
+      .switch.round
+        = form.check_box :admin
+        %label{ for: 'user_admin' }
+        %span Admin

@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :employers, only: [:index]
   resources :contact, only: [:index]
   resources :jobs, only: [:index, :new, :create]
+  resources :users
 end
