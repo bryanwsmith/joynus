@@ -1443,3 +1443,7 @@ $include-html-global-classes: $include-html-classes;
 
 // 37. Overrides
 .top-bar-section ul li { background: $ghost; }
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background-color: #6d9e30;
+  color: $ghost;
+}
