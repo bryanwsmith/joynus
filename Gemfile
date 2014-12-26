@@ -12,6 +12,7 @@ gem 'font-awesome-rails'
 gem 'rails_12factor'
 gem 'bcrypt-ruby'
 gem 'foundation-wysihtml5-rails'
+gem 'redcarpet'
 
 gem 'jquery-rails'
 gem 'turbolinks'

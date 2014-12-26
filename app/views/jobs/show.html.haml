@@ -1,0 +1,9 @@
+.row
+  .columns.large-10.large-offset-1
+    .breadcrumb
+      = link_to jobs_path do
+        %i.fa.fa-angle-left
+        Find a Job
+.row
+  .columns.large-10.large-offset-1
+    %p= markdown @job.description
