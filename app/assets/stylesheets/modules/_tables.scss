@@ -37,3 +37,11 @@
     }
   }
 }
+
+table.clickable-row {
+  tr {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

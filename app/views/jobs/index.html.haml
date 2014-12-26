@@ -39,9 +39,9 @@
           .row
             .columns.large-12
               #jobs-table.mb--
-                %table
+                %table.clickable-row
                   %tbody
-                    %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs' } }
+                    %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs', click: 'go(job.id)' } }
                       %td{ width: '20%' } {{ job.company }}
                       %td{ width: '30%' } {{ job.title }}
                       %td{ width: '20%' } {{ job.location }}

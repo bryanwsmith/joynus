@@ -4,4 +4,5 @@ json.array! @jobs do |job|
   json.location job.location
   json.language job.language
   json.posted job.formatted_date
+  json.id job.id
 end

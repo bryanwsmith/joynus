@@ -21,10 +21,10 @@
         .row
           .columns.large-12
             #users-table
-              %table
+              %table.clickable-row
                 %tbody
                   - @users.each do |user|
-                    %tr
+                    %tr{ data: { url: "#{edit_user_path(user)}" } }
                       %td{ width: '165' }= user.try(:first_name)
                       %td{ width: '165' }= user.try(:last_name)
                       %td= user.email

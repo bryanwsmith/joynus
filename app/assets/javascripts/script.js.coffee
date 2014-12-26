@@ -44,5 +44,9 @@ joynuss = ->
     "color": true
   })
 
+  $('table.clickable-row tr').click ->
+    href = $(this).attr('data-url')
+    window.location = href
+
 $(document).ready ->
   joynuss()

@@ -1,4 +1,4 @@
-jobCtrl = ($scope, $http) ->
+jobCtrl = ($scope, $http,  $location) ->
   $http.get('/jobs.json')
     .success (data, status, headers, config) ->
       $scope.jobs = data
@@ -6,6 +6,10 @@ jobCtrl = ($scope, $http) ->
     .error (data, status, headers, config) ->
       console.log 'Did not get Jobs'
 
+  $scope.go = (jobId) ->
+    href = 'jobs/' + jobId
+    window.location = href
+
 angular
   .module('Joynus')
-  .controller('jobCtrl', ['$scope', '$http', jobCtrl])
+  .controller('jobCtrl', ['$scope', '$http', '$location', jobCtrl])
