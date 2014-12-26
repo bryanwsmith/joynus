@@ -1,9 +1,5 @@
 .blog-posts {
-  hr {
-    background: #b9e2eb;
-    border: 0;
-    height: 2px;
-    margin-top: rem-calc(60);
-    margin-bottom: rem-calc(60);
-  }
+  border-bottom: 2px solid #b9e2eb;
+  padding-top: rem-calc(60);
+  padding-bottom: rem-calc(60);
 }

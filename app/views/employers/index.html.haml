@@ -1,4 +1,4 @@
-%section.feature-section.mb-
+%section.feature-section
   .feature
     %article.feature-static
       = image_tag('employers-bg.jpg')
@@ -10,13 +10,12 @@
 %section.employer-section
   .row
     .columns.large-10.large-offset-1
-      %h2.text-center.secondary-text.mt-- We do all the leg work
-      %p.mb-- List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
+      %h2.text-center.secondary-text.no-margin-top We do all the leg work
+      %p.no-margin List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
 
-%section.employer-section.mb--.mt-
-  .row
-    .columns.large-10.large-offset-1
-      %fieldset.mb--
-        = form_for Job.new, :url => jobs_path, :html => {:method => :post} do |form|
-          = render form
-          = form.submit "Submit", class: 'button small no-margin right submit radius'
+.row
+  .columns.large-10.large-offset-1
+    %fieldset.mb--
+      = form_for Job.new, :url => jobs_path, :html => {:method => :post} do |form|
+        = render form
+        = form.submit "Submit", class: 'button small no-margin right submit radius'

@@ -13,7 +13,11 @@ section {
     background: $info-color;
   }
 
-  &.home-section, &.about-section {
+  &.home-section,
+  &.about-section,
+  &.employer-section,
+  &.contact-section,
+  &.job-section {
     padding-top: rem-calc(60);
     padding-bottom: rem-calc(60);
 

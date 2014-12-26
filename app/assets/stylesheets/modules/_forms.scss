@@ -1,6 +1,7 @@
 fieldset {
   border-radius: $global-radius;
   background: $primary-color;
+  margin-top: 0;
   padding: rem-calc(40);
 
   input[type='text'], textarea, select, input[type='password'],  input[type='email'] {

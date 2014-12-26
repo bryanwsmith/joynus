@@ -1,4 +1,4 @@
-%section.feature-section.mb--
+%section.feature-section
   .feature
     %article.feature-static
       = image_tag('blog-bg.jpg')
@@ -8,9 +8,9 @@
         %h1.text-center News and resources
 
 - @posts.each do |post|
-  .blog-posts
-    .row
-      .columns.large-8.large-offset-2
+  .row
+    .columns.large-8.large-offset-2
+      .blog-posts
         = link_to post_url(post) do
           %h3.secondary-text= post.title
         %p= l post.created_at.to_date, format: :long
@@ -18,5 +18,3 @@
         %p.post-content= truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
 
         = link_to 'View More', post_url(post), class: 'secondary-text'
-
-        %hr
