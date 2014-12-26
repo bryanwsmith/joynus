@@ -2,7 +2,9 @@
   .row
     .columns.large-8.large-offset-2
       .breadcrumb
-        = link_to 'Blog', posts_path
+        = link_to posts_path do
+          %i.fa.fa-angle-left
+          Blog
 
         .right
           = link_to 'Delete', post_path(@post), action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }

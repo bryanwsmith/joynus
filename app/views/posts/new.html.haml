@@ -1,9 +1,11 @@
 - if current_user.admin?
   .row
-    .columns.large-10.large-offset-1
+    .columns.large-12
       .breadcrumb
-        = link_to 'Users', users_path
-        
+        = link_to posts_path do
+          %i.fa.fa-angle-left
+          Blog
+
 .row
   .columns.large-12
     %fieldset.mb--
