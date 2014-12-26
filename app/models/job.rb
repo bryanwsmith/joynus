@@ -1,6 +1,4 @@
 class Job < ActiveRecord::Base
-  before_save :set_approved
-
   def location
     if self.city.present? && self.state.present?
       "#{self.city}, #{self.state}"
