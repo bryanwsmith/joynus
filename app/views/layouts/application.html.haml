@@ -50,15 +50,16 @@
 
     %footer
       .row
-        .columns.medium-7
+        .columns.medium-5.medium-push-7
+          %div.social-icons-container
+            %ul.inline-list.social-icons
+              %li
+                %a.fa.fa-facebook{href: '#'}
+              %li
+                %a.fa.fa-twitter{href: '#'}
+              %li
+                %a.fa.fa-instagram{href: '#'}
+              %li
+                %a.fa.fa-linkedin{href: '#'}
+        .columns.medium-7.medium-pull-5
           %p.small &#169; Joynus Staffing #{Time.now.year}. All Rights Reserved.
-        .columns.medium-5
-          %ul.inline-list.social-icons.right
-            %li
-              %a.fa.fa-facebook{href: '#'}
-            %li
-              %a.fa.fa-twitter{href: '#'}
-            %li
-              %a.fa.fa-instagram{href: '#'}
-            %li
-              %a.fa.fa-linkedin{href: '#'}
