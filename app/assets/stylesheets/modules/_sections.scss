@@ -1,28 +1,46 @@
-section {
-  display: block;
+@media only screen {
+  main section {
+    display: block;
 
-  &.primary-color-bg {
-    background: $primary-color;
+    &.primary-color-bg {
+      background: $primary-color;
 
-    h2, p {
-      color: $white;
+      h2,
+      p { color: $white; }
     }
-  }
 
-  &.light-color-bg {
-    background: $info-color;
-  }
+    &.light-color-bg { background: $info-color; }
 
-  &.home-section,
-  &.about-section,
-  &.employer-section,
-  &.contact-section,
-  &.job-section {
-    padding-top: rem-calc(60);
-    padding-bottom: rem-calc(60);
+    &:not(.no-spacing){
+      padding-top: rem-calc(20);
+      padding-bottom: rem-calc(20);
 
-    h2 {
-      margin-bottom: rem-calc(30);
+      h2 { margin-bottom: rem-calc(15); }
     }
   }
 }
+
+@media only screen and (min-width:320px) {}
+
+@media only screen and (min-width:480px) {
+  main section {
+    &:not(.no-spacing){
+      padding-top: rem-calc(60);
+      padding-bottom: rem-calc(60);
+
+      h2 {
+        margin-bottom: rem-calc(30);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (min-width:1024px) {}
+
+@media only screen and (min-width:1140px) {}
+
+@media only screen and (min-width:1280px) {}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}

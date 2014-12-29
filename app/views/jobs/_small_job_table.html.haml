@@ -1,0 +1,34 @@
+.show-for-small-only
+  .row
+    .columns.large-12
+      %fieldset.mb--
+        %form{ ng: { controller: 'jobCtrl' } }
+          .row
+            .columns.large-12
+              .input-prepend
+                %span.fa.fa-search
+                %input.prepend.prepend-search.no-margin{type: 'text', placeholder: 'Search', ng: { model: 'searchJobs' } }
+
+          .row
+            .columns.large-12
+              #jobs-header
+                %table.no-margin
+                  %tbody
+                    %tr
+                      %td{ width: '20%' } Company
+                      %td{ width: '30%' } Title
+
+          .row
+            .columns.large-12
+              #jobs-table.mb--
+                %table.clickable-row
+                  %tbody
+                    %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs', click: 'go(job.id)' } }
+                      %td{ width: '20%' } {{ job.company }}
+                      %td{ width: '30%' } {{ job.title }}
+
+          .row
+            .columns.large-12
+              .right
+                %a.button.small.no-margin.no-hover{href: '#'} Sign In
+                %button.button.submit.small.radius.no-margin Apply

@@ -1,4 +1,4 @@
-%section.feature-section
+%section.feature-section.no-spacing
   .feature
     %article.feature-static
       = image_tag('find-job-bg.jpg')
@@ -7,48 +7,12 @@
       .feature-text
         %h1.text-center Current Openings
 
-%section.job-section
+%section
   .row
     .columns.large-10.large-offset-1
       %h2.text-center.secondary-text Let's get started.
       %p Browse and search for new career opporunities here. During the application process, we will tailor your desires, skillset, and qualifications to get you on track for success.
 
-.row
-  .columns.large-12
-    %fieldset.mb--
-      %form{ ng: { controller: 'jobCtrl' } }
-        .row
-          .columns.large-12
-            .input-prepend
-              %span.fa.fa-search
-              %input.prepend.prepend-search.no-margin{type: 'text', placeholder: 'Search', ng: { model: 'searchJobs' } }
 
-        .row
-          .columns.large-12
-            #jobs-header
-              %table.no-margin
-                %tbody
-                  %tr
-                    %td{ width: '20%' } Company
-                    %td{ width: '30%' } Title
-                    %td{ width: '20%' } Location
-                    %td{ width: '15%' } Language
-                    %td{ width: '15%' } Posted Date
-
-        .row
-          .columns.large-12
-            #jobs-table.mb--
-              %table.clickable-row
-                %tbody
-                  %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs', click: 'go(job.id)' } }
-                    %td{ width: '20%' } {{ job.company }}
-                    %td{ width: '30%' } {{ job.title }}
-                    %td{ width: '20%' } {{ job.location }}
-                    %td{ width: '15%' } {{ job.language }}
-                    %td{ width: '15%' } {{ job.posted }}
-
-        .row
-          .columns.large-12
-            .right
-              %a.button.small.no-margin.no-hover{href: '#'} Sign In
-              %button.button.submit.small.radius.no-margin Apply
+= render 'large_job_table'
+= render 'small_job_table'

@@ -1,72 +1,83 @@
-fieldset {
-  border-radius: $global-radius;
-  background: $primary-color;
-  margin-top: 0;
-  padding: rem-calc(40);
-
-  input[type='text'], textarea, select, input[type='password'],  input[type='email'] {
-    border: 3px solid $white;
+@media only screen {
+  fieldset {
     border-radius: $global-radius;
-    min-height: rem-calc(50);
-    margin-bottom: rem-calc(30);
-    display: block;
-    padding-left: rem-calc(15);
-    transition: all .5s ease;
+    background: $primary-color;
+    margin-top: 0;
+    padding: rem-calc(20);
 
-    &:focus {
-      border: 3px solid #23748a;
-    }
-  }
+    input[type='text'], textarea, select, input[type='password'],  input[type='email'] {
+      border: 3px solid $white;
+      border-radius: $global-radius;
+      min-height: rem-calc(50);
+      margin-bottom: rem-calc(30);
+      display: block;
+      padding-left: rem-calc(15);
+      transition: all .5s ease;
 
-  textarea {
-    resize: none;
-  }
-
-  select {
-    color: $primary-color;
-  }
-
-  .input-prepend {
-    position: relative;
-
-    .fa {
-      color: #36abca;
-      position: absolute;
-      top: rem-calc(10);
-      left: rem-calc(10);
+      &:focus { border: 3px solid #23748a; }
     }
 
-    input { padding-left: rem-calc(40); }
-  }
+    textarea { resize: none; }
+    select { color: $primary-color; }
 
-  p { color: $white; }
-
-  .switch {
-    span {
+    .input-prepend {
       position: relative;
-      top: -11px;
-      right: -11px;
-      color: rgba(255,255,255, 0.85);
+
+      .fa {
+        color: #36abca;
+        position: absolute;
+        top: rem-calc(16);
+        left: rem-calc(14);
+      }
+
+      input { padding-left: rem-calc(40); }
     }
+
+    p { color: $white; }
+
+    .switch {
+      span {
+        position: relative;
+        top: -11px;
+        right: -11px;
+        color: rgba(255,255,255, 0.85);
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder {
+     color: $primary-color;
+     opacity: 0.4;
+  }
+
+  :-moz-placeholder {
+     color: $primary-color;
+     opacity: 0.4;
+  }
+
+  ::-moz-placeholder {
+     color: $primary-color;
+     opacity: 0.4;
+  }
+
+  :-ms-input-placeholder {
+     color: $primary-color;
+     opacity: 0.4;
   }
 }
 
-::-webkit-input-placeholder {
-   color: $primary-color;
-   opacity: 0.4;
+@media only screen and (min-width:320px) {}
+
+@media only screen and (min-width:480px) {
+  fieldset { padding: rem-calc(40); }
 }
 
-:-moz-placeholder {
-   color: $primary-color;
-   opacity: 0.4;
-}
+@media only screen and (min-width:768px) {}
 
-::-moz-placeholder {
-   color: $primary-color;
-   opacity: 0.4;
-}
+@media only screen and (min-width:1024px) {}
 
-:-ms-input-placeholder {
-   color: $primary-color;
-   opacity: 0.4;
-}
+@media only screen and (min-width:1140px) {}
+
+@media only screen and (min-width:1280px) {}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}
