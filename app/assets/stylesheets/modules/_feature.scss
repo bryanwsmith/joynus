@@ -45,6 +45,8 @@
         height: auto;
         text-align: center;
 
+        h1 { font-size: rem-calc(50); }
+
         .circle {
           background: $white;
           border: 2px solid $primary-color;
