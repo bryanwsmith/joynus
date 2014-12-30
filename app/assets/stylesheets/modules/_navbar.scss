@@ -99,6 +99,11 @@ ul.off-canvas-list li a {
 }
 
 nav.tab-bar.tab-bar-mobile {
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
+  -moz-box-shadow:    0 0 0 4px rgba(0, 0, 0, .15);
+  box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
+  position: relative;
+  z-index: 1000;
 
   h1 {
     margin-left: rem-calc(15);

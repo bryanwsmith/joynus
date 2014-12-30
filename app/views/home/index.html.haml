@@ -1,9 +1,9 @@
 %section.feature-section.no-spacing
   .feature
     %article.feature-static
-      = image_tag('home-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('home-bg-mobile.jpg')}, (small)], [#{asset_path('home-bg.jpg')}, (medium)], [#{asset_path('home-bg.jpg')}, (large)]" } }
     %article.feature-absolute
-      = image_tag('home-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('home-bg-mobile.jpg')}, (small)], [#{asset_path('home-bg.jpg')}, (medium)], [#{asset_path('home-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'hero-landing'
         %p.text-center.animated.fadeInDown= t 'hero-tagline'
