@@ -13,6 +13,7 @@ gem 'rails_12factor'
 gem 'bcrypt-ruby'
 gem 'foundation-wysihtml5-rails'
 gem 'redcarpet'
+gem 'active_link_to'
 
 gem 'jquery-rails'
 gem 'turbolinks'

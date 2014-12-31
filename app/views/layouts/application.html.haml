@@ -42,10 +42,10 @@
             = link_to 'Find a Job', jobs_path, class: 'button secondary radius small'
 
           %ul.off-canvas-list
-            %li= link_to 'Employers', employers_path
-            %li= link_to 'Blog', posts_path
-            %li= link_to 'About', about_index_path
-            %li= link_to 'Contact', contact_index_path
+            %li= active_link_to 'Employers', employers_path
+            %li= active_link_to 'Blog', posts_path
+            %li= active_link_to 'About', about_index_path
+            %li= active_link_to 'Contact', contact_index_path
 
         %a.exit-off-canvas
 
@@ -61,10 +61,10 @@
 
             %section.top-bar-section
               %ul.right
-                %li= link_to 'Employers', employers_path
-                %li= link_to 'Blog', posts_path
-                %li= link_to 'About', about_index_path
-                %li= link_to 'Contact Us', contact_index_path
+                %li= active_link_to 'Employers', employers_path
+                %li= active_link_to 'Blog', posts_path
+                %li= active_link_to 'About', about_index_path
+                %li= active_link_to 'Contact Us', contact_index_path
                 %li.ml-= link_to 'Find a Job', jobs_path, class: 'button secondary radius'
 
         %main{ role: 'main', id: controller_name }

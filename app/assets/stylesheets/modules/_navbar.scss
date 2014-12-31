@@ -8,13 +8,28 @@
     box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
   }
 
-  nav {
-    position: relative;
-  }
+  nav { position: relative; }
 
-  .top-bar-section ul li > a.button {
-    padding-left: 15px;
-    padding-right: 15px;
+  .top-bar-section ul li > a {
+    font-weight: 400;
+    position: relative;
+
+    &.button {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &.active:before {
+      content: '';
+      width: calc(100% - 26px);
+      background: $primary-color;
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      bottom: 20px;
+      left: 13px;
+      opacity: 0.25;
+    }
   }
 
   .top-bar-section li:not(.has-form) a:not(.button) {
