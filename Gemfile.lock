@@ -63,6 +63,9 @@ GEM
     json (1.8.1)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mail_form (1.5.0)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
@@ -137,6 +140,7 @@ DEPENDENCIES
   haml (~> 4.0.6)
   jbuilder (~> 2.0)
   jquery-rails
+  mail_form
   pg (~> 0.17.1)
   rails (= 4.1.8)
   rails_12factor

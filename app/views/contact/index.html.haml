@@ -17,16 +17,16 @@
   .row
     .columns.large-8.large-offset-2
       %fieldset.mb--
-        %form
+        = form_for Contact.new, url: contact_index_path, html: { 'data-abide' => '' } do |form|
           .row
             .columns.large-6
-              %input{type: 'text', placeholder: 'First Name*'}
+              = form.text_field :first_name, placeholder: 'First Name*'
             .columns.large-6
-              %input{type: 'text', placeholder: 'Last Name*'}
+              = form.text_field :last_name, placeholder: 'Last Name*'
 
           .row
             .columns.large-7
-              %input{type: 'text', placeholder: 'Email*'}
+              = form.text_field :email, placeholder: 'email*'
             .columns.large-5
               %input{type: 'text', placeholder: 'Phone'}
 
@@ -44,7 +44,7 @@
 
           .row
             .columns.large-12
-              %button.button.submit.small.radius.no-margin.right Submit
+              = form.submit 'Send Email', class: 'button submit small radius no-margin right'
 
 %section.light-color-bg
   .row
