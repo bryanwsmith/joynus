@@ -1,18 +1,18 @@
 .row
   .columns.large-6
-    = form.text_field :first_name, placeholder: 'First Name'
+    = form.text_field :first_name, 'required' => '', placeholder: 'First Name *'
   .columns.large-6
-    = form.text_field :last_name, placeholder: 'Last Name'
+    = form.text_field :last_name, 'required' => '', placeholder: 'Last Name *'
 
 .row
   .columns.large-12
-    = form.email_field :email, placeholder: 'Email'
+    = form.email_field :email, 'required' => '', placeholder: 'Email *'
 
 .row
   .columns.large-6
-    = form.password_field :password, placeholder: 'Password'
+    = form.password_field :password, 'required' => '', placeholder: "#{params[:action] == 'new' ? 'Password *' : 'Password'}"
   .columns.large-6
-    = form.password_field :password_confirmation, placeholder: 'Password Confirmation'
+    = form.password_field :password_confirmation, 'required' => '', placeholder: "#{params[:action] == 'new' ? 'Password Confirmation *' : 'Password Confirmation'}"
 
 - if current_user.admin?
   .row

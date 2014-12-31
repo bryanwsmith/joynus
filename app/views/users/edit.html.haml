@@ -8,7 +8,8 @@
 
 .row
   .columns.large-10.large-offset-1
-    %fieldset.mt--
-      = form_for(@user) do |form|
+    %fieldset
+      = form_for @user do |form|
         = render form
-        = form.submit "Submit", class: 'button small no-margin right submit radius'
+        = form.submit 'Save User', class: 'button small no-margin right submit radius'
+        = link_to 'Delete User', user_path(@user), class: 'button small right radius no-hover', action: 'destroy', method: :delete, data: { confirm: 'Are you sure?' }

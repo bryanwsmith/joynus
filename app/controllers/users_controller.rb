@@ -13,7 +13,12 @@ class UsersController < ApplicationController
   def update
     @user = find_user
     @user.update_attributes(user_params)
-    redirect_to users_url(@user), notice: "#{@user.first_name} Updated"
+
+    if @user.save
+      redirect_to users_url(@user), notice: "#{@user.full_name} updated."
+    else
+      render 'edit'
+    end
   end
 
   def new
@@ -24,10 +29,16 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to users_url
+      redirect_to users_url(@user), notice: "#{@user.full_name} created."
     else
       render 'New'
     end
+  end
+
+  def destroy
+    @user = find_user
+    @user.destroy
+    redirect_to users_url, notice: "#{@user.full_name} deleted."
   end
 
   private

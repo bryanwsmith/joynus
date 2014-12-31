@@ -6,6 +6,10 @@ class Job < ActiveRecord::Base
   def location
     if self.city.present? && self.state.present?
       "#{self.city}, #{self.state}"
+    elsif self.state.present?
+      "#{self.state}"
+    elsif self.city.present?
+      "#{self.city}"
     else
       ""
     end
