@@ -9,7 +9,6 @@
     .row
       .columns.large-12
         %fieldset.mb--
-          %p.mb-- Unnaproved Jobs
           - if @unapproved_jobs.count == 0
             .empty-table
               %h1 Hurray! No new jobs to approve.
