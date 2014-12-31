@@ -1,16 +1,16 @@
-.blog-post
-  .row
-    .columns.large-8.large-offset-2
-      .breadcrumb
-        = link_to posts_path do
-          %i.fa.fa-angle-left
-          Blog
-
+.row
+  .columns.large-10.large-offset-1
+    .breadcrumb
+      = link_to posts_path do
+        %i.fa.fa-angle-left
+        Blog
+      - if current_user
         .right
-          = link_to 'Delete', post_path(@post), action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
-          = link_to 'Edit', edit_post_path
-  .row
-    .columns.large-8.large-offset-2
-      %h3= @post.title
-      %p= l @post.created_at.to_date, format: :long
-      %p= @post.raw_post
+          = link_to 'Delete Post', post_path(@post), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+          = link_to 'Edit Post', edit_post_path, class: 'button tiny radius ml'
+
+.row
+  .columns.large-10.large-offset-1
+    %h3= @post.title
+    %p= l @post.created_at.to_date, format: :long
+    %p= @post.raw_post

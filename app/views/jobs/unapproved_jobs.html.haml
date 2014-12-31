@@ -1,8 +1,11 @@
-%section.no-spacing.mt--
-  .row
-    .columns.large-12
-      .right.mt--
-        = link_to 'New Job', employers_path, class: 'button small radius secondary'
+.row
+  .columns.large-12
+    .breadcrumb
+      = link_to jobs_path do
+        %i.fa.fa-angle-left
+        Approved Jobs
+      .right
+        = link_to 'New Job', employers_path, class: 'button tiny radius secondary'
 
 = form_tag approve_jobs_path, method: :put do
   %section.no-spacing.mb--

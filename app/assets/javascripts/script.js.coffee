@@ -49,7 +49,7 @@ joynuss = ->
     href = $(this).attr('data-url')
     window.location = href
 
-  $('#jobSuccess').foundation('reveal', 'open')
+  $('#modalSuccess').foundation('reveal', 'open')
 
 $(document).ready ->
   joynuss()
