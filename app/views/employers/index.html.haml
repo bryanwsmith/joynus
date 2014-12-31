@@ -1,3 +1,9 @@
+- if flash[:notice]
+  #jobSuccess.reveal-modal{ 'data-reveal' => '' }
+    %a.close-reveal-modal &#215;
+    %h1.secondary-text.text-center Success!
+    %p.text-center= flash[:notice]
+
 %section.feature-section.no-spacing
   .feature
     %article.feature-static
@@ -16,6 +22,6 @@
 .row
   .columns.large-10.large-offset-1
     %fieldset.mb--
-      = form_for Job.new, :url => jobs_path, :html => {:method => :post} do |form|
+      = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
         = render form
         = form.submit "Submit", class: 'button small no-margin right submit radius'

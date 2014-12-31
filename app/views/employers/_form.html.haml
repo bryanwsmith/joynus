@@ -4,23 +4,23 @@
 
 .row
   .columns.large-5
-    = form.text_field :company, placeholder: 'Company *'
+    = form.text_field :company, 'required' => '', placeholder: 'Company *'
   .columns.large-5
-    = form.text_field :contact_name, placeholder: 'Contact Name *'
+    = form.text_field :contact_name, 'required' => '', placeholder: 'Contact Name *'
   .columns.large-2
     = form.text_field :contact_title, placeholder: 'Your Title'
 
 .row
   .columns.large-7
-    = form.text_field :email, placeholder: 'Email *'
+    = form.text_field :email, 'required' => '', placeholder: 'Email *'
   .columns.large-5
     = form.text_field :phone, placeholder: 'Phone'
 
 .row
   .columns.large-6
-    = form.text_field :city, placeholder: 'City'
+    = form.text_field :contact_city, placeholder: 'City'
   .columns.large-3
-    = form.text_field :state, placeholder: 'State'
+    = form.text_field :contact_state, placeholder: 'State'
   .columns.large-3
     = form.text_field :zip_code, placeholder: 'Zip Code'
 
@@ -30,15 +30,19 @@
 
 .row
   .columns.large-5
-    = form.text_field :title, placeholder: 'Job Title *'
+    = form.text_field :title, 'required' => '', placeholder: 'Job Title *'
   .columns.large-5
-    = form.text_field :department, placeholder: 'Department *'
+    = form.text_field :department, 'required' => '', placeholder: 'Department *'
   .columns.large-2
-    = form.text_field :salary, placeholder: 'Salary*'
+    = form.text_field :salary, 'required' => '', placeholder: 'Salary*'
 
 .row
   .columns.large-6
-    = form.text_field :language, placeholder: 'Language Requirements *'
+    = form.text_field :language, 'required' => '', placeholder: 'Language Requirements *'
+  .columns.large-3
+    = form.text_field :city, placeholder: 'City'
+  .columns.large-3
+    = form.text_field :state, placeholder: 'State'
 
 .row
   .columns.large-12

@@ -5,7 +5,7 @@ class JobsController < ApplicationController
 
   def create
     @job = Job.create(job_params)
-
+    flash[:notice] = "Your job opening will be reviewed and posted."
     redirect_to employers_path
   end
 
@@ -15,7 +15,7 @@ class JobsController < ApplicationController
 
   private
   def job_params
-    params.require(:job).permit(:company, :contact_name, :contact_title, :email, :phone, :city, :state, :zip_code, :description, :title, :salary, :department, :language)
+    params.require(:job).permit(:company, :contact_name, :contact_title, :contact_city, :contact_state, :email, :phone, :city, :state, :zip_code, :description, :title, :salary, :department, :language)
   end
 
   def find_job

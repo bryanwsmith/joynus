@@ -1,4 +1,6 @@
 class Job < ActiveRecord::Base
+  validates_presence_of :company, :contact_name, :email, :title, :department, :salary, :language
+
   def location
     if self.city.present? && self.state.present?
       "#{self.city}, #{self.state}"
