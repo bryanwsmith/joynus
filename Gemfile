@@ -14,7 +14,6 @@ gem 'bcrypt-ruby'
 gem 'foundation-wysihtml5-rails'
 gem 'redcarpet'
 gem 'active_link_to'
-gem 'mail_form'
 
 gem 'jquery-rails'
 gem 'turbolinks'

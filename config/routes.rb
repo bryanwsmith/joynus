@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :about, only: [:index]
   resources :employers, only: [:index]
-  resources :contact, only: [:index, :new, :create]
+  resources :contact, only: [:index]
   resources :jobs do
     collection do
       put :approve
