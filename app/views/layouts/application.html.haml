@@ -15,9 +15,11 @@
         .user-nav-container
           %ul.inline-list.left
             %li
-              %a{href: '#'} Unapproved Jobs
-            %li
-              = link_to 'Add Blog Post', new_post_path
+              = link_to unapproved_jobs_path do
+                %span Unapproved Jobs
+                - if Job.unapproved.count > 0
+                  %span.label.radius.alert= Job.unapproved.count
+            %li= link_to 'Add Blog Post', new_post_path
           %a.button.dropdown.tiny.right{ aria: { controls: 'drop1', expanded: false }, data: { dropdown: 'drop1' }, href: '#' }= current_user.email
           %ul#drop1.f-dropdown{ aria: { hidden: true }, data: { dropdown: { content: '' } }, tabindex: '-1' }
             %li= link_to 'Edit Profile', edit_user_path(current_user.id)
@@ -44,7 +46,6 @@
             %li= link_to 'Blog', posts_path
             %li= link_to 'About', about_index_path
             %li= link_to 'Contact', contact_index_path
-
 
         %a.exit-off-canvas
 

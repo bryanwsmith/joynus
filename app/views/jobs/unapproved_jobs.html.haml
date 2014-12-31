@@ -1,0 +1,44 @@
+%section.no-spacing.mt--
+  .row
+    .columns.large-12
+      .right.mt--
+        = link_to 'New Job', employers_path, class: 'button small radius secondary'
+
+= form_tag approve_jobs_path, method: :put do
+  %section.no-spacing.mb--
+    .row
+      .columns.large-12
+        %fieldset.mb--
+          %p.mb-- Unnaproved Jobs
+          - if @unapproved_jobs.count == 0
+            .empty-table
+              %h1 Hurray! No new jobs to approve.
+
+          - else
+            .row
+              .columns.large-12
+                #users-header
+                  %table.no-margin
+                    %tbody
+                      %tr
+                        %td{ width: '165' } First Name
+                        %td{ width: '165' } Last Name
+                        %td Email
+                        %td{ width: '70' }
+
+            .row
+              .columns.large-12
+                #users-table
+                  %table
+                    %tbody
+                      - @unapproved_jobs.each do |unapproved_job|
+                        %tr
+                          %td= check_box_tag "job_ids[]", unapproved_job.id
+                          %td= unapproved_job.company
+                          %td= unapproved_job.contact_name
+                          %td= unapproved_job.city
+                          %td= unapproved_job.state
+                          %td= unapproved_job.salary
+            .row
+              .columns.large-12
+                = submit_tag 'Approve Selected', class: 'button submit small radius mt-- no-margin-bottom right'

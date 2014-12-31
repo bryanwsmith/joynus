@@ -17,6 +17,21 @@
     }
   }
 
+  .empty-table {
+    background: $white;
+    min-height: rem-calc(400);
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+
+    h1 {
+      color: $primary-color;
+      margin: 0;
+      text-align: center;
+      padding-top: rem-calc(100);
+      opacity: .5;
+    }
+  }
+
   #jobs-table, #users-table {
     background: $white;
     min-height: rem-calc(400);

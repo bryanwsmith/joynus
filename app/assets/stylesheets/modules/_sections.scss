@@ -17,6 +17,11 @@
 
       h2 { margin-bottom: rem-calc(15); }
     }
+
+    &.spacing-half {
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+    }
   }
 }
 
