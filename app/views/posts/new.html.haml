@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+  
 - if current_user.admin?
   .row
     .columns.large-12
