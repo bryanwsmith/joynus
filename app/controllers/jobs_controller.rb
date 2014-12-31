@@ -1,4 +1,6 @@
 class JobsController < ApplicationController
+  before_filter :authorize, only: [:approve, :unapproved_jobs]
+
   def index
     @jobs = Job.all
   end
