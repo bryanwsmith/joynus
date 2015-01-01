@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+  
 %section.feature-section.no-spacing
   .feature
     %article.feature-static
@@ -17,34 +20,29 @@
   .row
     .columns.large-8.large-offset-2
       %fieldset.mb--
-        %form
+        = form_tag send_mail_path, 'data-abide' => '' do
           .row
             .columns.large-6
-              %input{type: 'text', placeholder: 'First Name*'}
+              = text_field_tag 'first_name', nil, 'required' => '', placeholder: 'First Name *'
             .columns.large-6
-              %input{type: 'text', placeholder: 'Last Name*'}
+              = text_field_tag 'last_name', nil, 'required' => '', placeholder: 'Last Name *'
 
           .row
             .columns.large-7
-              %input{type: 'text', placeholder: 'Email*'}
+              = text_field_tag 'email', nil, 'required' => '', placeholder: 'Email *'
             .columns.large-5
-              %input{type: 'text', placeholder: 'Phone'}
+              = text_field_tag 'phone', nil, placeholder: 'Phone'
 
           .row
             .columns.large-12
-              %select
-                %option{value: 'subject'} Subject
-                %option{value: 'subject'} Subject
-                %option{value: 'subject'} Subject
-                %option{value: 'subject'} Subject
+              = select_tag 'subject', options_for_select(Contact::SUBJECTS, ''), include_blank: 'Subject'
 
           .row
             .columns.large-12
-              %textarea{placeholder: 'Message', rows: 8}
-
+              = text_area_tag 'message', nil, placeholder: 'Message...', rows: 8
           .row
             .columns.large-12
-              %button.button.submit.small.radius.no-margin.right Submit
+              = submit_tag 'Submit', class: 'button submit small radius no-margin right'
 
 %section.light-color-bg
   .row

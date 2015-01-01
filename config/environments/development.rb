@@ -1,4 +1,13 @@
 Rails.application.configure do
+  ActionMailer::Base.smtp_settings = {
+      :address =>        'smtp.mandrillapp.com',
+      :port =>           '587',
+      :user_name =>      ENV['MANDRILL_USERNAME'],
+      :password =>       ENV['MANDRILL_APIKEY'],
+  }
+
+  ActionMailer::Base.delivery_method = :smtp
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -14,7 +23,12 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  # change to true to allow email to be sent during development
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
