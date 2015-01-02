@@ -1,9 +1,33 @@
 .row
-  .columns.large-10.large-offset-1
+  .columns.large-12
     .breadcrumb
       = link_to jobs_path do
         %i.fa.fa-angle-left
         Find a Job
+
+%section#job-show-header.mb--
+  .row
+    .columns.large-6
+      .job-info
+        %p.mb
+          %strong= @job.company
+        %p.mb= @job.title
+        %p.no-margin
+          %span.job-info-label Department
+          %span= @job.department
+        %p.no-margin
+          %span.job-info-label Language
+          %span= @job.language
+        %p.no-margin
+          %span.job-info-label Salary
+          %span= @job.salary
+        %p.no-margin
+          %span.job-info-label Location
+          %span= @job.try(:location)
+    .columns.large-6
+      .apply-now
+        = link_to 'Apply Now', nil, class: 'button secondary radius no-margin'
+
 .row
-  .columns.large-10.large-offset-1
+  .columns.large-12
     = markdown @job.description
