@@ -1,4 +1,3 @@
-
 @media only screen {
   #contact {
     h3, h5 { line-height: rem-calc(35); }
@@ -6,6 +5,31 @@
     #locations, #resources {
       h3, h4, h5, li { text-align: center; }
     }
+
+    #resources {
+      .health-care, .industrial-careers {
+        padding-left: rem-calc(80);
+        position: relative;
+
+        &:before {
+          background-size: 90%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: inline-block;
+          content: '';
+          height: rem-calc(80);
+          width: rem-calc(80);
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      .health-care:before { background-image: asset-url('health-care.png'); }
+      .industrial-careers:before { background-image: asset-url('industrial-careers.png'); }
+      h3, h5 { line-height: rem-calc(80); }
+      a { margin-left: rem-calc(15); }
+    }
+
   }
 }
 
