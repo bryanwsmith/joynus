@@ -1,1 +1,7 @@
-Email from contact.
+!!!
+%html
+  %head
+    %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport"}
+  %body
+    %p= "You have received the following email from #{@first_name} #{@last_name}"
+    %p= simple_format @message
