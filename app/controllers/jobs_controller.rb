@@ -2,7 +2,7 @@ class JobsController < ApplicationController
   before_filter :authorize, only: [:approve, :unapproved_jobs]
 
   def index
-    @jobs = Job.all
+    @jobs = Job.where.not(date_approved: nil)
   end
 
   def create
