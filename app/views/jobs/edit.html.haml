@@ -1,0 +1,7 @@
+%section
+  .row
+    .columns.large-10.large-offset-1
+      %fieldset.mb--
+        = form_for @job, html: { 'data-abide' => '' } do |form|
+          = render 'shared/job_form', form: form
+          = form.submit "Submit", class: 'button small no-margin right submit radius'

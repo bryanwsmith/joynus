@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
 .row
   .columns.large-12
     .breadcrumb
@@ -23,24 +26,28 @@
                   %table.no-margin
                     %tbody
                       %tr
-                        %td{ width: '165' } First Name
-                        %td{ width: '165' } Last Name
-                        %td Email
-                        %td{ width: '70' }
+                        %td{ width: '30' }
+                        %td{ width: '80' } Company
+                        %td{ width: '80' } Department
+                        %td{ width: '80' } Position
+                        %td{ width: '80' } Location
+                        %td.text-right{ width: '50' } Salary
+                        %td{ width: '60' }
 
             .row
               .columns.large-12
                 #users-table
-                  %table
+                  %table.clickable-row
                     %tbody
                       - @unapproved_jobs.each do |unapproved_job|
-                        %tr
-                          %td= check_box_tag "job_ids[]", unapproved_job.id
-                          %td= unapproved_job.company
-                          %td= unapproved_job.contact_name
-                          %td= unapproved_job.city
-                          %td= unapproved_job.state
-                          %td= unapproved_job.salary
+                        %tr{ data: { url: "#{edit_job_path(unapproved_job)}" } }
+                          %td{ width: '30' }= check_box_tag "job_ids[]", unapproved_job.id
+                          %td{ width: '80' }= unapproved_job.company
+                          %td{ width: '80' }= unapproved_job.department
+                          %td{ width: '80' }= unapproved_job.title
+                          %td{ width: '80' }= unapproved_job.location
+                          %td.text-right{ width: '50' }= unapproved_job.salary
+                          %td.tex-tcenter{ width: '60' }= link_to 'Edit', edit_job_path(unapproved_job)
             .row
               .columns.large-12
                 = submit_tag 'Approve Selected', class: 'button submit small radius mt-- no-margin-bottom right'

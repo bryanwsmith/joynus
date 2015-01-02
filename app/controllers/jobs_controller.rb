@@ -15,6 +15,16 @@ class JobsController < ApplicationController
     @job = find_job
   end
 
+  def edit
+    @job = find_job
+  end
+
+  def update
+    @job = find_job
+    @job.update_attributes(job_params)
+    redirect_to unapproved_jobs_url, notice: "#{@job.title} Updated"
+  end
+
   def approve
     Job.where(id: params[:job_ids]).update_all(date_approved: Date.today)
     redirect_to jobs_path

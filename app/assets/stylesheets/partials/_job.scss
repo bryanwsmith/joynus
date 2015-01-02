@@ -47,7 +47,6 @@
     background: -o-linear-gradient(left, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
     background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
     background: linear-gradient(to right, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$white', GradientType=1 );
   }
 }
 
