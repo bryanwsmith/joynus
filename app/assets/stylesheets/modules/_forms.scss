@@ -3,6 +3,7 @@
     border-radius: $global-radius;
     background: $primary-color;
     margin-top: 0;
+    margin-bottom: rem-calc(60);
     padding: rem-calc(20);
 
     input[type='text'], textarea, select, input[type='password'],  input[type='email'] {
@@ -15,7 +16,7 @@
       transition: all .5s ease;
 
       &:focus { border: 3px solid #23748a; }
-      
+
       &[data-invalid] {
         border: 3px solid #eb2d2d;
 

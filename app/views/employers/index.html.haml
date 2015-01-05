@@ -18,7 +18,7 @@
 
 .row
   .columns.large-10.large-offset-1
-    %fieldset.mb--
+    %fieldset
       = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
         = render 'shared/job_form', form: form
         = form.submit "Submit", class: 'button small no-margin right submit radius'
