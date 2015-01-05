@@ -37,10 +37,10 @@
             .row
               .columns.large-12
                 #users-table
-                  %table.clickable-row
+                  %table
                     %tbody
                       - @unapproved_jobs.each do |unapproved_job|
-                        %tr{ data: { url: "#{edit_job_path(unapproved_job)}" } }
+                        %tr
                           %td{ width: '30' }= check_box_tag "job_ids[]", unapproved_job.id
                           %td{ width: '80' }= unapproved_job.company
                           %td{ width: '80' }= unapproved_job.department
