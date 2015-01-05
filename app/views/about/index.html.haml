@@ -18,5 +18,5 @@
 
       %div.button-container
         %h4.mb-- Let's work Together
-        %a.button.secondary.radius.small.mr--{href: '#'} Jobseekers
-        %a.button.primary.radius.small{href: '#'} Businesses
+        = link_to 'Jobseekers', jobs_path, class: 'button secondary radius small mr--'
+        = link_to 'Businesses', employers_path, class: 'button primary radius small mr--'
