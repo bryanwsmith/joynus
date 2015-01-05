@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_filter :authorize, only: [:approve, :unapproved_jobs]
+  before_filter :authorize, only: [:approve]
 
   def index
     @jobs = Job.where.not(date_approved: nil)
@@ -15,14 +15,10 @@ class JobsController < ApplicationController
     @job = find_job
   end
 
-  def edit
-    @job = find_job
-  end
-
   def update
     @job = find_job
     @job.update_attributes(job_params)
-    redirect_to unapproved_jobs_url, notice: "#{@job.title} Updated"
+    redirect_to unapproved_job_url(@job), notice: "#{@job.title} Updated"
   end
 
   def approve
@@ -30,8 +26,7 @@ class JobsController < ApplicationController
     redirect_to jobs_path
   end
 
-  def unapproved_jobs
-    @unapproved_jobs = Job.where(date_approved: nil)
+  def destroy
   end
 
   private

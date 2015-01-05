@@ -1,0 +1,39 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
+.row
+  .columns.large-12
+    .breadcrumb
+      = link_to unapproved_jobs_path do
+        %i.fa.fa-angle-left
+        Unapproved Jobs
+
+= form_tag approve_jobs_path, method: :put do
+  = hidden_field_tag :job_ids, @job.id
+  %section#job-show-header.mb--
+    .row
+      .columns.large-6
+        .job-info
+          %p.mb
+            %strong= @job.company
+          %p.mb= @job.title
+          %p.no-margin
+            %span.job-info-label Department
+            %span= @job.department
+          %p.no-margin
+            %span.job-info-label Language
+            %span= @job.language
+          %p.no-margin
+            %span.job-info-label Salary
+            %span= @job.salary
+          %p.no-margin
+            %span.job-info-label Location
+            %span= @job.try(:location)
+      .columns.large-6
+        .text-center
+          = submit_tag 'Approve Job', class: 'button secondary radius no-margin'
+          = link_to 'Edit Job', edit_unapproved_job_path(@job), class: 'button primary radius no-margin'
+
+.row
+  .columns.large-12
+    = markdown @job.description

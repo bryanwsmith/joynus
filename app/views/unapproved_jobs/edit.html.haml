@@ -1,0 +1,13 @@
+.row
+  .columns.large-10.large-offset-1
+    .breadcrumb
+      = link_to unapproved_jobs_path do
+        %i.fa.fa-angle-left
+        Unapproved Jobs
+
+.row
+  .columns.large-10.large-offset-1
+    %fieldset.mb--
+      = form_for @job, html: { 'data-abide' => '' } do |form|
+        = render 'shared/job_form', form: form
+        = form.submit "Save Job", class: 'button small no-margin right submit radius'

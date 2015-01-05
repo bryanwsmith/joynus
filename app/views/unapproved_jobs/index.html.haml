@@ -1,0 +1,50 @@
+.row
+  .columns.large-12
+    .breadcrumb
+      = link_to jobs_path do
+        %i.fa.fa-angle-left
+        Approved Jobs
+      .right
+        = link_to 'New Job', employers_path, class: 'button tiny radius secondary'
+
+= form_tag approve_jobs_path, method: :put do
+  %section.no-spacing.mb--
+    .row
+      .columns.large-12
+        %fieldset.mb--
+          - if @jobs.count == 0
+            .empty-table
+              %h1 Hurray! No new jobs to approve.
+
+          - else
+            .row
+              .columns.large-12
+                #users-header
+                  %table.no-margin
+                    %tbody
+                      %tr
+                        %td{ width: '5%' }
+                        %td{ width: '20%' } Company
+                        %td{ width: '20%' } Position
+                        %td{ width: '20%' } Location
+                        %td.text-right{ width: '15%' } Salary
+                        %td{ width: '15%' }
+                        %td{ width: '5%' }
+
+            .row
+              .columns.large-12
+                #users-table
+                  %table
+                    %tbody
+                      - @jobs.each do |job|
+                        %tr
+                          %td{ width: '5%' }= check_box_tag "job_ids[]", job.id
+                          %td{ width: '20%' }= job.company
+                          %td{ width: '20%' }= job.title
+                          %td{ width: '20%' }= job.location
+                          %td.text-right{ width: '15%' }= job.salary
+                          %td.text-right{ width: '15%' }= link_to 'Preview', unapproved_job_path(job)
+                          %td.text-right{ width: '5%' }= link_to 'Edit', edit_unapproved_job_path(job)
+            .row
+              .columns.large-12
+                = submit_tag 'Approve Selected', class: 'button submit small radius mt-- no-margin-bottom right'
