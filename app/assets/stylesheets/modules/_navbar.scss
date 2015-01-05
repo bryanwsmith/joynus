@@ -92,7 +92,7 @@ nav {
   position: fixed;
   width: 100%;
   height: rem-calc(70);
-  z-index: 1000;
+  z-index: 100;
   -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
   -moz-box-shadow:    0 0 0 4px rgba(0, 0, 0, .15);
   box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
@@ -116,6 +116,18 @@ nav {
     font-size: rem-calc(14);
     font-weight: 400;
     line-height: rem-calc(70);
+    position: relative;
+
+    &.active:before {
+      content: '';
+      width: calc(100% - 26px);
+      background: $primary-color;
+      height: 2px;
+      position: absolute;
+      bottom: 20px;
+      left: 13px;
+      opacity: 0.25;
+    }
   }
 
   ul.menu {
