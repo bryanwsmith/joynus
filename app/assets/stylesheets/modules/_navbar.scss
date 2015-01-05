@@ -15,13 +15,84 @@ $animation-function: ease;
 
 .home-mobile-link { display: none; }
 
+body.logged-in {
+  & > main { padding-top: rem-calc(102); }
+  .sticky-nav { margin-top: rem-calc(32); }
+
+  .user-nav-container {
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 95%;
+  }
+
+  .user-nav {
+    background: $black;
+    height: rem-calc(32);
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+
+    .button.tiny {
+      background: $black;
+      font-size: 14px;
+      line-height: rem-calc(16);
+      opacity: 0.75;
+      transition: all .2s ease;
+
+      &:hover { opacity: 1; }
+      &:after { border-color: transparent !important; }
+    }
+
+    ul {
+      &.f-dropdown {
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.15);
+        margin-top: 0;
+
+        &:before, &:after {
+          left: 120px !important;
+          top: -10px;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+    }
+
+    ul.inline-list {
+      line-height: rem-calc(32);
+
+      li {
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        margin: 0;
+      }
+
+      a {
+        color: $white;
+        font-size: 14px;
+        opacity: 0.75;
+        transition: all .2s ease;
+
+        &:hover { opacity: 1; }
+      }
+    }
+  }
+}
+
 nav {
   background-color: $white;
   margin-bottom: 0;
   position: fixed;
   width: 100%;
   height: rem-calc(70);
-  z-index: 50000;
+  z-index: 1000;
   -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
   -moz-box-shadow:    0 0 0 4px rgba(0, 0, 0, .15);
   box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
