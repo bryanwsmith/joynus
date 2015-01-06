@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_filter :authorize, only: [:approve]
+  before_filter :authorize, only: [:approve, :edit]
 
   def index
     @jobs = Job.where.not(date_approved: nil)
@@ -15,10 +15,18 @@ class JobsController < ApplicationController
     @job = find_job
   end
 
+  def edit
+    @job = find_job
+  end
+
   def update
     @job = find_job
     @job.update_attributes(job_params)
-    redirect_to unapproved_job_url(@job), notice: "#{@job.title} Updated"
+    if referrer == 'unapproved_jobs'
+      redirect_to unapproved_job_url(@job), notice: "#{@job.title} Updated"
+    else
+      redirect_to job_url(@job), notice: "#{@job.title} Updated"
+    end
   end
 
   def approve
@@ -27,6 +35,13 @@ class JobsController < ApplicationController
   end
 
   def destroy
+    @job = find_job
+    @job.destroy
+    if referrer == 'unapproved_jobs'
+      redirect_to unapproved_jobs_url, notice: "#{@job.title} Deleted"
+    else
+      redirect_to jobs_url, notice: "#{@job.title} Deleted"
+    end
   end
 
   private
@@ -36,5 +51,9 @@ class JobsController < ApplicationController
 
   def find_job
     Job.find(params[:id])
+  end
+
+  def referrer
+    Rails.application.routes.recognize_path(request.referer)[:controller]
   end
 end

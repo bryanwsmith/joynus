@@ -1,9 +1,16 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
 .row
   .columns.large-12
     .breadcrumb
       = link_to jobs_path do
         %i.fa.fa-angle-left
         Find a Job
+      - if current_user
+        .right
+          = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+          = link_to 'Edit', edit_job_path(@job), class: 'button tiny radius ml'
 
 %section#job-show-header.mb--
   .row

@@ -7,6 +7,9 @@
       = link_to unapproved_jobs_path do
         %i.fa.fa-angle-left
         Unapproved Jobs
+      .right
+        = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+        = link_to 'Edit', edit_unapproved_job_path(@job), class: 'button tiny radius ml'
 
 = form_tag approve_jobs_path, method: :put do
   = hidden_field_tag :job_ids, @job.id
@@ -30,9 +33,8 @@
             %span.job-info-label Location
             %span= @job.try(:location)
       .columns.large-6
-        .text-center
+        .apply-now
           = submit_tag 'Approve Job', class: 'button secondary radius no-margin'
-          = link_to 'Edit Job', edit_unapproved_job_path(@job), class: 'button primary radius no-margin'
 
 .row
   .columns.large-12
