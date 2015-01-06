@@ -37,7 +37,7 @@
         .feature-text {
           position: absolute;
           left: 50%;
-          top: 50%;
+          top: 35%;
           -moz-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           -webkit-transform: translate(-50%, -50%);
@@ -82,7 +82,11 @@
 
 @media only screen and (min-width:768px) {
   #home .feature-section .feature-absolute .feature-text { top: 70%; }
-  .feature-section { min-height: rem-calc(268); }
+  .feature-section {
+    min-height: rem-calc(268);
+
+    .feature .feature-absolute .feature-text { top: 50%; }
+  }
 }
 
 @media only screen and (min-width:1024px) {}
