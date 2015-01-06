@@ -4,9 +4,9 @@
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     %article.feature-static
-      = image_tag('employers-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('employers-bg-mobile.jpg')}, (small)], [#{asset_path('employers-bg.jpg')}, (medium)], [#{asset_path('employers-bg.jpg')}, (large)]" } }
     %article.feature-absolute
-      = image_tag('employers-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('employers-bg-mobile.jpg')}, (small)], [#{asset_path('employers-bg.jpg')}, (medium)], [#{asset_path('employers-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center Submit a new job
 

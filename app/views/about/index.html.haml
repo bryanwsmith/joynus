@@ -1,9 +1,9 @@
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     %article.feature-static
-      = image_tag('about-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
     %article.feature-absolute
-      = image_tag('about-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center Our Vision is your future
 

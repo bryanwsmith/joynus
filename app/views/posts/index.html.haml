@@ -4,9 +4,9 @@
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     %article.feature-static
-      = image_tag('blog-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('blog-bg-mobile.jpg')}, (small)], [#{asset_path('blog-bg.jpg')}, (medium)], [#{asset_path('blog-bg.jpg')}, (large)]" } }
     %article.feature-absolute
-      = image_tag('blog-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('blog-bg-mobile.jpg')}, (small)], [#{asset_path('blog-bg.jpg')}, (medium)], [#{asset_path('blog-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center News and resources
 

@@ -4,9 +4,9 @@
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     %article.feature-static
-      = image_tag('contact-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
     %article.feature-absolute
-      = image_tag('contact-bg.jpg')
+      %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center Let's talk
 
