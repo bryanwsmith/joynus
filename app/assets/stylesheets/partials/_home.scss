@@ -82,6 +82,11 @@
 
       &#best-decision { background: asset-url('best-decision-img.jpg') no-repeat top right; }
 
+      &#employers {
+        background: asset-url('employer_homepage.jpg') no-repeat top left;
+        background-position: rem-calc(-100) 0;
+      }
+
       &#right-job {
         padding-top: rem-calc(150) !important;
         padding-bottom: rem-calc(150) !important;

@@ -1,13 +1,13 @@
 @media only screen {
+  .primary-color-bg {
+    background: $primary-color;
+
+    h2,
+    p { color: $white; }
+  }
+  
   main section {
     display: block;
-
-    &.primary-color-bg {
-      background: $primary-color;
-
-      h2,
-      p { color: $white; }
-    }
 
     &.light-color-bg { background: $info-color; }
 
