@@ -16,7 +16,6 @@
 //= require waypoints
 //= require foundation-wysihtml5
 //= require foundation-wysihtml5/locales
-//= require pusher
 //= require angular
 //= require angular-resource
 //= require angular-animate
@@ -27,7 +26,7 @@
 
 $(function(){
   $(document).foundation();
-  
+
   function adjustPusher() {
     var pusher = $("#pusher");
     var canvasHeight = $('body').height() - pusher.height();
