@@ -31,9 +31,25 @@
         %p.no-margin
           %span.job-info-label Location
           %span= @job.try(:location)
-    .columns.large-6
-      .apply-now
-        = link_to 'Apply Now', nil, class: 'button secondary radius no-margin'
+        - if @job.avionte_url == nil
+          .mb
+          - if @job.contact_name.present?
+            %p.no-margin
+              %span.job-info-label Contact Name
+              %span= @job.contact_name
+          - if @job.email.present?
+            %p.no-margin
+              %span.job-info-label Email
+              %span #{mail_to @job.email}
+          - if @job.phone.present?
+            %p.no-margin
+              %span.job-info-label Phone
+              %span= @job.contact_phone
+
+    - if @job.avionte_url != nil
+      .columns.large-6
+        .apply-now
+          = link_to 'Apply Now', nil, class: 'button secondary radius no-margin'
 
 .row
   .columns.large-12

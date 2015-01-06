@@ -15,4 +15,7 @@
     %fieldset.mb--
       = form_for @job, html: { 'data-abide' => '' } do |form|
         = render 'shared/job_form', form: form
+        .row
+          .columns.large-12
+            = form.text_field :avionte_url, placeholder: 'http://'
         = form.submit "Save Job", class: 'button small no-margin right submit radius'

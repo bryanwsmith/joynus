@@ -17,6 +17,8 @@
     .job-info {
       background: $primary-color;
 
+      a { color: $white; }
+
       .job-info-label {
         display: inline-block;
         width: 25%;
