@@ -24,11 +24,17 @@
     -moz-border-radius: 6px;
 
     h1 {
-      color: $primary-color;
+      color: $secondary-color;
       margin: 0;
       text-align: center;
       padding-top: rem-calc(100);
-      opacity: .5;
+      opacity: .9;
+    }
+
+    p {
+      color: $black;
+      text-align: center;
+      opacity: .8;
     }
   }
 

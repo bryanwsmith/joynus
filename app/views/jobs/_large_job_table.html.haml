@@ -24,14 +24,21 @@
           .row
             .columns.large-12
               #jobs-table.mb--
-                %table.clickable-row
-                  %tbody
-                    %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs', click: 'go(job.id)' } }
-                      %td{ width: '20%' } {{ job.company }}
-                      %td{ width: '30%' } {{ job.title }}
-                      %td{ width: '20%' } {{ job.location }}
-                      %td{ width: '15%' } {{ job.language }}
-                      %td{ width: '15%' } {{ job.posted }}
+                - if @jobs.where.not(date_approved: nil).count != 0
+                  %table.clickable-row
+                    %tbody
+                      %tr{ ng: { repeat: 'job in jobs  | filter:searchJobs', click: 'go(job.id)' } }
+                        %td{ width: '20%' } {{ job.company }}
+                        %td{ width: '30%' } {{ job.title }}
+                        %td{ width: '20%' } {{ job.location }}
+                        %td{ width: '15%' } {{ job.language }}
+                        %td{ width: '15%' } {{ job.posted }}
+                - else
+                  .empty-table
+                    %h1 No Jobs Currently Listed
+                    %p
+                      Check back later, or
+                      = link_to 'contact us.', contact_index_path
 
           .row
             .columns.large-12
