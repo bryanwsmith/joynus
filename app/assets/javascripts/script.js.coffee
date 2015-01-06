@@ -26,9 +26,6 @@ joynuss = ->
   # Sets a max height on the feature section
   $('.feature-section .feature-static').css('max-height', $(window).height() - 197)
 
-  # Body Pusher
-  $(window).resize adjustPusher
-
   # Smooths scrolling for home page
   $("a[href*=#]:not([href=#])").click ->
     if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
