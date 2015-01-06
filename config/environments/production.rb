@@ -1,4 +1,10 @@
 Rails.application.configure do
+  ActionMailer::Base.smtp_settings = {
+      :address =>        'smtp.mandrillapp.com',
+      :port =>           '587',
+      :user_name =>      ENV['MANDRILL_USERNAME'],
+      :password =>       ENV['MANDRILL_APIKEY'],
+  }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
