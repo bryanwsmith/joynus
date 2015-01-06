@@ -5,7 +5,7 @@
     h2,
     p { color: $white; }
   }
-  
+
   main section {
     display: block;
 
@@ -29,7 +29,7 @@
 
 @media only screen and (min-width:480px) {
   main section {
-    &:not(.no-spacing){
+    &:not(.no-spacing) {
       padding-top: rem-calc(60);
       padding-bottom: rem-calc(60);
 
@@ -37,10 +37,20 @@
         margin-bottom: rem-calc(30);
       }
     }
+
+    &.content-section {
+      padding-top: 0;
+    }
   }
 }
 
-@media only screen and (min-width:768px) {}
+@media only screen and (min-width:768px) {
+  main section {
+    &.content-section {
+      padding-top: 0;
+    }
+  }
+}
 
 @media only screen and (min-width:1024px) {}
 

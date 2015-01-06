@@ -75,5 +75,21 @@ joynuss = ->
   $('html').on 'click', 'body.nav-open', (e) ->
     actions.closeMenu()  unless $(e.target).is('a')
 
+  # home last section img spacing
+  homeImage = ->
+    if $(window).width() > 1600
+      $('#employers').css('backgroundPosition', '0 0')
+    else if $(window).width() <= 1600 and $(window).width() > 1350
+      $('#employers').css('backgroundPosition', '-100px 0')
+    else if $(window).width() <= 1350 and $(window).width() > 1150
+      $('#employers').css('backgroundPosition', '-200px 0')
+    else if $(window).width() <= 1150 and $(window).width() > 950
+      $('#employers').css('backgroundPosition', '-300px 0')
+    else if $(window).width() < 950
+      $('#employers').css('backgroundPosition', '-400px 0')
+
+  $(window).resize ->
+    homeImage()
+
 $(document).ready ->
   joynuss()
