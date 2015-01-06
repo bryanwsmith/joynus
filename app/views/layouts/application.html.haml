@@ -20,7 +20,7 @@
                 - if Job.unapproved.count > 0
                   %span.label.radius.alert= Job.unapproved.count
             %li= link_to 'Add Blog Post', new_post_path
-            %li.home-mobile-link= link_to 'Log Out', logout_path
+            %li.hide-for-large-up= link_to 'Log Out', logout_path
           %a.button.dropdown.tiny.right.hide-for-small-only.hide-for-medium-only{ aria: { controls: 'drop1', expanded: false }, data: { dropdown: 'drop1' }, href: '#' }= current_user.email
           %ul#drop1.f-dropdown{ aria: { hidden: true }, data: { dropdown: { content: '' } }, tabindex: '-1' }
             %li= link_to 'Edit Profile', edit_user_path(current_user.id)
@@ -35,7 +35,7 @@
           .navbar-header
             %h1= link_to 'Joynus', root_url
           %ul.menu
-            .home-mobile-link
+            .hide-for-large-up
               %li.menu-item= active_link_to 'Home', root_url
             %li.menu-item= active_link_to 'Employers', employers_path
             %li.menu-item= active_link_to 'Blog', posts_path
