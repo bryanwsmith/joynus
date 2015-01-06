@@ -1,0 +1,19 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
+.row
+  .columns.large-10.large-offset-1
+    .breadcrumb
+      = link_to jobs_path do
+        %i.fa.fa-angle-left
+        Find a Job
+      - if current_user
+        .right
+          = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+
+.row
+  .columns.large-10.large-offset-1
+    %fieldset.mb--
+      = form_for @job, html: { 'data-abide' => '' } do |form|
+        = render 'shared/job_form', form: form
+        = form.submit "Save Job", class: 'button small no-margin right submit radius'

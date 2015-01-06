@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_filter :authorize, only: [:approve, :edit]
+  before_filter :authorize, only: [:approve, :edit, :update, :destroy]
 
   def index
     @jobs = Job.where.not(date_approved: nil)
