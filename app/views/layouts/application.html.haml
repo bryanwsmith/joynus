@@ -36,12 +36,12 @@
             %h1= link_to 'Joynus Staffing', root_url
           %ul.menu
             .hide-for-large-up
-              %li.menu-item= active_link_to 'Home', root_url
-            %li.menu-item= active_link_to 'Employers', employers_path
-            %li.menu-item= active_link_to 'Blog', posts_path
-            %li.menu-item= active_link_to 'About', about_index_path
-            %li.menu-item= active_link_to 'Contact Us', contact_index_path
-            %li.menu-item= link_to 'Find a Job', jobs_path, class: 'button secondary radius'
+              %li.menu-item= active_link_to t('header.home'), root_url
+            %li.menu-item= active_link_to t('header.employers'), employers_path
+            %li.menu-item= active_link_to t('header.blog'), posts_path
+            %li.menu-item= active_link_to t('header.about'), about_index_path
+            %li.menu-item= active_link_to t('header.contact'), contact_index_path
+            %li.menu-item= link_to t('header.find-a-job'), jobs_path, class: 'button secondary radius'
 
             .menu-footer
               %ul.inline-list.social-icons
@@ -77,4 +77,4 @@
               %li
                 %a.fa.fa-linkedin{href: 'https://www.linkedin.com/company/3499330?trk=vsrp_jobs_res_name&trkInfo=VSRPsearchId%3A2080338161420490145807%2CVSRPtargetId%3A38262556%2CVSRPcmpt%3Aprimary'}
         .columns.medium-7.medium-pull-5
-          %p.small &#169; Joynus Staffing #{Time.now.year}. All Rights Reserved.
+          %p.small &#169; Joynus Staffing #{Time.now.year}. #{t('footer.rights-reserved')}.

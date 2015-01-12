@@ -6,7 +6,7 @@
     .breadcrumb
       = link_to jobs_path do
         %i.fa.fa-angle-left
-        Find a Job
+        = t 'jobs.breadcrumb'
       - if current_user
         .right
           = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
@@ -20,30 +20,30 @@
           %strong= @job.company
         %p.mb= @job.title
         %p.no-margin
-          %span.job-info-label Department
+          %span.job-info-label= t 'jobs.department'
           %span= @job.department
         %p.no-margin
-          %span.job-info-label Language
+          %span.job-info-label= t 'jobs.language'
           %span= @job.language
         %p.no-margin
-          %span.job-info-label Salary
+          %span.job-info-label= t 'jobs.salary'
           %span= @job.salary
         %p.no-margin
-          %span.job-info-label Location
+          %span.job-info-label= t 'jobs.location'
           %span= @job.try(:location)
         - if @job.avionte_url == nil
           .mb
           - if @job.contact_name.present?
             %p.no-margin
-              %span.job-info-label Contact Name
+              %span.job-info-label= t 'jobs.contact-name'
               %span= @job.contact_name
           - if @job.email.present?
             %p.no-margin
-              %span.job-info-label Email
+              %span.job-info-label= t 'jobs.email'
               %span #{mail_to @job.email}
           - if @job.phone.present?
             %p.no-margin
-              %span.job-info-label Phone
+              %span.job-info-label= t 'jobs.phone'
               %span= @job.contact_phone
 
     - if @job.avionte_url != nil

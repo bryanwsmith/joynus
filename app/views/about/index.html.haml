@@ -5,18 +5,18 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center Our Vision is your future
+        %h1.text-center= t 'about.feature-header'
 
 %section
   .row
     .columns.large-12
-      %h2.text-center.secondary-text.no-margin-top More than a decade of human resource expertise to thrust you into the workplace
-      %p Creating new opportunities for individuals and businesses to grow successfully is something we strive for each and every day. Strategic infrastructure in the workplace is vital, which is why we guide the most qualified people into the right work environments. With the expertise we provide, more companies can experience a cohesive system. We believe that meaningful work leads to a better quality of living in and out of the workplace, which, in turn, increases both employer and employee outcomes. This is what matters to us, a better life for a brighter future.
+      %h2.text-center.secondary-text.no-margin-top= t 'about.content-header'
+      %p= t 'about.content-paragraph-one'
       %p
         .left.door-img= image_tag('about-us-door.png')
-        The staff at Joynus ensures success by paying close attention to meet the needs of our employees and our clients. Our main office, located in Dalton, GA, is staffed with well-trained, motivated personnel. To ensure complete satisfaction, we have a staff member available to you 24 hours a day.
+        #{t('about.content-paragraph-two')}
 
       %div.button-container
-        %h4.mb-- Let's work Together
-        = link_to 'Jobseekers', jobs_path, class: 'button secondary radius small mr--'
-        = link_to 'Businesses', employers_path, class: 'button primary radius small mr--'
+        %h4.mb--= t 'content-callout'
+        = link_to t('about.jobseekers-button'), jobs_path, class: 'button secondary radius small mr--'
+        = link_to t('about.businesses-button'), employers_path, class: 'button primary radius small mr--'

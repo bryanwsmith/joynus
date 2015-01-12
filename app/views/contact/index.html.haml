@@ -8,13 +8,13 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center Let's talk
+        %h1.text-center= t 'contact.feature-header'
 
 %section
   .row
     .columns.large-8.large-offset-2
-      %h2.text-center.secondary-text.no-margin-top We're listening
-      %p.no-margin Questions, comments, or just want to say hello, drop up a line and we’ll get back to you as soon as we can. If you’re currently working with us, contact your Joynus Representative directly for immediate personal support.
+      %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+      %p.no-margin= t 'contact.content-text'
 
 %section.form-section.no-spacing.mb--
   .row
@@ -25,7 +25,7 @@
 %section.light-color-bg
   .row
     .columns.large-12
-      %h2.text-center.primary-text.mb-- Office Locations
+      %h2.text-center.primary-text.mb--= t 'contact.office-locations'
 
   #locations
     .row
@@ -37,32 +37,32 @@
               %li.small 11545 Park Woods Circle Ste B
               %li.small Alpharetta, GA 30005
               %li.small #{mail_to 'jobs@joynusstaffing.com'}
-              %li.small Fax: 678-369-7222
-              %li.small Phone: 678-248-5833
+              %li.small #{t('contact.fax-label')}: 678-369-7222
+              %li.small #{t('contact.phone-label')}: 678-248-5833
           .columns.large-4
             %h4.text-thin.primary-text LaGrange
             %ul.no-bullet
               %li.small 1506 Whitesville Street
               %li.small LaGrange, GA 30240
               %li.small #{mail_to 'jobs@joynusstaffing.com'}
-              %li.small Fax: 706-443-5186
-              %li.small Phone: 706-443-5184
+              %li.small #{t('contact.fax-label')}: 706-443-5186
+              %li.small #{t('contact.phone-label')}: 706-443-5184
           .columns.large-4
             %h4.text-thin.primary-text Opelika
             %ul.no-bullet
               %li.small 11545 Park Woods Circle Ste B
               %li.small Opelika, AL 36801
               %li.small #{mail_to 'jobs@joynusstaffing.com'}
-              %li.small Fax: 334-737-6552
-              %li.small Phone: 334-737-6550
+              %li.small #{t('contact.fax-label')}: 334-737-6552
+              %li.small #{t('contact.phone-label')}: 334-737-6550
 
 %section#resources
   .row
     .columns.large-3.large-offset-1
-      %h3.secondary-text.no-margin Helpful resources
+      %h3.secondary-text.no-margin= t 'contact.helpful-resources'
     .columns.large-4
       %h5.primary-text.text-thin.no-margin.health-care
-        %a{href: '#'} Healthcare
+        %a{href: '#'}= t 'contact.healthcare'
     .columns.large-4
       %h5.primary-text.text-thin.no-margin.industrial-careers
-        %a{href: '#'} Industrial Careers
+        %a{href: '#'}= t 'contact.industrial-careers'

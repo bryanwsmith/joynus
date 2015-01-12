@@ -8,15 +8,15 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('home-bg-mobile.jpg')}, (small)], [#{asset_path('home-bg.jpg')}, (medium)], [#{asset_path('home-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center.animated.fadeInDown= t 'hero-landing'
-        %p.text-center.animated.fadeInDown= t 'hero-tagline'
+        %h1.text-center.animated.fadeInDown= t 'home.feature-header'
+        %p.text-center.animated.fadeInDown= t 'home.feature-tagline'
         %a.circle.animated.fadeInDown{href: '#career'}
           %span.icon-down-cursor
 
 %section.companies.primary-color-bg.no-spacing.animated.fadeIn
   .row.show-for-large-up
     .columns.large-12
-      %p.text-center A few companies that choose Joynus Staffing
+      %p.text-center= t 'home.companies-tagline'
 
   %ul.logo-list.clearfix
     %li
@@ -36,8 +36,8 @@
       .home-section-img.mb-
         = image_tag('section-1.jpg')
       .animated-text
-        %h2 Better Career, better life.
-        %p Joynus Staffing understands that having a great job creates a higher level of satisfaction in life. We do one thing- we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus Staffing is the fastest path to a better life.
+        %h2= t 'home.career-header'
+        %p= t 'home.career-content'
 
 %section.content-section#right-job
   .row
@@ -46,8 +46,8 @@
         = image_tag('right-job-img.jpg')
     .columns.large-6
       .animated-text
-        %h2 We have the right job for you.
-        %p At Joynus Staffing, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose- enabling you to live a better life by connecting you to the right job.
+        %h2= t 'home.right-job-header'
+        %p= t 'home.right-job-content'
 
 %section.content-section.small#best-decision.no-spacing
   .row
@@ -55,9 +55,9 @@
       .home-section-img.mb-
         = image_tag('section-3.jpg')
       .animated-text
-        %h2 Make your best decisions.
-        %p We work closely with job seekers to identify each person’s strengths and help them find workplaces where they will succeed. Our wide variety of partners enable us to match the right person to the perfect opportunity. At Joynus Staffing, our goal is to help our clients find better jobs with better pay and higher levels of satisfaction.
-        = link_to 'Apply Now', jobs_path, class: 'button secondary radius small'
+        %h2= t 'home.best-decision-header'
+        %p= t 'home.best-decision-content'
+        = link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small'
 
 .primary-color-bg
   %section.content-section.x-small#employers.no-spacing
@@ -66,6 +66,6 @@
         .home-section-img.mb-
           = image_tag('section-4.jpg')
         .animated-text
-          %h2 Employers
-          %p We have over a decade of experience staffing some of the most reputable companies in the world. Joynus Staffing works hard to find employees who will work hard for you and match your businesses needs. We are qualified to service any business of any size in any industry. From small businesses to large companies, Joynus Staffing is prepared to help you meet your organization’s goals.
-          = link_to 'Learn More', employers_path, class: 'button secondary radius small'
+          %h2= t 'home.employers-header'
+          %p= t 'home.employers-content'
+          = link_to t('home.employers-button'), employers_path, class: 'button secondary radius small'

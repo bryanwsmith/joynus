@@ -8,13 +8,13 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('find-job-bg-mobile.jpg')}, (small)], [#{asset_path('find-job-bg.jpg')}, (medium)], [#{asset_path('find-job-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center Current Openings
+        %h1.text-center= t 'jobs.feature-header'
 
 %section
   .row
     .columns.large-10.large-offset-1
-      %h2.text-center.secondary-text.no-margin-top Let's get started.
-      %p.no-margin Browse and search for new career opporunities here. During the application process, we will tailor your desires, skillset, and qualifications to get you on track for success.
+      %h2.text-center.secondary-text.no-margin-top= t 'jobs.content-header'
+      %p.no-margin= t 'jobs.content-text'
 
 = render 'large_job_table'
 = render 'small_job_table'

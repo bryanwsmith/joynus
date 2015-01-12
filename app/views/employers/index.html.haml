@@ -8,17 +8,17 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('employers-bg-mobile.jpg')}, (small)], [#{asset_path('employers-bg.jpg')}, (medium)], [#{asset_path('employers-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center Submit a new job
+        %h1.text-center= t 'employers.feature-header'
 
 %section
   .row
     .columns.large-10.large-offset-1
-      %h2.text-center.secondary-text.no-margin-top We do all the leg work
-      %p.no-margin List current openings with us. We will keep your company listed and find the right person for your business needs. Let us know what you’re looking for in a candidate with a brief job description, and we will be in contact with you as soon as possible.
+      %h2.text-center.secondary-text.no-margin-top= t 'employers.content-header'
+      %p.no-margin= t 'employers.content-text'
 
 .row
   .columns.large-10.large-offset-1
     %fieldset
       = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
         = render 'shared/job_form', form: form
-        = form.submit "Submit", class: 'button small no-margin right submit radius'
+        = form.submit t('job-form.button'), class: 'button small no-margin right submit radius'

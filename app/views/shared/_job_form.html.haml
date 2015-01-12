@@ -1,49 +1,49 @@
 .row
   .columns.large-12
-    %p.m-b Company Info
+    %p.m-b=  t('job-form.company-header')
 
 .row
   .columns.large-5
-    = form.text_field :company, 'required' => '', placeholder: 'Company *'
+    = form.text_field :company, 'required' => '', placeholder: t('job-form.company-placeholder')
   .columns.large-5
-    = form.text_field :contact_name, 'required' => '', placeholder: 'Contact Name *'
+    = form.text_field :contact_name, 'required' => '', placeholder: t('job-form.contact-name-placeholder')
   .columns.large-2
-    = form.text_field :contact_title, placeholder: 'Your Title'
+    = form.text_field :contact_title, placeholder: t('job-form.contact-title-placeholder')
 
 .row
   .columns.large-7
-    = form.email_field :email, 'required' => '', placeholder: 'Email *'
+    = form.email_field :email, 'required' => '', placeholder: t('job-form.contact-email-placeholder')
   .columns.large-5
-    = form.text_field :phone, placeholder: 'Phone'
+    = form.text_field :phone, placeholder: t('job-form.contact-phone-placeholder')
 
 .row
   .columns.large-6
-    = form.text_field :contact_city, placeholder: 'City'
+    = form.text_field :contact_city, placeholder: t('job-form.contact-city-placeholder')
   .columns.large-3
-    = form.text_field :contact_state, placeholder: 'State'
+    = form.text_field :contact_state, placeholder: t('job-form.contact-state-placeholder')
   .columns.large-3
-    = form.text_field :zip_code, placeholder: 'Zip Code'
+    = form.text_field :zip_code, placeholder: t('job-form.contact-zip-code-placeholder')
 
 .row
   .columns.large-12
-    %p.m-b About the position
+    %p.m-b= t('job-form.position-header')
 
 .row
   .columns.large-5
-    = form.text_field :title, 'required' => '', placeholder: 'Job Title *'
+    = form.text_field :title, 'required' => '', placeholder: t('job-form.job-title-placeholder')
   .columns.large-5
-    = form.text_field :department, 'required' => '', placeholder: 'Department *'
+    = form.text_field :department, 'required' => '', placeholder: t('job-form.department-placeholder')
   .columns.large-2
-    = form.text_field :salary, 'required' => '', placeholder: 'Salary*'
+    = form.text_field :salary, 'required' => '', placeholder: t('job-form.salary-placeholder')
 
 .row
   .columns.large-6
-    = form.text_field :language, 'required' => '', placeholder: 'Language Requirements *'
+    = form.text_field :language, 'required' => '', placeholder: t('job-form.language-placeholder')
   .columns.large-3
-    = form.text_field :city, placeholder: 'City'
+    = form.text_field :city, placeholder: t('job-form.city-placeholder')
   .columns.large-3
-    = form.text_field :state, placeholder: 'State'
+    = form.text_field :state, placeholder: t('job-form.state-placeholder')
 
 .row
   .columns.large-12
-    = form.text_area :description, placeholder: 'Job Description and Requirements', rows: 8
+    = form.text_area :description, placeholder: t('job-form.description-placeholder'), rows: 8
