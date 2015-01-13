@@ -152,7 +152,11 @@ nav {
         .triangle {
           position: absolute;
           left: 28.5%;
-          transform: translateX(42%);
+          -webkit-transform: translateX(42%);
+             -moz-transform: translateX(42%);
+              -ms-transform: translateX(42%);
+               -o-transform: translateX(42%);
+                  transform: translateX(42%);
           top: -15px;
         	width: 0;
         	height: 0;
@@ -187,7 +191,11 @@ nav {
           top: 50%;
           width: rem-calc(35);
           height: rem-calc(35);
-          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+             -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+               -o-transform: translateY(-50%);
+                  transform: translateY(-50%);
         }
 
         &.en-link:before { background: image-url('en-flag.png'); }
