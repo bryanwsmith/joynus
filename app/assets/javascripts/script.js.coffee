@@ -91,5 +91,6 @@ joynuss = ->
   $(window).resize ->
     homeImage()
 
+
 $(document).ready ->
   joynuss()

@@ -1,5 +1,5 @@
 jobCtrl = ($scope, $http,  $location) ->
-  $http.get('/jobs.json')
+  $http.get('/en/jobs.json')
     .success (data, status, headers, config) ->
       $scope.jobs = data
 

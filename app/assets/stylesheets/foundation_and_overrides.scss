@@ -533,9 +533,9 @@ $include-html-global-classes: $include-html-classes;
 // $f-dropdown-border-color: scale-color($white, $lightness: -20%);
 
 // We use these to style the triangle pip.
-// $f-dropdown-triangle-size: 6px;
+   $f-dropdown-triangle-size: 0;
 // $f-dropdown-triangle-color: $white;
-// $f-dropdown-triangle-side-offset: 10px;
+// $f-dropdown-triangle-side-offset: 150px;
 
 // We use these to control styles for the list elements.
 // $f-dropdown-list-style: none;
