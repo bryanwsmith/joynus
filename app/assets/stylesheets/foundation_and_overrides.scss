@@ -54,6 +54,7 @@
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
+@import "modules/variables";
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -99,10 +100,10 @@ $include-html-global-classes: $include-html-classes;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
-   $info-color: #b9e2eb;
+   $info-color: $light-primary;
 
-   $white       : #f7f9f3;
-   $ghost       : #f7f9f3;
+   $white       : $white;
+   $ghost       : $white;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
@@ -113,17 +114,17 @@ $include-html-global-classes: $include-html-classes;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
-   $monsoon     : #21a2c5;
+// $monsoon     : #21a2c5;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-   $oil         : #34441d;
+   $oil         : $header-color;
 // $jet         : #222222;
-   $black       : #0d2325;
+   $black       : $black;
 
 // We use these to control various global styles
-   $body-bg: #f7f9f3;
-   $body-font-color: #4b4d49;
+   $body-bg: $body-bg;
+   $body-font-color: $body-font-color;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
