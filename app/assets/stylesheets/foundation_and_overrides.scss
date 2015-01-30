@@ -78,7 +78,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+   $row-width: rem-calc(1200);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -91,8 +91,9 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+   $font-weight-light: 300 !default;
+   $font-weight-normal: 500 !default;
+   $font-weight-bold: 700 !default;
 
 // We use these as default colors throughout
    $primary-color: #21a2c5;
@@ -204,10 +205,10 @@ $include-html-global-classes: $include-html-classes;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-   $h2-font-size: rem-calc(32);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
+   $h1-font-size: rem-calc(72);
+   $h2-font-size: rem-calc(36);
+   $h3-font-size: rem-calc(27);
+   $h4-font-size: rem-calc(24);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -222,18 +223,18 @@ $include-html-global-classes: $include-html-classes;
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
-// $subheader-font-weight: $font-weight-normal;
+   $subheader-font-weight: $font-weight-light;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
-// $small-font-size: 60%;
+   $small-font-size: rem-calc(15);
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+   $paragraph-font-weight: 300;
+   $paragraph-font-size: rem-calc(18);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -434,10 +435,10 @@ $include-html-global-classes: $include-html-classes;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
-// $button-font-sml: rem-calc(13);
+   $button-font-sml: rem-calc(18);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+   $button-font-weight: 300;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -1277,14 +1278,14 @@ $include-html-global-classes: $include-html-classes;
 
 // These control the table head styles
 // $table-head-bg: $white-smoke  ;
-// $table-head-font-size: rem-calc(14);
+   $table-head-font-size: rem-calc(21);
 // $table-head-font-color: $jet;
-// $table-head-font-weight: $font-weight-bold;
+   $table-head-font-weight: $font-weight-light;
 // $table-head-padding: rem-calc(8 10 10);
 
 // These control the row padding and font styles
 // $table-row-padding: rem-calc(9 10);
-// $table-row-font-size: rem-calc(14);
+   $table-row-font-size: $paragraph-font-size;
 // $table-row-font-color: $jet;
 // $table-line-height: rem-calc(18);
 

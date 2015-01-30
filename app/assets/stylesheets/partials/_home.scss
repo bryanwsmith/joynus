@@ -17,7 +17,10 @@
       padding-bottom: rem-calc(24);
       padding-left: rem-calc(64);
 
-      p { margin-bottom: rem-calc(24); }
+      h3 {
+        color: $white;
+        margin-bottom: rem-calc(24);
+      }
 
       ul {
         max-width: rem-calc(900);

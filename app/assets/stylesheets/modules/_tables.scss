@@ -9,7 +9,9 @@
       padding-right: rem-calc(5);
       width: 100%;
 
-      td {
+      thead { background: transparent; }
+
+      td, th {
         color: $white;
         line-height: 1;
         height: rem-calc(55);
@@ -55,7 +57,9 @@
       padding-right: rem-calc(5);
       width: 100%;
 
-      td {
+      td, th {
+        font-weight: 300;
+        line-height: 1.5;
         background: $white;
         vertical-align: top;
       }

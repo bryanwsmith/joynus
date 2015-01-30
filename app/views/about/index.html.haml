@@ -14,9 +14,9 @@
       %p= t 'about.content-paragraph-one'
       %p
         .left.door-img= image_tag('about-us-door.png')
-        #{t('about.content-paragraph-two')}
+        %p #{t('about.content-paragraph-two')}
 
       %div.button-container
-        %h4.mb--= t 'content-callout'
+        %h4.mb--= t 'about.content-callout'
         = link_to t('about.jobseekers-button'), jobs_path, class: 'button secondary radius small mr--'
         = link_to t('about.businesses-button'), employers_path, class: 'button primary radius small mr--'

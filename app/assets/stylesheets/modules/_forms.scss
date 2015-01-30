@@ -72,21 +72,25 @@
 
   ::-webkit-input-placeholder {
      color: $primary-color;
+     font-size: $small-font-size;
      opacity: 0.4;
   }
 
   :-moz-placeholder {
      color: $primary-color;
+     font-size: $small-font-size;
      opacity: 0.4;
   }
 
   ::-moz-placeholder {
      color: $primary-color;
+     font-size: $small-font-size;
      opacity: 0.4;
   }
 
   :-ms-input-placeholder {
      color: $primary-color;
+     font-size: $small-font-size;
      opacity: 0.4;
   }
 }

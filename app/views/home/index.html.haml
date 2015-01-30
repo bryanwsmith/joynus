@@ -9,14 +9,14 @@
       %img{ data: { interchange:"[#{asset_path('home-bg-mobile.jpg')}, (small)], [#{asset_path('home-bg.jpg')}, (medium)], [#{asset_path('home-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'home.feature-header'
-        %p.text-center.animated.fadeInDown= t 'home.feature-tagline'
+        %h3.subheader.text-center.animated.fadeInDown= t 'home.feature-tagline'
         %a.circle.animated.fadeInDown{href: '#career'}
           %span.icon-down-cursor
 
 %section.companies.primary-color-bg.no-spacing.animated.fadeIn
   .row.show-for-large-up
     .columns.large-12
-      %p.text-center= t 'home.companies-tagline'
+      %h3.subheader.text-center= t 'home.companies-tagline'
 
   %ul.logo-list.clearfix
     %li
