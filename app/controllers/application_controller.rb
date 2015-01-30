@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_locale
+  before_filter :set_site
 
   def set_locale
     I18n.locale = params[:locale] if params[:locale].present?
@@ -16,6 +17,31 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user
+
+  def set_site
+    if Rails.env == "development"
+      session[:site] = case request.domain
+      when "joynusstaffing.dev" then "joynusstaffing"
+      when "tidrainc.dev" then "tidrainc"
+        else ENV['site'] || "joynusstaffing"
+      end
+    else session[:site].blank?
+      if Rails.env == "staging"
+        session[:site] = case request.subdomains.last
+        when "joynusstaffing" then "joynusstaffing"
+        when "tidrainc" then "tidrainc"
+        end
+      elsif Rails.env == "production"
+        session[:site] = case request.domain
+        when "joynusstaffing.com" then "joynusstaffing"
+        when "tidrainc.com" then "tidrainc"
+          else "joynusstaffing"
+        end
+      else
+        session[:site] = "joynusstaffing"
+      end
+    end
+  end
 
   private
   def authorize
