@@ -21,3 +21,5 @@
         %p.post-content= truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
 
         = link_to 'View More', post_url(post), class: 'secondary-text'
+
+= paginate @posts
