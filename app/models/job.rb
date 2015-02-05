@@ -1,6 +1,8 @@
 class Job < ActiveRecord::Base
   validates_presence_of :company, :contact_name, :email, :title, :department, :salary, :language
 
+  AVIONTE_URL = "http://joy.aviontego.com/portals/portals/jobboard/requirelogin.aspx?JobID="
+
   scope :unapproved, -> { where(date_approved: nil) }
 
   def location
@@ -17,5 +19,9 @@ class Job < ActiveRecord::Base
 
   def formatted_date
     "#{self.date_approved.strftime('%b %d')}"
+  end
+
+  def job_url
+    "#{Job::AVIONTE_URL}#{self.avionte_job_id}"
   end
 end

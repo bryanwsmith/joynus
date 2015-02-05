@@ -5,4 +5,5 @@ json.array! @jobs do |job|
   json.language job.language
   json.posted job.formatted_date
   json.id job.id
+  json.featured job.featured
 end
