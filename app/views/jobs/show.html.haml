@@ -41,10 +41,6 @@
             %p.no-margin
               %span.job-info-label= t 'jobs.email'
               %span #{mail_to @job.email}
-          - if @job.phone.present?
-            %p.no-margin
-              %span.job-info-label= t 'jobs.phone'
-              %span= @job.contact_phone
 
     - if @job.avionte_url != nil
       .columns.large-6
