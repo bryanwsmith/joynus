@@ -109,3 +109,8 @@ kr:
     phone: "전화 *"
     message: "메세지..."
     button: "문의"
+
+  views:
+    pagination:
+      previous: "Older"
+      next: "Newer"

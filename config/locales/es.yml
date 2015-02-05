@@ -109,3 +109,8 @@ es:
     phone: "Teléfono *"
     message: "Mensaje..."
     button: "Continuar"
+
+  views:
+    pagination:
+      previous: "Older"
+      next: "Newer"
