@@ -1,10 +1,24 @@
-Joyn Us Staffing App
+Joynus Staffing
 ================================
+For Editing
+---------------
+If you would like to change colors:
+[Go Here](https://bitbucket.org/rileybracken/joynus-staffing/src/master/app/assets/stylesheets/modules/_variables.scss)
+
+If you would like to change the English text:
+[Go Here](https://bitbucket.org/rileybracken/joynus-staffing/src/master/config/locales/en.yml)
+
+If you would like to change the Korean text:
+[Go Here](https://bitbucket.org/rileybracken/joynus-staffing/src/master/config/locales/kr.yml)
+
+If you would like to change the Spanish text:
+[Go Here](https://bitbucket.org/rileybracken/joynus-staffing/src/master/config/locales/es.yml)
+
+
+For the Developers
+---------------
 
 It's a Rails 4.1.8 app.
-
-Running the app
----------------
 
 Make sure you're running Ruby 2.1.5 (there's a .ruby-version file that should be
 read by rvm or rbenv) and then:
