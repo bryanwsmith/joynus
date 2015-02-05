@@ -31,21 +31,24 @@
         %p.no-margin
           %span.job-info-label= t 'jobs.location'
           %span= @job.try(:location)
-        - if @job.avionte_url == nil
-          .mb
-          - if @job.contact_name.present?
-            %p.no-margin
-              %span.job-info-label= t 'jobs.contact-name'
-              %span= @job.contact_name
-          - if @job.email.present?
-            %p.no-margin
-              %span.job-info-label= t 'jobs.email'
-              %span #{mail_to @job.email}
+        .mb
+        - if @job.contact_name.present?
+          %p.no-margin
+            %span.job-info-label= t 'jobs.contact-name'
+            %span= @job.contact_name
+        - if @job.email.present?
+          %p.no-margin
+            %span.job-info-label= t 'jobs.email'
+            %span #{mail_to @job.email}
+        - if @job.phone.present?
+          %p.no-margin
+            %span.job-info-label= t 'jobs.phone'
+            %span= @job.phone
 
-    - if @job.avionte_url != nil
+    - if @job.avionte_job_id != nil
       .columns.large-6
         .apply-now
-          = link_to 'Apply Now', @job.avionte_url, class: 'button secondary radius no-margin'
+          = link_to 'Apply Now', @job.job_url, class: 'button secondary radius no-margin'
 
 .row
   .columns.large-12

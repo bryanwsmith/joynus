@@ -50,6 +50,11 @@
     background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
     background: linear-gradient(to right, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
   }
+
+  small.featured {
+    font-size: rem-calc(14);
+    color: $secondary-color;
+  }
 }
 
 @media only screen and (min-width:1024px) {}

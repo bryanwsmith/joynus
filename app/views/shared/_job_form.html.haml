@@ -47,3 +47,15 @@
 .row
   .columns.large-12
     = form.text_area :description, placeholder: t('job-form.description-placeholder'), rows: 8
+
+- if current_user
+  %p.m-b Joynus Information
+  .row
+    .columns.large-3
+      = form.text_field :avionte_job_id, placeholder: 'Job Id'
+  .row
+    .columns.large-3
+      .switch.round
+        = form.check_box :featured
+        %label{ for: 'job_featured' }
+        %span Featured
