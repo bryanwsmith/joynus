@@ -8,7 +8,7 @@
     %article.feature-absolute
       %img{ data: { interchange:"[#{asset_path('blog-bg-mobile.jpg')}, (small)], [#{asset_path('blog-bg.jpg')}, (medium)], [#{asset_path('blog-bg.jpg')}, (large)]" } }
       .feature-text
-        %h1.text-center News and resources
+        %h1.text-center= t 'blog.feature-header'
 
 - @posts.each do |post|
   .row

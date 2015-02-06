@@ -110,7 +110,6 @@ kr:
     message: "메세지..."
     button: "문의"
 
-
   views:
     pagination:
       previous: "Older"
