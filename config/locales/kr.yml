@@ -10,7 +10,7 @@ kr:
     employers: "구인"
     blog: "블로그"
     about: "회사소개"
-    contact-us: ": 연락및 문의"
+    contact-us: "연락및 문의"
     find-a-job: "취업 정보"
 
   footer:
@@ -109,6 +109,7 @@ kr:
     phone: "전화 *"
     message: "메세지..."
     button: "문의"
+
 
   views:
     pagination:
