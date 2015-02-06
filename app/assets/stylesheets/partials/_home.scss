@@ -99,7 +99,11 @@
         padding-bottom: rem-calc(150) !important;
       }
 
-      &#best-decision { background: asset-url('best-decision-img.jpg') no-repeat top right; }
+      &#best-decision {
+        background: asset-url('best-decision-img.jpg') no-repeat top right;
+        background-size: auto 100%;
+      }
+
       &#employers { background: asset-url('employer_homepage.jpg') no-repeat top left; }
 
       &#right-job {
