@@ -15,9 +15,9 @@ class UsersController < ApplicationController
     @user.update_attributes(user_params)
 
     if @user.save
-      redirect_to users_url(@user), notice: "#{@user.full_name} updated."
+      redirect_to users_url, notice: "#{@user.full_name} updated."
     else
-      render 'edit'
+      render 'edit', notice: "#{@user.full_name} was not successfully updated."
     end
   end
 
@@ -29,9 +29,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to users_url(@user), notice: "#{@user.full_name} created."
+      redirect_to users_url, notice: "#{@user.full_name} created."
     else
-      render 'New'
+      render 'new', "#{@user.full_name} was not successfully created."
     end
   end
 
