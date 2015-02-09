@@ -17,7 +17,8 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to users_url, notice: "#{@user.full_name} updated."
     else
-      render 'edit', notice: "#{@user.full_name} was not successfully updated."
+      flash[:alert] = "We could not save #{@user.full_name}."
+      render 'edit'
     end
   end
 
@@ -31,7 +32,8 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to users_url, notice: "#{@user.full_name} created."
     else
-      render 'new', "#{@user.full_name} was not successfully created."
+      flash[:alert] = "We could create this user."
+      render 'new'
     end
   end
 

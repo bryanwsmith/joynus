@@ -10,9 +10,9 @@
 
 .row
   .columns.large-6
-    = form.password_field :password, 'required' => '', placeholder: "#{params[:action] == 'new' ? 'Password *' : 'Password'}"
+    = form.password_field :password, placeholder: "#{params[:action] == 'new' ? 'Password *' : 'Password'}"
   .columns.large-6
-    = form.password_field :password_confirmation, 'required' => '', placeholder: "#{params[:action] == 'new' ? 'Password Confirmation *' : 'Password Confirmation'}"
+    = form.password_field :password_confirmation, placeholder: "#{params[:action] == 'new' ? 'Password Confirmation *' : 'Password Confirmation'}"
 
 - if current_user.admin?
   .row
