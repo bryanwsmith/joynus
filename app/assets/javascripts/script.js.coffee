@@ -24,7 +24,7 @@ joynuss = ->
     offset: 'bottom-in-view'
 
   # Sets a max height on the feature section
-  $('.feature-section .feature-static').css('max-height', $(window).height() - 197)
+  $('.feature-section .feature-static').css('max-height', $(window).height() - 235)
 
   # Smooths scrolling for home page
   $("a[href*=#]:not([href=#])").click ->
