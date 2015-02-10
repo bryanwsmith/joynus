@@ -91,6 +91,16 @@ joynuss = ->
   $(window).resize ->
     homeImage()
 
+  formDisable = ->
+    $('form input[required="required"]').on 'focusout change', ->
+      buttonDisabled = false
+
+      $('form input[required="required"]').each ->
+        if !$(this).val()
+          buttonDisabled = true
+      $('form input[type="submit"]').prop 'disabled', buttonDisabled
+
+  formDisable()
 
 $(document).ready ->
   joynuss()

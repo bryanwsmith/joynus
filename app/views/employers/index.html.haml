@@ -21,4 +21,4 @@
     %fieldset
       = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
         = render 'shared/job_form', form: form
-        = form.submit t('job-form.button'), class: 'button small no-margin right submit radius'
+        = form.submit t('job-form.button'), class: 'button small no-margin right submit radius', 'disabled' => ''

@@ -6,6 +6,16 @@
     margin-bottom: rem-calc(60);
     padding: rem-calc(20);
 
+    form {
+      input.submit {
+        background: $black;
+
+        &[disabled] { opacity: 0.6; }
+
+        &[disabled], &:hover, &[disabled]:hover { background: $black; }
+      }
+    }
+
     input[type='text'], textarea, select, input[type='password'],  input[type='email'] {
       border: 3px solid $white;
       border-radius: $global-radius;
