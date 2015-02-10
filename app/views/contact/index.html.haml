@@ -3,10 +3,8 @@
 
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
-    %article.feature-static
-      %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
-    %article.feature-absolute
-      %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
+    .feature-container
+      %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg-mobile.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center= t 'contact.feature-header'
 

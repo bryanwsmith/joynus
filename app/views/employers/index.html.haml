@@ -3,9 +3,7 @@
 
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
-    %article.feature-static
-      %img{ data: { interchange:"[#{asset_path('employers-bg-mobile.jpg')}, (small)], [#{asset_path('employers-bg.jpg')}, (medium)], [#{asset_path('employers-bg.jpg')}, (large)]" } }
-    %article.feature-absolute
+    .feature-container
       %img{ data: { interchange:"[#{asset_path('employers-bg-mobile.jpg')}, (small)], [#{asset_path('employers-bg.jpg')}, (medium)], [#{asset_path('employers-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center= t 'employers.feature-header'

@@ -12,6 +12,8 @@
     }
 
     .companies {
+      position: relative;
+      top: -1px;
       padding-top: rem-calc(24);
       padding-right: rem-calc(64);
       padding-bottom: rem-calc(24);
@@ -47,6 +49,11 @@
           }
         }
       }
+    }
+
+    #career {
+      position: relative;
+      top: -1px;
     }
   }
 }

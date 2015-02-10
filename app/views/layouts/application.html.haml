@@ -7,7 +7,6 @@
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
     = csrf_meta_tags
-    = javascript_include_tag 'application'
 
   %body{ 'ng-cloak' => '', class: ('logged-in' if current_user) }
     - if current_user
@@ -27,7 +26,6 @@
             - if current_user.admin?
               %li= link_to 'Manage Users', users_path
             %li= link_to 'Log Out', logout_path
-
 
     %header
       %nav(role='navigation')
@@ -88,3 +86,4 @@
           %small &#169; uJoynus #{Time.now.year}. #{t('footer.rights-reserved')}.
 
     = render 'layouts/google'
+    = javascript_include_tag 'application'
