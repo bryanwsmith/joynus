@@ -6,6 +6,7 @@
 @import "animate.scss";
 
 /* Modules */
+@import 'modules/_mixins.scss';
 @import 'modules/_breadcrumbs.scss';
 @import 'modules/_buttons.scss';
 @import 'modules/_feature.scss';
@@ -14,7 +15,9 @@
 @import 'modules/_forms.scss';
 @import 'modules/_general.scss';
 @import 'modules/_grid.scss';
+@import 'modules/_language_dropdown.scss';
 @import 'modules/_navbar.scss';
+@import 'modules/_mobile-nav.scss';
 @import 'modules/_sections.scss';
 @import 'modules/_spacing.scss';
 @import 'modules/_tables.scss';
@@ -22,6 +25,7 @@
 
 /* Partials */
 @import 'partials/_about.scss';
+@import 'partials/_admin.scss';
 @import 'partials/_blog.scss';
 @import 'partials/_contact.scss';
 @import 'partials/_employers.scss';

@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px){
+  .home-mobile-link { display: inline-block; }
+
+  body.logged-in .user-nav ul.inline-list {
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+
+    li {
+      text-align: center;
+      width: 33%;
+      padding: 0;
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  nav {
+    ul.menu {
+      background: $black;
+      width: $mobile-nav-width;
+      height: 100%;
+      padding: 0 rem-calc(30);
+      position: fixed;
+      top: 0;
+      right: -$mobile-nav-width;
+      @include transition(all, $animation-time, $animation-function);
+
+      .menu-footer {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: $mobile-nav-width;
+        margin-bottom: rem-calc(30);
+
+        li {
+          a { font-size: rem-calc(17) !important; }
+
+          &:first-child {
+            margin-top: 0 !important;
+          }
+        }
+
+        ul.social-icons {
+          text-align: center;
+          width: $mobile-nav-width;
+          margin: 0;
+          padding: 0 rem-calc(60);
+
+          li {
+            margin: 0;
+            width: 25%;
+            height: rem-calc(40);
+          }
+
+          a {
+            color: $white;
+            font-size: rem-calc(18) !important;
+            opacity: .75;
+
+            &.active:before {
+              content: '';
+              width: calc(100% - 26px);
+              background: $primary-color;
+              height: 2px;
+              position: absolute;
+              bottom: 20px;
+              left: 13px;
+              opacity: 0.25;
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .copyright {
+          text-align: center;
+          color: rgba(255, 255, 255, 0.6);
+          small { font-size: rem-calc(14); }
+        }
+      }
+
+      li.menu-item {
+        width: 100%;
+
+        &:first-child {
+          margin-top: rem-calc(15);
+        }
+
+        a {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: rem-calc(16);
+          margin: 0;
+
+          &.home-mobile-link { display: inline-block; }
+
+          &:hover { color: #ffffff; }
+
+          &.btn {
+            font-size: rem-calc(20);
+            position: absolute;
+            top: rem-calc(30);
+            width: 65%;
+          }
+        }
+      }
+    }
+
+    a.mobile-menu { display: block; }
+  }
+
+  body.nav-open {
+    margin-left: -$mobile-nav-width;
+    margin-right: $mobile-nav-width;
+    @include transition(all, $animation-time, $animation-function);
+
+    nav ul.menu { right: 0; }
+  }
+}

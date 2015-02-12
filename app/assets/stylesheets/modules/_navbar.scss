@@ -1,245 +1,66 @@
-$mobile-nav-width: rem-calc(350);
-$animation-time: 400ms;
-$animation-function: ease;
+@media only screen {
+  .home-mobile-link { display: none; }
 
-@mixin transition($property, $time, $function){
-  -webkit-transition: $property $time $function;
-  -moz-transition: $property $time $function;
-  -ms-transition: $property $time $function;
-  -o-transition: $property $time $function;
-  transition: $property $time $function;
-}
-
-.home-mobile-link { display: none; }
-
-body.logged-in {
-  & > main { padding-top: rem-calc(102); }
-  .sticky-nav { margin-top: rem-calc(32); }
-
-  .user-nav-container {
-    margin: 0 auto;
+  nav {
+    background-color: $white;
     margin-bottom: 0;
-    max-width: 95%;
-  }
-
-  .user-nav {
-    background: $black;
-    height: rem-calc(32);
-    width: 100%;
     position: fixed;
-    z-index: 5000;
+    width: 100%;
+    height: rem-calc(70);
+    z-index: 100;
+    -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
+    -moz-box-shadow:    0 0 0 4px rgba(0, 0, 0, .15);
+    box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
 
-    .button.tiny {
-      background: $black;
-      font-size: 14px;
-      line-height: rem-calc(16);
-      opacity: 0.75;
-      transition: all .2s ease;
-
-      &:hover { opacity: 1; }
-      &:after { border-color: transparent !important; }
+    .navbar-container {
+      margin: 0 auto;
+      width: 95%;
     }
 
-    ul {
-      &.f-dropdown {
-        border-width: 0 1px 1px 1px;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.15);
-        margin-top: 0;
-
-        &:before, &:after {
-          left: 120px !important;
-          top: -10px;
-        }
-
-        &:after {
-          display: none;
-        }
-      }
-
-      &:focus {
-        outline: -webkit-focus-ring-color auto 0px;
-      }
-    }
-
-    ul.inline-list {
-      line-height: rem-calc(32);
-
-      li {
-        padding-left: rem-calc(16);
-        padding-right: rem-calc(16);
-        margin: 0;
-      }
-
-      a {
-        color: $white;
-        font-size: 14px;
-        opacity: 0.75;
-        transition: all .2s ease;
-
-        &:hover { opacity: 1; }
-      }
-    }
-  }
-}
-
-nav {
-  background-color: $white;
-  margin-bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: rem-calc(70);
-  z-index: 100;
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, .15);
-  -moz-box-shadow:    0 0 0 4px rgba(0, 0, 0, .15);
-  box-shadow:         0 0 0 4px rgba(0, 0, 0, .15);
-
-  .navbar-container {
-    margin: 0 auto;
-    width: 95%;
-  }
-
-  .navbar-header {
-    display: inline-block;
-
-    h1 {
-      font-size: 1.5rem;
-      line-height: rem-calc(70);
-      margin: 0;
-    }
-  }
-
-  li > a {
-    font-size: rem-calc(14);
-    font-weight: 400;
-    line-height: rem-calc(70);
-    position: relative;
-  }
-
-  ul.menu {
-    button.language-dropdown {
-      border: 2px solid $primary-color;
-      border-radius: rem-calc(35);
-      background-color: transparent;
-      padding: 0;
-      margin: 0;
-      outline: none;
-      height: rem-calc(35);
-      width: rem-calc(35);
-      position: relative;
-      top: rem-calc(10);
-
-
-      &.en-selected { background: image-url('en-flag.png'); }
-      &.es-selected { background: image-url('es-flag.png'); }
-      &.kr-selected { background: image-url('kr-flag.png'); }
-
-      &.en-selected, &.es-selected, &.kr-selected {
-        background-position: -1px -1px;
-        background-size: 102%;
-        background-repeat: no-repeat;
-      }
-    }
-
-    #language-dropdown {
-      padding-top: rem-calc(10);
-      padding-bottom: rem-calc(10);
-
-      &.align-dropdown {
-        margin-left: -76px;
-        margin-top: rem-calc(15);
-
-        .triangle {
-          position: absolute;
-          left: 28.5%;
-          -webkit-transform: translateX(42%);
-             -moz-transform: translateX(42%);
-              -ms-transform: translateX(42%);
-               -o-transform: translateX(42%);
-                  transform: translateX(42%);
-          top: -15px;
-        	width: 0;
-        	height: 0;
-        	border-left: 20px solid transparent;
-        	border-right: 20px solid transparent;
-
-        	border-bottom: 15px solid $white;
-          z-index: 50000;
-        }
-
-        .triangle + .triangle {
-          top: -17px;
-        	border-bottom: 15px solid $primary-color;
-          z-index: 49999;
-        }
-      }
-
-      li a {
-        color: $primary-color;
-        line-height: rem-calc(52);
-        padding-left: rem-calc(73);
-        position: relative;
-
-        &:hover{
-          background: $info-color;
-        }
-
-        &:before {
-          content: '';
-          position: absolute;
-          left: rem-calc(19);
-          top: 50%;
-          width: rem-calc(35);
-          height: rem-calc(35);
-          -webkit-transform: translateY(-50%);
-             -moz-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-               -o-transform: translateY(-50%);
-                  transform: translateY(-50%);
-        }
-
-        &.en-link:before { background: image-url('en-flag.png'); }
-        &.es-link:before { background: image-url('es-flag.png'); }
-        &.kr-link:before { background: image-url('kr-flag.png'); }
-
-        &.en-link:before, &.es-link:before, &.kr-link:before {
-          background-position: -1px -1px;
-          background-size: 102%;
-          background-repeat: no-repeat;
-        }
-      }
-    }
-
-    .language-link .f-dropdown {
-      border: 2px solid $primary-color;
-      outline: none;
-    }
-
-    float: right;
-    margin: 0;
-    list-style-type: none;
-
-    li.menu-item {
-      letter-spacing: normal;
+    .navbar-header {
       display: inline-block;
 
-      a {
-        color: $primary-color;
-        display: block;
-        font-size: $paragraph-font-size;
-        padding-left: rem-calc(10);
-        padding-right: rem-calc(10);
-
-        &.button {
-          color: $white;
-          padding: rem-calc(8) rem-calc(16);
-          margin-top: rem-calc(16);
-          margin-left: rem-calc(10);
-        }
+      h1 {
+        font-size: 1.5rem;
+        line-height: rem-calc(70);
+        margin: 0;
       }
     }
 
-    .menu-footer { display: none; }
+    li > a {
+      font-size: rem-calc(14);
+      font-weight: 400;
+      line-height: rem-calc(50);
+      position: relative;
+    }
+
+    ul.menu {
+      float: right;
+      margin: 0;
+      list-style-type: none;
+
+      li.menu-item {
+        letter-spacing: normal;
+        display: inline-block;
+
+        a {
+          color: $primary-color;
+          display: block;
+          font-size: $paragraph-font-size;
+          padding-left: rem-calc(10);
+          padding-right: rem-calc(10);
+
+          &.button {
+            color: $white;
+            padding: rem-calc(8) rem-calc(16);
+            margin-top: rem-calc(16);
+            margin-left: rem-calc(10);
+          }
+        }
+      }
+
+      .menu-footer { display: none; }
+    }
   }
 
   a.mobile-menu {
@@ -251,126 +72,16 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px){
-  .home-mobile-link { display: inline-block; }
+@media only screen and (min-width:320px) {}
 
-  body.logged-in .user-nav ul.inline-list {
-    width: calc(100% + 20px);
-    margin: 0 -10px;
+@media only screen and (min-width:480px) {}
 
-    li {
-      text-align: center;
-      width: 33%;
-      padding: 0;
+@media only screen and (min-width:768px) {}
 
-      a {
-        font-size: 12px;
-      }
-    }
-  }
+@media only screen and (min-width:1024px) {}
 
-  nav {
-    ul.menu {
-      background: $black;
-      width: $mobile-nav-width;
-      height: 100%;
-      padding: 0 rem-calc(30);
-      position: fixed;
-      top: 0;
-      right: -$mobile-nav-width;
-      @include transition(all, $animation-time, $animation-function);
+@media only screen and (min-width:1140px) {}
 
-      .menu-footer {
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: $mobile-nav-width;
-        margin-bottom: rem-calc(30);
+@media only screen and (min-width:1280px) {}
 
-        li {
-          a { font-size: rem-calc(17) !important; }
-
-          &:first-child {
-            margin-top: 0 !important;
-          }
-        }
-
-        ul.social-icons {
-          text-align: center;
-          width: $mobile-nav-width;
-          margin: 0;
-          padding: 0 rem-calc(60);
-
-          li {
-            margin: 0;
-            width: 25%;
-            height: rem-calc(40);
-          }
-
-          a {
-            color: $white;
-            font-size: rem-calc(18) !important;
-            opacity: .75;
-
-            &.active:before {
-              content: '';
-              width: calc(100% - 26px);
-              background: $primary-color;
-              height: 2px;
-              position: absolute;
-              bottom: 20px;
-              left: 13px;
-              opacity: 0.25;
-            }
-
-            &:hover {
-              opacity: 1;
-            }
-          }
-        }
-
-        .copyright {
-          text-align: center;
-          color: rgba(255, 255, 255, 0.6);
-          small { font-size: rem-calc(14); }
-        }
-      }
-
-      li.menu-item {
-        width: 100%;
-
-        &:first-child {
-          margin-top: rem-calc(15);
-        }
-
-        a {
-          color: rgba(255, 255, 255, 0.6);
-          font-size: rem-calc(16);
-          margin: 0;
-
-          &.home-mobile-link { display: inline-block; }
-
-          &:hover { color: #ffffff; }
-
-          &.btn {
-            font-size: rem-calc(20);
-            position: absolute;
-            top: rem-calc(30);
-            width: 65%;
-          }
-        }
-      }
-    }
-
-    a.mobile-menu { display: block; }
-  }
-
-  body.nav-open {
-    margin-left: -$mobile-nav-width;
-    margin-right: $mobile-nav-width;
-    @include transition(all, $animation-time, $animation-function);
-
-    nav ul.menu { right: 0; }
-  }
-}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}
