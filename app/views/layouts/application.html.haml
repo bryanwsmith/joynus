@@ -39,7 +39,7 @@
             %li.menu-item= active_link_to t('header.blog'), posts_path
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
-            %li.menu-item.language-link
+            %li.menu-item.language-link.show-for-medium-up
               %button{ class: "#{locale}-selected language-dropdown", data: { dropdown: 'language-dropdown' }, aria: { expanded: 'false', controls: 'drop' } }
               %ul#language-dropdown.f-dropdown.align-dropdown{ role: 'menu', tabindex: '-1', aria: { hidden: 'false' }, data: { dropdown: { content: '' } } }
                 .triangle
