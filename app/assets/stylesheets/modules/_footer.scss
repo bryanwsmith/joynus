@@ -11,6 +11,8 @@
       font-weight: 100;
       line-height: rem-calc(30);
       margin-bottom: 0;
+      display: block;
+      text-align: center;
     }
 
     .social-icons {
@@ -63,7 +65,14 @@
   }
 }
 
-@media only screen and (min-width:768px) {}
+@media only screen and (min-width:768px) {
+  footer {
+    small {
+      display: inline;
+      text-align: left;
+    }
+  }
+}
 
 @media only screen and (min-width:1024px) {}
 
