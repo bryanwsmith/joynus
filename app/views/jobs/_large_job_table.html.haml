@@ -27,7 +27,7 @@
                 - if @jobs.where.not(date_approved: nil).count != 0
                   %table.clickable-row.no-margin
                     %tbody
-                      %tr{ ng: { repeat: "job in jobs  | filter:searchJobs | orderBy: ['featured', 'posted']", click: 'go(job.id)' } }
+                      %tr{ ng: { repeat: "job in jobs  | filter:searchJobs | orderBy: ['-featured', '-date']", click: 'go(job.id)' } }
                         %td{ width: '22%' }
                           %span {{ job.company }}
                           %div{ ng: { if: 'job.featured' } }
