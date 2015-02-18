@@ -1,2 +1,2 @@
 angular
-  .module('Joynus', [])
+  .module('Joynus', ['ngSanitize'])

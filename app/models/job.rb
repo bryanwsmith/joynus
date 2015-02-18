@@ -7,11 +7,11 @@ class Job < ActiveRecord::Base
 
   def location
     if self.city.present? && self.state.present?
-      "<span>#{self.city}</span>, <span>#{self.state}</span>"
+      "<span class='upcase'>#{self.city}</span>, <span class='uppercase'>#{self.state}</span>"
     elsif self.state.present?
-      "#{self.state}"
+      "<span class='uppercase'>#{self.state}</span>"
     elsif self.city.present?
-      "#{self.city}"
+      "<span class='upcase'>#{self.city}</span>"
     else
       ""
     end

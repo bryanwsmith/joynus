@@ -19,6 +19,7 @@
 //= require angular
 //= require angular-resource
 //= require angular-animate
+//= require angular-sanitize
 //= require script
 //= require app
 //= require services/JobsService

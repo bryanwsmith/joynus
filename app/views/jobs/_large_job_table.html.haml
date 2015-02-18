@@ -33,7 +33,7 @@
                           %div{ ng: { if: 'job.featured' } }
                             %small.featured Sponsored by {{ job.company }}
                         %td{ width: '28%' } {{ job.title }}
-                        %td{ width: '20%' } {{ job.location }}
+                        %td{ width: '20%', ng:  { bind: { html: 'job.location'} } }
                         %td{ width: '15%' } {{ job.language }}
                         %td{ width: '15%' } {{ job.posted }}
 
