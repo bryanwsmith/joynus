@@ -20,6 +20,7 @@
 //= require angular-resource
 //= require angular-animate
 //= require angular-sanitize
+//= require masked-input
 //= require script
 //= require app
 //= require services/JobsService

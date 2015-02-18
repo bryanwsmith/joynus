@@ -14,7 +14,7 @@
   .columns.large-7
     = form.email_field :email, 'required' => '', placeholder: t('job-form.contact-email-placeholder')
   .columns.large-5
-    = form.text_field :phone, placeholder: t('job-form.contact-phone-placeholder')
+    = form.text_field :phone, id: 'phone', placeholder: t('job-form.contact-phone-placeholder')
 
 .row
   .columns.large-6
