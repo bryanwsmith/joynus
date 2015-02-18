@@ -27,10 +27,10 @@
           %span= @job.language
         %p.no-margin
           %span.job-info-label= t 'jobs.salary'
-          %span= @job.salary
+          %span= @job.salary.is_int? ? number_to_currency(@job.salary.to_i, precision: 0) : 'DOE'
         %p.no-margin
           %span.job-info-label= t 'jobs.location'
-          %span= @job.try(:location)
+          %span= @job.try(:location).html_safe
         .mb
         - if @job.contact_name.present?
           %p.no-margin
