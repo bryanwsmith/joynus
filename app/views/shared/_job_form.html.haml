@@ -14,13 +14,16 @@
   .columns.large-7
     = form.email_field :email, 'required' => '', placeholder: t('job-form.contact-email-placeholder')
   .columns.large-5
-    = form.text_field :phone, placeholder: t('job-form.contact-phone-placeholder')
+    = form.text_field :phone, id: 'phone', placeholder: t('job-form.contact-phone-placeholder')
 
 .row
   .columns.large-6
     = form.text_field :contact_city, placeholder: t('job-form.contact-city-placeholder')
   .columns.large-3
-    = form.text_field :contact_state, placeholder: t('job-form.contact-state-placeholder')
+    - if params[:action] == 'edit'
+      = form.select :contact_state, options_for_select(Job::STATES, @job.contact_state), include_blank: t('job-form.contact-state-placeholder')
+    - else
+      = form.select :contact_state, options_for_select(Job::STATES, ''), include_blank: t('job-form.contact-state-placeholder')
   .columns.large-3
     = form.text_field :zip_code, placeholder: t('job-form.contact-zip-code-placeholder')
 
@@ -42,7 +45,10 @@
   .columns.large-3
     = form.text_field :city, placeholder: t('job-form.city-placeholder')
   .columns.large-3
-    = form.text_field :state, placeholder: t('job-form.state-placeholder')
+    - if params[:action] == 'edit'
+      = form.select :state, options_for_select(Job::STATES, @job.state), include_blank: t('job-form.state-placeholder')
+    - else
+      = form.select :state, options_for_select(Job::STATES, ''), include_blank: t('job-form.state-placeholder')
 
 .row
   .columns.large-12

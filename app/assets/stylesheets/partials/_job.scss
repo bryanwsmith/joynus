@@ -21,11 +21,14 @@
 
       .job-info-label {
         display: inline-block;
-        width: 25%;
+        width: 50%;
       }
     }
 
     .apply-now {
+      &.hide-mobile {
+        display: none;
+      }
       .button {
         position: absolute;
         left: 50%;
@@ -49,12 +52,17 @@
     background: -o-linear-gradient(left, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
     background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
     background: linear-gradient(to right, $primary-color 0%, $primary-color 50%, $white 50%, $white 100%);
+
+    .apply-now.hide-mobile { display: block; }
+    .job-info .job-info-label { width: 25%; }
   }
 
   small.featured {
     font-size: rem-calc(14);
     color: $secondary-color;
   }
+
+  .apply-now.hide-desktop { display: none; }
 }
 
 @media only screen and (min-width:1024px) {}

@@ -7,10 +7,13 @@
       = link_to jobs_path do
         %i.fa.fa-angle-left
         = t 'jobs.breadcrumb'
+
+        .apply-now.hide-desktop.right
+          = link_to 'Apply Now', @job.job_url, class: 'button secondary tiny radius no-margin'
       - if current_user
         .right
-          = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
-          = link_to 'Edit', edit_job_path(@job), class: 'button tiny radius ml'
+          = link_to 'Delete', job_path(@job), class: 'button tiny radius alert m--r', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
+          = link_to 'Edit', edit_job_path(@job), class: 'button tiny radius m--r'
 
 %section#job-show-header.mb--
   .row
@@ -27,10 +30,10 @@
           %span= @job.language
         %p.no-margin
           %span.job-info-label= t 'jobs.salary'
-          %span= @job.salary
+          %span= @job.salary.is_int? ? number_to_currency(@job.salary.to_i, precision: 0) : 'DOE'
         %p.no-margin
           %span.job-info-label= t 'jobs.location'
-          %span= @job.try(:location)
+          %span= @job.try(:location).html_safe
         .mb
         - if @job.contact_name.present?
           %p.no-margin
@@ -47,7 +50,7 @@
 
     - if @job.avionte_job_id != nil
       .columns.large-6
-        .apply-now
+        .apply-now.hide-mobile
           = link_to 'Apply Now', @job.job_url, class: 'button secondary radius no-margin'
 
 .row
