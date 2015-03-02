@@ -23,6 +23,6 @@ class Job < ActiveRecord::Base
   end
 
   def job_url
-    "#{Job::AVIONTE_URL}#{self.avionte_job_id}"
+    "#{Job::AVIONTE_URL}#{self.avionte_job_id}&CompanyID=JoynusStaffing"
   end
 end
