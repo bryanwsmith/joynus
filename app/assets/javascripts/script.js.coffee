@@ -37,6 +37,15 @@ joynuss = ->
         , 1000
         false
 
+  # Select All Checkbox
+  $('#selectAll').click ->
+    if ( this.checked )
+      $(':checkbox').each ->
+        $(this).prop('checked', true)
+    else
+     $(':checkbox').each ->
+        $(this).prop('checked', false)
+
   # Wysiwyg editor for blog
   $('#blog-textarea').wysihtml5({
     "size": 'tiny',
