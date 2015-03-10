@@ -9,10 +9,10 @@ If you would like to change the English text:
 [Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/en.yml)
 
 If you would like to change the Korean text:
-[Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/es.yml)
+[Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/kr.yml)
 
 If you would like to change the Spanish text:
-[Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/kr.yml)
+[Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/es.yml)
 
 
 For the Developers
