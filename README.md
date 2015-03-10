@@ -14,6 +14,8 @@ If you would like to change the Korean text:
 If you would like to change the Spanish text:
 [Go Here](https://github.com/underbelly/joynusstaffing/blob/master/config/locales/es.yml)
 
+If you would like to change analytics:
+[Go Here](https://github.com/underbelly/joynusstaffing/blob/master/app/views/layouts/_google.html.erb)
 
 For the Developers
 ---------------
