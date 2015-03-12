@@ -17,6 +17,9 @@ If you would like to change the Spanish text:
 If you would like to change analytics:
 [Go Here](https://github.com/joynus/joynus/blob/master/app/views/layouts/_google.html.erb)
 
+If you would like to update title tags:
+[Go Here](https://github.com/Joynus/joynus/blob/master/app/views/layouts/application.html.haml)
+
 For the Developers
 ---------------
 
