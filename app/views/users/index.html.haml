@@ -27,7 +27,8 @@
               %table.clickable-row
                 %tbody
                   - @users.each do |user|
-                    %tr{ data: { url: "#{edit_user_path(user)}" } }
-                      %td{ width: '190' }= user.try(:full_name)
-                      %td= user.email
-                      %td.text-center{ width: '70' }= link_to 'Edit', edit_user_path(user)
+                    - if user.email != 'hello@underbelly.is'
+                      %tr{ data: { url: "#{edit_user_path(user)}" } }
+                        %td{ width: '190' }= user.try(:full_name)
+                        %td= user.email
+                        %td.text-center{ width: '70' }= link_to 'Edit', edit_user_path(user)

@@ -4,6 +4,8 @@
   body.logged-in header nav { margin-top: rem-calc(32) !important; }
   main { padding-top: rem-calc(70); }
   body.logged-in main { padding-top: rem-calc(102); }
+
+  .reveal-modal { top: rem-calc(100) !important; }
 }
 
 @media only screen and (min-width:320px) {}

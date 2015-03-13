@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   def update
     @post = find_post
     @post.update_attributes(post_params)
-    redirect_to edit_post_url(@post), notice: "#{@post.title} Updated"
+    redirect_to post_url(@post), notice: "#{@post.title} Updated"
   end
 
   def destroy
