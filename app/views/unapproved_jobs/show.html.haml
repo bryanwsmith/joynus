@@ -28,7 +28,7 @@
             %span= @job.language
           %p.no-margin
             %span.job-info-label Salary
-            %span= @job.salary.is_int? ? number_to_currency(@job.salary.to_i, precision: 0) : 'DOE'
+            %span= @job.salary.is_int? ? number_to_currency(@job.salary.to_i, precision: 0) : @job.salary
           %p.no-margin
             %span.job-info-label Location
             %span= @job.try(:location).html_safe
