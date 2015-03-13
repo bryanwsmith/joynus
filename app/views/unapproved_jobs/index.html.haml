@@ -47,7 +47,7 @@
                           %td{ width: '20%' }= job.company
                           %td{ width: '20%' }= job.title
                           %td{ width: '20%' }= job.location.html_safe
-                          %td.text-right{ width: '15%' }= job.salary.is_int? ? number_to_currency(job.salary.to_i, precision: 0) : 'DOE'
+                          %td.text-right{ width: '15%' }= job.salary.is_int? ? number_to_currency(job.salary.to_i, precision: 0) : job.salary
                           %td.text-right{ width: '15%' }= link_to 'Preview', unapproved_job_path(job)
                           %td.text-right{ width: '5%' }= link_to 'Edit', edit_unapproved_job_path(job)
             .row
