@@ -6,9 +6,10 @@ class ContactMailer < ActionMailer::Base
     @email = email
     @subject = subject
     @message = message
+    @phone = phone
 
     mail subject: @subject,
          to: @to_email,
-         from: @email
+         from: 'no-reply@ujoynus.com'
   end
 end
