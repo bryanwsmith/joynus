@@ -6,6 +6,7 @@
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
+    = yield :js_head
     = csrf_meta_tags
 
   %body{ class: ('logged-in' if current_user) }
@@ -48,8 +49,11 @@
                 %li= link_to "한국어", { locale: "kr" }, class: 'kr-link'
                 %li= link_to "Espanol", { locale: "es" }, class: 'es-link'
             %li.menu-item= link_to t('header.find-a-job'), jobs_path, class: 'button secondary radius'
+            /%li.menu-item= link_to t('header.find-a-job'), "https://joy.aviontego.com/portals/main.aspx?App=1&Companyid=JoynusStaffing&Lang=Spanish", class: 'button secondary radius'
+            
 
             .menu-footer
+
               %ul.inline-list.social-icons
                 %li
                   %a.fa.fa-facebook{href: 'https://facebook.com/joynusstaffing'}
@@ -87,3 +91,4 @@
 
     = render 'layouts/google'
     = javascript_include_tag 'application'
+    = yield :js

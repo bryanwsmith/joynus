@@ -2,6 +2,7 @@ class JobsController < ApplicationController
   before_filter :authorize, only: [:approve, :edit, :update, :destroy]
 
   def index
+    puts "------>>>> #{I18n.locale}"
     @jobs = Job.where.not(date_approved: nil)
   end
 

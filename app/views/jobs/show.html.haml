@@ -1,3 +1,9 @@
+= content_for :js_head do
+  :javascript
+    var switchTo5x=true;
+  = javascript_include_tag "http://w.sharethis.com/button/buttons.js"
+  :javascript
+    stLight.options({publisher: "89b810c0-d2c7-4a57-9d66-ad33235cac5b", doNotHash: false, doNotCopy: false, hashAddressBar: false});
 - if flash[:notice]
   = render 'shared/success_notice'
 
@@ -10,6 +16,17 @@
 
         .apply-now.hide-desktop.right
           = link_to 'Apply Now', @job.job_url, class: 'button secondary tiny radius no-margin'
+          .button.secondary.radius.tiny.no-margin.btn-top-share.js-top-share
+            .fa.fa-share-alt
+            %span Share
+        .row.shareable-post.js-social-top-buttons.hidden
+          .columns.large-12
+            %span.st_facebook_large{:displayText => "Facebook"}
+            %span.st_twitter_large{:displayText => "Tweet"}
+            %span.st_googleplus_large{:displayText => "Google +"}
+            %span.st_linkedin_large{:displayText => "LinkedIn"}
+            %span.st_pinterest_large{:displayText => "Pinterest"}
+            %span.st_email_large{:displayText => "Email"}
       - if current_user
         .right
           = link_to 'Delete', job_path(@job), class: 'button tiny radius alert m--r', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
@@ -52,7 +69,28 @@
       .columns.large-6
         .apply-now.hide-mobile
           = link_to 'Apply Now', @job.job_url, class: 'button secondary radius no-margin', target: '_blank'
+          .button.secondary.radius.js-toggle-social.share-now
+            .fa.fa-share-alt
+            %span Share
+        .clear
+        .row.shareable-post.js-social-buttons.hidden
+          .columns.large-12
+            %span.st_facebook_large{:displayText => "Facebook"}
+            %span.st_twitter_large{:displayText => "Tweet"}
+            %span.st_googleplus_large{:displayText => "Google +"}
+            %span.st_linkedin_large{:displayText => "LinkedIn"}
+            %span.st_pinterest_large{:displayText => "Pinterest"}
+            %span.st_email_large{:displayText => "Email"}
+            /= render_shareable :twitter => {:button_caption => 'Tweet this!'}
 
 .row
   .columns.large-12
     = markdown @job.description
+= content_for :js do
+  :javascript
+    jQuery(".js-toggle-social").click(function(){
+        $(".js-social-buttons").slideToggle('slow');
+     });
+    jQuery(".js-top-share").click(function(){
+        $(".js-social-top-buttons").slideToggle('slow');
+     });

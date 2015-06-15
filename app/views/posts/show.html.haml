@@ -1,3 +1,9 @@
+= content_for :js_head do
+  :javascript
+    var switchTo5x=true;
+  = javascript_include_tag "http://w.sharethis.com/button/buttons.js"
+  :javascript
+    stLight.options({publisher: "89b810c0-d2c7-4a57-9d66-ad33235cac5b", doNotHash: false, doNotCopy: false, hashAddressBar: false});
 - if flash[:notice]
   = render 'shared/success_notice'
 
@@ -14,6 +20,40 @@
 
 .row
   .columns.large-10.large-offset-1
+
     %h3= @post.title
     %p= l @post.created_at.to_date, format: :long
     %p= @post.raw_post
+    .row.shareable.hide-mobile
+
+      .columns.large-12
+        .button.secondary.radius.js-toggle-social.share-now.btn-share
+          .fa.fa-share-alt
+          %span Share
+      .columns.large-12.js-social-icons.hidden
+        %span.st_facebook_hcount{:displayText => "Facebook"}
+        %span.st_twitter_hcount{:displayText => "Tweet"}
+        %span.st_googleplus_hcount{:displayText => "Google +"}
+        %span.st_linkedin_hcount{:displayText => "LinkedIn"}
+        %span.st_pinterest_hcount{:displayText => "Pinterest"}
+        %span.st_email_hcount{:displayText => "Email"}
+    .row.shareable.hide-desktop
+      .row.text-center
+        .button.secondary.radius.js-toggle-mobile-social.share-now.btn-share
+          .fa.fa-share-alt
+          %span Share
+      .columns.large-12.text-center.js-mobile-social-icons.hidden
+        .columns.large-2.st_facebook_hcount{:displayText => "Facebook"}
+        .columns.large-2.st_twitter_hcount{:displayText => "Tweet"}
+        .columns.large-2.st_googleplus_hcount{:displayText => "Google +"}
+        .columns.large-2.st_linkedin_hcount{:displayText => "LinkedIn"}
+        .columns.large-2.st_pinterest_hcount{:displayText => "Pinterest"}
+        .columns.large-2.st_email_hcount{:displayText => "Email"}
+= content_for :js do
+  :javascript
+    jQuery(".js-toggle-mobile-social").click(function(){
+        $(".js-mobile-social-icons").slideToggle('slow');
+     });
+    jQuery(".js-toggle-social").click(function(){
+        $(".js-social-icons").slideToggle('slow');
+     });
