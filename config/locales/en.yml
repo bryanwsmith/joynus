@@ -33,7 +33,7 @@ en:
 
   employers:
     feature-header: "Submit a new job"
-    content-header: "Advertise your job here"
+    content-header: "We do all the legwork"
     content-text: "List current openings here and find the right person for your business needs or contact us for our recruitment services."
 
   blog:
@@ -112,5 +112,5 @@ en:
 
   views:
     pagination:
-      previous: "Older"
-      next: "Newer"
+      previous: "Newer"
+      next: "Older"
