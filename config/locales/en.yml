@@ -112,5 +112,5 @@ en:
 
   views:
     pagination:
-      previous: "Newer"
-      next: "Older"
+      previous: "Older"
+      next: "Newer"
