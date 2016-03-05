@@ -7,11 +7,21 @@ Rails.application.configure do
   # }
 
   ActionMailer::Base.smtp_settings = {
-      :address =>        'smtp.mandrillapp.com',
-      :port =>           '587',
+      :address =>        'smtp.gmail.com',
+      :port =>           '465',
+      authentication: "plain",
+      enable_starttls_auto: true,
       :user_name =>      ENV['GMAIL_USERNAME'],
-      :password =>       ENV['GMAIL_PASSWORD'],
+      :password =>       ENV['GMAIL_PASSWORD']
+
   }
+
+  # ActionMailer::Base.smtp_settings = {
+  #     :address =>        'smtp.mandrillapp.com',
+  #     :port =>           '587',
+  #     :user_name =>      ENV['GMAIL_USERNAME'],
+  #     :password =>       ENV['GMAIL_PASSWORD']
+  # }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
