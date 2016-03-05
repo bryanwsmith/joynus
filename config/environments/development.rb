@@ -6,15 +6,18 @@ Rails.application.configure do
   #     :password =>       ENV['MANDRILL_APIKEY'],
   # }
 
-  ActionMailer::Base.smtp_settings = {
-      :address =>        'smtp.gmail.com',
-      :port =>           '465',
-      authentication: "plain",
-      enable_starttls_auto: true,
-      :user_name =>      "jobs@ujoynus.com",#ENV['MANDRILL_USERNAME'],
-      :password =>       "Joynus123!" #ENV['MANDRILL_APIKEY'],
 
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "gmail.com",
+      :user_name            => "test@gmail.com",
+      :password             => "testing",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
   }
+
+
 
   ActionMailer::Base.delivery_method = :smtp
 
