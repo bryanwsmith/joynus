@@ -6,6 +6,7 @@ Rails.application.configure do
   #     :password =>       ENV['MANDRILL_APIKEY'],
   # }
 
+  config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
       :address =>        'smtp.gmail.com',
       :port =>           '465',
