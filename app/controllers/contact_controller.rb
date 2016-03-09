@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
   def index
+    puts request.url
   end
 
   def send_mail
