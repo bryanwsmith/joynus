@@ -1,15 +1,24 @@
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: 5
-  timeout: 5000
-
+  
+  # Important configs for cloud9, change password value
+  # to what you entered in the previous psql step.
+  template: template0
+  username: ubuntu
+  password: Faster1!
+  
 development:
   <<: *default
-  database: db/joynuss_staffing_dev_db
+  database: your_app_name_development
 
 test:
   <<: *default
-  database: db/joynuss_staffing_test_db
+  database: your_app_name_test
 
 production:
-  url: <%= ENV["DATABASE_URL"] %>
+  <<: *default
+  database: your_app_name_production
+  username: your_app_name
+  password: <%= ENV['YOUR_APP_NAME_DATABASE_PASSWORD'] %>
