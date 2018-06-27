@@ -9,8 +9,8 @@
 user = User.create(
   first_name: 'Admin',
   last_name: 'Istrator',
-  email: 'admin@example.com',
-  password: 'password',
-  password_confirmation: 'password',
+  email: 'chisung@joynus.com',
+  password: 'Joynus123!',
+  password_confirmation: 'Joynus123!',
   admin: true
 )
