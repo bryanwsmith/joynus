@@ -21,14 +21,14 @@ en:
     feature-tagline: "Let's get started"
     companies-tagline: 'A few companies that choose Joynus'
     career-header: "Better career, better life."
-    career-content: "Joynus understands that having a great job creates a higher level of satisfaction in life. We do one thing; we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, joynus is the fastest path to a better life."
+    career-content: "Joynus understands that having a great job creates a higher level of satisfaction in life. We do one thing; we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus is the fastest path to a better life."
     right-job-header: "We have the right job for you."
     right-job-content: "At Joynus, we are committed to helping you realize your goals and aspirations by matching you with the perfect career. Our team is dedicated to one purpose, enabling you to live a better life by connecting you to the right job."
     best-decision-header: "Make your best decisions."
-    best-decision-content: "We work closely with job seekers to identify each person’s strengths and help them find workplaces where they will succeed. Our wide variety of partners enable us to match the right person to the perfect opportunity. At joynus, our goal is to help our clients find better jobs with better pay and higher levels of satisfaction."
+    best-decision-content: "We work closely with job seekers to identify each person’s strengths and help them find workplaces where they will succeed. Our wide variety of partners enable us to match the right person to the perfect opportunity. At Joynus, our goal is to help our clients find better jobs with better pay and higher levels of satisfaction."
     best-decision-button: "Apply Now"
     employers-header: "Employers"
-    employers-content: "We have over a decade of experience staffing some of the most reputable companies in the world. Joynus works hard to find employees who will work hard for you and match your business’ needs. We are qualified to service any business of any size in any industry. From small businesses to large companies, joynus is prepared to help you meet your organization’s goals."
+    employers-content: "We have over a decade of experience staffing some of the most reputable companies in the world. Joynus works hard to find employees who will work hard for you and match your business’ needs. We are qualified to service any business of any size in any industry. From small businesses to large companies, Joynus is prepared to help you meet your organization’s goals."
     employers-button: "Learn More"
 
   employers:
@@ -37,7 +37,7 @@ en:
     content-text: "List current openings here and find the right person for your business needs or contact us for our recruitment services."
 
   blog:
-    feature-header: "News and resources"
+    feature-header: "News"
 
   about:
     feature-header: "Our vision is your future"

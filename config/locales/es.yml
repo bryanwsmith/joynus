@@ -19,11 +19,19 @@ es:
   home:
     feature-header: "La opportunidad está llamando"
     feature-tagline: "Empieza hoy"
+<<<<<<< HEAD
     companies-tagline: 'Algunas de las compañías que prefieren joynus'
     career-header: "Mejor carrera, mejor vida."
     career-content: "joynus entiende que tener un gran trabajo crea un mayor nivel de satisfacción en la vida. Nuestro propósito es uno: Ayudarlo a elegir la carrera que esté buscando. Ya sea que esté buscando una nueva oportunidad o se encuentre temporalmente desempleado, joynus es el camino más rápido hacia una vida mejor."
     right-job-header: "Tenemos el mejor trabajo para usted."
     right-job-content: "En joynus, estamos comprometidos a ayudarlo a alcanzar sus metas y aspiraciones tan solo con seleccionarlo con una carrera perfecta para sus preferencias y habilidades. Nuestro equipo está dedicado a un solo objetivo: Ayudarlo a alcanazar una mejor vida al conectarlo con el trabajo indicado."
+=======
+    companies-tagline: 'Algunas de las compañías que prefieren Joynus'
+    career-header: "Mejor carrera, mejor vida."
+    career-content: "Joynus entiende que tener un gran trabajo crea un mayor nivel de satisfacción en la vida. Nuestro propósito es uno: Ayudarlo a elegir la carrera que esté buscando. Ya sea que esté buscando una nueva oportunidad o se encuentre temporalmente desempleado, ujoynus es el camino más rápido hacia una vida mejor."
+    right-job-header: "Tenemos el mejor trabajo para usted."
+    right-job-content: "En Joynus, estamos comprometidos a ayudarlo a alcanzar sus metas y aspiraciones tan solo con seleccionarlo con una carrera perfecta para sus preferencias y habilidades. Nuestro equipo está dedicado a un solo objetivo: Ayudarlo a alcanazar una mejor vida al conectarlo con el trabajo indicado."
+>>>>>>> 4a535eb934315773b7e8a9bab78ec2c9ece0e2d3
     best-decision-header: "Tome les mejor decisiones."
     best-decision-content: "Trabajamos en estrecha colaboración los solicitantes de empleo para identificar las fortalezas de cada persona y ayudarles a encontrar los lugares de trabajo donde van a tener éxito. Nuestra amplia variedad de socios nos permite coincidir con la persona adecuada para la ocasión perfecta. En joynus, nuestro objetivo es ayudar a nuestros clientes a encontrar los mejores empleos, mejores salarios y mayores niveles de satisfacción."
     best-decision-button: "Aplique ahora"
@@ -43,7 +51,7 @@ es:
     feature-header: "Nuestro visión es su futuro"
     content-header: "Más de una década de experiencia en recursos humanos para impulzarlo al lugar de trabajo"
     content-paragraph-one: "La creación de nuevas oportunidades para los individuos y las empresas a crecer con éxito es algo que nos esforzamos cada día. Infraestructura estratégica en el lugar de trabajo es esencial, por lo que los guiamos a las personas más cualificadas en los entornos de trabajo adecuados. Con la experiencia que ofrecemos, más compañías pueden experimentar un sistema coherente. Creemos que el trabajo significativo conduce a una mejor calidad de vida dentro y fuera del lugar de trabajo, lo que, a su vez, aumenta los resultados tanto de empresarios y trabajadores. Esto es lo que nos importa, una vida mejor para un futuro más brillante."
-    content-paragraph-two: "El personal de joynus asegura el éxito prestando mucha atención a satisfacer las necesidades de nuestros empleados y nuestros clientes. Nosotros cuenta con personal bien capacitado, personal motivado. Para garantizar la completa satisfacción, tenemos un miembro del personal a su disposición las 24 horas del día."
+    content-paragraph-two: "El personal de Joynus asegura el éxito prestando mucha atención a satisfacer las necesidades de nuestros empleados y nuestros clientes. Nosotros cuenta con personal bien capacitado, personal motivado. Para garantizar la completa satisfacción, tenemos un miembro del personal a su disposición las 24 horas del día."
     content-callout: "Trabajemos juntos"
     jobseekers-button: "Solicitantes de empleo"
     businesses-button: "Empresas"
