@@ -12,6 +12,6 @@ class ContactMailer < ActionMailer::Base
 
     mail subject: @subject,
          to: @to_email,
-         from: 'no-reply@ujoynus.com'
+         from: 'no-reply@joynus.com'
   end
 end
