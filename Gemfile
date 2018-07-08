@@ -24,3 +24,4 @@ gem 'shareable'
 
 
 gem 'spring',        group: :development
+gem 'invisible_captcha'

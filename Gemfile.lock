@@ -54,6 +54,8 @@ GEM
       tilt
     hike (1.2.3)
     i18n (0.6.11)
+    invisible_captcha (0.10.0)
+      rails (>= 3.2.0)
     jbuilder (2.2.5)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -142,6 +144,7 @@ DEPENDENCIES
   foundation-rails
   foundation-wysihtml5-rails
   haml (~> 4.0.6)
+  invisible_captcha
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
