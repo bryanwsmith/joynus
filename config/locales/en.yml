@@ -11,8 +11,9 @@ en:
     blog: "Blog"
     about: "About"
     contact-us: "Contact Us"
-    find-a-job: "Find a Job"
-
+    job: "Jobs"
+    apply: "Apply"
+    sign: "Sign In"
   footer:
     rights-reserved: "All Rights Reserved"
 
