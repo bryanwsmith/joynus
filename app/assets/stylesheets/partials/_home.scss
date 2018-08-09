@@ -163,7 +163,7 @@
 
 .sleft {
     left: 0;
-    background: image-url("jobseeker1.jpg");
+    background: asset-url('jobseeker1.jpg');
     background-size: cover;
 }
 
@@ -187,7 +187,7 @@
 
 .sright {
     right: 0;
-    background: image-url("employer.jpg") no-repeat;
+    background: asset-url("employer.jpg") no-repeat;
     background-size:cover;
 }
 
@@ -233,13 +233,13 @@
   
   .sleft {
     left: 0;
-    background: image-url("jobseeker-mobile.jpg");
+    background: asset-url("jobseeker-mobile.jpg");
     background-size: cover;
   }
   
   .sright {
       right: 0;
-      background: image-url("employer-mobile2.jpg") ;
+      background: asset-url("employer-mobile2.jpg") ;
       background-size:cover;
   }
   
