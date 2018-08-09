@@ -22,6 +22,12 @@ joynuss = ->
     handler: (direction) ->
       $('#employers .animated-text').addClass 'animated fadeIn', direction is 'down'
     offset: 'bottom-in-view'
+    
+  # Fades in the description text based off scrolling down
+  $('#employers').waypoint
+    handler: (direction) ->
+      $('#employers .animated-text').addClass 'animated fadeIn', direction is 'down'
+    offset: 'top-in-view'  
 
   # Sets a max height on the feature section
   $('.feature-section .feature-static').css('max-height', $(window).height() - 235)

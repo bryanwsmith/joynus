@@ -4,7 +4,11 @@
 @import 'foundation_and_overrides';
 @import "font-awesome";
 @import "animate.scss";
-
+@import 'fontello-codes.scss';
+@import 'fontello-embedded.scss';
+@import 'fontello-ie7-codes.scss';
+@import 'fontello-ie7.scss';
+@import 'fontello.scss';
 /* Modules */
 @import 'modules/_mixins.scss';
 @import 'modules/_breadcrumbs.scss';
@@ -22,6 +26,7 @@
 @import 'modules/_spacing.scss';
 @import 'modules/_tables.scss';
 @import 'modules/_typography.scss';
+@import 'modules/_custom.scss';
 
 /* Partials */
 @import 'partials/_about.scss';

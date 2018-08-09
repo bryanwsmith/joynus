@@ -1,0 +1,278 @@
+<% if flash[:notice] %>
+  <%= render 'shared/success_notice' %>
+<% end %>
+
+
+<!--section class="feature-section no-spacing">
+  <div class="feature animated fadeIn">
+    <div class="feature-container">
+      <img data-interchange="[/assets/home-bg-mobile.jpg, (small)], [/assets/home-bg-mobile.jpg, (medium)], [/assets/home-bg.jpg, (large)]" data-uuid="interchange-jkjprfp90" src="/assets/home-bg-mobile.jpg">
+      <div class="feature-text">
+        <h1 class="text-center animated fadeInDown">
+          <!%= t 'home.feature-header' %>
+        </h1>
+        <h3 class="subheader text-center animated fadeInDown">
+          <!%= t 'home.feature-tagline' %>
+        </h3>
+        <a class="circle animated fadeInDown" href="#career">
+          <span class="icon-down-cursor"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section-->
+
+<section class="feature-section">
+  
+    <div class="feature-container">
+      
+      <div class="split sleft">
+        
+        <div class="centered">
+          
+          <h1>Job&nbsp;Seeker</h1>
+          <h3>Looking for job?</h3>
+          <%= link_to t('home.find-job'), jobs_path, class: ' button secondary radius iprocess icon-angle-double-right' %>
+        </div>
+      </div>
+     
+      <div class="split sright">
+        
+        <div class="centered">
+          
+
+          <h1>Employer</h1>
+          <h3>Looking&nbsp;for&nbsp;employee?</h3>
+          <%= link_to t('home.employer'), employers_path, class: 'button success radius iprocess icon-angle-double-right m-top4' %>
+          
+        </div>
+      </div>
+      
+    </div>
+ 
+</section>
+
+
+
+
+
+
+
+
+<!--section class="companies custom-color-bg no-spacing animated fadeIn m-top1 m-bottom1">
+  <div class="row show-for-large-up">
+    <div class="columns large-12">
+      <h2 class="text-center m-bottom2">
+        <!%= t 'home.companies-tagline' %>
+      </h3>
+    </div>
+  <ul class="logo-list clearfix">
+    <li>
+      <span class="icon-hyundai-logo"></span>
+    </li>
+    <li>
+      <span class="icon-sk-logo"></span>
+    </li>
+    <li class="hide-for-small-only">
+      <span class="icon-lg-logo"></span>
+    </li>
+    <li class="show-for-large-up">
+      <span class="icon-kia-logo"></span>
+    </li>
+    <li class="show-for-large-up">
+      <span class="icon-posco-logo"></span>
+    </li>
+  </ul>
+</section-->
+
+
+
+
+  
+<div class="wwdContent2 m-bottom2 ">
+						
+						  <div class="row m-top2">
+                <div class="columns large-12">
+                  <h2 class="text-center ">
+                    <%= t 'home.companies-tagline' %>
+                  </h2>
+                  
+                </div>
+              </div>
+							
+								<!--Service-->
+									
+								<div class="row m-bottom3">
+									<div class="columns large-3 text-center">
+									<div class="srvIco-1">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-posco-logo"></i>
+										
+									</div>
+									</div>
+									
+									<div class="columns large-3 text-center">
+									<div class="srvIco">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-kia-logo"></i>
+										
+									</div>
+                	</div>
+                	
+                	<div class="columns large-3 text-center">
+									<div class="srvIco">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-lg-logo"></i>
+										
+									</div>
+									</div>
+                	
+                	
+									
+									
+									<div class="columns large-3 text-center m-top-n">
+									<div class="srvIco1">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-sk-logo"></i>
+										
+									</div>
+									</div>
+								</div>	
+								
+								<div class="row">
+									<div class="columns large-4 text-center m-top5">
+									<div class="srvIco1">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-hyundai-logo"></i>
+										
+									</div>
+                  </div>
+									
+							
+			
+			
+									
+									<div class="columns large-4 text-center m-left-n">
+									<div class="srvIco2">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-samsung"></i>
+									</div>
+									</div>
+
+										
+									
+									
+									
+									<div class="columns large-4 text-center">
+									<div class="srvIco2">
+										<!--a href="https://www.joynus.com"-->
+										<i class="icon-tesla"></i>
+										
+									</div>
+                  </div>
+										
+									
+									
+									
+									
+									
+								</div>
+						</div>
+						
+						
+            
+						
+					</div>
+					<!--What we do content-->		
+					
+
+
+
+						
+
+
+
+
+
+
+<section class="content-section no-spacing" id="career">
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+    <div class="columns xlarge-6">
+      <div class="home-section-img mb-">
+        <%= image_tag('section-1.jpg') %>
+      </div>
+      <div class="animated-text">
+        <h2>
+          <%= t 'home.career-header' %>
+        </h2>
+        <p>
+          <%= t 'home.career-content' %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content-section" id="right-job">
+  <div class="row">
+    <div class="columns xlarge-6">
+      <div class="right-job-img">
+        <%= image_tag('right-job-img.jpg') %>
+      </div>
+    </div>
+    <div class="columns xlarge-6">
+      <div class="animated-text">
+        <h2>
+          <%= t 'home.right-job-header' %>
+        </h2>
+        <p>
+          <%= t 'home.right-job-content' %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content-section small no-spacing" id="best-decision">
+  <div class="row">
+    <div class="columns xlarge-6">
+      <div class="home-section-img mb-">
+        <%= image_tag('section-3.jpg') %>
+      </div>
+      <div class="animated-text">
+        <h2>
+          <%= t 'home.best-decision-header' %>
+        </h2>
+        <p>
+          <%= t 'home.best-decision-content' %>
+        </p>
+        <%= link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small' %>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="primary-color-bg">
+  <section class="content-section x-small no-spacing" id="employers">
+    <div class="row">
+      <div class="columns xlarge-6 xlarge-offset-6">
+        <div class="home-section-img mb-">
+          <%= image_tag('section-4.jpg') %>
+        </div>
+        <div class="animated-text">
+          <h2>
+            <%= t 'home.employers-header' %>
+          </h2>
+          <p>
+            <%= t 'home.employers-content' %>
+          </p>
+          <%= link_to t('home.employers-button'), employers_path, class: 'button secondary radius small' %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

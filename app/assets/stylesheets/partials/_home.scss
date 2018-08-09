@@ -148,3 +148,106 @@
 
 // XXLarge screens
 @media only screen and (min-width: 120.063em) {}
+
+
+.split {
+    height: 110%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 15px;
+    
+}
+
+.sleft {
+    left: 0;
+    background: url(jobseeker1.jpg);
+    background-size: cover;
+}
+
+
+
+.sleft:before {
+  background: rgba(64, 64, 64, 0.6);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+	left:0;
+	top:0;
+	z-index:0;
+}
+
+
+
+
+
+
+.sright {
+    right: 0;
+    background: url(employer.jpg) no-repeat;
+    background-size:cover;
+}
+
+.sright:before{
+  background: rgba(26, 51, 101, 0.6);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+	left:0;
+	top:0;
+	z-index:0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media all and (max-width:480px) {
+  
+  .centered >h1{
+    font-size:37px;
+    display:inline-block;
+  }
+  
+  .centered >h3{
+    font-size:18px;
+    position: relative;
+  }
+  
+  .iprocess {
+    color: #000;
+    padding: 9px 15px ;
+    font-size: 15px;
+    position: relative;
+    
+  }
+  
+  
+  .sleft {
+    left: 0;
+    background: url(jobseeker-mobile.jpg);
+    background-size: cover;
+  }
+  
+  .sright {
+      right: 0;
+      background: url(employer-mobile2.jpg) ;
+      background-size:cover;
+  }
+  
+  
+  .wwdContent2 {
+    .m-top2{margin-top:25%; padding-top:5%;}
+  }
+  
+  
+  
+}

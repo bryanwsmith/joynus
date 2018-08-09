@@ -1,0 +1,154 @@
+
+.wwdInner{
+    display:block;
+    align-items:center;
+    margin:0 auto;
+    padding:3% 10% 0 10%;
+    
+}
+
+.srvIco i {
+    color: #48522d;
+    display: inline-block;
+    font-size:50px;
+    position: relative;
+    margin-left:0%;
+    margin-top : 20%;
+}
+
+.srvIco-1 i{
+    color: #48522d;
+    display: inline-block;
+    font-size:35px;
+    position: relative;
+    margin-left:0%;
+    margin-top : 24%;
+}
+
+.srvIco1 i{
+    color: #48522d;
+    display: inline-block;
+    font-size:60px;
+    position: relative;
+    margin-left:0%;
+    margin-top : 20%;
+}
+
+.srvIco2 i{
+    color: #48522d;
+    display: inline-block;
+    font-size:90px;
+    position: relative;
+    margin-left:0%;
+    margin-top : 20%;
+}
+
+
+
+.srvIco, .srvDet {
+    float: none;
+}
+
+
+
+.srvDet h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+	margin-left:10px;
+	color:#FFFFFF;
+	font-size:18px;
+	
+	position: relative;
+	
+}
+
+.itemC{
+    align-items:center;
+    display:flex;
+}
+
+/*specialization*/
+.specialcontainer {
+    position: relative;
+    width: 100%;
+    
+}
+
+.imagee {
+  opacity: 1;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 2px solid #00cc99;
+  border-radius:30px;
+}
+
+.middle {
+  transition: .5s ease .5s;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.specialcontainer:hover .image {
+  opacity: 0.5;
+}
+
+.specialcontainer:hover .middle {
+  opacity: 0.85;
+}
+
+
+.text {
+  background-color:rgba(0, 102, 77, 0.8);
+  color: white;
+  
+  padding: 16px 32px;
+}
+
+/*specialization*/
+
+
+
+/*howitworks*/
+.process {
+    box-sizing: border-box;
+    border-radius:15px;
+    width: 230px;
+    height: 100px;
+    padding: 6px 15px;    
+    border: 3px solid #006280;
+    background-color:rgb(230, 249, 255);
+    display:flex;
+   align-items:center;
+   justify-content:center; 
+   padding:1em;
+}
+
+.process:hover {
+  box-sizing: border-box;
+    border-radius:15px;
+    width: 300px;
+    height: 150px;
+    padding: 6px 15px;    
+    border: 3px solid #e6e6ff;
+    background-color:rgb(0, 0, 102);
+    display:flex;
+   align-items:center;
+   justify-content:center; 
+   padding:1em;
+}
+
+.iprocess {
+    color: #000;
+    
+    font-size: 25px;
+    position: relative;
+    
+}

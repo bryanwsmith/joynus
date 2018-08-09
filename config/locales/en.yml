@@ -20,7 +20,7 @@ en:
   home:
     feature-header: "Opportunity is knocking"
     feature-tagline: "Let's get started"
-    companies-tagline: 'A few companies that choose Joynus'
+    companies-tagline: 'Trusted by these companies'
     career-header: "Better career, better life."
     career-content: "Joynus understands that having a great job creates a higher level of satisfaction in life. We do one thing; we help you find the career you’re looking for. Whether you are looking for a new opportunity or are temporarily unemployed, Joynus is the fastest path to a better life."
     right-job-header: "We have the right job for you."
@@ -66,7 +66,7 @@ en:
 
   jobs:
     feature-header: "Current openings"
-    content-header: "Let's get started."
+    content-header: "Let's get started"
     content-text: "Browse and search for new career opportunities here. During the application process, we will tailor your desires, skillset, and qualifications to get you on track for success."
     search-input: "Search"
     company: "Company"

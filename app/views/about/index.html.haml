@@ -79,8 +79,11 @@
           Openness & honesty
         .columns.large-12    
           %p Openness and honesty helps us find solutions that lead to improvement. Joynus develops open and honest relationships with clients and employees to provide unbeatable service.
+  
+  
   .button-container.text-center
-    %h3.mb--
+    %h3{:style => "margin:30px"}
+
       = t 'about.content-callout'
-    = link_to t('about.jobseekers-button'), jobs_path, class: 'button secondary radius small mr--'
-    = link_to t('about.businesses-button'), employers_path, class: 'button primary radius small mr--'
+    = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+    
