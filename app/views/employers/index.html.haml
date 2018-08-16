@@ -4,7 +4,7 @@
   .feature.animated.fadeIn
     .feature-container
       %img{ data: { interchange:"[#{asset_path('employer-bg-mobile.jpg')}, (small)], [#{asset_path('employer-bg-mobile.jpg')}, (medium)], [#{asset_path('employer-bg.jpg')}, (large)]" } }
-        .feature-text.m-top2
+        .feature-text
           %h1.text-center.animated.fadeInDown
             We&nbsp;always deliver&nbsp;more than&nbsp;expected
             
@@ -31,8 +31,8 @@
   %section#why.content-section.no-spacing
     .row
       .columns.xlarge-6
-        .home-section-img.mb-.margin-right1
-          = image_tag('industry.png')
+        .employer-section-img.mb-
+          = image_tag('industry2.png')
         %h2.text-center.secondary-text
           Industry
         .columns.xlarge-6
@@ -56,10 +56,10 @@
       .columns.xlarge-6
         %h2.text-center.secondary-text
           Services
-        %h4.text-center Business process outsourcing(BPO)
-        %h4
+        %p.text-center Business process outsourcing(BPO)
+        %p{:style => "margin-top:10px"}
           What is it?
-          %span{:style => "font-size: 19px; font-weight:10"} Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
-        %h4
+          %span &emsp; Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
+        %p{:style => "margin-top:10px"}
           Why use it?
-          %span{:style => "font-size: 19px; font-weight:10"} Joynus BPO is the key to your outsource contract management so you can maximize your core business output
+          %span &emsp; Joynus BPO is the key to your outsource contract management so you can maximize your core business output

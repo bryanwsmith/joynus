@@ -22,7 +22,7 @@
         height: 0;
         overflow: hidden;
         position: relative;
-        
+
         img {
           position: absolute;
           top: 0;
@@ -44,7 +44,7 @@
         height: auto;
         text-align: center;
 
-        h1 { font-size: rem-calc(45); }
+        h1 { font-size: rem-calc(45);}
 
         h3 {
           font-size: rem-calc(20);
@@ -82,12 +82,6 @@
       bottom: rem-calc(40);
     }
   }
-  
-  
-  
-  
-  
-  
 }
 
 @media only screen and (min-width:320px) {}
@@ -100,7 +94,6 @@
 
 @media only screen and (min-width:768px) {
   #home .feature-container { padding-bottom: 39.85%; }
-  
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); }
     h3 { font-size: $h3-font-size; }
@@ -108,7 +101,7 @@
 }
 
 @media only screen and (min-width:1024px) {
-  .feature-section .feature-container .feature-text h1 { font-size: $h1-font-size; }
+  .feature-section .feature-container .feature-text h1 { font-size: rem-calc(55); }
 }
 
 @media only screen and (min-width:1140px) {}

@@ -18,7 +18,7 @@
 
 @media only screen {
   #employers {
-    .home-section-img {
+    .employer-section-img {
       width: calc(100% + 30px);
       position: relative !important;
       left: -15px;
@@ -30,6 +30,7 @@
       //industry
   li{
   margin-top:30px;
+  
 }
     }
 
@@ -105,14 +106,18 @@
 @media only screen and (min-width: rem-calc(768)) {
   #employers {
     .companies ul li { width: 20%; }
-    .home-section-img img { width: 100%; }
+    .employer-section-img img { width: 100%; }
   }
 }
 
 @media only screen and (min-width: rem-calc(1024)) {
   #employers {
-    .home-section-img { display: none; }
+    .employer-section-img { display: none; }
 
+    section.feature-section{
+      h1 { margin-top:10px;}
+    }
+    
     section.content-section {
       padding-top: rem-calc(150);
       padding-bottom: rem-calc(150);
@@ -133,10 +138,14 @@
 
 //industry
       &#why {
-        background: asset-url('industry.png') no-repeat top right;
-        border-radius:20px;
+        background: asset-url('industry2.png') no-repeat  right;
+        
         padding-top: rem-calc(150) !important;
         padding-bottom: rem-calc(150) !important;
+        display:inline-block;
+        
+        width:100%;
+        
         
       }
 
@@ -188,10 +197,8 @@
   
 ul{  
    li{
-  margin-top:0px;
+  margin-top:10px;
   text-align:center;
 }
-}
-
-
+}  
 }

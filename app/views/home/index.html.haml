@@ -1,0 +1,154 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+/
+  section class="feature-section no-spacing">
+  <div class="feature animated fadeIn">
+  <div class="feature-container">
+  <img data-interchange="[/assets/home-bg-mobile.jpg, (small)], [/assets/home-bg-mobile.jpg, (medium)], [/assets/home-bg.jpg, (large)]" data-uuid="interchange-jkjprfp90" src="/assets/home-bg-mobile.jpg">
+  <div class="feature-text">
+  <h1 class="text-center animated fadeInDown">
+  <!%= t 'home.feature-header' %>
+  </h1>
+  <h3 class="subheader text-center animated fadeInDown">
+  <!%= t 'home.feature-tagline' %>
+  </h3>
+  <a class="circle animated fadeInDown" href="#career">
+  <span class="icon-down-cursor"></span>
+  </a>
+  </div>
+  </div>
+  </div>
+  </section>
+  
+
+/
+  section class="companies custom-color-bg no-spacing animated fadeIn m-top1 m-bottom1">
+  <div class="row show-for-large-up">
+  <div class="columns large-12">
+  <h2 class="text-center m-bottom2">
+  <!%= t 'home.companies-tagline' %>
+  </h3>
+  </div>
+  <ul class="logo-list clearfix">
+  <li>
+  <span class="icon-hyundai-logo"></span>
+  </li>
+  <li>
+  <span class="icon-sk-logo"></span>
+  </li>
+  <li class="hide-for-small-only">
+  <span class="icon-lg-logo"></span>
+  </li>
+  <li class="show-for-large-up">
+  <span class="icon-kia-logo"></span>
+  </li>
+  <li class="show-for-large-up">
+  <span class="icon-posco-logo"></span>
+  </li>
+  </ul>
+  </section>
+
+%section.feature-section
+  .feature-container
+    .split.sleft
+      .centered
+        %h1 Job Seeker
+        %h3 Looking for a job?
+        = link_to t('home.find-job'), jobs_path, class: ' button secondary radius iprocess icon-angle-double-right'
+    .split.sright
+      .centered
+        %h1 Employer
+        %h3 Looking for employees?
+        = link_to t('home.employer'), employers_path, class: 'button success radius iprocess icon-angle-double-right m-top4'
+
+
+
+.wwdContent2.m-bottom2
+  .columns.large-12.m-top2
+    %h2.text-center
+      = t 'home.companies-tagline'
+  / Service
+  .row.m-bottom4
+    .columns.large-4.text-center.p-right
+      .srvIcoSamsung
+        / a href="https://www.joynus.com"
+        %i.icon-samsung
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-kia
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-lg
+  .row
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-hyundai
+    .columns.large-4.text-center.p-right.m-top5
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-posco
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-tesla
+  .row.m-top4
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-skc
+    .columns.large-4.text-center.p-right.m-top5
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-lotte
+    .columns.large-4.text-center
+      .srvIco
+        / a href="https://www.joynus.com"
+        %i.icon-beaulieu
+/ What we do content
+%section#career.content-section.no-spacing
+  .row
+    .columns.xlarge-6
+      .home-section-img.mb-
+        = image_tag('section-1.jpg')
+      .animated-text
+        %h2
+          = t 'home.career-header'
+        %p
+          = t 'home.career-content'
+%section#right-job.content-section
+  .row
+    .columns.xlarge-6
+      .right-job-img
+        = image_tag('right-job-img.jpg')
+    .columns.xlarge-6
+      .animated-text
+        %h2
+          = t 'home.right-job-header'
+        %p
+          = t 'home.right-job-content'
+%section#best-decision.content-section.small.no-spacing
+  .row
+    .columns.xlarge-6
+      .home-section-img.mb-
+        = image_tag('section-3.jpg')
+      .animated-text
+        %h2
+          = t 'home.best-decision-header'
+        %p
+          = t 'home.best-decision-content'
+        = link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small'
+.primary-color-bg
+  %section.content-section.x-small#employers.no-spacing
+    .row
+      .columns.xlarge-6.xlarge-offset-6
+        .home-section-img.mb-
+          %img{ data: { interchange:"[(small)], [(medium)], [(large)]" } }
+
+          = image_tag('section-4.jpg')
+        .animated-text
+          %h2= t 'home.employers-header'
+          %p= t 'home.employers-content'
+          = link_to t('home.employers-button'), employers_path, class: 'button secondary radius small'
