@@ -11,3 +11,187 @@
     vertical-align: middle !important;
   }
 }
+
+
+
+
+
+@media only screen {
+  #employers {
+    .home-section-img {
+      width: calc(100% + 30px);
+      position: relative !important;
+      left: -15px;
+    }
+
+    .content-section {
+      h2 { margin-top: rem-calc(30); }
+      p, .button { margin-bottom: rem-calc(30); }
+      //industry
+  li{
+  margin-top:30px;
+}
+    }
+
+    .companies {
+      position: relative;
+      top: -1px;
+      padding-top: rem-calc(24);
+      padding-right: rem-calc(64);
+      padding-bottom: rem-calc(24);
+      padding-left: rem-calc(64);
+
+      h3 {
+        color: $white;
+        margin-bottom: rem-calc(24);
+      }
+
+      ul {
+        max-width: rem-calc(900);
+        margin: 0 auto;
+
+        li {
+          width: 50%;
+          float: right;
+          list-style-type: none;
+          text-align: center;
+
+          span {
+            color: #fff;
+            font-size: rem-calc(50);
+            opacity: 0.6;
+            width: 100%;
+            text-align: center;
+
+            &.icon-posco-logo {
+              position: relative;
+              top: 14px;
+              font-size: rem-calc(30);
+            }
+          }
+        }
+      }
+    }
+
+    #why {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+
+
+
+// Small screens
+@media only screen and (min-width: rem-calc(480)) {
+  #employers {
+    .companies ul li { width: 33%; }
+
+    section.content-section {
+
+      &.x-small, &.small {
+        padding-top: rem-calc(0);
+        padding-bottom: rem-calc(50);
+      }
+
+      &#why { padding-bottom: 0 !important; }
+      &#industry { padding-top: 0 !important; }
+    }
+  }
+}
+
+// Medium screens
+@media only screen and (min-width: rem-calc(768)) {
+  #employers {
+    .companies ul li { width: 20%; }
+    .home-section-img img { width: 100%; }
+  }
+}
+
+@media only screen and (min-width: rem-calc(1024)) {
+  #employers {
+    .home-section-img { display: none; }
+
+    section.content-section {
+      padding-top: rem-calc(150);
+      padding-bottom: rem-calc(150);
+
+      h2 { margin-top: 0; }
+      p, .button { margin-bottom: 0; }
+      .button { margin-top: rem-calc(30); }
+
+      &.small {
+        padding-top: rem-calc(100);
+        padding-bottom: rem-calc(100);
+      }
+
+      &.x-small {
+        padding-top: rem-calc(50);
+        padding-bottom: rem-calc(50);
+      }
+
+//industry
+      &#why {
+        background: asset-url('industry.png') no-repeat top right;
+        border-radius:20px;
+        padding-top: rem-calc(150) !important;
+        padding-bottom: rem-calc(150) !important;
+        
+      }
+
+      &#service {
+        background: asset-url('service.png') no-repeat top right;
+        background-size: auto 100%;
+       
+      }
+
+      &#employers { background: asset-url('employer_homepage.jpg') no-repeat top left; }
+
+//service
+      &#industry {
+        padding-top: rem-calc(150) !important;
+        padding-bottom: rem-calc(150) !important;
+
+        .industry-img {
+          position: absolute;
+          top: -70px;
+
+          img {
+            max-height: 400px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em) {}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {}
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {}
+
+
+
+
+
+@media all and (max-width:480px) {
+  
+ul{  
+   li{
+  margin-top:0px;
+  text-align:center;
+}
+}
+
+
+}

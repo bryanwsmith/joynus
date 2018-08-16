@@ -10,40 +10,33 @@
 .srvIco i {
     color: #48522d;
     display: inline-block;
-    font-size:50px;
+    font-size:55px;
+    position: relative fixed;
+    margin-left:0%;
+    margin-top : 20%;
+    
+}
+
+.srvIcoSamsung i {
+    color: #48522d;
+    display: inline-block;
+    font-size:80px;
+    position: relative fixed;
+    margin-left:0%;
+    margin-right:23%;
+    margin-top : 16%;
+    
+}
+
+.srvIcoHyundai i{
+     color: #48522d;
+    display: inline-block;
+    font-size:70px;
     position: relative;
     margin-left:0%;
     margin-top : 20%;
+    
 }
-
-.srvIco-1 i{
-    color: #48522d;
-    display: inline-block;
-    font-size:35px;
-    position: relative;
-    margin-left:0%;
-    margin-top : 24%;
-}
-
-.srvIco1 i{
-    color: #48522d;
-    display: inline-block;
-    font-size:60px;
-    position: relative;
-    margin-left:0%;
-    margin-top : 20%;
-}
-
-.srvIco2 i{
-    color: #48522d;
-    display: inline-block;
-    font-size:90px;
-    position: relative;
-    margin-left:0%;
-    margin-top : 20%;
-}
-
-
 
 .srvIco, .srvDet {
     float: none;
@@ -152,3 +145,8 @@
     position: relative;
     
 }
+
+
+
+
+

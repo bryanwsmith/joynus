@@ -7,7 +7,7 @@
     }
 
     .content-section {
-      h2 { margin-top: rem-calc(30); }
+      h2 { margin-top: rem-calc(0); margin-left:rem-calc(10); }
       p, .button { margin-bottom: rem-calc(30); }
     }
 
@@ -81,7 +81,10 @@
   #home {
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
+
+  
   }
+  
 }
 
 @media only screen and (min-width: rem-calc(1024)) {
@@ -210,6 +213,12 @@
     text-align: center;
 }
 
+
+
+
+
+
+
 @media all and (max-width:480px) {
   
   .centered >h1{
@@ -245,9 +254,65 @@
   
   
   .wwdContent2 {
-    .m-top2{margin-top:25%; padding-top:5%;}
+    margin-top:10%;
+    display:inline-block;
+    
+    .row{
+      display:inline-flex;
+      padding-right:10%;
+      
+      .h2{
+        padding:0%;
+      }
+      
+      .p-right{
+        padding-right:8%;
+      }
+    }
+  
+   
+    
+    
+    
+    .m-top2{margin-top:15%; padding-top:5%;}
   }
   
+  .srvIco i{
+    font-size:25px;
+    color: #48522d;
+    display: inline-block;
+  }
+
+  .srvIcoSamsung i {
+    font-size:30px;
+    color: #48522d;
+    display: inline-block;
+    margin-right:40%;
+  }
+  
+  .srvIcoHyundai i{
+     color: #48522d;
+    display: inline-block;
+    font-size:30px;
+    
+    margin-left:1%;
+    
+    
+  }
+  
+  .wwdContent2:before{
+   
+    
+    height: 100%;
+    position: absolute;
+    width: 90%;
+    margin:5%;
+    
+    left:0;
+	top:0;
+	z-index:0;
+	border-radius:30px;
+}
   
   
 }

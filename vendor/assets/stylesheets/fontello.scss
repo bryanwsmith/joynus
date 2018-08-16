@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: font-url('fontello.eot?71314110');
-  src: font-url('fontello.eot?71314110#iefix') format('embedded-opentype'),
-       font-url('fontello.woff2?71314110') format('woff2'),
-       font-url('fontello.woff?71314110') format('woff'),
-       font-url('fontello.ttf?71314110') format('truetype'),
-       font-url('fontello.svg?71314110#fontello') format('svg');
+  src: font-url('fontello.eot?2934914');
+  src: font-url('fontello.eot?2934914#iefix') format('embedded-opentype'),
+       font-url('fontello.woff2?2934914') format('woff2'),
+       font-url('fontello.woff?2934914') format('woff'),
+       font-url('fontello.ttf?2934914') format('truetype'),
+       font-url('fontello.svg?2934914#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: font-url('fontello.svg?71314110#fontello') format('svg');
+    src: font-url('fontello.svg?2934914#fontello') format('svg');
   }
 }
 */
@@ -216,8 +216,15 @@
 %icon-hammer:before { @extend %icon-base; content: '\e89e'; } /* '' */
 %icon-lemon:before { @extend %icon-base; content: '\e89f'; } /* '' */
 %icon-glass:before { @extend %icon-base; content: '\e8a0'; } /* '' */
-%icon-samsung:before { @extend %icon-base; content: '\e8a1'; } /* '' */
-%icon-tesla:before { @extend %icon-base; content: '\e8a2'; } /* '' */
+%icon-beaulieu:before { @extend %icon-base; content: '\e8a1'; } /* '' */
+%icon-hyundai:before { @extend %icon-base; content: '\e8a2'; } /* '' */
+%icon-kia:before { @extend %icon-base; content: '\e8a3'; } /* '' */
+%icon-lg:before { @extend %icon-base; content: '\e8a4'; } /* '' */
+%icon-posco:before { @extend %icon-base; content: '\e8a5'; } /* '' */
+%icon-skc:before { @extend %icon-base; content: '\e8a6'; } /* '' */
+%icon-tesla:before { @extend %icon-base; content: '\e8a7'; } /* '' */
+%icon-samsung:before { @extend %icon-base; content: '\e8a8'; } /* '' */
+%icon-lotte:before { @extend %icon-base; content: '\e8a9'; } /* '' */
 %icon-move:before { @extend %icon-base; content: '\f047'; } /* '' */
 %icon-link-ext:before { @extend %icon-base; content: '\f08e'; } /* '' */
 %icon-check-empty:before { @extend %icon-base; content: '\f096'; } /* '' */
@@ -894,8 +901,15 @@
 .icon-hammer { @extend %icon-hammer; }
 .icon-lemon { @extend %icon-lemon; }
 .icon-glass { @extend %icon-glass; }
-.icon-samsung { @extend %icon-samsung; }
+.icon-beaulieu { @extend %icon-beaulieu; }
+.icon-hyundai { @extend %icon-hyundai; }
+.icon-kia { @extend %icon-kia; }
+.icon-lg { @extend %icon-lg; }
+.icon-posco { @extend %icon-posco; }
+.icon-skc { @extend %icon-skc; }
 .icon-tesla { @extend %icon-tesla; }
+.icon-samsung { @extend %icon-samsung; }
+.icon-lotte { @extend %icon-lotte; }
 .icon-move { @extend %icon-move; }
 .icon-link-ext { @extend %icon-link-ext; }
 .icon-check-empty { @extend %icon-check-empty; }
