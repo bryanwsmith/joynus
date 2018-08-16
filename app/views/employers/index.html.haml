@@ -1,0 +1,65 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+%section.feature-section.no-spacing
+  .feature.animated.fadeIn
+    .feature-container
+      %img{"data-interchange" => "[assets/employer-bg-mobile.jpg, (small)], [assets/employer-bg.jpg, (medium)], [assets/employer-bg.jpg, (large)]", "data-uuid" => "interchange-jksp51qt0", :src => "assets/employer-bg.jpg"}
+        .feature-text.m-top2
+          %h1.text-center.animated.fadeInDown
+            Wealways delivermore thanexpected
+            / %= t 'employers.feature-header' %
+          %h3.subheader.text-center.animated.fadeInDown
+            = t 'employers.feature-subheader'
+          %a.circle.animated.fadeInDown{:href => "/contact"}
+            %span.icon-down-cursor
+  %section
+    / What we do content
+    .wwdContent3
+      .row
+        .columns.large-12
+          %h2.text-center.secondary-text.m-top3
+            Why Joynus
+          %p.m-bottom3
+            That&#x2019;s easy, because we have your best interest at heart.
+            Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
+            we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
+            We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
+          / div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/V8EKNz8Kh2Y?ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div
+          %div{:style => "position:relative;height:0;padding-bottom:56.25%"}
+            %iframe{:allow => "autoplay; encrypted-media", :frameborder => "0", :height => "360", :src => "https://www.youtube.com/embed/okd4ZoTHnak", :style => "position:absolute;width:100%;height:100%;left:0", :width => "640"}
+    / What we do content
+  %section#why.content-section.no-spacing
+    .row
+      .columns.xlarge-6
+        .home-section-img.mb-.margin-right1
+          = image_tag('industry.png')
+        %h2.text-center.secondary-text
+          Industry
+        .columns.xlarge-6
+          %ul{:style => "list-style-type:none;"}
+            %li Automative manufacturing
+            %li Plastic manufacturing
+            %li Carpet manufacturing
+            %li Logistic
+        .columns.xlarge-6
+          %ul{:style => "list-style-type:none;"}
+            %li Information technology
+            %li Accounting  finance
+            %li Health care
+            %li
+            %li
+  %section#industry.content-section
+    .row
+      .columns.xlarge-6
+        .industry-img.m-right3.m-top2
+          = image_tag('service.png')
+      .columns.xlarge-6
+        %h2.text-center.secondary-text
+          Services
+        %h3.text-center Business process outsourcing(BPO)
+        %h4
+          What is it?
+          %span{:style => "font-size: 19px; font-weight:10"} Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
+        %h4
+          Why use it?
+          %span{:style => "font-size: 19px; font-weight:10"} Joynus BPO is the key to your outsource contract management so you can maximize your core business output
