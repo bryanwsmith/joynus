@@ -22,7 +22,9 @@
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
-          %img.imagee{:alt => "staffing", :src => "assets/staff1.png", :style => "width:100%"}/
+          
+          = image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
+          
           .middle
             %p.text Staffing process
       .columns.large-5
@@ -36,7 +38,8 @@
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
-          %img.imagee{:alt => "Recruiting", :src => "assets/recruit.png", :style => "width:100%"}/
+          = image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
+
           .middle
             %p.text Recruiting process
       .columns.large-5
