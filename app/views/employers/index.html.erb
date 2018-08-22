@@ -1,0 +1,97 @@
+<head>
+  <title>Employers Joynus Staffing</title>
+</head>
+
+
+<% if flash[:notice] %>
+  <%= render 'shared/success_notice' %>
+<% end %>
+
+
+
+
+<section class="feature-section no-spacing">
+  <div class="feature animated fadeIn">
+    <div class="feature-container">
+      <img data-interchange="[/assets/employer-bg-mobile.jpg, (small)], [/assets/employer-bg-mobile.jpg, (medium)], [/assets/employer-bg.jpg, (large)]" data-uuid="interchange-jl2bwtbd0" src="/assets/employer-bg.jpg">
+      <div class="feature-text">
+        <h1 class="text-center animated fadeInDown">
+          We&nbsp;always deliver&nbsp;more than&nbsp;expected
+        </h1>
+        <h3 class="subheader text-center animated fadeInDown">
+          <a class="fadeInDown white-text" href="/contact">
+            <%= t 'employers.feature-subheader' %>
+          </a>
+        </h3>
+        <a class="circle animated fadeInDowns" href="/contact">
+          <i class="icon-phone"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+    <!-- What we do content
+    -->
+     <h2 class="text-center secondary-text m-top3">
+            Why Joynus
+     </h2>
+          <p class="row">
+            That&#x2019;s easy, because we have your best interest at heart.
+            Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
+            we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
+            We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
+          </p>
+  <section>
+    <iframe width="100%" height="800" src="https://www.youtube.com/embed/okd4ZoTHnak?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>       
+    
+  
+  <section class="content-section no-spacing" id="why">
+    <div class="row">
+      <div class="columns xlarge-6">
+        <div class="employer-section-img mb-">
+          <%= image_tag('industry2.png') %>
+        </div>
+        <h2 class="text-center secondary-text">
+          Industry
+          
+        </h2>
+        <div class="columns xlarge-6">
+          <ul style="list-style-type:none;">
+            <li>Automative </li>
+            <li>Manufacturing</li>
+            <li>Healthcare</li>
+          </ul>
+        </div>
+        <div class="columns xlarge-6">
+          <ul style="list-style-type:none;">
+            <li>Accounting & finance</li>
+            <li>Information technology</li>
+            <li>Office & administrative</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-section" id="industry">
+    <div class="row">
+      <div class="columns xlarge-6">
+        <div class="industry-img m-right3 m-top2">
+          <%= image_tag('service.png') %>
+        </div>
+      </div>
+      <div class="columns xlarge-6">
+        <h2 class="text-center secondary-text">
+          Services
+        </h2>
+        <p>
+          Our clients stay with us and our clients come back to us because we offer quality service.
+          It's becoming cliché to say "QUALITY' because everyone offers it. Joynus doesn't stop there like others.
+          We have our own guidelines on what Quality means. We send quality people to our clients' office who thoroughly meet our clients' need.
+          <a href="/services" alt=services>Learn more</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</section>

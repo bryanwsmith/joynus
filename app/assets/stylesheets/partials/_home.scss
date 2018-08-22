@@ -81,6 +81,11 @@
   #home {
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
+    
+    .wwdContent2:before{
+     width:100%;
+     margin:10% 0% 10%;
+    }  
   }
 }
 
@@ -101,8 +106,8 @@
     content: "";
     height: 80%;
     position: absolute;
-    width: 86%;
-    margin:10% 7% 10%;
+    width: 90%;
+    margin:10% 5% 10%;
     padding-right:25%;
     left:0;
 	top:0;

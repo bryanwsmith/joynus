@@ -1,11 +1,12 @@
 !!!
 %html{ 'ng-app' => 'Joynus' }
   %head
-    %title Joynus
+    = yield :title
     %meta{ charset: 'utf-8'}
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
+    = favicon_link_tag 'favicon.ico'
     = yield :js_head
     = csrf_meta_tags
 
@@ -37,6 +38,7 @@
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url
             %li.menu-item= active_link_to t('header.employers'), employers_path
+            %li.menu-item= active_link_to t('header.services'), services_path  
             %li.menu-item= active_link_to t('header.blog'), posts_path
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path

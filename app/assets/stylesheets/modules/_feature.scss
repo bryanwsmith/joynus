@@ -70,6 +70,15 @@
             left: 50%;
             margin-left: -13px;
           }
+          i{
+            color: $primary-color;
+            font-size: rem-calc(35);
+            position: relative;
+            
+            margin-top: -5px;
+            left: 17%;
+            margin-left: -13px;
+          }
         }
       }
     }

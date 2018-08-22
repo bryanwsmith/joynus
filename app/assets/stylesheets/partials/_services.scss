@@ -1,24 +1,6 @@
-.hero-employers {
-  background: asset-url('employers-bg.jpg') no-repeat center bottom fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 0 400%;
-  margin-bottom: rem-calc(60);
-
-  .hero-container .hero-text {
-    vertical-align: middle !important;
-  }
-}
-
-
-
-
-
 @media only screen {
-  #employers {
-    .employer-section-img {
+  #services {
+    .home-section-img {
       width: calc(100% + 30px);
       position: relative !important;
       left: -15px;
@@ -27,11 +9,6 @@
     .content-section {
       h2 { margin-top: rem-calc(30); }
       p, .button { margin-bottom: rem-calc(30); }
-      //industry
-  li{
-  margin-top:30px;
-  
-}
     }
 
     .companies {
@@ -74,19 +51,16 @@
       }
     }
 
-    #why {
+    #career {
       position: relative;
       top: -1px;
     }
   }
 }
 
-
-
-
 // Small screens
 @media only screen and (min-width: rem-calc(480)) {
-  #employers {
+  #services {
     .companies ul li { width: 33%; }
 
     section.content-section {
@@ -96,33 +70,49 @@
         padding-bottom: rem-calc(50);
       }
 
-      &#why { padding-bottom: 0 !important; }
-      &#industry { padding-top: 0 !important; }
-    }
-    .feature-text{
-      h2 {font-size:40px;
-      }
+      &#career { padding-bottom: 0 !important; }
+      &#right-job { padding-top: 0 !important; }
     }
   }
 }
 
 // Medium screens
 @media only screen and (min-width: rem-calc(768)) {
-  #employers {
+  #services {
     .companies ul li { width: 20%; }
-    .employer-section-img img { width: 100%; }
+    .home-section-img img { width: 100%; }
+    .specialcontainer {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    }
+    .feature-text{
+      h1{
+        font-size:45px;
+      }
+    }
     
+
   }
+  
+  
+  
 }
 
 @media only screen and (min-width: rem-calc(1024)) {
-  #employers {
-    .employer-section-img { display: none; }
-
-    section.feature-section{
-      h1 { margin-top:10px;}
+  #services {
+    .home-section-img { display: none; }
+    .specialcontainer {
+    position: relative;
+    width: 330px;
+    height: 330px;
+   }
+   .feature-text{
+      h1{
+        font-size:55px;
+      }
     }
-    
+   
     section.content-section {
       padding-top: rem-calc(150);
       padding-bottom: rem-calc(150);
@@ -141,35 +131,26 @@
         padding-bottom: rem-calc(50);
       }
 
-//industry
-      &#why {
-        background: asset-url('industry2.png') no-repeat  right;
-        
+      &#career {
+        background: asset-url('career-img.jpg') no-repeat top right;
         padding-top: rem-calc(150) !important;
         padding-bottom: rem-calc(150) !important;
-        display:inline-block;
-        
-        width:100%;
-        
-        
       }
 
-      &#service {
-        background: asset-url('service.png') no-repeat top right;
+      &#best-decision {
+        background: asset-url('best-decision-img.jpg') no-repeat top right;
         background-size: auto 100%;
-       
       }
 
       &#employers { background: asset-url('employer_homepage.jpg') no-repeat top left; }
 
-//service
-      &#industry {
+      &#right-job {
         padding-top: rem-calc(150) !important;
         padding-bottom: rem-calc(150) !important;
 
-        .industry-img {
+        .right-job-img {
           position: absolute;
-          top: -70px;
+          top: -100px;
 
           img {
             max-height: 400px;
@@ -178,7 +159,6 @@
       }
     }
   }
-  
 }
 
 // Large screens
@@ -195,16 +175,11 @@
 @media only screen and (min-width: 120.063em) {}
 
 
-
-
-
-@media all and (max-width:480px) {
-  
-ul{  
-   li{
-  margin-top:10px;
-  text-align:center;
-  margin-right:2%;
-}
-}  
+@media all and (max-width:480px){
+  .specialcontainer{
+    margin:5% auto;
+    height:220px;
+    width:220px;
+    
+  }
 }
