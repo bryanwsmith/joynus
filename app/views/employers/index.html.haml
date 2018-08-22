@@ -1,0 +1,59 @@
+%head
+  %title Employers Joynus Staffing
+%body
+  - if flash[:notice]
+    = render 'shared/success_notice'
+  %section.feature-section.no-spacing
+    .feature.animated.fadeIn
+      .feature-container
+        %img{ data: { interchange:"[#{asset_path('employer-bg-mobile.jpg')}, (small)], [#{asset_path('employer-bg-mobile.jpg')}, (medium)], [#{asset_path('employer-bg.jpg')}, (large)]" } }
+        .feature-text
+          %h1.text-center.animated.fadeInDown
+            We always deliver more than expected
+          %h3.subheader.text-center.animated.fadeInDown
+            %a.fadeInDown.white-text{:href => "/contact"}
+              = t 'employers.feature-subheader'
+          %a.circle.animated.fadeInDowns{:href => "/contact"}
+            %i.icon-phone
+    /
+      What we do content
+    %h2.text-center.secondary-text.m-top3
+      Why Joynus
+    %p.row
+      That’s easy, because we have your best interest at heart.
+      Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
+      we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
+      We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
+    %section
+      %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "800", :src => "https://www.youtube.com/embed/okd4ZoTHnak?rel=0", :width => "100%"}
+    %section#why.content-section.no-spacing
+      .row
+        .columns.xlarge-6
+          .employer-section-img.mb-
+            = image_tag('industry2.png')
+          %h2.text-center.secondary-text
+            Industry
+          .columns.xlarge-6
+            %ul{:style => "list-style-type:none;"}
+              %li Automative
+              %li Manufacturing
+              %li Healthcare
+          .columns.xlarge-6
+            %ul{:style => "list-style-type:none;"}
+              %li Accounting &amp; finance
+              %li Information technology
+              %li Office &amp; administrative
+              %li
+    %section#industry.content-section
+      .row
+        .columns.xlarge-6
+          .industry-img.m-right3.m-top2
+            = image_tag('service.png')
+        .columns.xlarge-6
+          %h2.text-center.secondary-text
+            Services
+          %p
+            Our clients stay with us and our clients come back to us because we offer quality service.
+            It's becoming cliché to say "QUALITY' because everyone offers it. Joynus doesn't stop there like others.
+            We have our own guidelines on what Quality means. We send quality people to our clients' office who thoroughly meet our clients' need.
+            %a{:alt => "services", :href => "/services"} Learn more
