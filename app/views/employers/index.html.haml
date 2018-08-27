@@ -1,5 +1,6 @@
 %head
-  %title Employers Joynus Staffing
+  %title Joynus Staffing | Employers | Understading your business
+  %meta{:content => "Hiring the right talent equals to the growth of a company", :name => "Description"}/
 %body
   - if flash[:notice]
     = render 'shared/success_notice'
@@ -57,3 +58,7 @@
             We have our own guidelines on what Quality means.
             We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
             %a{:alt => "services", :href => "/services"} Learn more
+  .button-container.text-center
+    %h3{:style => "margin:30px"}
+      = t 'about.content-callout'
+    = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'

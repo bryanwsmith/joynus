@@ -4,7 +4,11 @@
   body.logged-in .user-nav ul.inline-list {
     width: calc(100% + 20px);
     margin: 0 -10px;
-
+    
+    
+    
+    
+    
     li {
       text-align: center;
       width: 33%;
@@ -17,6 +21,27 @@
   }
 
   nav {
+    
+    .dropdown{
+          
+          padding: 0 rem-calc(103);
+          margin-bottom:15px;
+          margin-top:15px;
+          position: fixed;
+        
+      a{
+        color: rgba(255, 255, 255, 0.6);
+      }
+      
+      
+    }
+    
+    .dropdown-content{
+      a{
+        color:#008ae6;
+      }
+    }
+    
     ul.menu {
       background: $black;
       width: $mobile-nav-width;
@@ -34,7 +59,9 @@
         left: 0;
         width: $mobile-nav-width;
         margin-bottom: rem-calc(30);
-
+        
+        
+        
         li {
           a { font-size: rem-calc(17) !important; }
 

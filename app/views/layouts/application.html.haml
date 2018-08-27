@@ -33,12 +33,16 @@
       %nav(role='navigation')
         .container.navbar-container
           .navbar-header
-            %h1= link_to 'Joynus', root_url
+            %h2= link_to 'Joynus', root_url
           %ul.menu
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url
-            %li.menu-item= active_link_to t('header.employers'), employers_path
-            %li.menu-item= active_link_to t('header.services'), services_path  
+            .dropdown
+              %a=t('header.employers')
+              .dropdown-content
+                .menu-item= active_link_to t('header.employers'), employers_path
+                .menu-item= active_link_to t('header.services'), services_path
+                .menu-item= active_link_to t('header.staff'), staff_index_path
             %li.menu-item= active_link_to t('header.news'), posts_path
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
@@ -75,7 +79,7 @@
 
     %main{ role: 'main', id: controller_name }
       = yield
-
+    
     #pusher
 
     %footer

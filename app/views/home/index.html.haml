@@ -1,7 +1,8 @@
 !!!
 
 %head
-  %title Joynus Staffing
+  %title Joynus Staffing | Staffing & Recruiting solution | Joynus.com
+  %meta{:content => "Joynus helps people finding jobs and provides quality service to clients", :name => "Description"}/
     
 
 - if flash[:notice]
@@ -64,12 +65,14 @@
       .centered
         %h1 Job Seeker
         %h3 Looking for a job?
-        = link_to "  Jobs  ", jobs_path, class: ' button secondary radius iprocess icon-angle-double-right'
+        %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/jobs"}  Jobs  
+        /= link_to "  Jobs  ", jobs_path, class: ' button secondary radius iprocess icon-angle-double-right'
     .split.sright
       .centered
         %h1 Employer
         %h3 Looking for employees?
-        = link_to t('home.employer'), employers_path, class: 'button success radius iprocess icon-angle-double-right m-top4'
+        %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/jobs"} Employer
+        /= link_to t('home.employer'), employers_path, class: 'button success radius iprocess icon-angle-double-right m-top4'
 
 
 
@@ -149,7 +152,8 @@
           = t 'home.best-decision-header'
         %p
           = t 'home.best-decision-content'
-        = link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small'
+        
+        /= link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small'
 .primary-color-bg
   %section.content-section.x-small#employers.no-spacing
     .row
@@ -161,4 +165,5 @@
         .animated-text
           %h2= t 'home.employers-header'
           %p= t 'home.employers-content'
-          = link_to t('home.employers-button'), employers_path, class: 'button secondary radius small'
+        
+          /= link_to t('home.employers-button'), employers_path, class: 'button secondary radius small'

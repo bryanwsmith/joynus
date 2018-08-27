@@ -16,6 +16,8 @@ en:
     job: "Jobs"
     apply: "Apply"
     sign: "Sign In"
+    staff: "Staffing"
+    
   footer:
     rights-reserved: "All Rights Reserved"
 

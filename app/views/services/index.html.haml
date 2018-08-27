@@ -1,12 +1,13 @@
 %head
-  %title Services Joynus Staffing
+  %title Joynus Staffing | Services | We provide best solutions
+  %meta{:content => "We have your best interest at heart", :name => "Description"}/
 %body
   - if flash[:notice]
     = render 'shared/success_notice'
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container
-        %img{ data: { interchange:"[#{asset_path('services-bg-mobile.png')}, (small)], [#{asset_path('services-bg-mobile.png')}, (medium)], [#{asset_path('services-bg.png')}, (large)]" } }
+        %img{ data: { interchange:"[#{asset_path('services-bg-mobile.jpg')}, (small)], [#{asset_path('services-bg-mobile.jpg')}, (medium)], [#{asset_path('services-bg.jpg')}, (large)]" } }
 
 
         .feature-text
@@ -33,7 +34,7 @@
           You will operate on your schedule so that you may be at ease with a pleasant overall experience.
           We are dedicated team of professionals who love their work and because of this,
           we repeatedly exceed our customer's expectations for every single one of our clients.
-          %a{:href => ""}
+          %a{:href => "staff_path"}Learn more
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
@@ -118,3 +119,7 @@
           %p.secondary-text.text-center Strategic marketing
           .srvIco1
             %i.icon-chart-line
+.button-container.text-center
+  %h3{:style => "margin:30px"}
+    = t 'about.content-callout'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
