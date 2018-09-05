@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
  
 
+  
+
   scope "(:locale)", locale: /en|es|kr/ do
     get 'login', to: 'sessions#new', as: 'login'
     get 'logout', to: 'sessions#destroy', as: 'logout'
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
     resources :contact, only: [:index]
     resources :services, only: [:index]
     resources :staff, only: [:index]
+    resources :recruit, only: [:index]
     resources :unapproved_jobs
     resources :jobs do
       collection do

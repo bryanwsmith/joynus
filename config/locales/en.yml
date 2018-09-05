@@ -17,6 +17,7 @@ en:
     apply: "Apply"
     sign: "Sign In"
     staff: "Staffing"
+    recruit: "Direct hire"
     
   footer:
     rights-reserved: "All Rights Reserved"

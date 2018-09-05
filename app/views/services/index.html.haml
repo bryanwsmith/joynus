@@ -22,11 +22,11 @@
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
-
-          = image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
+          %a{:href => "/staff"}= image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
 
           .middle
-            %p.text Staffing process
+            %a{:href => "/staff"}
+              %p.text Staffing process
       .columns.large-5
         %h2.text-center.secondary-text Staffing
         %p
@@ -34,7 +34,7 @@
           You will operate on your schedule so that you may be at ease with a pleasant overall experience.
           We are dedicated team of professionals who love their work and because of this,
           we repeatedly exceed our customer's expectations for every single one of our clients.
-          %a{:href => "staff_path"}Learn more
+          %a{:href => "/staff"}Learn more
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
@@ -50,7 +50,7 @@
           After we send you candidates who match your needs, you interview them and make a decision
           %a{:href => ""}
   %section.wwdContent3
-    %section
+    %section#bpo
       .row
         .columns.large-12
           %h2.text-center.secondary-text
@@ -78,7 +78,7 @@
 
 
 %section.wwdContent4
-  %section
+  %section#consultation
     .row
       .columns.large-12
         %h2.secondary-text.text-center Consultation

@@ -98,13 +98,16 @@ h2 {
 
 
 .imgg{
-   height:350px;
+   height:400px;
    width:auto;
+   padding:1em;
+   border-radius:50px;
 }
 
 .img0{
     height:300px;
     width:auto;   
+    padding:1em;
 }
 
 
@@ -298,6 +301,36 @@ h2 {
 	z-index:0;
 }
 
+.wwdContent5{
+    background: url(business-object.jpg);
+    background-attachment: fixed;
+	background-position: center top;
+	background-repeat: repeat-y;
+	background-size: cover;
+	min-height: 380px;
+	background-color:#ffffff;
+	margin-top:25px;
+	position:relative;
+}
+
+
+
+.wwdContent5:before{
+   //background: rgba(255, 192, 0, .85);
+    //background: rgba(97, 0, 77, 0.75); 
+    //background: rgba(83, 198, 140, 0.75);
+    //background: rgb(242, 250, 250);
+    
+    background: rgba(51, 51, 51, 0.8);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	left:0;
+	top:0;
+	z-index:0;
+}
+
 
 
 
@@ -344,6 +377,6 @@ h2 {
     
     .m-left-n{padding-right:40%;}
     
-    
+    .imgg{height:300px;}
     
 }

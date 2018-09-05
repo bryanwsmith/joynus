@@ -27,38 +27,80 @@
       We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
     %section
       %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "800", :src => "https://www.youtube.com/embed/okd4ZoTHnak?rel=0", :width => "100%"}
-    %section#why.content-section.no-spacing
-      .row
-        .columns.xlarge-6
-          .employer-section-img.mb-
-            = image_tag('industry2.png')
-          %h2.text-center.secondary-text
-            Industry
-          .columns.xlarge-6
-            %ul{:style => "list-style-type:none;"}
-              %li Automative
-              %li Manufacturing
-              %li Healthcare
-          .columns.xlarge-6
-            %ul{:style => "list-style-type:none;"}
-              %li Accounting &amp; finance
-              %li Information technology
-              %li Office &amp; administrative
-              %li
-    %section#industry.content-section
-      .row
-        .columns.xlarge-6
-          .industry-img.m-right3.m-top2
-            = image_tag('service.png')
-        .columns.xlarge-6
-          %h2.text-center.secondary-text
-            Services
-          %p
-            Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
-            We have our own guidelines on what Quality means.
-            We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
-            %a{:alt => "services", :href => "/services"} Learn more
-  .button-container.text-center
-    %h3{:style => "margin:30px"}
-      = t 'about.content-callout'
-    = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+      
+.wwdContent5
+  
+  .row.m-bottom4
+    .columns.large-4.text-center
+      %a{:href => "/recruit"}
+        .srvIco3
+          
+          %i.icon-magic
+        .srvDet
+          %h3 Fill talent
+    .columns.large-4.text-center
+      %a{:href => "/staff#retention"}
+        .srvIco3
+          %i.icon-award
+        .srvDet
+          %h3 Recognition & award  
+    .columns.large-4.text-center
+      %a{:href => "/staff#compliance"}
+        .srvIco3
+          %i.icon-search
+        .srvDet
+          %h3 Compliance  
+  .row
+    .columns.large-4.text-center
+      %a{:href => "/services#consultation"}
+        .srvIco3
+          %i.icon-chart-bar
+        .srvDet
+          %h3 Market analysis  
+    .columns.large-4.text-center
+      %a{:href => "/services#bpo"}
+        .srvIco3
+          %i.icon-globe
+        .srvDet
+          %h3 Outsourcing  
+    .columns.large-4.text-center
+      .srvIco3
+        %i.icon-money
+      .srvDet
+        %h3 Tax saving
+/ What we do content  
+%section#why.content-section.no-spacing
+  .row
+    .columns.xlarge-6
+      .employer-section-img.mb-
+        = image_tag('industry2.png')
+      %h2.text-center.secondary-text
+        Industry
+      .columns.xlarge-6
+        %ul{:style => "list-style-type:none;"}
+          %li Automative
+          %li Manufacturing
+          %li Healthcare
+      .columns.xlarge-6
+        %ul{:style => "list-style-type:none;"}
+          %li Accounting &amp; finance
+          %li Information technology
+          %li Office &amp; administrative
+          %li
+%section#industry.content-section
+  .row
+    .columns.xlarge-6
+      .industry-img.m-right3.m-top2
+        = image_tag('service.png')
+    .columns.xlarge-6
+      %h2.text-center.secondary-text
+        Services
+      %p
+        Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
+        We have our own guidelines on what Quality means.
+        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
+        %a{:alt => "services", :href => "/services"} Learn more
+.button-container.text-center
+  %h3{:style => "margin:30px"}
+    = t 'about.content-callout'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'

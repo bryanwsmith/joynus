@@ -15,7 +15,7 @@
         %h2.text-center.secondary-text Temp, Temp to hire &amp; Short term. What are these all?
         %p
           %b> Temp -
-          These are positions ranging from one afternoon, to full time work for up to a year. The important thing to know is that there is no promise of the position turning into a permanent position with benefits.
+          These are positions ranging from one afternoon, to full time work for up to a year. The important thing to know is that there is no promise of the position turning into a permanent position with benefits
         %p
           %b Temp to hire -
           %a{:href => "https://en.wikipedia.org/wiki/Permatemp"}
@@ -23,7 +23,7 @@
         %p
           %b Short term -
           short-term employment are workers who hold explicit or implicit contracts of employment which are expected to last longer than the period used to define casual workers, but shorter than the one
-          used to define regular employees. These workers may be classified as employees or own- account workers according to the specific characteristics of the employment contract.
+          used to define regular employees. These workers may be classified as employees or own- account workers according to the specific characteristics of the employment contract
   %section
     .slideshow-container
       .mySlides.fade
@@ -61,8 +61,10 @@
         
         .stext
           %p
-            We educate our applicants on our rules, regulations, safe work practices, pre-interview, background test, and drug test in order to send right talents to
-            clients. We also keep tracking their past work performances and prior incidents to protect your business
+            Joynus sends in the right talent to your business. This is where orientation comes in.<br>
+            We educate our applicants on our rules and regulations
+          
+           
       .mySlides.fade
         .numbertext
           %h2 Stand-by
@@ -71,7 +73,7 @@
         .stext
           %p
             Once we completed orientation, we place all eligible candidates on stand-by. Stand-by is a list of candidates that meet the requirements to work on-site
-            that we fiell would be the ideal employee for you long term
+            that we fill would be the ideal employee for you long term
       %a.prev{:onclick => "plusSlides(-1)"} ❮
       %a.next{:onclick => "plusSlides(1)"} ❯
     %br/
@@ -81,3 +83,91 @@
       %span.dot{:onclick => "currentSlide(3)"}
       %span.dot{:onclick => "currentSlide(4)"}
       %span.dot{:onclick => "currentSlide(5)"}
+%section
+  .row
+    .columns.large-12.text-center
+      %h2.secondary-text Employee management system
+      %p
+        Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
+        <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
+        
+
+%section#compliance
+  .row
+    .box  
+      .columns.large-6
+        %h2.secondary-text.text-center Compliance
+        %p.text-center Joynus conducts pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
+        .columns.large-6.text-center
+          %p
+            %b Drug screen <br>
+            10 panel drug screen<br>
+            Alcohol test
+          %p
+            %b Criminal history<br>
+            Nation, state & county
+        
+        .columns.large-6.text-center 
+          %p
+            %b I-9 & E-verify<br>
+            Identity verification
+           
+          %p
+            %b Education verification
+          %p
+            %b Reference verification
+      
+      .columns.large-6
+        = image_tag 'compliance.jpg', :class => "imgg" 
+        
+        
+  .row
+    .box  
+      .columns.large-7.large-push-5
+        %h2.secondary-text.text-center#retention Employee retention
+        %p.text-center We know that good talent is hard to find thus we want to keep them
+        .columns.large-6.text-center
+          
+          %p
+            %b Employee wellness analysis
+          %p
+            %b Performance evaluations  
+          %p
+            %b Employee of the month  
+          %p
+            %b Enjoy the tour
+          %p
+            %b Bonus
+            
+        .columns.large-6.text-center 
+          %p
+            %b Perfect performance bonus
+          %p
+            %b Holiday referral
+          %p
+            %b Raffle Ticket
+          %p
+            %b Joynus board
+      
+      .columns.large-5.large-pull-7
+        = image_tag 'Rains Money.jpg', :class => "imgg" 
+    
+  .row
+    .box  
+      .columns.large-6.text-center 
+        %h2.secondary-text Employee payroll
+        %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
+        
+        %p
+          %b Direct deposit<br>
+        %p
+          %b Paper checks<br>
+        %p
+          %b Pay cards
+      
+      .columns.large-6.m-top3
+        = image_tag 'payroll.jpg', :class => "imgg" 
+.button-container.text-center
+  %h3{:style => "margin:30px"}
+    = t 'about.content-callout'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
