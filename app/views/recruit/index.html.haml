@@ -1,11 +1,129 @@
 %head
-  %title Joynus Staffing | Staffing process
+  %title Joynus Staffing | Direct hiring process
   %meta{:content => "Why are we different? check out our Direct hire process", :name => "Description"}/
-%body
-  %section.feature-section.no-spacing
-    .feature.animated.fadeIn
-      .feature-container
-        %img{ data: { interchange:"[#{asset_path('recruit-bg-mobile.jpg')}, (small)], [#{asset_path('recruit-bg-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg.jpg')}, (large)]" } }
-        .feature-text
-          %h1.text-center.animated.fadeInDown
-            Great vision without great people is irrelevant
+
+
+  
+  
+%section.feature-section.no-spacing
+  .feature.animated.fadeIn
+    .feature-container
+      %img{ data: { interchange:"[#{asset_path('recruit-bg-mobile.jpg')}, (small)], [#{asset_path('recruit-bg-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg.jpg')}, (large)]" } }
+      .feature-text
+        %h1.text-center.animated.fadeInDown
+          Great vision without great people is irrelevant
+        
+
+.row
+  .columns.large-12
+    %h2.text-center.secondary-text.m-top3
+      Direct hire
+    
+    %b What is it?
+    %p
+      Direct hire positions are permanent, usually full time positions with benefits. A direct hire position is one in which the client company utilizes 
+      the staffing company to find the talent, then hires them directly. A candidate offered a direct hire position is not an employee of the staffing company, 
+      but goes directly on the client company payroll
+    
+    %b How it works?
+    %p 
+      We present you with potential candidate who will be a permanent position in your organization. You interview them and make a decision.
+      Then, you pay us fee, percentage of the annual salary of the person hired
+    
+%iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "800", :src => "https://www.youtube.com/embed/6rOsQDVGgD0?rel=0", :width => "100%"}
+    
+    
+.row
+  .columns.large-12
+    %h2.text-center.secondary-text.m-top3
+      Direct hire process
+
+%section#process
+  .slideshow-container
+    .mySlides.fade
+      .numbertext1
+        %h2 Acquisition
+      = image_tag 'acquisition.jpg', :alt => 'Acquisition', :style => "width:100%"  
+      
+      .stext1
+        %p
+          Talent acquisition specialists will review your job description. We dig our database and review a plethora of resumes.
+          Advertise the position on job boards if needed
+    .mySlides.fade
+      .numbertext1
+        %h2 Assessment
+      = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
+      
+      .stext1
+        %p
+          
+          Because Joynus takes the time to understand your needs, we know the right questions to ask to assess not only a match in skills and qualifications but also a cultural fit
+    .mySlides.fade
+      .numbertext1
+        %h2 Presenting
+      = image_tag 'present.jpg', :alt => 'presenting', :style => "width:100%" 
+      
+      .stext1
+        %p
+          We will send you resumes and candidate profile that shows you why our candidate 
+    .mySlides.fade
+      .numbertext1
+        %h2 Feedback
+      = image_tag 'feedback.jpg', :alt => 'orientation', :style => "width:100%"   
+      
+      .stext1
+        %p
+          Joynus will provide you with timely progress updates with feedback obtained directly from the talent pool and consult with you on any adjustments that
+          may be needed to meet your hiring goal
+        
+         
+    .mySlides.fade
+      .numbertext1
+        %h2 Interview
+      = image_tag 'interview.jpg', :alt => 'Interview', :style => "width:100%" 
+      
+      .stext1
+        %p
+          Scheduling is a drag. Let us know when you are available and how you would like to meet the candidate (phone, video, in person, etc) and will take care of the rest
+          
+    .mySlides.fade
+      .numbertext1
+        %h2 Follow-up
+      = image_tag 'followup.jpg', :alt => 'Followup', :style => "width:100%" 
+      
+      .stext1
+        %p
+          Our recruiting specialist will follow up after the interview with the client and candidate, wheter Job offer to the candidate or reject
+          
+    %a.prev{:onclick => "plusSlides(-1)"} ❮
+    %a.next{:onclick => "plusSlides(1)"} ❯
+  %br/
+  %div{:style => "text-align:center"}
+    %span.dot{:onclick => "currentSlide(1)"}
+    %span.dot{:onclick => "currentSlide(2)"}
+    %span.dot{:onclick => "currentSlide(3)"}
+    %span.dot{:onclick => "currentSlide(4)"}
+    %span.dot{:onclick => "currentSlide(5)"}
+    %span.dot{:onclick => "currentSlide(6)"}
+
+
+.row
+  .box  
+    .columns.large-6.text-center 
+      %h2.secondary-text Employee payroll
+      %p  
+        Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
+        an acceptance of an offer that both parties will be happy to sign on to
+      
+      %p
+        %b Hiring process<br>
+      %p
+        %b Selective screening
+     
+    
+    .columns.large-6.m-top3
+      = image_tag 'negotiation.jpg', :class => "imgg" 
+.button-container.text-center
+  %h3{:style => "margin:30px"}
+    = t 'about.content-callout'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'

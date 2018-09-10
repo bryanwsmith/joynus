@@ -38,17 +38,18 @@
     .row.box.m-top3
       .columns.large-4.text-center
         .specialcontainer
-          = image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
+          %a{:href => "/recruit"}= image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
 
           .middle
-            %p.text Recruiting process
+            %a{:href => "/recruit"}
+              %p.text Recruiting process
       .columns.large-5
         %h2.text-center.secondary-text Recruiting
         %p
           We present you with potential candidate who will be a permanent position in your organization.
           Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
-          After we send you candidates who match your needs, you interview them and make a decision
-          %a{:href => ""}
+          After we send you candidates who match your needs, you interview them and make a decision.
+          %a{:href => "/recruit"} Learn more
   %section.wwdContent3
     %section#bpo
       .row
@@ -58,7 +59,7 @@
       .row
         .columns.large-12.text-center
           %p
-            As a business process outsourcing partner, Joynus Provides customer experiences and back office operations for our clients.
+            As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients.
             %br/
             What is back office operation? Call us and we'll tell you #{link_to 'Contact us', contact_index_path}
     %section

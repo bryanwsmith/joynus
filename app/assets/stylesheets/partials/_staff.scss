@@ -49,10 +49,30 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+.stext1 > p{
+  background:rgba(0, 0, 102,0.5);
+  color: #f2f2f2;
+  font-size: 19px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  
+  text-align: center;
+}
 
 
 /* Number text (1/3 etc) */
 .numbertext > h2{
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext1 > h2{
+  background:rgba(0, 0, 102,0.5);
   color: #f2f2f2;
   font-size: 35px;
   padding: 8px 12px;
@@ -99,6 +119,31 @@ img {vertical-align: middle;}
   .prev, .next {font-size: 11px}
   
   .stext > p{
+    background:rgba(26, 26, 26, 0.4);
+    font-size:13px;
+    width:80%;
+    padding: 10px 12px;
+    margin-left:10%;
+    bottom:0%;
+  }
+  
+  .numbertext > h2{
+  background:rgba(26, 26, 26, 0.4);
+  font-size:25px;
+  padding: 4px 6px;
+ 
+}
+  
+  .numbertext1 > h2{
+  background:rgba(0, 0, 102,0.2);
+  font-size:25px;
+  padding: 4px 6px;
+ 
+}
+  
+  
+  .stext1 > p{
+    background:rgba(0, 0, 102,0.2);
     font-size:13px;
     width:80%;
     padding: 10px 12px;
