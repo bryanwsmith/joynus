@@ -64,28 +64,85 @@
         .srvDet
           %h3 Outsourcing  
     .columns.large-4.text-center
-      .srvIco3
-        %i.icon-money
-      .srvDet
-        %h3 Tax saving
+      %a{:href => "#save"}    
+        .srvIco3
+          %i.icon-money
+        .srvDet
+          %h3 Tax saving
 / What we do content  
-%section#why.content-section.no-spacing
+
+%section#save
   .row
-    .columns.xlarge-6
-      .employer-section-img.mb-
-        = image_tag('industry2.png')
-      %h2.text-center.secondary-text
-        Industry
-      .columns.xlarge-6
-        %ul{:style => "list-style-type:none;"}
-          %li Automative
-          %li Manufacturing
-          %li Healthcare
-      .columns.xlarge-6
-        %ul{:style => "list-style-type:none;"}
-          %li Accounting &amp; finance
-          %li Information technology
-          %li Office &amp; administrative
+    .box  
+      .columns.large-6
+        = image_tag 'convenience.jpg', :class => "imgg"
+      .columns.large-6.text-center
+        %h2.secondary-text Convenience
+        %p.text-center Stay in comfortable. Joynus will take care of all your needs
+        
+        
+       
+        %p
+          %b Hiring process time consumption
+        %p
+          %b Payroll  
+        %p
+          %b Unemployment
+        %p
+          %b Law suits  
+        
+      
+       
+        
+        
+  .row
+    .box  
+      .columns.large-7.large-push-5
+        = image_tag 'save.jpg', :class => "imgg" 
+      
+      .columns.large-5.large-pull-7
+        %h2.secondary-text.text-center#retention Save money
+        %p.text-center Clients even save money while Joynus does all work
+        .columns.large-6.text-center
+          
+          %p
+            %b Worker's comp<br>
+            Loss prevention & loss control services
+          %p
+            %b WOTC
+        .columns.large-6.text-center    
+          %p
+            %b Employee promotion
+          %p
+            %b Paid time off  
+  
+  .row
+    .box  
+      .columns.large-6.m-top3
+        = image_tag 'responsive.jpg', :class => "imgg" 
+      
+      .columns.large-6.text-center 
+        %h2.secondary-text Responsive
+        %p  Clients don't have to call our main number, you will have a direct access to account manager
+        
+        %p
+          %b Site supervisor
+        %p
+          %b 
+            Unload your work<br>
+            %a{:href => "#save"}see convenience
+        
+      
+      
+
+
+
+
+
+
+
+
+
 
 %section.whywedowhatwedo
   %h2.secondary-text.text-center.m-top3 How it works

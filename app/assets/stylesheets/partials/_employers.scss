@@ -200,11 +200,27 @@
 
 @media all and (max-width:480px) {
   
-ul{  
-   li{
-  margin-top:10px;
-  text-align:center;
-  margin-right:2%;
+
+
+.srvIco3 i{
+    font-size:35px;
+    display: inline-block;
+    
+  }
+  
+
+.wwdContent5 {
+  margin-top:10%;
+  display:inline-block;
+  
+  .row{
+    display:inline-flex;
+    
+  }
+  .srvDet {
+    h3{    font-size:15px;  }    
+  }
+  .m-bottom4{margin-top:20%;}
 }
-}  
+
 }
