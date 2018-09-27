@@ -1,6 +1,8 @@
 %head
   %title Joynus Staffing | Employers | Understading your business
   %meta{:content => "Hiring the right talent equals to the growth of a company", :name => "Description"}/
+  
+
 %body
   - if flash[:notice]
     = render 'shared/success_notice'
@@ -87,7 +89,7 @@
         %p
           %b Payroll  
         %p
-          %b Unemployment
+          %b Unemployment dealing with DOL
         %p
           %b Law suits  
         
@@ -132,13 +134,94 @@
             Unload your work<br>
             %a{:href => "#save"}see convenience
         
+
+
+  
+  
+.row.box
+  .columns.large-7.large-push-5
+    =image_tag 'selectivescreening.jpg', :class => "imgg"
+  .columns.large-5.large-pull-7  
+    .w3-container
+      .row.text-center
+        %h2.secondary-text Selective screening
+        
+        %b
+          %a{:onclick => "document.getElementById('id01').style.display='block'"} Learn more
+      #id01.w3-modal
+        .w3-modal-content.w3-card-4.w3-animate-zoom
+          %header.w3-container.w3-blue
+            %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id01').style.display='none'"} ×
+            %h2.w3-text-white Selective screening
+          .w3-bar.w3-border-bottom
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Sourcing')"} Sourcing
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Identification')"} Identification
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Strategy')"} Strategy
+            
+          #Sourcing.w3-container.city
+            %h2.primary-text Sourcing
+            %p 
+              World Wide Web has unlimited potential, yet it is ever so large and constantly growing. Not only through our own website, 
+              we keep up to date on numerous places on the web for sourcing candidates and constantly update and look for better sourcing sites
+            
+          #Identification.w3-container.city
+            %h2.primary-text Identification
+            %p We have database of industry specific top candidates. It is more than search by keywords. With our expertise, we measure candidates characters, personality and work ethics
+           
+          #Strategy.w3-container.city
+            %h2.primary-text Strategy
+            %p
+              %b.secondary-text A. Investigation<br>
+              Based on the industry, pay scale, location, we implement in depth screening process so that the candidate we present aligns with your requirements
+            %p
+              %b.secondary-text B. Headhunting<br>
+              Most often top candidates are already working. This is where the challenge begins. Numerous phone calls and exchanges of email; sifting through resumes and key words, and comparing
+              our scores at a high volume. It's a matter of becoming the best liaison and put the hiring company and candidate to talk to each other while we do all the difficult talk in the middle1
+            %p
+              %b.secondary-text C. Assessment & Evaluation<br>
+              We provide our feedback to clients about prescreen, qualification, education, certification, personality, depth of skill level, speciality; developing a comprehensive comparison matrix and analysis
+            %p
+              %b.secondary-text D. Acceptance<br>
+              Our work doesn't end at arranging the interview. We ensure and help offer letter is appropriate and candidate feels gratitude to be hired, ensure all process and obstacles
+              including relocation, immigration status, compensation, are handled until the first day of employment
+            %p
+              %b.secondary-text E. Employment<br>
+              After 3 months, we follow up on candidate's performance with client. We feel responsible for our actions. We feel that it is our civic duty to ensure client satisfaction as hiring a right individual can shape a future of a company
+              
+            %br/
+          .w3-container.w3-light-grey.w3-padding
+            %button.w3-button.w3-right.w3-white.w3-border{:onclick => "document.getElementById('id01').style.display='none'"} Close
+    :javascript
+      document.getElementsByClassName("tablink")[0].click();
       
-      
-
-
-
-
-
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+      var modal = document.getElementById('id01');
+  
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+          
+    
+    
+    
+    
+    
+    
 
 
 
