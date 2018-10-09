@@ -4,6 +4,14 @@
     = yield :title
     %meta{ charset: 'utf-8'}
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+    
+    / Global site tag (gtag.js) - Google Ads: 974726899
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=AW-974726899"}
+    :javascript
+      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-974726899');
+
+    
+    
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
     
@@ -99,6 +107,15 @@
                 %a.fa.fa-linkedin{href: 'https://www.linkedin.com/company/3499330?trk=vsrp_jobs_res_name&trkInfo=VSRPsearchId%3A2080338161420490145807%2CVSRPtargetId%3A38262556%2CVSRPcmpt%3Aprimary', target: '_blank'}
         .columns.medium-7.medium-pull-5
           %small &#169; Joynus #{Time.now.year}. #{t('footer.rights-reserved')}.
+
+        :javascript
+          _linkedin_partner_id = "483580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        :javascript
+          (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+        %noscript
+          %img{:alt => "", :height => "1", :src => "https://dc.ads.linkedin.com/collect/?pid=483580&fmt=gif", :style => "display:none;", :width => "1"}/
+
+
 
     = render 'layouts/google'
     = javascript_include_tag 'application'
