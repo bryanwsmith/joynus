@@ -330,6 +330,13 @@
         We have our own guidelines on what Quality means.
         We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
         %a{:alt => "services", :href => "/services"} Learn more
+        
+.row
+  .columns.large-10.large-offset-1
+    %fieldset
+      = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
+        = render 'shared/job_form', form: form
+        = form.submit t('job-form.button'), class: 'button small no-margin right submit radius', 'disabled' => ''        
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'
