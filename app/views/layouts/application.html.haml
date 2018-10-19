@@ -7,9 +7,13 @@
     
     / Global site tag (gtag.js) - Google Ads: 974726899
     %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=AW-974726899"}
+      :cdata
+        gtag('config', 'AW-974726899');
     :javascript
       window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-974726899');
 
+    
+    
     
     
     = stylesheet_link_tag 'application', media: 'all'
@@ -108,12 +112,13 @@
         .columns.medium-7.medium-pull-5
           %small &#169; Joynus #{Time.now.year}. #{t('footer.rights-reserved')}.
 
-        :javascript
-          _linkedin_partner_id = "483580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        :javascript
-          (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
-        %noscript
-          %img{:alt => "", :height => "1", :src => "https://dc.ads.linkedin.com/collect/?pid=483580&fmt=gif", :style => "display:none;", :width => "1"}/
+    :javascript
+      _linkedin_partner_id = "483580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    :javascript
+      (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+    %noscript
+      %img{:alt => "", :height => "1", :src => "https://dc.ads.linkedin.com/collect/?pid=483580&fmt=gif", :style => "display:none;", :width => "1"}/
+
 
 
 
