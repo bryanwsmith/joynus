@@ -131,7 +131,7 @@
   .row
     .columns.xlarge-6
       .home-section-img.mb-
-        = image_tag('section-1.jpg')
+        = image_tag 'section-1.jpg'
       .animated-text
         %h2
           = t 'home.career-header'
@@ -141,7 +141,9 @@
   .row
     .columns.xlarge-5
       .right-job-img
-        = image_tag('right-job-img.jpg')
+        = image_tag 'right-job-img.jpg', :alt => 'Right Job'
+        
+        
     .columns.xlarge-7.xlarge-offset-6
       .animated-text
         %h2
