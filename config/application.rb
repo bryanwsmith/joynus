@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Joynusstaffing
   class Application < Rails::Application
+    config.serve_static_assets = true
     config.i18n.default_locale = [ :en ]
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif
     "fontello.ttf", "fontello.eot", "fontello.svg", "fontello.woff", "fontello.woff2"
