@@ -3,74 +3,85 @@
   %meta{:content => "Hiring the right talent equals to the growth of a company", :name => "Description"}/
   
 
-%body
-  - if flash[:notice]
-    = render 'shared/success_notice'
-  %section.feature-section.no-spacing
-    .feature.animated.fadeIn
-      .feature-container
-        %img{ data: { interchange:"[#{asset_path('employer-bg-mobile.jpg')}, (small)], [#{asset_path('employer-bg-mobile.jpg')}, (medium)], [#{asset_path('employer-bg.jpg')}, (large)]" } }
-        .feature-text
-          %h1.text-center.animated.fadeInDown
-            We always deliver more than expected
-          %h3.subheader.text-center.animated.fadeInDown
-            %a.fadeInDown.white-text{:href => "/contact"}
-              = t 'employers.feature-subheader'
-          %a.circle.animated.fadeInDowns{:href => "/contact"}
-            %i.icon-phone
-    /
-      What we do content
-    %h2.text-center.secondary-text.m-top3
-      Why Joynus
-    %p.row
-      That’s easy, because we have your best interest at heart.
-      Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
-      we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
-      We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
-    %section
-      %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "800", :src => "https://www.youtube.com/embed/okd4ZoTHnak?rel=0", :width => "100%"}
+
+%section.feature-section.no-spacing.m-top-n
+
+  = video_tag "Videos.mp4", :width => "100%", :height => "1100px",  :autoplay => true, :loop => true, class: "video" "myVideo"
+  
+  .content_on_BG.text-center.animated.fadeInDown
+    %h1 We deliver more than you expected
+      
+      
+
+
+
+
+
+   
+%section
+  .row
+    %h1.secondary-text.text-center Why Joynus?
+  
+  .row
+  
+    .box  
+      .columns.large-6.div{"data-aos" => "fade-up-right", "data-aos-duration" => "2000"}
+        = image_tag 'Question.jpg', :class => "imgg"
+      .columns.large-7.div{"data-aos" => "fade-down-left", "data-aos-duration" => "2000"}
+
+        
+        %h5
+          That’s easy, because we have your best interest at heart. Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
+          we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
+          We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
+              
+
+        
+       
+
+
+
       
 .wwdContent5
   
-  .row.m-bottom4
-    .columns.large-4.text-center
+  .row
+    .m-top3.columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
       %a{:href => "/recruit#process"}
         .srvIco3
-          
           %i.icon-magic
         .srvDet
-          %h3 Fill talent
-    .columns.large-4.text-center
+          %h2 Fill talent
+    .m-top3.columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
       %a{:href => "/staff#compliance"}
         .srvIco3
           %i.icon-award
         .srvDet
-          %h3 Recognition & award  
-    .columns.large-4.text-center
+          %h2 Recognition & award  
+    .m-top3.columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
       %a{:href => "/staff#compliance"}
         .srvIco3
           %i.icon-search
         .srvDet
-          %h3 Compliance  
-  .row
-    .columns.large-4.text-center
+          %h2 Compliance  
+  .row.m-top3
+    .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
       %a{:href => "/services#consultation"}
         .srvIco3
           %i.icon-chart-bar
         .srvDet
-          %h3 Market analysis  
-    .columns.large-4.text-center
+          %h2 Market analysis  
+    .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
       %a{:href => "/services#bpo"}
         .srvIco3
           %i.icon-globe
         .srvDet
-          %h3 Outsourcing  
-    .columns.large-4.text-center
+          %h2 Outsourcing  
+    .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
       %a{:href => "#save"}    
         .srvIco3
           %i.icon-money
         .srvDet
-          %h3 Tax saving
+          %h2 Tax saving
 / What we do content  
 
 %section#save
@@ -80,7 +91,7 @@
         = image_tag 'convenience.jpg', :class => "imgg"
       .columns.large-6.text-center
         %h2.secondary-text Convenience
-        %p.text-center Stay in comfortable. Joynus will take care of all your needs
+        /%p.text-center Stay in comfortable. Joynus will take care of all your needs
         
         
        
@@ -99,17 +110,17 @@
         
   .row
     .box  
-      .columns.large-7.large-push-5
+      .columns.large-7.large-push-6
         = image_tag 'save.jpg', :class => "imgg" 
       
-      .columns.large-5.large-pull-7
+      .columns.large-6.large-pull-7
         %h2.secondary-text.text-center#retention Save money
-        %p.text-center Clients even save money while Joynus does all work
+        /%p.text-center Work with us and Save money
         .columns.large-6.text-center
           
           %p
             %b Worker's comp<br>
-            Loss prevention & loss control services
+            Loss prevention <br>&<br> loss control services
           %p
             %b WOTC
         .columns.large-6.text-center    
@@ -122,10 +133,10 @@
     .box  
       .columns.large-6.m-top3
         = image_tag 'responsive.jpg', :class => "imgg" 
-      
+        
       .columns.large-6.text-center 
         %h2.secondary-text Responsive
-        %p  Clients don't have to call our main number, you will have a direct access to account manager
+        %h5  Clients don't have to call our main number, you will have a direct access to account manager
         
         %p
           %b Site supervisor
@@ -139,9 +150,9 @@
   
   
 .row.box#selectivescreening
-  .columns.large-7.large-push-5
+  .columns.large-7.large-push-6
     =image_tag 'selectivescreening.jpg', :class => "imgg"
-  .columns.large-5.large-pull-7  
+  .columns.large-6.large-pull-7  
     .w3-container
       .row.text-center
         %h2.secondary-text Selective screening
@@ -243,7 +254,7 @@
     %a{:href => "/services#bpo"} Learn more
   .row.m-top3
     .columns.large-4.text-center
-      %h4.secondary-text 1. Personnel management
+      %h3.secondary-text 1. Personnel management
       .specialcontainer1
         = image_tag 'personnel.png', :alt => 'Personnel', :class => "imagee", :style => "width:100%"
           
@@ -255,7 +266,7 @@
             DOL related<br>
             Benefit
     .columns.large-4.text-center
-      %h4.secondary-text 2. Business management
+      %h3.secondary-text 2. Business management
       .specialcontainer1
         = image_tag 'business.png', :alt => 'Business', :class => "imagee", :style => "width:100%"
         .middle1
@@ -267,7 +278,7 @@
             Job training
               
     .columns.large-4.text-center
-      %h4.secondary-text 3. Process management
+      %h3.secondary-text 3. Process management
       .specialcontainer1
         = image_tag 'process.png', :alt => 'Process', :class => "imagee", :style => "width:100%"
         .middle1
@@ -279,7 +290,7 @@
             Inventory
   .row.m-top3
     .columns.large-4.text-center
-      %h4.secondary-text 4. Facility management
+      %h3.secondary-text 4. Facility management
       .specialcontainer1
         = image_tag 'facility.png', :alt => 'Facility', :class => "imagee", :style => "width:100%"
         
@@ -291,7 +302,7 @@
             Preventive maintenance<br>
             Regular repairs
     .columns.large-4.text-center
-      %h4.secondary-text 5. Production management
+      %h3.secondary-text 5. Production management
       .specialcontainer1
         = image_tag 'production.png', :alt => 'Production', :class => "imagee", :style => "width:100%"
         .middle1
@@ -302,7 +313,7 @@
             Inventory planning<br>
             Supply chain management
     .columns.large-4.text-center
-      %h4.secondary-text 6. Organization management
+      %h3.secondary-text 6. Organization management
       .specialcontainer1
         = image_tag 'organization.png', :alt => 'Organization', :class => "imagee", :style => "width:100%"
         .middle1
@@ -325,18 +336,13 @@
     .columns.xlarge-6
       %h2.text-center.secondary-text
         Services
-      %p
+      %h5
         Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
         We have our own guidelines on what Quality means.
         We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
         %a{:alt => "services", :href => "/services"} Learn more
         
-.row
-  .columns.large-10.large-offset-1
-    %fieldset
-      = form_for Job.new, :url => jobs_path, html: { method: :post, 'data-abide' => '' } do |form|
-        = render 'shared/job_form', form: form
-        = form.submit t('job-form.button'), class: 'button small no-margin right submit radius', 'disabled' => ''        
+        
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'

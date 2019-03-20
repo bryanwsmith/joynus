@@ -27,6 +27,10 @@
 //= require controllers/JobsController
 
 $(function(){
+  AOS.init ()
+});
+
+$(function(){
   $(document).foundation();
 
   function adjustPusher() {
@@ -86,7 +90,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.classList.add("w3-light-grey");
 }
-
 
 
 

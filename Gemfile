@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.7'
+
 gem 'fontello_rails_converter'
 gem 'rails', '4.1.8'
 gem 'pg', '~> 0.17.1'

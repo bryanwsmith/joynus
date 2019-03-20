@@ -103,15 +103,23 @@
 
 @media only screen and (min-width:768px) {
   #home .feature-container { padding-bottom: 39.85%; }
+  #employers .feature-container { padding-bottom: 47.85%; }
+  #staff .feature-container { padding-bottom: 47.85%; }
+ 
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); }
     h3 { font-size: $h3-font-size; }
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
   }
 }
 
 @media only screen and (min-width:1024px) {
-  .feature-section .feature-container .feature-text h1 { font-size: rem-calc(55); }
-}
+  .feature-section .feature-container .feature-text h1 { font-size: rem-calc(73); }
+position: absolute;
+    left: 50%;
+    bottom: 50%;}
 
 @media only screen and (min-width:1140px) {}
 

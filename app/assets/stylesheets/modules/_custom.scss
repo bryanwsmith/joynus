@@ -40,20 +40,21 @@
 .srvIco3 i {
     color: #3399ff;
     display: inline-block;
-    font-size:55px;
+    font-size:65px;
     position: relative fixed;
     margin-left:0%;
-    margin-top : 10%;
+    margin-top : 15%;
+    
     
 }
 
 .srvIco3 i:hover {
     color: #00e6ac;
     display: inline-block;
-    font-size:55px;
+    font-size:65px;
     position: relative fixed;
     margin-left:0%;
-    margin-top : 10%;
+    margin-top : 15%;
     
 }
 
@@ -84,7 +85,9 @@
 
 
 
-.srvDet h3 {
+.srvDet{
+  
+h3 {
     margin-top: 10px;
     margin-bottom: 5px;
 	margin-left:10px;
@@ -92,8 +95,20 @@
 	font-size:20px;
 	
 	position: relative;
-	
 }
+
+h2 {
+   margin-top: 10px;
+    margin-bottom: 5px;
+	margin-left:10px;
+	color:#FFFFFF;
+	font-size:25px;
+	
+	position: relative;
+}
+}
+
+
 
 .itemC{
     align-items:center;
@@ -226,4 +241,77 @@
 
 
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 
+.content_on_BG {
+  position: absolute;
+  top:1%;
+  margin:auto;
+  background: rgba(0, 0, 0, 0.2);
+  
+  color: #f1f1f1;
+  width: 100%;
+  height: 95%;
+}
+
+.content_on_BG >h1 {
+  
+  padding:20% 0 20% 0;
+  margin:auto;
+  
+  
+  color: #f1f1f1;
+  
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+@media all and (max-width:480px) {
+ 
+.srvDet{
+  h2 {
+     margin-top: 10px;
+      margin-bottom: 5px;
+  	margin-left:10px;
+  	color:#FFFFFF;
+  	font-size:15px;
+  	
+  	position: relative;
+  }
+}
+  
+  
+
+.srvIco3 i:hover {
+    color: #00e6ac;
+    display: inline-block;
+    font-size:55px;
+    position: relative fixed;
+    margin-left:0%;
+    margin-top : 10%;
+    
+}
+
+  
+}
