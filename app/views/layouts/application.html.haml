@@ -46,13 +46,16 @@
       %nav(role='navigation')
         .container.navbar-container
           .navbar-header
-            %h2= link_to 'Joynus', root_url
+            %a{:alt => "Joynus", :href => "/"}
+              =image_tag 'Logo_Horizontal_no_bg.png', :class => "img-logo"
+            /%h2= link_to 'Joynus', root_url
           %ul.menu
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url
+            %li.menu-item= active_link_to t('header.employers'), employers_path  
             %li.menu-item= active_link_to t('header.staff'), staff_index_path
             %li.menu-item= active_link_to t('header.recruit'), recruit_index_path
-            %li.menu-item= active_link_to t('header.employers'), employers_path
+            
             %li.menu-item= active_link_to t('header.services'), services_path
             
             %li.menu-item= active_link_to t('header.news'), posts_path
@@ -67,7 +70,7 @@
                 %li= link_to "한국어", { locale: "kr" }, class: 'kr-link'
                 %li= link_to "Espanol", { locale: "es" }, class: 'es-link'
             %li.menu-item= link_to t('header.job'), jobs_path, class: 'button secondary radius'
-            %li.menu-item= link_to t('header.sign'), "https://joy.aviontego.com/portals/main.aspx?App=3&Companyid=JoynusStaffing&pad=true", class: 'button success radius'
+            
             %li.menu-item= link_to t('header.Apply'), apply_url, class: 'button alert radius'
 
             /%li.menu-item= link_to t('header.find-a-job'), "https://joy.aviontego.com/portals/main.aspx?App=1&Companyid=JoynusStaffing&Lang=Spanish", class: 'button secondary radius'

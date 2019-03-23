@@ -28,7 +28,8 @@
           %p
             The discovery stage is beginning the process of getting to know you and
             letting you know more about us. More importantly, we want to know if we are able to provide a solution for your business. Questions??
-            %a{:alt => "contact", :href => "/contact"} Contact Us
+            %b
+              %a{:alt => "contact", :href => "/contact"} Contact Us
       .mySlides.fade
         .numbertext
           %h2 Assessment
@@ -46,7 +47,7 @@
         .stext
           %p
             Staffing is an ongoing process. We consistently post jobs on our social media, job boards, and coordinate with the city to schedule job fairs
-            so that we are able to consistently provide you with the workforce you need
+            so that we are able to consistently provide you with the workforce 
       .mySlides.fade
         .numbertext
           %h2 Orientation
@@ -133,8 +134,11 @@
         
         
   .row
-    .box  
-      .columns.large-7.large-push-5
+    .box
+      .columns.large-6
+        = image_tag 'Rains Money.jpg', :class => "imgg" 
+    
+      .columns.large-7
         %h2.secondary-text.text-center#retention Employee retention
         %p.text-center We know that good talent is hard to find thus we want to keep them
         .columns.large-6.text-center
@@ -146,13 +150,11 @@
           %p
             %b Employee of the month  
           %p
-            %b Enjoy the tour
-          %p
-            %b Bonus
+            %b Perfect performance bonus
             
         .columns.large-6.text-center 
           %p
-            %b Perfect performance bonus
+            %b Enjoy the tour
           %p
             %b Holiday referral
           %p
@@ -160,12 +162,14 @@
           %p
             %b Joynus board
       
-      .columns.large-5.large-pull-7
-        = image_tag 'Rains Money.jpg', :class => "imgg" 
+      
     
   .row
-    .box  
-      .columns.large-6.text-center 
+    .box
+      .columns.large-7.large-push-6.m-top3
+        = image_tag 'payroll.jpg', :class => "imgg" 
+    
+      .columns.large-6.large-pull-7.text-center 
         %h2.secondary-text Employee payroll
         %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
         
@@ -176,8 +180,7 @@
         %p
           %b Pay cards
       
-      .columns.large-6.m-top3
-        = image_tag 'payroll.jpg', :class => "imgg" 
+      
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'

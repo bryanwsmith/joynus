@@ -89,41 +89,41 @@
   / Service
   .row.m-bottom4
     .columns.large-4.text-center.p-right
-      .srvIcoSamsung
+      .srvIcoSamsung.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
         / a href="https://www.joynus.com"
         %i.icon-samsung
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
         / a href="https://www.joynus.com"
         %i.icon-kia
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
         / a href="https://www.joynus.com"
         %i.icon-lg
   .row
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
         / a href="https://www.joynus.com"
         %i.icon-hyundai
     .columns.large-4.text-center.p-right.m-top5
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
         / a href="https://www.joynus.com"
         %i.icon-posco
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
         / a href="https://www.joynus.com"
         %i.icon-tesla
   .row.m-top4{:style => "padding-bottom:5%;"}
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
         / a href="https://www.joynus.com"
         %i.icon-skc
     .columns.large-4.text-center.p-right.m-top5
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
         / a href="https://www.joynus.com"
         %i.icon-lotte
     .columns.large-4.text-center
-      .srvIco
+      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
         / a href="https://www.joynus.com"
         %i.icon-beaulieu
 / What we do content
@@ -167,8 +167,7 @@
     .row
       .columns.xlarge-6.xlarge-offset-6
         .home-section-img.mb-
-          %img{ data: { interchange:"[(small)], [(medium)], [(large)]" } }
-
+          
           = image_tag('section-4.jpg')
         .animated-text
           %h2= t 'home.employers-header'

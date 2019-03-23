@@ -21,9 +21,10 @@
       display: inline-block;
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: rem-calc(70);
         margin: 0;
+        display: inline-block;
       }
     }
 
@@ -46,7 +47,7 @@
         a {
           color: $primary-color;
           display: block;
-          font-size: $paragraph-font-size;
+          font-size: rem-calc(19);
           padding-left: rem-calc(10);
           padding-right: rem-calc(10);
 
@@ -88,6 +89,9 @@
     line-height: rem-calc(70);
     float: right;
   }
+  
+  
+  
 }
 
 @media only screen and (min-width:320px) {}

@@ -5,7 +5,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 65%;
   position: relative;
   margin: auto;
 }
@@ -40,7 +40,7 @@ img {vertical-align: middle;}
 .stext > p{
   background:rgba(26, 26, 26, 0.6);
   color: #f2f2f2;
-  font-size: 19px;
+  font-size: 22px;
   padding: 8px 12px;
   position: absolute;
   bottom: 20%;
@@ -114,8 +114,21 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 1980px){
+  #staff{
+   p{font-size:20px;}
+   h2{font-size: $h2-font-size;}
+   
+ } 
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 480px) {
+  #staff{
+   p{font-size:17px;}
+   h2{font-size:30px;}
+ } 
+  
   .prev, .next {font-size: 11px}
   
   .stext > p{

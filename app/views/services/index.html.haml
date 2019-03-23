@@ -46,37 +46,41 @@
             
   %section
     %h2.secondary-text.text-center.m-top3 Staffing &amp; recruiting
-    .row.box.m-top3
-      .columns.large-4.text-center
-        .specialcontainer
-          %a{:href => "/staff"}= image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
-
-          .middle
+    .row
+      .box.m-top3
+        .columns.large-4.text-center
+          .specialcontainer
             %a{:href => "/staff"}
-              %p.text Staffing process
-      .columns.large-5
-        %h2.text-center.secondary-text Staffing
-        %p
-          We provide a complete range of job placements with the appropriate skillsets our clients require.
-          You will operate on your schedule so that you may be at ease with a pleasant overall experience.
-          We are dedicated team of professionals who love their work and because of this,
-          we repeatedly exceed our customer's expectations for every single one of our clients.
-          %a{:href => "/staff"}Learn more
-    .row.box.m-top3
-      .columns.large-4.text-center
-        .specialcontainer
-          %a{:href => "/recruit"}= image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
-
-          .middle
+              = image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
+  
+            .middle
+              %a{:href => "/staff"}
+                %p.text Staffing process
+        .columns.large-5
+          %h2.text-center.secondary-text Staffing
+          %p
+            We provide a complete range of job placements with the appropriate skillsets our clients require.
+            You will operate on your schedule so that you may be at ease with a pleasant overall experience.
+            We are dedicated team of professionals who love their work and because of this,
+            we repeatedly exceed our customer's expectations for every single one of our clients.
+            %a{:href => "/staff"}Learn more
+    .row
+      .box.m-top3
+        .columns.large-4.text-center
+          .specialcontainer
             %a{:href => "/recruit"}
-              %p.text Recruiting process
-      .columns.large-5
-        %h2.text-center.secondary-text Recruiting
-        %p
-          We present you with potential candidate who will be a permanent position in your organization.
-          Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
-          After we send you candidates who match your needs, you interview them and make a decision.
-          %a{:href => "/recruit"} Learn more
+              = image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
+  
+            .middle
+              %a{:href => "/recruit"}
+                %p.text Recruiting process
+        .columns.large-5
+          %h2.text-center.secondary-text Recruiting
+          %p
+            We present you with potential candidate who will be a permanent position in your organization.
+            Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
+            After we send you candidates who match your needs, you interview them and make a decision.
+            %a{:href => "/recruit"} Learn more
   %section.wwdContent3
     %section#bpo
       .row

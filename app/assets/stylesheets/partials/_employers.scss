@@ -81,9 +81,22 @@
   }
 }
 
-
-
-
+@media only screen and (min-width: rem-calc(360)) {
+   #employers{
+     .feature-section{
+       height:230px;
+     }
+     
+     p{
+     font-size:17px;
+   }
+   
+   h2{
+      font-size:30px;
+    }
+     
+   }
+}
 // Small screens
 @media only screen and (min-width: rem-calc(480)) {
   #employers {
@@ -103,6 +116,9 @@
       h2 {font-size:40px;
       }
     }
+    
+    
+    
   }
 }
 
@@ -111,6 +127,13 @@
   #employers {
     .companies ul li { width: 20%; }
     .employer-section-img img { width: 100%; }
+    p {
+      font-size: 20px;
+    }
+    
+    h2{
+      font-size: $h2-font-size;
+    }
     
   }
 }
@@ -121,6 +144,7 @@
 
     section.feature-section{
       h1 { margin-top:10px;}
+      height:1100px;
     }
     
     section.content-section {
@@ -200,6 +224,23 @@
 
 @media all and (max-width:480px) {
   
+ 
+ h1{
+   font-size: rem-calc(52);
+ }
+ 
+ h2{
+   font-size: rem-calc(38);
+ }   
+ h3{
+   font-size: rem-calc(23);
+ }   
+ h4{
+   font-size: rem-calc(20);
+ }   
+ h5{
+   font-size: rem-calc(17);
+ }   
 
 
 .srvIco3 i{

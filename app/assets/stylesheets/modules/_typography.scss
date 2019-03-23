@@ -90,7 +90,7 @@ h2 {
    align-items:center;
    justify-content:center; 
    padding:1em;
-   
+   margin: 5% 0% 5% 0%;
 }
 
 
@@ -98,10 +98,19 @@ h2 {
 
 
 .imgg{
+   height:500px;
+   width:auto;
+   padding:1em;
+   border-radius:50px;
+   margin: 5% 0% 5% 0%;
+}
+
+.imggg{
    height:400px;
    width:auto;
    padding:1em;
    border-radius:50px;
+   margin:auto;
 }
 
 .img0{
@@ -134,7 +143,13 @@ h2 {
     width:220px;
 }
 
-
+.img-logo{
+   height:63px;
+   padding:5px 15px 0 0;
+   
+   display: inline-block;
+ 
+}
 
 /*
 .dropbtn {
@@ -380,7 +395,8 @@ h2 {
     
     .imgg{height:300px;}
  
- 
+    .imggg{height:300px;}
+    
 .wwdContent5{
     
 	min-height: 400px;

@@ -6,7 +6,7 @@
 
 %section.feature-section.no-spacing.m-top-n
 
-  = video_tag "Videos.mp4", :width => "100%", :height => "1100px",  :autoplay => true, :loop => true, class: "video" "myVideo"
+  = video_tag "Videos.mp4", :width => "100%", :height =>"100%",   :autoplay => true, :loop => true, class: "video" "myVideo"
   
   .content_on_BG.text-center.animated.fadeInDown
     %h1 We deliver more than you expected
@@ -20,14 +20,11 @@
    
 %section
   .row
-    %h1.secondary-text.text-center Why Joynus?
-  
-  .row
-  
+    %h2.secondary-text.text-center Why Joynus?
     .box  
-      .columns.large-6.div{"data-aos" => "fade-up-right", "data-aos-duration" => "2000"}
-        = image_tag 'Question.jpg', :class => "imgg"
-      .columns.large-7.div{"data-aos" => "fade-down-left", "data-aos-duration" => "2000"}
+      .columns.large-6.div{"data-aos" => "fade-down-right", "data-aos-duration" => "2000"}
+        = image_tag 'Question.jpg', :class => "imggg"
+      .columns.large-7.div{"data-aos" => "fade-up-right", "data-aos-duration" => "2000"}
 
         
         %h5
@@ -50,46 +47,46 @@
         .srvIco3
           %i.icon-magic
         .srvDet
-          %h2 Fill talent
+          %h3 Fill talent
     .m-top3.columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
       %a{:href => "/staff#compliance"}
         .srvIco3
           %i.icon-award
         .srvDet
-          %h2 Recognition & award  
+          %h3 Recognition & award  
     .m-top3.columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
       %a{:href => "/staff#compliance"}
         .srvIco3
           %i.icon-search
         .srvDet
-          %h2 Compliance  
+          %h3 Compliance  
   .row.m-top3
     .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
       %a{:href => "/services#consultation"}
         .srvIco3
           %i.icon-chart-bar
         .srvDet
-          %h2 Market analysis  
+          %h3 Market analysis  
     .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
       %a{:href => "/services#bpo"}
         .srvIco3
           %i.icon-globe
         .srvDet
-          %h2 Outsourcing  
+          %h3 Outsourcing  
     .columns.large-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
       %a{:href => "#save"}    
         .srvIco3
           %i.icon-money
         .srvDet
-          %h2 Tax saving
+          %h3 Tax saving
 / What we do content  
 
 %section#save
   .row
     .box  
-      .columns.large-6
+      .columns.large-6.div{"data-aos" => "fade-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
         = image_tag 'convenience.jpg', :class => "imgg"
-      .columns.large-6.text-center
+      .columns.large-6.text-center.div{"data-aos" => "fade-right","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
         %h2.secondary-text Convenience
         /%p.text-center Stay in comfortable. Joynus will take care of all your needs
         
@@ -110,64 +107,70 @@
         
   .row
     .box  
-      .columns.large-7.large-push-6
+      .columns.large-7.large-push-6.div{"data-aos" => "fade-up","data-aos-easing"=>"linear", "data-aos-duration" => "1200", "data-aos-anchor-placement"=>"top-bottom"}
         = image_tag 'save.jpg', :class => "imgg" 
       
-      .columns.large-6.large-pull-7
+      .columns.large-6.large-pull-7.div{"data-aos" => "fade-up","data-aos-easing"=>"linear", "data-aos-duration" => "1200", "data-aos-anchor-placement"=>"top-bottom"}
         %h2.secondary-text.text-center#retention Save money
         /%p.text-center Work with us and Save money
         .columns.large-6.text-center
           
           %p
             %b Worker's comp<br>
-            Loss prevention <br>&<br> loss control services
           %p
-            %b WOTC
+            %b Loss prevention <br>
+          %p
+            %b Loss control services<br>
+             
+          
         .columns.large-6.text-center    
           %p
             %b Employee promotion
           %p
             %b Paid time off  
-  
+          %p
+            %b WOTC
   .row
     .box  
-      .columns.large-6.m-top3
+      .columns.large-6.m-top3.div{"data-aos" => "fade-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
         = image_tag 'responsive.jpg', :class => "imgg" 
         
-      .columns.large-6.text-center 
+      .columns.large-6.text-center.div{"data-aos" => "fade-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"} 
         %h2.secondary-text Responsive
-        %h5  Clients don't have to call our main number, you will have a direct access to account manager
+        %p  Clients don't have to call our main number, you will have a direct access to account manager
         
         %p
           %b Site supervisor
         %p
           %b 
             Unload your work<br>
-            %a{:href => "#save"}see convenience
+            
         
 
 
   
   
-.row.box#selectivescreening
-  .columns.large-7.large-push-6
-    =image_tag 'selectivescreening.jpg', :class => "imgg"
-  .columns.large-6.large-pull-7  
-    .w3-container
-      .row.text-center
-        %h2.secondary-text Selective screening
-        
-        %p
-          %b Sourcing
-          
-        %p
-          %b Identification
-          
-        %p
-          %b Strategy
-        
-        %b
-          %a{:onclick => "document.getElementById('id01').style.display='block'"} Learn more
+  .row
+    .box#selectivescreening
+      .columns.large-7.large-push-6.div{"data-aos" => "fade-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+        =image_tag 'selectivescreening.jpg', :class => "imggg"
+      .columns.large-6.large-pull-6.div{"data-aos" => "fade-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}  
+        .w3-container
+          .row.text-center
+            %h2.secondary-text Selective screening
+            
+            %p
+              %b Sourcing
+              
+            %p
+              %b Identification
+              
+            %p
+              %b Strategy
+            
+            %h5
+              %b
+                %a{:onclick => "document.getElementById('id01').style.display='block'"} Learn more
       #id01.w3-modal
         .w3-modal-content.w3-card-4.w3-animate-zoom
           %header.w3-container.w3-blue
@@ -251,7 +254,8 @@
   %h2.secondary-text.text-center.m-top3 How it works
   %p.text-center 
     Outsourcing business area selection 
-    %a{:href => "/services#bpo"} Learn more
+    %b
+      %a{:href => "/services#bpo"} Learn more
   .row.m-top3
     .columns.large-4.text-center
       %h3.secondary-text 1. Personnel management
