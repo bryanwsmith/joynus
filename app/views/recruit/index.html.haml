@@ -8,29 +8,35 @@
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     .feature-container
-      %img{ data: { interchange:"[#{asset_path('recruit-bg-mobile.jpg')}, (small)], [#{asset_path('recruit-bg-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg.jpg')}, (large)]" } }
+      %img{ data: { interchange:"[#{asset_path('recruit-bg22-mobile.jpg')}, (small)], [#{asset_path('recruit-bg22-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg2.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown
-          Great vision without great people is irrelevant
+          Right talents equal to the growth of company
+          /Great vision without great people is irrelevant
         
 
 .row
-  .columns.large-12
+  .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
     %h2.text-center.secondary-text.m-top3
       Direct hire
-    
-    %b What is it?
     %p
-      Direct hire positions are permanent, usually full time positions with benefits. A direct hire position is one in which the client company utilizes 
+      %b What is it?
+    
+      <br>Direct hire positions are permanent, usually full time positions with benefits. A direct hire position is one in which the client company utilizes 
       the staffing company to find the talent, then hires them directly. A candidate offered a direct hire position is not an employee of the staffing company, 
       but goes directly on the client company payroll
     
-    %b How it works?
     %p 
-      We present you with potential candidate who will be a permanent position in your organization. You interview them and make a decision.
+      %b How it works?
+      <br>We present you with potential candidate who will be a permanent position in your organization. You interview them and make a decision.
       Then, you pay us fee, percentage of the annual salary of the person hired
-    
-%iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "800", :src => "https://www.youtube.com/embed/6rOsQDVGgD0?rel=0", :width => "100%"}
+
+
+%a#play-video.video-play-button{:href => "#"}
+  %span
+#video-overlay.video-overlay
+  %a.video-overlay-close ×
+
     
     
 .row
@@ -110,7 +116,7 @@
 .row
   .box  
     .columns.large-6.text-center 
-      %h2.secondary-text Employee payroll
+      %h2.secondary-text Job Offer Coordination
       %p  
         Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
         an acceptance of an offer that both parties will be happy to sign on to

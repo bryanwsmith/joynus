@@ -65,13 +65,9 @@
 
 @media only screen and (min-width: rem-calc(360)) {
  #home{
-   p{
-     font-size:17px;
-   }
+   p{font-size:17px; }
    
-   h2{
-      font-size:30px;
-    }
+   h2{font-size:30px;}
    
  } 
 } 
@@ -103,13 +99,9 @@
   #home {
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
-    p {
-      font-size: 20px;
-    }
+    p { font-size: 20px;}
     
-    h2{
-      font-size: $h2-font-size;
-    }
+    h2{font-size: $h2-font-size;}
     
     
     .wwdContent2:before{

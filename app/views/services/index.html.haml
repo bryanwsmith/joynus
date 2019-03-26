@@ -7,7 +7,7 @@
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container
-        %img{ data: { interchange:"[#{asset_path('services-bg-mobile.jpg')}, (small)], [#{asset_path('services-bg-mobile.jpg')}, (medium)], [#{asset_path('services-bg.jpg')}, (large)]" } }
+        %img{ data: { interchange:"[#{asset_path('services-bg-mobile.jpg')}, (small)], [#{asset_path('services-bg-mobile.jpg')}, (medium)], [#{asset_path('service-bg.jpg')}, (large)]" } }
 
 
         .feature-text
@@ -62,8 +62,9 @@
             We provide a complete range of job placements with the appropriate skillsets our clients require.
             You will operate on your schedule so that you may be at ease with a pleasant overall experience.
             We are dedicated team of professionals who love their work and because of this,
-            we repeatedly exceed our customer's expectations for every single one of our clients.
-            %a{:href => "/staff"}Learn more
+            we repeatedly exceed our customer's expectations for every single one of our clients.<br>
+            %b
+              %a{:href => "/staff"}Learn more
     .row
       .box.m-top3
         .columns.large-4.text-center
@@ -80,75 +81,92 @@
             We present you with potential candidate who will be a permanent position in your organization.
             Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
             After we send you candidates who match your needs, you interview them and make a decision.
-            %a{:href => "/recruit"} Learn more
-  %section.wwdContent3
-    %section#bpo
-      .row
-        .columns.large-12
-          %h2.text-center.secondary-text
-            Business process outsourcing(BPO)
-      .row
-        .columns.large-12.text-center
-          %p
-            As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients.
-            %br/
-            What is back office operation? Call us and we'll tell you #{link_to 'Contact us', contact_index_path}
-    %section
-      .row
-        .columns.large-12
-          .columns.large-6
-            %h2.text-center.secondary-text What is BPO?
-            %p Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
-            %p Provide benefits and solutions to customers by taking on operation and responsibility of their business related process
-          .columns.large-6
-            %h2.text-center.secondary-text Why use BPO?
-            %p With high uncertainty and a rapidly changing world outsourcing is survival strategy to stay competitive and maintain competitive advantage
-            %p Joynus BPO is the key to your outsource contract management so you can maximize your core business output
-            %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
+            %b
+              %a{:href => "/recruit"} Learn more
+            
+  
+
+            
+            
+            
+  
+  %section#bpo.wwdContent3
+    .row
+      .box
+        .columns.large-5.large-push-7
+          =image_tag 'bpo.png', :class => "imggg"
+        .columns.large-7.large-pull-5  
+        
+          .row
+            %h2.text-center.secondary-text
+              Business Process Outsourcing
+            .columns.large-12
+              %p 
+                As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients. 
+                What is back office operation? Call us and we'll tell you Contact us 
+                %b #{link_to 'Contact us', contact_index_path}
+     
+   
+    .row
+      .columns.large-12
+        .columns.large-6
+          %h2.text-center.secondary-text What is BPO?
+          %p Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
+          %p Provide benefits and solutions to customers by taking on operation and responsibility of their business related process
+        .columns.large-6
+          %h2.text-center.secondary-text Why use BPO?
+          %p With high uncertainty and a rapidly changing world outsourcing is survival strategy to stay competitive and maintain competitive advantage
+          %p Joynus BPO is the key to your outsource contract management so you can maximize your core business output
+          %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
 
 
 
 
-%section.wwdContent4
+
   %section#consultation
     .row
       .columns.large-12
         %h2.secondary-text.text-center Consultation
-        .columns.large-5
-          %p
-            New to the area or industry?
-            %br
+        .box
+          .columns.large-6
+            %p
+              %b
+                New to the area or industry?
+              %br
               We have connections with firms of all sizes and industries and a range of diverse talent nation wide
               to provide insight into industry standards, including compensation information
-        .columns.large-5
+          
+          .columns.large-6
+            =image_tag 'new.png', :class => "img0"    
+        .columns.large-12
           %p
             Our trained team will utilize strategic marketing tools, including mass communication compaigns and job boards, and connections within
             our extensive network to target the talent pool that would be the best fit for your next hire
     %section
       .row
         .columns.large-4.text-center
-          %p.secondary-text.text-center Targeted advertising & access to our network
+          %h4.secondary-text.text-center Targeted advertising 
           .srvIco2
             %i.icon-target
         .columns.large-4.text-center
-          %p.secondary-text.text-center Localized demographic
+          %h4.secondary-text.text-center Localized demographic
           .srvIco1
             %i.icon-chart-pie
         .columns.large-4.text-center
-          %p.secondary-text.text-center Hiring foreign nationals
+          %h4.secondary-text.text-center Hiring foreign nationals
           .srvIco1
             %i.icon-users
       .row.m-top3
         .columns.large-4.text-center
-          %p.secondary-text.text-center Competitor analysis
+          %h4.secondary-text.text-center Competitor analysis
           .srvIco1
             %i.icon-chart-bar
         .columns.large-4.text-center
-          %p.secondary-text.text-center Outsourcing
+          %h4.secondary-text.text-center Outsourcing
           .srvIco1
             %i.icon-arrows-cw
         .columns.large-4.text-center
-          %p.secondary-text.text-center Strategic marketing
+          %h4.secondary-text.text-center Strategic marketing
           .srvIco1
             %i.icon-chart-line
 .button-container.text-center

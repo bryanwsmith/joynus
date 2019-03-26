@@ -12,13 +12,24 @@
 }
 
 @media only screen and (min-width:320px) {}
-
+#about{
+   p{font-size:17px; }
+   
+   h2{font-size:30px;}
+   
+ } 
 @media only screen and (min-width:480px) {
   .button-container { text-align: left; }
 }
 
 @media only screen and (min-width:768px) {
   .door-img { width: auto; }
+  #about{
+   p{font-size:20px; }
+   
+   h2{font-size:$h2-font-size;}
+   
+ } 
 }
 
 @media only screen and (min-width:1024px) {}

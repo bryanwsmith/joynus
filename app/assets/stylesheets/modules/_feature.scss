@@ -93,8 +93,8 @@
   }
 }
 
-@media only screen and (min-width:320px) {}
-  #employers .feature-section .feature .feature-container {  padding-bottom: 2%;
+@media only screen and (min-width:320px) {
+  #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
   }
 @media only screen and (min-width:480px) {
   .feature-section .feature .feature-container {
@@ -107,7 +107,11 @@
   #home .feature-container { padding-bottom: 39.85%; }
   #employers .feature-container { padding-bottom: 4.85%; }
   #staff .feature-container { padding-bottom: 47.85%; }
- 
+  #recruit .feature-container { padding-bottom: 47.85%; }
+  #services .feature-container { padding-bottom: 47.85%; }
+  #posts .feature-container { padding-bottom: 47.85%; }
+  #about{ .feature-container { padding-bottom: 47.85%; }  } 
+  #contact{ .feature-container {padding-bottom: 47.85%;}  }
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }

@@ -27,7 +27,7 @@
       .columns.large-7.div{"data-aos" => "fade-up-right", "data-aos-duration" => "2000"}
 
         
-        %h5
+        %p
           That’s easy, because we have your best interest at heart. Unlike some of the frustrations you may have experienced with your previous staffing companies you have worked with,
           we prevent this by understanding the dynamics of your business with a simple concept that staffing is progressive and ongoing.
           We continuously provide you with the workforce needed for your business to operate successfully with minimal defect.
@@ -130,6 +130,7 @@
             %b Paid time off  
           %p
             %b WOTC
+%section            
   .row
     .box  
       .columns.large-6.m-top3.div{"data-aos" => "fade-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
@@ -140,7 +141,7 @@
         %p  Clients don't have to call our main number, you will have a direct access to account manager
         
         %p
-          %b Site supervisor
+          %b Site Coordinator
         %p
           %b 
             Unload your work<br>
@@ -168,7 +169,7 @@
             %p
               %b Strategy
             
-            %h5
+            %p
               %b
                 %a{:onclick => "document.getElementById('id01').style.display='block'"} Learn more
       #id01.w3-modal
@@ -334,19 +335,38 @@
           
 %section#industry.content-section
   .row
-    .columns.xlarge-6
-      .industry-img.m-right3.m-top2
-        = image_tag('service.png')
-    .columns.xlarge-6
+    .columns.xlarge-12
       %h2.text-center.secondary-text
         Services
-      %h5
+    .columns.xlarge-12
+      %p
         Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
         We have our own guidelines on what Quality means.
         We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
-        %a{:alt => "services", :href => "/services"} Learn more
+        %b
+          %a{:alt => "services", :href => "/services"} Learn more
+  .row
+    .box.m-top3  
+      .columns.large-6.text-center
         
         
+        %a{:href => "/staff"}
+          = image_tag 'staff1.png', :alt => 'Staffing', :class => "imggg"
+        %h2.secondary-text Staffing 
+        %p
+          We provide a complete range of job placements <br>
+          %b.text-center
+            %a{:href => "/staff"} Learn More
+              
+      .columns.large-6.text-center    
+        
+        %a{:href => "/recruit"}
+          = image_tag 'recruit.png', :alt => 'Recruiting', :class => "imggg"
+        %h2.secondary-text Direct hire
+        %p
+          We present you with potential candidate<br>
+          %b.text-center
+            %a{:href => "/recruit"} Learn More
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'

@@ -78,10 +78,12 @@
       %span.dot{:onclick => "currentSlide(4)"}
       %span.dot{:onclick => "currentSlide(5)"}
       
+
+
       
 %section
-  .row
-    .columns.large-12
+  .row        
+    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
       
       %h2.text-center.secondary-text Temp, Temp to hire &amp; Short term
       %p
@@ -106,8 +108,12 @@
 
 %section#compliance
   .row
-    .box  
-      .columns.large-6
+    .box
+      
+      .columns.large-6.large-push-6
+        = image_tag 'compliance.jpg', :class => "imgg" 
+    
+      .columns.large-6.large-pull-6
         %h2.secondary-text.text-center Compliance
         %p.text-center Joynus conducts pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
         .columns.large-6.text-center
@@ -129,18 +135,17 @@
           %p
             %b Reference verification
       
-      .columns.large-6
-        = image_tag 'compliance.jpg', :class => "imgg" 
+      
         
         
   .row
     .box
-      .columns.large-6
+      .columns.large-7
         = image_tag 'Rains Money.jpg', :class => "imgg" 
     
       .columns.large-7
         %h2.secondary-text.text-center#retention Employee retention
-        %p.text-center We know that good talent is hard to find thus we want to keep them
+        %p.text-center Good talent is hard to find thus we want to keep them
         .columns.large-6.text-center
           
           %p
@@ -166,10 +171,10 @@
     
   .row
     .box
-      .columns.large-7.large-push-6.m-top3
+      .columns.large-6.large-push-6.m-top3
         = image_tag 'payroll.jpg', :class => "imgg" 
     
-      .columns.large-6.large-pull-7.text-center 
+      .columns.large-6.large-pull-6.text-center 
         %h2.secondary-text Employee payroll
         %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
         
