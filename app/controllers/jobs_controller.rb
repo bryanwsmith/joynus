@@ -2,8 +2,9 @@ class JobsController < ApplicationController
   before_filter :authorize, only: [:approve, :edit, :update, :destroy]
 
   def index
-    puts "------>>>> #{I18n.locale}"
-    @jobs = Job.where.not(date_approved: nil)
+=begin    puts "------>>>> #{I18n.locale}"
+=end    @jobs = Job.where.not(date_approved: nil)
+    redirect_to "https://app.employstream.com/jobs/joynus/search/"
   end
 
   def create
