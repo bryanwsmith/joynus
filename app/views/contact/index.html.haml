@@ -30,57 +30,66 @@
     .columns.large-12
       %h2.text-center.primary-text.mb--= t 'contact.office-locations'
 
+
   #locations
     .row
-      .columns.large-12.large
-        .row
+      
           
-          .columns.large-2
-            %h4.text-thin.primary-text Norcross
-            %ul.no-bullet
-              %li.small 4855 Peachtree Industrial Blvd. Suit #220
-              %li.small Norcross, GA 30092
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.fax-label')}: 678-369-7222
-              %li.small #{t('contact.phone-label')}: 678-248-5833
-          .columns.large-2
-            %h4.text-thin.primary-text LaGrange
-            %ul.no-bullet
-              %li.small 1506 Whitesville Street
-              %li.small LaGrange, GA 30240
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.fax-label')}: 706-443-5186
-              %li.small #{t('contact.phone-label')}: 706-443-5184
-          .columns.large-2
-            %h4.text-thin.primary-text Opelika
-            %ul.no-bullet
-              %li.small 2204 B Gateway Drive
-              %li.small Opelika, AL 36801
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.fax-label')}: 334-737-6552
-              %li.small #{t('contact.phone-label')}: 334-737-6550
-          .columns.large-2
-            %h4.text-thin.primary-text Greenville
-            %ul.no-bullet
-              %li.small 125 W Commerce Street  
-              %li.small Greenville, AL 36037
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.phone-label')}: 706-302-5099
-          .columns.large-2
-            %h4.text-thin.primary-text Conyers
-            %ul.no-bullet
-              %li.small 1775 Parker Rd SE Building C Suite 201,  
-              %li.small Conyers, GA 30094
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.phone-label')}: 678-487-3782 
-          .columns.large-2
-            %h4.text-thin.primary-text Lathrop
-            %ul.no-bullet 
-              %li.small 400 D’Arcy Parkway
-              %li.small Lathrop, California 95330
-              %li.small #{mail_to 'job@joynus.com'}
-              %li.small #{t('contact.fax-label')}: 334-737-6552
-              %li.small #{t('contact.phone-label')}: 334-425-5368
+      .columns.large-2
+        %h4.text-thin.primary-text Norcross
+        %ul.no-bullet
+          %li.small 4855 Peachtree Industrial Blvd. Suite #220
+          %li.small Norcross, GA 30092
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'norcross@joynus.com'}
+          %li.small #{t('contact.fax-label')}: 678-369-7222
+          %li.small #{t('contact.phone-label')}: 678-248-5833
+      .columns.large-2
+        %h4.text-thin.primary-text LaGrange
+        %ul.no-bullet
+          %li.small 1506 Whitesville St.
+          %li.small LaGrange, GA 30240
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'lagrange@joynus.com'}
+          %li.small #{t('contact.fax-label')}: 706-443-5186
+          %li.small #{t('contact.phone-label')}: 706-443-5184
+      .columns.large-2
+        %h4.text-thin.primary-text Dalton
+        %ul.no-bullet 
+          %li.small 510 N Glenwood Ave.
+          %li.small Dalton, GA 30721
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'dalton@joynus.com'}
+          %li.small #{t('contact.phone-label')}: 706-529-6339 
+    
+      .columns.large-2
+        %h4.text-thin.primary-text Opelika
+        %ul.no-bullet
+          %li.small 2204 B Gateway Dr.
+          %li.small Opelika, AL 36801
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'opelika@joynus.com'}
+          %li.small #{t('contact.fax-label')}: 334-737-6552
+          %li.small #{t('contact.phone-label')}: 334-737-6550
+      .columns.large-2
+        %h4.text-thin.primary-text Greenville
+        %ul.no-bullet
+          %li.small 125 W Commerce St. 
+          %li.small Greenville, AL 36037
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'greenville@joynus.com'}
+          %li.small #{t('contact.phone-label')}: 334-737-6551
+      
+      .columns.large-2
+        %h4.text-thin.primary-text Manteca
+        %ul.no-bullet 
+          %li.small 1439 Historical Plaza Way
+          %li.small Manteca, CA 95336
+          /%li.small #{mail_to 'job@joynus.com'}
+          %li.small #{mail_to 'manteca@joynus.com'}
+          %li.small #{t('contact.phone-label')}: 209-213-7803
+      
+
 
 
 /%section#resources

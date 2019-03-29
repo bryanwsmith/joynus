@@ -12,7 +12,7 @@
   
           
           
-  .row
+  .row#process
     .columns.large-12
       %h2.text-center.secondary-text.m-top3
         Staffing process       
@@ -56,8 +56,9 @@
         .stext
           %p
             Joynus sends in the right talent to your business. This is where orientation comes in.<br>
-            We educate our applicants on our rules and regulations
-          
+            We educate our applicants on our rules and regulations<br>
+            %b
+              %a{:href => "/staff#compliance"} Learn more
            
       .mySlides.fade
         .numbertext
@@ -85,7 +86,7 @@
   .row        
     .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
       
-      %h2.text-center.secondary-text Temp, Temp to hire &amp; Short term
+      %h2.text-center.secondary-text What are Temp, Temp to hire &amp; Short term?
       %p
         %b Temp -
         Temporary employment is an ideal solution for unpredictable workloads, project work, seasonal peaks, and other limited-term needs, such as a leave of absence. Temp positions typically have a set timeframe. Through all assignments, the talent is employed by the staffing firm
@@ -115,12 +116,14 @@
     
       .columns.large-6.large-pull-6
         %h2.secondary-text.text-center Compliance
-        %p.text-center Joynus conducts pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
+        %p.text-center Joynus conducts safe work practices, pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
         .columns.large-6.text-center
           %p
+            %a{:href=>'/employers'}
+              %b Safety<br>
             %b Drug screen <br>
             10 panel drug screen<br>
-            Alcohol test
+            
           %p
             %b Criminal history<br>
             Nation, state & county
@@ -138,7 +141,7 @@
       
         
         
-  .row
+  .row#retention
     .box
       .columns.large-7
         = image_tag 'Rains Money.jpg', :class => "imgg" 
