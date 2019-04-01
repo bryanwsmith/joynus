@@ -12,7 +12,7 @@ Rails.application.configure do
       :port                 => 587,
       :domain               => "gmail.com",
       :user_name            => "support@joynus.com",
-      :password             => "Jns1212!",
+      :password             => "R2D2Force1!",
       :authentication       => :plain,
       :enable_starttls_auto => true
   }

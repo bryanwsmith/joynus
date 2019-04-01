@@ -123,8 +123,8 @@
     //background: rgba(51, 51, 51, 0.8); //grey
     //background: rgb(247, 249, 243); //original
     //background: rgba(0, 204, 153,0.8);
-    
-    background-color:rgb(233, 237, 222);
+    background-color: rgb(146, 217, 239);
+    //background-color:rgb(233, 237, 222);
     content: "";
     height: 80%;
     position: absolute;
@@ -214,9 +214,8 @@
 
 .sleft {
     left: 0;
-    background: image-url("jobseeker1.jpg") no-repeat;
-    
-    background-size: cover;
+    background: image-url("jobseeker.jpg") no-repeat;
+    background-size:cover;
 }
 
 

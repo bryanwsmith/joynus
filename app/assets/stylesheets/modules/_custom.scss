@@ -1,4 +1,6 @@
 
+
+
 .wwdInner{
     display:block;
     align-items:center;
@@ -8,7 +10,7 @@
 }
 
 .srvIco i {
-    color: #48522d;
+    color: $error-color ;
     display: inline-block;
     font-size:50px;
     position: relative fixed;
@@ -38,7 +40,7 @@
 }
 
 .srvIco3 i {
-    color: #3399ff;
+    color: #75d1f0;
     display: inline-block;
     font-size:65px;
     position: relative fixed;
@@ -49,7 +51,7 @@
 }
 
 .srvIco3 i:hover {
-    color: #00e6ac;
+    color: #3399ff;
     display: inline-block;
     font-size:65px;
     position: relative fixed;
@@ -59,7 +61,7 @@
 }
 
 .srvIcoSamsung i {
-    color: #48522d;
+    color: $error-color ;
     display: inline-block;
     font-size:75px;
     position: relative fixed;
@@ -232,7 +234,7 @@ h2 {
 
 .iprocess {
     color: #000;
-    
+    font-family: "lato", "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
     font-size: 27px;
     position: relative;
     

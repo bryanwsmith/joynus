@@ -9,7 +9,7 @@
   main section {
     display: block;
 
-    &.light-color-bg { background: $info-color; }
+    &.light-color-bg { background: #d0eaf2; }
 
     &:not(.no-spacing){
       padding-top: rem-calc(20);
