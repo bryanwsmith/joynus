@@ -100,11 +100,17 @@
       
 %section
   .row
-    .columns.large-12.text-center
-      %h2.secondary-text Employee management system
-      %p
-        Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
-        <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
+    .box    
+      
+      
+    
+      .columns.large-6
+        = image_tag 'hr-management.png', :class => "imgg"
+      .columns.large-6
+        %h2.secondary-text Employee management
+        %p
+          Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
+          <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
         
 
 %section#compliance
@@ -118,38 +124,54 @@
         %h2.secondary-text.text-center Compliance
         %p.text-center Joynus conducts safe work practices, pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
         .columns.large-6.text-center
-          %p
-            %a{:href=>'/employers'}
-              %b Safety<br>
+          %a{:href=>'/employers'}
+            %p
+              %b Safety
+          %p.text-thin
             %b Drug screen <br>
+          
             10 panel drug screen<br>
-            
+          
           %p
-            %b Criminal history<br>
+            %b Criminal history <br>
+          
             Nation, state & county
-        
+            
+          
         .columns.large-6.text-center 
           %p
-            %b I-9 & E-verify<br>
-            Identity verification
-           
-          %p
             %b Education verification
+          
+          %p
+            %b I-9 & E-verify <br>
+          
+            Identity verification
+          
           %p
             %b Reference verification
       
       
         
-        
+%section        
   .row#retention
     .box
-      .columns.large-7
+      .columns.large-6
         = image_tag 'Rains Money.jpg', :class => "imgg" 
     
       .columns.large-7
         %h2.secondary-text.text-center#retention Employee retention
         %p.text-center Good talent is hard to find thus we want to keep them
-        .columns.large-6.text-center
+        .columns.large-4.text-center.large-offset-1
+          %p
+            %b Enjoy the tour
+          %p
+            %b Holiday referral
+          %p
+            %b Raffle Ticket
+          %p
+            %b Joynus board
+          
+        .columns.large-7.text-center
           
           %p
             %b Employee wellness analysis
@@ -160,18 +182,10 @@
           %p
             %b Perfect performance bonus
             
-        .columns.large-6.text-center 
-          %p
-            %b Enjoy the tour
-          %p
-            %b Holiday referral
-          %p
-            %b Raffle Ticket
-          %p
-            %b Joynus board
+       
       
       
-    
+%section    
   .row
     .box
       .columns.large-6.large-push-6.m-top3
@@ -179,15 +193,16 @@
     
       .columns.large-6.large-pull-6.text-center 
         %h2.secondary-text Employee payroll
-        %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
+        .columns.large-10.large-offset-1
+          %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
+        .columns.large-12
+          %p
+            %b Direct deposit<br>
+          %p
+            %b Paper checks<br>
+          %p
+            %b Pay cards
         
-        %p
-          %b Direct deposit<br>
-        %p
-          %b Paper checks<br>
-        %p
-          %b Pay cards
-      
       
 .button-container.text-center
   %h3{:style => "margin:30px"}
