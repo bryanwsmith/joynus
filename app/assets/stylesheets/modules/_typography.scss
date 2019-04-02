@@ -132,20 +132,20 @@ h2 {
 } 
 
 .img2{
-    height:150px;
-    width:auto;
+    height:auto;
+    width:180px;
     float:right;
     
 }
 
 .img3{
-    height:130px;
+    height:100px;
     width:auto;
 }
 
 .img4{
-    height:260px;
-    width:220px;
+    height:125px;
+    width:auto;
 }
 
 .img-logo{
@@ -387,9 +387,10 @@ h2 {
 
 @media all and (max-width:480px) {
 
-    .h1,.h2,.h3,.h4,.imgg,.img1,.img3 {display:block; margin:auto;}
+    .h1,.h2,.h3,.h4,.imgg,.img1 {display:block; margin:auto;}
     .img2 {display:block; margin:auto; float:none;}
-   
+    .img3 {display:block; margin:auto; height:80px;}
+    
         .box{
             display:block;
         }    

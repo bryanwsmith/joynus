@@ -51,7 +51,7 @@
         .columns.large-4.text-center
           .specialcontainer
             %a{:href => "/staff"}
-              = image_tag 'staff1.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
+              = image_tag 'staffing.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
   
             .middle
               %a{:href => "/staff"}
@@ -70,11 +70,11 @@
         .columns.large-4.text-center
           .specialcontainer
             %a{:href => "/recruit"}
-              = image_tag 'recruit.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
+              = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
   
             .middle
               %a{:href => "/recruit"}
-                %p.text Recruiting process
+                %p.textt Recruiting process
         .columns.large-5
           %h2.text-center.secondary-text Recruiting
           %p
@@ -91,22 +91,45 @@
             
   
   %section#bpo.wwdContent3
+    
+    
     .row
+      .columns.large-12
+        %h2.text-center.secondary-text
+          Business Process Outsourcing
       .box
-        .columns.large-5.large-push-7
+        .columns.large-5.large-offset-1
           =image_tag 'bpo.png', :class => "imggg"
-        .columns.large-7.large-pull-5  
+        .columns.large-6
         
           .row
-            %h2.text-center.secondary-text
-              Business Process Outsourcing
+            
             .columns.large-12
               %p 
                 As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients. 
-                What is back office operation? Call us and we'll tell you 
+                What is back office operation? <br>Call us and we'll tell you 
                 %b #{link_to 'Contact us', contact_index_path}
      
-   
+    
+    .row
+      .columns.large-12
+        %h2.text-center.secondary-text
+          Business Process Outsourcing
+      .box
+        .columns.large-5.large-offset-1
+          =image_tag 'bpo1.png', :class => "imggg"
+        .columns.large-6
+        
+          .row
+            
+            .columns.large-12
+              %p 
+                As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients. 
+                What is back office operation? <br>Call us and we'll tell you 
+                %b #{link_to 'Contact us', contact_index_path}
+     
+    
+    
     .row
       .columns.large-12
         .columns.large-6
@@ -120,16 +143,22 @@
           %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
 
   %section.wwdContent4
-    %h2.secondary-text.text-center.m-top3 How it works
-    %p.text-center 
-      Outsourcing business area selection 
-      %b
-        %a{:href => "/services#bpo"} Learn more
+  
+    .row
+      .columns.large-12
+        %h2.text-center.secondary-text
+          How it works
+        %p.text-center 
+          Outsourcing business area selection 
+          %b
+            %a{:href => "/services#bpo"} Learn more 
+  
+    
     .row.m-top3
       .columns.large-4.text-center
         %h3.secondary-text 1. Personnel management
         .specialcontainer1
-          = image_tag 'personnel.png', :alt => 'Personnel', :class => "imagee", :style => "width:100%"
+          = image_tag 'personnel.png', :alt => 'Personnel', :class => "imagee"
             
           .middle1
             %p.text1
@@ -141,7 +170,7 @@
       .columns.large-4.text-center
         %h3.secondary-text 2. Business management
         .specialcontainer1
-          = image_tag 'business.png', :alt => 'Business', :class => "imagee", :style => "width:100%"
+          = image_tag 'business.png', :alt => 'Business', :class => "imagee"
           .middle1
             %p.text1
               
@@ -153,7 +182,7 @@
       .columns.large-4.text-center
         %h3.secondary-text 3. Process management
         .specialcontainer1
-          = image_tag 'process.png', :alt => 'Process', :class => "imagee", :style => "width:100%"
+          = image_tag 'process.png', :alt => 'Process', :class => "imagee"
           .middle1
             %p.text1 
               
@@ -165,7 +194,7 @@
       .columns.large-4.text-center
         %h3.secondary-text 4. Facility management
         .specialcontainer1
-          = image_tag 'facility.png', :alt => 'Facility', :class => "imagee", :style => "width:100%"
+          = image_tag 'facility.png', :alt => 'Facility', :class => "imagee"
           
           .middle1
             %p.text1
@@ -177,7 +206,7 @@
       .columns.large-4.text-center
         %h3.secondary-text 5. Production management
         .specialcontainer1
-          = image_tag 'production.png', :alt => 'Production', :class => "imagee", :style => "width:100%"
+          = image_tag 'production.png', :alt => 'Production', :class => "imagee"
           .middle1
             %p.text1
               
@@ -188,7 +217,7 @@
       .columns.large-4.text-center
         %h3.secondary-text 6. Organization management
         .specialcontainer1
-          = image_tag 'organization.png', :alt => 'Organization', :class => "imagee", :style => "width:100%"
+          = image_tag 'organization.png', :alt => 'Organization', :class => "imagee"
           .middle1
             %p.text1 
               
@@ -196,7 +225,7 @@
               Sales & planning<br>
               Maintenance<br>
               Production & Logistics
-          
+        
 
 
 
@@ -206,6 +235,8 @@
         %h2.secondary-text.text-center Consultation
         .box
           .columns.large-6
+            =image_tag 'new.png', :class => "img0"  
+          .columns.large-6
             %p
               %b
                 New to the area or industry?
@@ -213,40 +244,44 @@
               We have connections with firms of all sizes and industries and a range of diverse talent nation wide
               to provide insight into industry standards, including compensation information
           
-          .columns.large-6
-            =image_tag 'new.png', :class => "img0"    
+            
         .columns.large-12
           %p
             Our trained team will utilize strategic marketing tools, including mass communication compaigns and job boards, and connections within
             our extensive network to target the talent pool that would be the best fit for your next hire
     %section
       .row
-        .columns.large-4.text-center
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
           %h4.secondary-text.text-center Targeted advertising 
           .srvIco2
-            %i.icon-target
-        .columns.large-4.text-center
+            %i
+              = image_tag 'TargetedAd.png', :class => 'img4'
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1000"}
           %h4.secondary-text.text-center Localized demographic
-          .srvIco1
-            %i.icon-chart-pie
-        .columns.large-4.text-center
+          .srvIco2
+            %i
+              = image_tag 'LocalDemograph.png', :class => 'img4'
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
           %h4.secondary-text.text-center Hiring foreign nationals
-          .srvIco1
-            %i.icon-users
+          .srvIco2
+            %i
+              = image_tag 'InternationalHiring.png', :class => 'img4'
       .row.m-top3
-        .columns.large-4.text-center
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
           %h4.secondary-text.text-center Competitor analysis
-          .srvIco1
-            %i.icon-chart-bar
-        .columns.large-4.text-center
+          .srvIco2
+            %i
+              = image_tag 'CompetitorAnalysis.png', :class => 'img4'
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1000"}
           %h4.secondary-text.text-center Outsourcing
-          .srvIco1
-            %i.icon-arrows-cw
-        .columns.large-4.text-center
+          .srvIco2
+            %i
+              = image_tag 'Outsourcing.png', :class => 'img4'
+        .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
           %h4.secondary-text.text-center Strategic marketing
-          .srvIco1
-            %i.icon-chart-line
-            
+          .srvIco2
+            %i
+              = image_tag 'StrategicMarketing.png', :class => 'img4'
             
             
 
