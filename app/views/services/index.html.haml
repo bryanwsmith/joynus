@@ -45,19 +45,22 @@
             
             
   %section
-    %h2.secondary-text.text-center.m-top3 Staffing &amp; recruiting
+    %h2.secondary-text.text-center.m-top3 Staffing & Recruiting
+    
+      
     .row
-      .box.m-top3
+      %h2.text-center.secondary-text.m-top1 Staffing
+      .box
         .columns.large-4.text-center
           .specialcontainer
             %a{:href => "/staff"}
-              = image_tag 'staffing.png', :alt => 'Staffing', :class => "imagee", :style => "width:100%"
+              = image_tag 'staffing.png', :alt => 'Staffing', :class => "imageee", :style => "width:100%"
   
             .middle
               %a{:href => "/staff"}
                 %p.text Staffing process
         .columns.large-5
-          %h2.text-center.secondary-text Staffing
+          
           %p
             We provide a complete range of job placements with the appropriate skillsets our clients require.
             You will operate on your schedule so that you may be at ease with a pleasant overall experience.
@@ -66,17 +69,18 @@
             %b
               %a{:href => "/staff"}Learn more
     .row
-      .box.m-top3
+      %h2.text-center.secondary-text.m-top1 Recruiting
+      .box
         .columns.large-4.text-center
           .specialcontainer
             %a{:href => "/recruit"}
-              = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imagee", :style => "width:100%"
+              = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imageee", :style => "width:100%"
   
             .middle
               %a{:href => "/recruit"}
                 %p.textt Recruiting process
         .columns.large-5
-          %h2.text-center.secondary-text Recruiting
+          
           %p
             We present you with potential candidate who will be a permanent position in your organization.
             Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
@@ -90,42 +94,23 @@
             
             
   
-  %section#bpo.wwdContent3
-    
-    
+  %section#bpo.wwdContent3.m-top1
     .row
       .columns.large-12
         %h2.text-center.secondary-text
           Business Process Outsourcing
       .box
-        .columns.large-5.large-offset-1
-          =image_tag 'bpo.png', :class => "imggg"
-        .columns.large-6
+        .columns.large-4.large-offset-1
+          .specialcontainer
+            =image_tag 'bpo1.png', :class => "imagee", :style => "width:100%"
+        .columns.large-5
         
           .row
             
             .columns.large-12
               %p 
                 As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients. 
-                What is back office operation? <br>Call us and we'll tell you 
-                %b #{link_to 'Contact us', contact_index_path}
-     
-    
-    .row
-      .columns.large-12
-        %h2.text-center.secondary-text
-          Business Process Outsourcing
-      .box
-        .columns.large-5.large-offset-1
-          =image_tag 'bpo1.png', :class => "imggg"
-        .columns.large-6
-        
-          .row
-            
-            .columns.large-12
-              %p 
-                As a business process outsourcing partner, Joynus provides customer experiences and back office operations for our clients. 
-                What is back office operation? <br>Call us and we'll tell you 
+                What is back office operation? &emsp;Call us and we'll tell you <br>
                 %b #{link_to 'Contact us', contact_index_path}
      
     
@@ -142,21 +127,21 @@
           %p Joynus BPO is the key to your outsource contract management so you can maximize your core business output
           %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
 
-  %section.wwdContent4
+  %section.wwdContent3.m-top1
   
-    .row
+    .row.m-top1
       .columns.large-12
         %h2.text-center.secondary-text
           How it works
         %p.text-center 
-          Outsourcing business area selection 
+          Outsourcing business area selection <br>
           %b
             %a{:href => "/services#bpo"} Learn more 
   
     
     .row.m-top3
       .columns.large-4.text-center
-        %h3.secondary-text 1. Personnel management
+        %h4.secondary-text 1. Personnel management
         .specialcontainer1
           = image_tag 'personnel.png', :alt => 'Personnel', :class => "imagee"
             
@@ -168,7 +153,7 @@
               DOL related<br>
               Benefit
       .columns.large-4.text-center
-        %h3.secondary-text 2. Business management
+        %h4.secondary-text 2. Business management
         .specialcontainer1
           = image_tag 'business.png', :alt => 'Business', :class => "imagee"
           .middle1
@@ -180,7 +165,7 @@
               Job training
                 
       .columns.large-4.text-center
-        %h3.secondary-text 3. Process management
+        %h4.secondary-text 3. Process management
         .specialcontainer1
           = image_tag 'process.png', :alt => 'Process', :class => "imagee"
           .middle1
@@ -192,7 +177,7 @@
               Inventory
     .row.m-top3
       .columns.large-4.text-center
-        %h3.secondary-text 4. Facility management
+        %h4.secondary-text 4. Facility management
         .specialcontainer1
           = image_tag 'facility.png', :alt => 'Facility', :class => "imagee"
           
@@ -204,7 +189,7 @@
               Preventive maintenance<br>
               Regular repairs
       .columns.large-4.text-center
-        %h3.secondary-text 5. Production management
+        %h4.secondary-text 5. Production management
         .specialcontainer1
           = image_tag 'production.png', :alt => 'Production', :class => "imagee"
           .middle1
@@ -215,7 +200,7 @@
               Inventory planning<br>
               Supply chain management
       .columns.large-4.text-center
-        %h3.secondary-text 6. Organization management
+        %h4.secondary-text 6. Organization management
         .specialcontainer1
           = image_tag 'organization.png', :alt => 'Organization', :class => "imagee"
           .middle1

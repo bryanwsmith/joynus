@@ -130,13 +130,26 @@ h2 {
 .imagee {
   opacity: 1;
   display: inline-block;
-  width: 85%;
+  width: 52%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-top:13%;
+  border-radius:30px;
+}
+
+.imageee {
+  opacity: 1;
+  display: inline-block;
+  width: 50%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   
   border-radius:30px;
 }
+
+
 
 .middle {
   transition: .5s ease .5s;
@@ -337,7 +350,8 @@ h2 {
   }
 }
   
-  
+
+ 
 
 .srvIco3 i:hover {
     color: #00e6ac;
