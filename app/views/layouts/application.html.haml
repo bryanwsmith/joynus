@@ -61,15 +61,8 @@
             %li.menu-item= active_link_to t('header.news'), posts_path
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
-            %li.menu-item.language-link
-              %button{ class: "#{locale}-selected language-dropdown", data: { dropdown: 'language-dropdown' }, aria: { expanded: 'false', controls: 'drop' } }
-              %ul#language-dropdown.f-dropdown.align-dropdown{ role: 'menu', tabindex: '-1', aria: { hidden: 'false' }, data: { dropdown: { content: '' } } }
-                .triangle
-                .triangle
-                %li= link_to "English", { locale: "en" }, class: 'en-link'
-                %li= link_to "한국어", { locale: "kr" }, class: 'kr-link'
-                %li= link_to "Espanol", { locale: "es" }, class: 'es-link'
-            %li.menu-item= link_to t('header.job'), "https://app.employstream.com/jobs/joynus/search/", class: 'button primary radius'
+            
+            %li.menu-item= link_to "Jobs", "https://app.employstream.com/jobs/joynus/search/", class: 'button primary radius'
             
             %li.menu-item= link_to t('header.Apply'), "https://app.employstream.com/profile/#/joynus/login?signup=true", class: 'button secondary radius'
             /%li.menu-item= link_to t('header.find-a-job'), "https://joy.aviontego.com/portals/main.aspx?App=1&Companyid=JoynusStaffing&Lang=Spanish", class: 'button secondary radius'

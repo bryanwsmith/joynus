@@ -19,37 +19,37 @@
             The more helpful you are, more pleasant we are
   
   %section
-  .row
-    .columns.large-6
-      .employer-section-img
-        = image_tag('industry2.png')
-    .columns.large-6.text-center.m-top3    
-      %h2.secondary-text
-        Industry
+    .row
       .columns.large-6
-        %p
-          %b Automotive
-        %p
-          %b Manufacturing 
-        %p
-          %b Healthcare 
-        
-      .columns.large-6
-        %p
-          %b Accounting &amp; finance
-        %p
-          %b Information technology
-        %p
-          %b Office &amp; administrative 
+        .employer-section-img
+          = image_tag('industry2.png')
+      .columns.large-6.text-center.m-top3    
+        %h2.secondary-text
+          Industry
+        .columns.large-6
+          %p
+            %b Automotive
+          %p
+            %b Manufacturing 
+          %p
+            %b Healthcare 
+          
+        .columns.large-6
+          %p
+            %b Accounting &amp; finance
+          %p
+            %b Information technology
+          %p
+            %b Office &amp; administrative 
               
             
             
-  %section
+  %section.m-bottom1.m-top2
     %h2.secondary-text.text-center.m-top3 Staffing & Recruiting
     
       
     .row
-      %h2.text-center.secondary-text.m-top1 Staffing
+      %h2.text-center.secondary-text Staffing
       .box
         .columns.large-4.text-center
           .specialcontainer
@@ -69,7 +69,7 @@
             %b
               %a{:href => "/staff"}Learn more
     .row
-      %h2.text-center.secondary-text.m-top1 Recruiting
+      %h2.text-center.secondary-text.m-top2 Recruiting
       .box
         .columns.large-4.text-center
           .specialcontainer
@@ -94,7 +94,7 @@
             
             
   
-  %section#bpo.wwdContent3.m-top1
+  %section.wwdContent3.m-top1#bpo
     .row
       .columns.large-12
         %h2.text-center.secondary-text
@@ -102,7 +102,7 @@
       .box
         .columns.large-4.large-offset-1
           .specialcontainer
-            =image_tag 'bpo1.png', :class => "imagee", :style => "width:100%"
+            =image_tag 'bpo1.png', :class => "img6", :style => "width:100%"
         .columns.large-5
         
           .row
@@ -114,7 +114,7 @@
                 %b #{link_to 'Contact us', contact_index_path}
      
     
-    
+  %section.wwdContent3  
     .row
       .columns.large-12
         .columns.large-6
@@ -127,9 +127,9 @@
           %p Joynus BPO is the key to your outsource contract management so you can maximize your core business output
           %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
 
-  %section.wwdContent3.m-top1
   
-    .row.m-top1
+  .wwdContent3
+    .row
       .columns.large-12
         %h2.text-center.secondary-text
           How it works
@@ -214,7 +214,7 @@
 
 
 
-  %section#consultation
+  %section#consultation.m-top2
     .row
       .columns.large-12
         %h2.secondary-text.text-center Consultation

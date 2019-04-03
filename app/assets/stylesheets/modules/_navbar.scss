@@ -6,12 +6,12 @@
     margin-bottom: 0;
     position: fixed;
     width: 100%;
-    height: rem-calc(70);
+    height: rem-calc(75);
     z-index: 100;
     -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, .15);
     -moz-box-shadow:    0 0 0 2px rgba(0, 0, 0, .15);
     box-shadow:         0 0 0 2px rgba(0, 0, 0, .15);
-    opacity:0.8;
+    
     .navbar-container {
       margin: 0 auto;
       width: 95%;
@@ -47,15 +47,16 @@
         a {
           color: $primary-color;
           display: block;
-          font-size: rem-calc(19);
-          padding-left: rem-calc(10);
-          padding-right: rem-calc(10);
+          font-size: rem-calc(20);
+          padding-left: rem-calc(14);
+          padding-right: rem-calc(14);
 
           &.button {
             color: $white;
             padding: rem-calc(8) rem-calc(16);
             margin-top: rem-calc(16);
-            margin-left: rem-calc(10);
+            margin-left: rem-calc(17);
+            width:95px;
           }
         }
       }

@@ -7,12 +7,12 @@
       %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'about.feature-header'
-%section.whywedowhatwedo
+%section.whywedowhatwedo.m-top3
   
-  .row.m-bottom3
+  .row
     .box  
       .columns.large-5
-        = image_tag 'growth1.png', :class => "img0 box"
+        = image_tag 'growth1.png', :class => "img0"
     
       .columns.large-5
         %h2.text-center.secondary-text Why we do what we do
@@ -20,26 +20,27 @@
           Our experience tells us that growth is crucial to the survival of a business.
           We believe that hiring the right people is the first ingredient for growth. We are the catalyst in helping companies
           grow by hiring the right people and helping people find the right company
-      
+%section      
   .row
     .box
       .columns.large-5
-        = image_tag 'find-people.png', :class => "img00 box"
+        = image_tag 'find-people.png', :class => "img00 "
       .columns.large-5
         %h2.text-center.secondary-text We believe
         %p
           Job satisfaction leads to happiness and growth. We spend the majority of our days at work. Therefore, we feel responsible in helping people find jobs that they will enjoy
           
           Recruiting people for a job and career is an art, but there is a science behind the art of recruiting. We utilize an array of tests and analyses to find successful matches for our clients
-  .row
-    .columns.large-12
-      %h2.text-center.secondary-text.m-top1
-        Core value
-      %p.text-center.m-bottom3
-        Everyone at Joynus embodies the following six principles, whether its handling internal projects, how we treat each other, or how we represent ourselves to the public. Our core values are just one of the things that makes Joynus unique
-        
+  
+%section        
   .wwdContent
     .row
+      .columns.large-12
+        %h2.text-center.secondary-text
+          Core value
+        %p.text-center.m-bottom3
+          Everyone at Joynus embodies the following six principles, whether its handling internal projects, how we treat each other, or how we represent ourselves to the public. Our core values are just one of the things that makes Joynus unique
+    .row.m-top3
       .columns.large-2
         //= image_tag 'goal.png', :class => "img2  m-top2"
         = image_tag 'GoalCrush.png', :class => "img2 m-top2"  

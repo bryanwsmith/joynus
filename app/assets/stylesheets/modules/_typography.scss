@@ -9,6 +9,7 @@
 .m-top3{margin-top:5%;}
 .m-top4{margin-top:1px;}
 .m-top5{margin-top:1%;}
+.m-top6{margin-top:3%;}
 .m-top-n{margin-top:-13px;}
 .m-top-n1{margin-top:-10%;}
 .m-top-n2{margin-top:-55%;}
@@ -160,9 +161,9 @@ h2 {
 
 
 .img-logo{
-   height:63px;
-   padding:5px 15px 0 0;
-   
+   height:65px;
+   padding-right:5px;
+   padding-top:7px;
    display: inline-block;
  
 }
@@ -422,5 +423,11 @@ h2 {
     
     .wwdContent5{	min-height: 400px;}
  
-    
+    .img-logo{
+       height:55px;
+       padding-right:5px;
+       padding-top:15px;
+       display: inline-block;
+     
+    }        
 }
