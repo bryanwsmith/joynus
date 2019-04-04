@@ -95,7 +95,13 @@ h2 {
    margin: 5% 0% 5% 0%;
 }
 
-
+.boxx {
+   display:flex;
+   align-items:center;
+   justify-content:center; 
+   padding:1em;
+   margin: 5% 0% 5% 0%;
+}
 
 
 
@@ -135,7 +141,7 @@ h2 {
 .img2{
     height:auto;
     width:180px;
-    float:right;
+    
     
 }
 
@@ -413,6 +419,11 @@ h2 {
             display:block;
         }    
     
+    .boxx{
+        display:block;
+        margin:0%;
+        padding: 0;
+    }
     
     
     .m-left-n{padding-right:40%;}
