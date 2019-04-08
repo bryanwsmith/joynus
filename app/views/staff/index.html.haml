@@ -110,7 +110,48 @@
           Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
           <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
         
+#id02.w3-modal
+  .w3-modal-content.w3-card-4.w3-animate-zoom
+    %header.w3-container.w3-blue
+      %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id02').style.display='none'"} ×
+      %h2.w3-text-white Safety Training 
+    .w3-bar.w3-border-bottom
+      %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Video')"} Safety
+      
+      
+    #Video.w3-container.city.video-responsive
+      %h2.primary-text Safety Video
+      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :width => "100%", :height => "70%", :src => "https://www.youtube.com/embed/9E0CrZJe_xg?rel=0"}
+    
 
+
+
+               
+    
+    :javascript
+      document.getElementsByClassName("tablink")[0].click();
+      
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+      var modal = document.getElementById('id02');
+  
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
 %section#compliance
   .row{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
     .box
@@ -122,7 +163,7 @@
         %h2.secondary-text.text-center Compliance
         %p.text-center Joynus conducts safe work practices, pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
         .columns.large-6.text-center
-          %a{:href=>'/employers'}
+          %a{:onclick => "document.getElementById('id02').style.display='block'"}
             %p
               %b Safety
           %p.text-thin{:style=>'line-height:normal;'}

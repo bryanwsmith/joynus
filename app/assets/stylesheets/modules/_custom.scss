@@ -312,6 +312,25 @@ h2 {
   color: black;
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:500px;
+}
+.video-responsive{
+  
+ .iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+ }  
+}
+
+
+
 @media all and (max-width:1024px) {
 .content_on_BG >h1 {
   
