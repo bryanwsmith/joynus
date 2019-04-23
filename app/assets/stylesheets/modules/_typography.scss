@@ -92,7 +92,7 @@ h2 {
    align-items:center;
    justify-content:center; 
    padding:1em;
-   margin: 5% 0% 5% 0%;
+   margin: 2% 0% 2% 0%;
 }
 
 .boxx {
@@ -100,7 +100,7 @@ h2 {
    align-items:center;
    justify-content:center; 
    padding:1em;
-   margin: 5% 0% 5% 0%;
+   margin: 2% 0% 2% 0%;
 }
 
 
@@ -124,7 +124,7 @@ h2 {
 .img0{
     height:300px;
     width:auto;   
-    padding:1em;
+    
 }
 .img00{
     height:400px;
@@ -165,6 +165,16 @@ h2 {
     width:120px;
 }
 
+.img7{
+    height:250px;
+    width: auto;
+}
+
+.img8{
+    height:120px;
+    width:auto;
+    
+}
 
 .img-logo{
    height:65px;
@@ -412,7 +422,7 @@ h2 {
 @media all and (max-width:480px) {
 
     .h1,.h2,.h3,.h4,.imgg,.img1 {display:block; margin:auto;}
-    .img2 {display:block; margin:auto; float:none; margin-top:45px;}
+    .img2 {display:block;  float:none; margin-top:25px;}
     .img3 {display:block; margin:auto; height:80px; }
     .img5 {margin-left:23%;}
         .box{
@@ -440,5 +450,8 @@ h2 {
        padding-top:15px;
        display: inline-block;
      
-    }        
+    }   
+    
+    
+    
 }

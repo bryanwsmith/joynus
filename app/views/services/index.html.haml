@@ -2,63 +2,123 @@
   %title Joynus Staffing | Services | We provide best solutions
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
 %body
-  - if flash[:notice]
-    = render 'shared/success_notice'
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container
-        %img{ data: { interchange:"[#{asset_path('services-bg-mobile.jpg')}, (small)], [#{asset_path('services-bg-mobile.jpg')}, (medium)], [#{asset_path('service-bg.jpg')}, (large)]" } }
-
-
+        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
+            Right talents equal to the growth of company
             / Don’t find fault. Find a remedy
             / People expect good service but few are willing to give it
             / Our service is rated by your profit
             / We listen to our customers deeply, or we will have none
-            The more helpful you are, more pleasant we are
+
+        
   
   %section
-    .row
-      .columns.large-6
-        .employer-section-img
-          = image_tag('industry2.png')
-      .columns.large-6.text-center.m-top3    
-        %h2.secondary-text
-          Industry
-        .columns.large-6
-          %p
-            %b Automotive
-          %p
-            %b Manufacturing 
-          %p
-            %b Healthcare 
+    %h2.secondary-text.text-center
+      Industry
+  
+    .industry-grid-container
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
+        = image_tag 'Icon Automotive.png', :alt => 'Automotive', :class => "img8"
+        %p
+          %b
+            Automotive
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
+        = image_tag 'Icon Finance.png', :alt => 'Accounting & Finance', :class => "img8"
+        %p
+          %b
+            Accounting & Finance
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
+        = image_tag 'Icon Healthcare.png', :alt => 'Healthcare', :class => "img8"
+        %p
+          %b
+            Healthcare
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
+        = image_tag 'Icon Manufacturing.png', :alt => 'Manufacturing', :class => "img8"
+        %p
+          %b
+            Manufacturing
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
+        = image_tag 'Icon Office.png', :alt => 'Office & Administrative', :class => "img8"
+        %p
+          %b
+            Office & Administrative
+      .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
+        = image_tag 'IT Icon.png', :alt => 'IT', :class => "img8"
+        %p
+          %b
+            Information Technology
+
+  .row#industry.content-section
+    .columns.xlarge-12
+      %h2.text-center.secondary-text
+        Services
+    .columns.xlarge-12
+      %p
+        Our clients stay with us and come back to us for the quality of the services offered at Joynus.&ensp; 
+        We have our own guidelines on what Quality means.&ensp;
+        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
+        %b
+          %a{:alt => "services", :href => "/services"} Learn more
           
-        .columns.large-6
-          %p
-            %b Accounting &amp; finance
-          %p
-            %b Information technology
-          %p
-            %b Office &amp; administrative 
-              
+  
+  
+  .grid-container
+    .grid-items.text-center
+      
+      %h2.secondary-text Staffing 
+      %a{:href => "#staffing"}
+        = image_tag 'staffing.png', :alt => 'Staffing', :class => "img7"
+       
+      %p
+        Joynus provides a complete range of job placements <br>
+        %b.text-center
+          %a{:href => "#staffing"} Learn More 
+    .grid-items.text-center
+      %h2.secondary-text Direct hire
+      %a{:href => "#directhire"}
+        = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img7"
+        
+      %p
+        Joynus presents you with potential candidates<br>
+        %b
+          %a{:href => "#directhire"} Learn More
+          
+    .grid-items.text-center
+      %h2.secondary-text BPO
+      %a{:href => "#bpo"}
+        =image_tag 'bpo1.png', :class => "img7", :alt => 'BPO'
+      %p 
+        Joynus provides customer experiences and back office operations<br>
+        
+        %b   
+          %a{:href => "#bpo"} Learn More    
+    .grid-items.text-center
+      %h2.secondary-text.text-center Consultation
+      %a{:href => "#consultation"}    
+        =image_tag 'new.png', :alt => "Consultation", :class => "img7"  
+        
+      %p
+        New to the area or industry?<br>
+        %b   
+          %a{:href => "/services#consultation"} Learn More             
             
-            
-  %section
-    .row
-      %h2.secondary-text.text-center.m-top3 Staffing & Recruiting
+ 
     
-  %section   
-    .row
+  %section.m-top1   
+    .row#staffing
       %h2.text-center.secondary-text Staffing
       .box
         .columns.large-4.text-center
           .specialcontainer
-            %a{:href => "/staff"}
+            %a{:href => "#staffing_process"}
               = image_tag 'staffing.png', :alt => 'Staffing', :class => "imageee", :style => "width:100%"
   
             .middle
-              %a{:href => "/staff"}
+              %a{:href => "#staffing_process"}
                 %p.text Staffing process
         .columns.large-5
           
@@ -67,33 +127,352 @@
             You will operate on your schedule so that you may be at ease with a pleasant overall experience.
             We are dedicated team of professionals who love their work and because of this,
             we repeatedly exceed our customer's expectations for every single one of our clients.<br>
+            
+              
+  %section#staffing_process
+    .row#process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .columns.large-12
+        %h2.text-center.secondary-text
+          Staffing process       
+          
+  
+    .slideshow-container{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .mySlides.fade
+        .numbertext
+          %h2 Discovery
+        = image_tag 'discovery.jpg', :alt => 'Discovery', :style => "width:100%"  
+        
+        .stext
+          %p
+            The discovery stage is beginning the process of getting to know you and
+            letting you know more about us. More importantly, we want to know if we are able to provide a solution for your business. Questions??
             %b
-              %a{:href => "/staff"}Learn more
-  %section
+              %a{:alt => "contact", :href => "/contact"} Contact Us
+      .mySlides.fade
+        .numbertext
+          %h2 Assessment
+        = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
+        
+        .stext
+          %p
+            After getting acquainted, we may prepare one or a few different options that may be a good fit for you. We discuss some of the areas we fill
+            would be beneficial and other areas that may be helpful down the line
+      .mySlides.fade
+        .numbertext
+          %h2 Preparation
+        = image_tag 'preparation.jpg', :alt => 'preparation', :style => "width:100%" 
+        
+        .stext
+          %p
+            Staffing is an ongoing process. We consistently post jobs on our social media, job boards, and coordinate with the city to schedule job fairs
+            so that we are able to consistently provide you with the workforce 
+      .mySlides.fade
+        .numbertext
+          %h2 Orientation
+        = image_tag 'orientation.jpg', :alt => 'orientation', :style => "width:100%"   
+        
+        .stext
+          %p
+            Joynus sends in the right talent to your business. This is where orientation comes in.
+            We educate our applicants on our rules and regulations
+            %b
+              %a{:href => "/staff#compliance"} Learn more
+           
+      .mySlides.fade
+        .numbertext
+          %h2 Stand-by
+        = image_tag 'standby.jpg', :alt => 'Stand-by', :style => "width:100%" 
+        
+        .stext
+          %p
+            Once we completed orientation, we place all eligible candidates on stand-by. Stand-by is a list of candidates that meet the requirements to work on-site
+            that we fill would be the ideal employee for you long term
+      %a.prev{:onclick => "plusSlides(-1)"} ❮
+      %a.next{:onclick => "plusSlides(1)"} ❯
+    %br/
+    %div{:style => "text-align:center"}
+      %span.dot{:onclick => "currentSlide(1)"}
+      %span.dot{:onclick => "currentSlide(2)"}
+      %span.dot{:onclick => "currentSlide(3)"}
+      %span.dot{:onclick => "currentSlide(4)"}
+      %span.dot{:onclick => "currentSlide(5)"}
+      
+
+
+        
+  %section.m-top2
+    .row        
+      .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
+        
+        %h2.text-center.secondary-text What are Temp, Temp to hire &amp; Short term?
+        %p
+          %b Temp -
+          Temporary employment is an ideal solution for unpredictable workloads, project work, seasonal peaks, and other limited-term needs, such as a leave of absence. Temp positions typically have a set timeframe. Through all assignments, the talent is employed by the staffing firm
+        %p
+          %b Temp to hire -
+          Temp-to-hire is a working arrangement in which a worker is hired first on a temporary basis – usually through a temporary staffing agency – with the possibility of the position becoming full-time
+        %p
+          %b Short term -
+          short-term employment are workers who hold explicit or implicit contracts of employment which are expected to last longer than the period used to define casual workers, but shorter than the one
+          used to define regular employees. These workers may be classified as employees or own- account workers according to the specific characteristics of the employment contract      
+        
+  
+    .row{"data-aos" => "zoom-in","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .box    
+        .columns.large-6
+          = image_tag 'hr-management.png', :class => "imgg"
+        .columns.large-6
+          %h2.secondary-text Employee management
+          %p
+            Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
+            <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
+          
+  #id02.w3-modal
+    .w3-modal-content.w3-card-4.w3-animate-zoom
+      %header.w3-container.w3-blue
+        %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id02').style.display='none'"} ×
+        %h2.w3-text-white Safety Training 
+      .w3-bar.w3-border-bottom
+        %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Video')"} Safety
+        
+        
+      #Video.w3-container.city.video-responsive
+        %h2.primary-text Safety Video
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :width => "100%", :height => "70%", :src => "https://www.youtube.com/embed/XGNKbCtZ6vY?rel=0"}
+    
+
+
+               
+    
+    
+
+  .row#compliance{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+    .box
+      
+      .columns.large-6.large-push-6
+        = image_tag 'compliance.jpg', :class => "imgg" 
+    
+      .columns.large-6.large-pull-6
+        %h2.secondary-text.text-center Compliance
+        %p.text-center Joynus conducts safe work practices, pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
+        .columns.large-6.text-center
+          %a{:onclick => "document.getElementById('id02').style.display='block'"}
+            %p
+              %b Safety
+          %p.text-thin{:style=>'line-height:normal;'}
+            %b Drug screen <br>
+          
+            10 panel drug screen<br>
+          
+          %p{:style=>'line-height:normal;'}
+            %b Criminal history <br>
+          
+            Nation, state & county
+            
+          
+        .columns.large-6.text-center 
+          %p
+            %b Education verification
+          
+          %p{:style=>'line-height:normal;'}
+            %b I-9 & E-verify <br>
+          
+            Identity verification
+          
+          %p
+            %b Reference verification
+      
+      
+        
+
+  .row#retention{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}        
+    .box
+      .columns.large-6
+        = image_tag 'Rains Money.jpg', :class => "imgg" 
+    
+      .columns.large-7
+        %h2.secondary-text.text-center#retention Employee retention
+        %p.text-center Good talent is hard to find thus we want to keep them
+        .columns.large-4.text-center.large-offset-1
+          %p
+            %b Enjoy the tour
+          %p
+            %b Holiday referral
+          %p
+            %b Raffle Ticket
+          %p
+            %b Joynus board
+          
+        .columns.large-7.text-center
+          
+          %p
+            %b Employee wellness analysis
+          %p
+            %b Performance evaluations  
+          %p
+            %b Employee of the month  
+          %p
+            %b Perfect performance bonus
+            
+       
+      
+      
+
+  .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
+    .box
+      .columns.large-6.large-push-6.m-top3
+        = image_tag 'payroll.jpg', :class => "imgg" 
+    
+      .columns.large-6.large-pull-6.text-center 
+        %h2.secondary-text Employee payroll
+        .columns.large-10.large-offset-1
+          %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
+        .columns.large-12
+          %p
+            %b Direct deposit<br>
+          %p
+            %b Paper checks<br>
+          %p
+            %b Pay cards       
+            
+            
+            
+            
+  %section.m-top1#directhire
     .row
-      %h2.text-center.secondary-text Recruiting
+      %h2.text-center.secondary-text Direct hire
       .box
         .columns.large-4.text-center
           .specialcontainer
-            %a{:href => "/recruit"}
+            %a{:href => "#directhire_process"}
               = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imageee", :style => "width:100%"
   
             .middle
-              %a{:href => "/recruit"}
-                %p.textt Recruiting process
+              %a{:href => "#directhire_process"}
+                %p.textt Direct hire process
         .columns.large-5
           
           %p
             We present you with potential candidate who will be a permanent position in your organization.
-            Joynus recruiting specialists will review your job description and dig our database and review a plethora of resumes.
+            Joynus Direct hire specialists will review your job description and dig our database and review a plethora of resumes.
             After we send you candidates who match your needs, you interview them and make a decision.
-            %b
-              %a{:href => "/recruit"} Learn more
-            
-  
+    
+  .row
+    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "300", "data-aos-offset"=>"0"}
+      
+      %p
+        %b What is it?
+      
+        <br>Direct hire positions are permanent, usually full time positions with benefits. A direct hire position is one in which the client company utilizes 
+        the staffing company to find the talent, then hires them directly. A candidate offered a direct hire position is not an employee of the staffing company, 
+        but goes directly on the client company payroll
+      
+      %p 
+        %b How it works?
+        <br>We present you with potential candidate who will be a permanent position in your organization. You interview them and make a decision.
+        Then, you pay us fee, percentage of the annual salary of the person hired
 
+
+
+
+    
+  %section    
+    .row{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .columns.large-12
+        %h2.text-center.secondary-text.m-top3
+          Direct hire process
+  
+  
+    .slideshow-container#process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .mySlides2.fade
+        .numbertext1
+          %h2 Acquisition
+        = image_tag 'acquisition.jpg', :alt => 'Acquisition', :style => "width:100%"  
+        
+        .stext1
+          %p
+            Talent acquisition specialists will review your job description. We dig our database and review a plethora of resumes.
+            Advertise the position on job boards if needed
+      .mySlides2.fade
+        .numbertext1
+          %h2 Assessment
+        = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
+        
+        .stext1
+          %p
             
+            Because Joynus takes the time to understand your needs, we know the right questions to ask to assess not only a match in skills and qualifications but also a cultural fit
+      .mySlides2.fade
+        .numbertext1
+          %h2 Presenting
+        = image_tag 'present.jpg', :alt => 'presenting', :style => "width:100%" 
+        
+        .stext1
+          %p
+            We will send you resumes and candidate profile that shows you why our candidate is the best
+      .mySlides2.fade
+        .numbertext1
+          %h2 Feedback
+        = image_tag 'feedback.jpg', :alt => 'orientation', :style => "width:100%"   
+        
+        .stext1
+          %p
+            Joynus will provide you with timely progress updates with feedback obtained directly from the talent pool and consult with you on any adjustments that
+            may be needed to meet your hiring goal
+          
+           
+      .mySlides2.fade
+        .numbertext1
+          %h2 Interview
+        = image_tag 'interview.jpg', :alt => 'Interview', :style => "width:100%" 
+        
+        .stext1
+          %p
+            Scheduling is a drag. Let us know when you are available and how you would like to meet the candidate (phone, video, in person, etc) and will take care of the rest
             
+      .mySlides2.fade
+        .numbertext1
+          %h2 Follow-up
+        = image_tag 'followup.jpg', :alt => 'Followup', :style => "width:100%" 
+        
+        .stext1
+          %p
+            Our Direct Hire specialist will follow up after the interview with the client and candidate, wheter Job offer to the candidate or reject
+            
+      %a.prev{:onclick => "plusSlides2(-1)"} ❮
+      %a.next{:onclick => "plusSlides2(1)"} ❯
+    %br/
+    %div{:style => "text-align:center"}
+      %span.dot2{:onclick => "currentSlide2(1)"}
+      %span.dot2{:onclick => "currentSlide2(2)"}
+      %span.dot2{:onclick => "currentSlide2(3)"}
+      %span.dot2{:onclick => "currentSlide2(4)"}
+      %span.dot2{:onclick => "currentSlide2(5)"}
+      %span.dot2{:onclick => "currentSlide2(6)"}
+
+
+  .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
+    .box  
+      .columns.large-6.text-center 
+        %h2.secondary-text Job Offer Coordination
+        %p  
+          Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
+          an acceptance of an offer that both parties will be happy to sign on to
+        
+        %p
+          %b Hiring process<br>
+        %p
+          %a{:href => "/employers#selectivescreening"}  
+            %b Selective screening
+       
+      
+      .columns.large-7.m-top3
+        = image_tag 'coordination.jpg', :class => "imgg"          
+              
+    
+  
+              
+              
             
   
   %section.wwdContent3.m-top1#bpo
@@ -236,41 +615,41 @@
           %p
             Our trained team will utilize strategic marketing tools, including mass communication compaigns and job boards, and connections within
             our extensive network to target the talent pool that would be the best fit for your next hire
-    %section
-      .row
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Targeted advertising 
-          .srvIco2
-            %i
-              = image_tag 'TargetedAd.png', :class => 'img4'
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Localized demographic
-          .srvIco2
-            %i
-              = image_tag 'LocalDemograph.png', :class => 'img4'
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Hiring foreign nationals
-          .srvIco2
-            %i
-              = image_tag 'InternationalHiring.png', :class => 'img4'
-      .row.m-top3
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Competitor analysis
-          .srvIco2
-            %i
-              = image_tag 'CompetitorAnalysis.png', :class => 'img4'
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Outsourcing
-          .srvIco2
-            %i
-              = image_tag 'Outsourcing.png', :class => 'img4'
-        .columns.large-4.text-center
-          %h4.secondary-text.text-center Strategic marketing
-          .srvIco2
-            %i
-              = image_tag 'StrategicMarketing.png', :class => 'img4'
-            
-            
+  %section
+    .row
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Targeted advertising 
+        .srvIco2
+          %i
+            = image_tag 'TargetedAd.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Localized demographic
+        .srvIco2
+          %i
+            = image_tag 'LocalDemograph.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Hiring foreign nationals
+        .srvIco2
+          %i
+            = image_tag 'InternationalHiring.png', :class => 'img4'
+    .row.m-top3
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Competitor analysis
+        .srvIco2
+          %i
+            = image_tag 'CompetitorAnalysis.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Outsourcing
+        .srvIco2
+          %i
+            = image_tag 'Outsourcing.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Strategic marketing
+        .srvIco2
+          %i
+            = image_tag 'StrategicMarketing.png', :class => 'img4'
+          
+          
 
 
             

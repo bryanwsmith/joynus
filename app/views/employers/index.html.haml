@@ -38,7 +38,7 @@
 
 
 
-%section     
+   
   .wwdContent5
     
     .row
@@ -88,7 +88,7 @@
             %h3 Tax saving
   / What we do content  
 
-%section
+
   .row
     .box  
       .columns.large-6.div{"data-aos" => "fade-down-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
@@ -247,57 +247,72 @@
           }
       }
           
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-          
-          
-          
-          
-%section#industry.content-section
-  .row
+  .row#industry.content-section
     .columns.xlarge-12
       %h2.text-center.secondary-text
         Services
-    .columns.xlarge-12
+    .columns.xlarge-12.text-center
       %p
-        Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
-        We have our own guidelines on what Quality means.
-        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
+        Our clients stay with us and come back to us for the quality of the services offered at Joynus<br>
         %b
           %a{:alt => "services", :href => "/services"} Learn more
-  .row
-    .box.m-top3  
-      .columns.large-6.text-center
-        
-        %h2.secondary-text Staffing
-        %a{:href => "/staff"}
-          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"
-         
-        %p
-          We provide a complete range of job placements <br>
-          %b.text-center
-            %a{:href => "/staff"} Learn More
-              
-      .columns.large-6.text-center    
-        %h2.secondary-text Direct hire
-        %a{:href => "/recruit"}
-          = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
-        
-        %p
-          We present you with potential candidates<br>
-          %b.text-center
-            %a{:href => "/recruit"} Learn More
+          
+  
+  
+  
+            
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'
-  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'  
+    
+    
+    
+    
+    
+
+
+
+
+
+
+          
+          
+          
+          
+
+/  .row#industry.content-section
+/    .columns.xlarge-12
+/      %h2.text-center.secondary-text
+/        Services
+/    .columns.xlarge-12
+/      %p
+/        Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
+/        We have our own guidelines on what Quality means.
+/        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
+/        %b
+/          %a{:alt => "services", :href => "/services"} Learn more
+/  .row
+/    .box.m-top3  
+/      .columns.large-6.text-center
+/        
+/        %h2.secondary-text Staffing
+/        %a{:href => "/staff"}
+/          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"
+/         
+/        %p
+/          We provide a complete range of job placements <br>
+/          %b.text-center
+/            %a{:href => "/staff"} Learn More
+/              
+/      .columns.large-6.text-center    
+/        %h2.secondary-text Direct hire
+/        %a{:href => "/recruit"}
+/          = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
+/        
+/        %p
+/          We present you with potential candidates<br>
+/          %b.text-center
+/            %a{:href => "/recruit"} Learn More
+           
+ 

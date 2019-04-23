@@ -18,8 +18,8 @@ Rails.application.routes.draw do
     resources :employers, only: [:index]
     resources :contact, only: [:index]
     resources :services, only: [:index]
-    resources :staff, only: [:index]
-    resources :recruit, only: [:index]
+#    resources :staff, only: [:index]
+#    resources :recruit, only: [:index]
     resources :unapproved_jobs
     resources :jobs do
       collection do

@@ -4,7 +4,7 @@ class ContactMailer < ActionMailer::Base
     
   def contact_email(first_name, last_name, email, subject, phone, message)
   
-    @to_email = Rails.env.development? ? 'test@joynus.com' : 'test@joynus.com'
+    @to_email = Rails.env.development? ? 'contact@joynus.com' : 'contact@joynus.com'
 
 
     @first_name = first_name

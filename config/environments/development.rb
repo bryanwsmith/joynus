@@ -1,25 +1,32 @@
 Rails.application.configure do
-  # ActionMailer::Base.smtp_settings = {
-  #     :address =>        'smtp.mandrillapp.com',
-  #     :port =>           '25',
-  #     :user_name =>      ENV['MANDRILL_USERNAME'],
-  #     :password =>       ENV['MANDRILL_APIKEY'],
-  # }
+ 
 
-
-  config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
-      :domain               => "gmail.com",
-      :user_name            => "support@joynus.com",
-      :password             => "R2D2Force1!",
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-  }
+    config.action_mailer.smtp_settings = {
+      :address => 'smtpout.secureserver.net',
+      :domain  => 'www.example.com',
+      :port      => 80,
+      :user_name => 'info@tidrainc.com',
+      :password => 'Faster1!',
+      :authentication => :plain
+    }
 
 
 
   ActionMailer::Base.delivery_method = :smtp
+
+ # config.action_mailer.smtp_settings = {
+ #   :address              => "smtp.gmail.com",
+#      :port                 => 587,
+#      :domain               => "gmail.com",
+#      :user_name            => "support@joynus.com",
+#      :password             => "R2D2Force1!",
+#      :authentication       => :plain,
+#      :enable_starttls_auto => true
+#  }
+
+
+
+
 
   # Settings specified here will take precedence over those in config/application.rb.
 

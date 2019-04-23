@@ -3,7 +3,7 @@
   padding-top: rem-calc(60);
   padding-bottom: rem-calc(60);
 }
-
+#blog{
 .prev-next-posts {
   color: rgba(33, 162, 197, 0.6);
   font-size: rem-calc(18);
@@ -12,6 +12,7 @@
 
   .prev { margin-right: rem-calc(20); }
   .next { margin-left: rem-calc(20); }
+}
 }
 .row .row.shareable{
   margin-bottom: 10px;
