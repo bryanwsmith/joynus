@@ -8,7 +8,8 @@
         %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
-            Right talents equal to the growth of company
+            WHAT WE DO
+            /Right talents equal to the growth of company
             / Don’t find fault. Find a remedy
             / People expect good service but few are willing to give it
             / Our service is rated by your profit
@@ -18,7 +19,7 @@
   
   %section
     %h2.secondary-text.text-center
-      Industry
+      Our specialized staffing services
   
     .industry-grid-container
       .industry-grid-items.text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
@@ -56,13 +57,7 @@
     .columns.xlarge-12
       %h2.text-center.secondary-text
         Services
-    .columns.xlarge-12
-      %p
-        Our clients stay with us and come back to us for the quality of the services offered at Joynus.&ensp; 
-        We have our own guidelines on what Quality means.&ensp;
-        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
-        %b
-          %a{:alt => "services", :href => "/services"} Learn more
+    
           
   
   
@@ -109,19 +104,13 @@
  
     
   %section.m-top1   
+    %h2.text-center.secondary-text Staffing
     .row#staffing
-      %h2.text-center.secondary-text Staffing
       .box
-        .columns.large-4.text-center
-          .specialcontainer
-            %a{:href => "#staffing_process"}
-              = image_tag 'staffing.png', :alt => 'Staffing', :class => "imageee", :style => "width:100%"
-  
-            .middle
-              %a{:href => "#staffing_process"}
-                %p.text Staffing process
         .columns.large-5
-          
+          %a{:href => "#staffing_process"}
+            = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"
+        .columns.large-6
           %p
             We provide a complete range of job placements with the appropriate skillsets our clients require.
             You will operate on your schedule so that you may be at ease with a pleasant overall experience.
@@ -136,68 +125,44 @@
           Staffing process       
           
   
-    .slideshow-container{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .mySlides.fade
-        .numbertext
-          %h2 Discovery
-        = image_tag 'discovery.jpg', :alt => 'Discovery', :style => "width:100%"  
+    
         
-        .stext
-          %p
-            The discovery stage is beginning the process of getting to know you and
-            letting you know more about us. More importantly, we want to know if we are able to provide a solution for your business. Questions??
-            %b
-              %a{:alt => "contact", :href => "/contact"} Contact Us
-      .mySlides.fade
-        .numbertext
-          %h2 Assessment
-        = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
-        
-        .stext
-          %p
-            After getting acquainted, we may prepare one or a few different options that may be a good fit for you. We discuss some of the areas we fill
-            would be beneficial and other areas that may be helpful down the line
-      .mySlides.fade
-        .numbertext
-          %h2 Preparation
-        = image_tag 'preparation.jpg', :alt => 'preparation', :style => "width:100%" 
-        
-        .stext
-          %p
-            Staffing is an ongoing process. We consistently post jobs on our social media, job boards, and coordinate with the city to schedule job fairs
-            so that we are able to consistently provide you with the workforce 
-      .mySlides.fade
-        .numbertext
-          %h2 Orientation
-        = image_tag 'orientation.jpg', :alt => 'orientation', :style => "width:100%"   
-        
-        .stext
-          %p
-            Joynus sends in the right talent to your business. This is where orientation comes in.
-            We educate our applicants on our rules and regulations
-            %b
-              %a{:href => "/staff#compliance"} Learn more
-           
-      .mySlides.fade
-        .numbertext
-          %h2 Stand-by
-        = image_tag 'standby.jpg', :alt => 'Stand-by', :style => "width:100%" 
-        
-        .stext
-          %p
-            Once we completed orientation, we place all eligible candidates on stand-by. Stand-by is a list of candidates that meet the requirements to work on-site
-            that we fill would be the ideal employee for you long term
-      %a.prev{:onclick => "plusSlides(-1)"} ❮
-      %a.next{:onclick => "plusSlides(1)"} ❯
-    %br/
-    %div{:style => "text-align:center"}
-      %span.dot{:onclick => "currentSlide(1)"}
-      %span.dot{:onclick => "currentSlide(2)"}
-      %span.dot{:onclick => "currentSlide(3)"}
-      %span.dot{:onclick => "currentSlide(4)"}
-      %span.dot{:onclick => "currentSlide(5)"}
+   
+        %p
+          %b
+            Discovery<br>
+          The discovery stage is beginning the process of getting to know you and
+          letting you know more about us. More importantly, we want to know if we are able to provide a solution for your business. Questions??
+          %b
+            %a{:alt => "contact", :href => "/contact"} Contact Us
       
-
+        %p
+          %b
+            Assessment<br>
+          After getting acquainted, we may prepare one or a few different options that may be a good fit for you. We discuss some of the areas we fill
+          would be beneficial and other areas that may be helpful down the line
+      
+        %p
+          %b
+            Preparation<br>
+          Staffing is an ongoing process. We consistently post jobs on our social media, job boards, and coordinate with the city to schedule job fairs
+          so that we are able to consistently provide you with the workforce 
+      
+        %p
+          %b
+            Orientation<br>
+          Joynus sends in the right talent to your business. This is where orientation comes in.
+          We educate our applicants on our rules and regulations
+          %b
+            %a{:href => "/staff#compliance"} Learn more
+             
+      
+        %p
+          %b
+            Stand-by<br>
+          Once we completed orientation, we place all eligible candidates on stand-by. Stand-by is a list of candidates that meet the requirements to work on-site
+          that we fill would be the ideal employee for you long term
+     
 
         
   %section.m-top2
@@ -339,18 +304,16 @@
             
             
   %section.m-top1#directhire
+    %h2.text-center.secondary-text Direct hire
     .row
-      %h2.text-center.secondary-text Direct hire
+      
       .box
-        .columns.large-4.text-center
-          .specialcontainer
-            %a{:href => "#directhire_process"}
-              = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imageee", :style => "width:100%"
-  
-            .middle
-              %a{:href => "#directhire_process"}
-                %p.textt Direct hire process
         .columns.large-5
+          
+          %a{:href => "#directhire_process"}
+            = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
+  
+        .columns.large-6
           
           %p
             We present you with potential candidate who will be a permanent position in your organization.
@@ -382,73 +345,40 @@
         %h2.text-center.secondary-text.m-top3
           Direct hire process
   
-  
-    .slideshow-container#process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .mySlides2.fade
-        .numbertext1
-          %h2 Acquisition
-        = image_tag 'acquisition.jpg', :alt => 'Acquisition', :style => "width:100%"  
-        
-        .stext1
-          %p
-            Talent acquisition specialists will review your job description. We dig our database and review a plethora of resumes.
-            Advertise the position on job boards if needed
-      .mySlides2.fade
-        .numbertext1
-          %h2 Assessment
-        = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
-        
-        .stext1
-          %p
-            
-            Because Joynus takes the time to understand your needs, we know the right questions to ask to assess not only a match in skills and qualifications but also a cultural fit
-      .mySlides2.fade
-        .numbertext1
-          %h2 Presenting
-        = image_tag 'present.jpg', :alt => 'presenting', :style => "width:100%" 
-        
-        .stext1
-          %p
-            We will send you resumes and candidate profile that shows you why our candidate is the best
-      .mySlides2.fade
-        .numbertext1
-          %h2 Feedback
-        = image_tag 'feedback.jpg', :alt => 'orientation', :style => "width:100%"   
-        
-        .stext1
-          %p
-            Joynus will provide you with timely progress updates with feedback obtained directly from the talent pool and consult with you on any adjustments that
-            may be needed to meet your hiring goal
+        %p
+          %b
+            Acquisition<br>
+          Talent acquisition specialists will review your job description. We dig our database and review a plethora of resumes.
+          Advertise the position on job boards if needed
+      
+        %p
+          %b
+            Assessment<br>
+          Because Joynus takes the time to understand your needs, we know the right questions to ask to assess not only a match in skills and qualifications but also a cultural fit
+      
+        %p
+          %b
+            Presenting<br>
+          We will send you resumes and candidate profile that shows you why our candidate is the best
+      
+        %p
+          %b
+            Feedback<br>
+          Joynus will provide you with timely progress updates with feedback obtained directly from the talent pool and consult with you on any adjustments that
+          may be needed to meet your hiring goal
           
-           
-      .mySlides2.fade
-        .numbertext1
-          %h2 Interview
-        = image_tag 'interview.jpg', :alt => 'Interview', :style => "width:100%" 
-        
-        .stext1
-          %p
-            Scheduling is a drag. Let us know when you are available and how you would like to meet the candidate (phone, video, in person, etc) and will take care of the rest
+     
+        %p
+          %b
+            Interview<br>
+          Scheduling is a drag. Let us know when you are available and how you would like to meet the candidate (phone, video, in person, etc) and will take care of the rest
+    
+        %p
+          %b
+            Follow-up<br>
+          Our Direct Hire specialist will follow up after the interview with the client and candidate, wheter Job offer to the candidate or reject
             
-      .mySlides2.fade
-        .numbertext1
-          %h2 Follow-up
-        = image_tag 'followup.jpg', :alt => 'Followup', :style => "width:100%" 
-        
-        .stext1
-          %p
-            Our Direct Hire specialist will follow up after the interview with the client and candidate, wheter Job offer to the candidate or reject
-            
-      %a.prev{:onclick => "plusSlides2(-1)"} ❮
-      %a.next{:onclick => "plusSlides2(1)"} ❯
-    %br/
-    %div{:style => "text-align:center"}
-      %span.dot2{:onclick => "currentSlide2(1)"}
-      %span.dot2{:onclick => "currentSlide2(2)"}
-      %span.dot2{:onclick => "currentSlide2(3)"}
-      %span.dot2{:onclick => "currentSlide2(4)"}
-      %span.dot2{:onclick => "currentSlide2(5)"}
-      %span.dot2{:onclick => "currentSlide2(6)"}
+     
 
 
   .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
@@ -555,7 +485,7 @@
               Material<br>
               Product<br>
               Inventory
-    .row.m-top3
+    .row
       .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         %h4.secondary-text 4. Facility management
         .specialcontainer1

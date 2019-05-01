@@ -134,14 +134,14 @@ h2 {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  margin-top:13%;
+  margin-top:10%;
   border-radius:20px;
 }
 
 .imageee {
   opacity: 1;
   display: inline-block;
-  width: 50%;
+  width: 60%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -164,7 +164,7 @@ h2 {
 }
 
 .specialcontainer1 {
-    position: relative;
+    
     width: 250px;
     height: 250px;
     margin-left:auto;
@@ -181,7 +181,7 @@ h2 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width:90%;
+  width:60%;
   
   
 }
@@ -339,6 +339,18 @@ h2 {
   font-size:50px;
   
 }
+
+.imageee {
+  opacity: 1;
+  
+  width: 60%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+  border-radius:30px;
+}
+
 
 }
 
