@@ -53,55 +53,64 @@
           %b
             Information Technology
 
+
+
+
   .row#industry.content-section
     .columns.xlarge-12
       %h2.text-center.secondary-text
         Services
     
-          
-  
-  
-  .grid-container
-    .grid-items.text-center
+    .row
+      .box
+        .columns.large-4
+          %a{:href => "#staffing"}
+            = image_tag 'staffing.png', :alt => 'Staffing', :class => "img000"
       
-      %h2.secondary-text Staffing 
-      %a{:href => "#staffing"}
-        = image_tag 'staffing.png', :alt => 'Staffing', :class => "img7"
-       
-      %p
-        Joynus provides a complete range of job placements <br>
-        %b.text-center
-          %a{:href => "#staffing"} Learn More 
-    .grid-items.text-center
-      %h2.secondary-text Direct hire
-      %a{:href => "#directhire"}
-        = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img7"
-        
-      %p
-        Joynus presents you with potential candidates<br>
-        %b
-          %a{:href => "#directhire"} Learn More
+        .columns.large-5
+          %h2.secondary-text Staffing  
+          %p
+            Joynus provides a complete range of job placements <br>
+            %b.text-center
+              %a{:href => "#staffing"} Learn More 
           
-    .grid-items.text-center
-      %h2.secondary-text BPO
-      %a{:href => "#bpo"}
-        =image_tag 'bpo1.png', :class => "img7", :alt => 'BPO'
-      %p 
-        Joynus provides customer experiences and back office operations<br>
-        
-        %b   
-          %a{:href => "#bpo"} Learn More    
-    .grid-items.text-center
-      %h2.secondary-text.text-center Consultation
-      %a{:href => "#consultation"}    
-        =image_tag 'new.png', :alt => "Consultation", :class => "img7"  
-        
-      %p
-        New to the area or industry?<br>
-        %b   
-          %a{:href => "/services#consultation"} Learn More             
-            
- 
+    .row
+      .box
+        .columns.large-4
+          %a{:href => "#directhire"}
+            = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img000"
+        .columns.large-5
+          %h2.secondary-text Direct hire    
+          %p
+            Joynus presents you with potential candidates<br>
+            %b
+              %a{:href => "#directhire"} Learn More
+              
+    .row
+      .box
+        .columns.large-4
+          %a{:href => "#bpo"}
+            =image_tag 'bpo1.png', :class => "img000", :alt => 'BPO'
+        .columns.large-5
+          %h2.secondary-text BPO  
+          %p 
+            Joynus provides customer experiences and back office operations<br>
+            %b   
+              %a{:href => "#bpo"} Learn More    
+    .row
+      .box
+        .columns.large-4
+          %a{:href => "#consultation"}    
+            =image_tag 'new.png', :alt => "Consultation", :class => "img000"  
+        .columns.large-5
+          %h2.secondary-text Consultation
+          %p
+            New to the area or industry?<br>
+            %b   
+              %a{:href => "/services#consultation"} Learn More         
+      
+  
+  
     
   %section.m-top1   
     %h2.text-center.secondary-text Staffing
@@ -586,3 +595,52 @@
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'
   = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+  
+/
+  .row#industry.content-section
+    .columns.xlarge-12
+      %h2.text-center.secondary-text
+        Services
+    
+          
+  
+  
+  .grid-container
+    .grid-items.text-center
+      
+      %h2.secondary-text Staffing 
+      %a{:href => "#staffing"}
+        = image_tag 'staffing.png', :alt => 'Staffing', :class => "img7"
+       
+      %p
+        Joynus provides a complete range of job placements <br>
+        %b.text-center
+          %a{:href => "#staffing"} Learn More 
+    .grid-items.text-center
+      %h2.secondary-text Direct hire
+      %a{:href => "#directhire"}
+        = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img7"
+        
+      %p
+        Joynus presents you with potential candidates<br>
+        %b
+          %a{:href => "#directhire"} Learn More
+          
+    .grid-items.text-center
+      %h2.secondary-text BPO
+      %a{:href => "#bpo"}
+        =image_tag 'bpo1.png', :class => "img7", :alt => 'BPO'
+      %p 
+        Joynus provides customer experiences and back office operations<br>
+        
+        %b   
+          %a{:href => "#bpo"} Learn More    
+    .grid-items.text-center
+      %h2.secondary-text.text-center Consultation
+      %a{:href => "#consultation"}    
+        =image_tag 'new.png', :alt => "Consultation", :class => "img7"  
+        
+      %p
+        New to the area or industry?<br>
+        %b   
+          %a{:href => "/services#consultation"} Learn More             
