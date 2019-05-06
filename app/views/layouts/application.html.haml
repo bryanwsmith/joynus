@@ -44,11 +44,13 @@
 
     %header
       %nav(role='navigation')
-        .container.navbar-container
+        .navbar-container
           .navbar-header
             %a{:alt => "Joynus", :href => "/"}
-              =image_tag 'Logo_Horizontal_no_bg.png', :class => "img-logo"
-            /%h2= link_to 'Joynus', root_url
+            
+            //=image_tag 'Logo_White_Web.png', :class => "img-logo"
+            //=image_tag 'Logo_Horizontal_no_bg.png', :class => "img-logo"
+            %h2= link_to 'Joynus', root_url
           %ul.menu
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url

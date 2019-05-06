@@ -26,6 +26,18 @@
 //= require services/JobsService
 //= require controllers/JobsController
 
+$(document).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+    
+   
+  } else {
+    $('nav').removeClass('shrink');
+  
+  }
+});
+
+
 $(function(){
   AOS.init ()
 });

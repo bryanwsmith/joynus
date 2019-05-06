@@ -95,6 +95,26 @@
 
 @media only screen and (min-width:320px) {
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
+  #services{
+    #staffing_process{
+      img{
+        width:50%;
+        height:50%;
+        left:25%;
+        position:relative;
+      }
+    }
+    
+    #directhire_process{
+      img{
+        width:50%;
+        height:50%;
+        left:25%;
+        position:relative;
+      }
+    }
+    
+  }
   }
 @media only screen and (min-width:480px) {
   .feature-section .feature .feature-container {
@@ -105,19 +125,39 @@
 
 @media only screen and (min-width:768px) {
   #home .feature-container { padding-bottom: 39.85%; }
-  #employers .feature-container { padding-bottom: 4.85%; }
+  #employers .feature-container { padding-bottom: 50%; }
   #staff .feature-container { padding-bottom: 47.85%; }
   #recruit .feature-container { padding-bottom: 47.85%; }
-  #services .feature-container { padding-bottom: 47.85%; }
-  #posts .feature-container { padding-bottom: 47.85%; }
-  #about{ .feature-container { padding-bottom: 47.85%; }  } 
-  #contact{ .feature-container {padding-bottom: 47.85%;}  }
+  #services .feature-container { padding-bottom: 52%; }
+  #posts .feature-container { padding-bottom: 50%; }
+  #about{ .feature-container { padding-bottom: 50%; }  } 
+  #contact{ .feature-container {padding-bottom: 50%;}  }
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }
     position: absolute;
     left: 50%;
     bottom: 50%;
+  }
+  #services{
+    #staffing_process{
+      img{
+        width:70%;
+        height:90%;
+        left:25%;
+        position:relative;
+      }
+    }
+    #directhire_process{
+      img{
+        width:70%;
+        height:90%;
+        left:25%;
+        position:relative;
+      }
+    }
+    
+    
   }
 }
 
@@ -127,8 +167,49 @@ position: absolute;
     left: 50%;
     bottom: 50%;}
 
+#services{
+    #staffing_process{
+      img{
+        width:70%;
+        height:90%;
+        left:10%;
+        position:relative;
+      }
+    }
+    
+    #directhire_process{
+      img{
+        width:70%;
+        height:90%;
+        left:10%;
+        position:relative;
+      }
+    }
+  }
+
+
 @media only screen and (min-width:1140px) {}
 
-@media only screen and (min-width:1280px) {}
+@media only screen and (min-width:1280px) {
+    #services{
+    #staffing_process{
+      img{
+        width:100%;
+        height:100%;
+        left:0;
+        position:relative;
+      }
+    }
+    #directhire_process{
+      img{
+        width:100%;
+        height:100%;
+        left:0;
+        position:relative;
+      }
+    }
+    
+  }
+}
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}

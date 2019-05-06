@@ -63,7 +63,7 @@
    
   
    .industry-grid-items{
-     background:white;
+     background:transparent;
       border-style: solid;
       border-color:#d7dbd0;
       
@@ -77,6 +77,13 @@
 
 @media only screen and (min-width: rem-calc(360)){
   #services{
+  .img000{
+    height:auto;
+    width:90%;
+    padding-left:10%;
+   
+    }
+  
   .prev, .next {font-size: 11px}  
   .stext > p{
     background:rgba(26, 26, 26, 0.4);
@@ -126,6 +133,8 @@
     grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
+  
+    
     
     .img8{
       height:70px;
@@ -180,7 +189,7 @@
     
   .industry-grid-container {
     p{
-      font-size:25px;
+      font-size:23px;
     }  
   }
   
@@ -202,9 +211,7 @@
   }
   
   
-    
-    
-    
+  
   }
   
 }
@@ -222,7 +229,12 @@
     width: 230px;
     height: 230px;
     }
-    
+   .img000{
+    height:250px;
+    width:auto;
+    padding-left:30%;
+   
+} 
    
    p{font-size:20px;}
    h2{font-size: $h2-font-size;}
@@ -243,9 +255,8 @@
       height:150px;
       width:auto;
     }
+  } 
   
-   
- } 
 
   }
   
