@@ -100,8 +100,12 @@
       img{
         width:50%;
         height:50%;
-        left:25%;
+        margin:auto;
         position:relative;
+        display:block;
+        float:none;
+        
+        
       }
     }
     
@@ -109,8 +113,12 @@
       img{
         width:50%;
         height:50%;
-        left:25%;
+        
         position:relative;
+        margin:auto;
+        
+        display:block;
+        float:none;
       }
     }
     
@@ -140,20 +148,29 @@
     bottom: 50%;
   }
   #services{
+     
+    
     #staffing_process{
       img{
         width:70%;
         height:90%;
-        left:25%;
+        margin:auto;
         position:relative;
+        display:block;
+        float:none;
+        right:5%;
+        
       }
     }
     #directhire_process{
       img{
         width:70%;
         height:90%;
-        left:25%;
+        margin:auto;
         position:relative;
+        display:block;
+        float:none;
+        right:5%;
       }
     }
     
@@ -172,8 +189,7 @@ position: absolute;
       img{
         width:70%;
         height:90%;
-        left:10%;
-        position:relative;
+        
       }
     }
     
@@ -181,8 +197,7 @@ position: absolute;
       img{
         width:70%;
         height:90%;
-        left:10%;
-        position:relative;
+        
       }
     }
   }
@@ -194,18 +209,20 @@ position: absolute;
     #services{
     #staffing_process{
       img{
+        
         width:100%;
         height:100%;
-        left:0;
-        position:relative;
+        padding-left:5%;
+        
       }
     }
     #directhire_process{
       img{
         width:100%;
         height:100%;
-        left:0;
-        position:relative;
+        padding-left:5%;
+        
+        
       }
     }
     

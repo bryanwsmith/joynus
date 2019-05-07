@@ -46,7 +46,7 @@
       %nav(role='navigation')
         .navbar-container
           .navbar-header
-            %a{:alt => "Joynus", :href => "/"}
+            
             
             //=image_tag 'Logo_White_Web.png', :class => "img-logo"
             //=image_tag 'Logo_Horizontal_no_bg.png', :class => "img-logo"
@@ -59,7 +59,7 @@
             /%li.menu-item= active_link_to t('header.recruit'), recruit_index_path
             
             %li.menu-item= active_link_to t('header.services'), services_path
-            
+            %li.menu-item= active_link_to "Automotive", services_automotive_path
             %li.menu-item= active_link_to t('header.news'), posts_path
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path

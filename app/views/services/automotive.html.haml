@@ -1,0 +1,88 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
+%head
+  %title Joynus Staffing | Services | We provide best solutions
+  %meta{:content => "We have your best interest at heart", :name => "Description"}/
+%body
+  %section.feature-section.no-spacing
+    .feature.animated.fadeIn
+      .feature-container
+        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
+        .feature-text
+          %h1.text-center.animated.fadeInDown
+            Right People Right Now
+            
+
+        
+  
+  %section
+    .wrap
+      
+              
+                
+      .pageleft
+        .row        
+          .columns.large-12
+      
+            %h2.secondary-text.text-center
+              Automotive
+            %p
+              50% of our portfolio is in Automotive due to its high volume demand. 
+              We have been placing our associates for Automotive over a decade. 
+              With technological advancement, automotive manufacturing is rapidly adapting 
+              to advanced manufacturing technology, yielding higher efficiency through automation. 
+              These fast paced automation requires a workforce that can work with these new equipment.
+              Needless to say we know the top issues and know how to solve them
+            
+           
+            
+            .columns.large-6
+             
+              %h5
+                %b.secondary-text
+                  Top five issues we focus on
+              %p
+                Production demand<br>
+              
+                Quality<br>
+              
+                Attendance<br>
+              
+                Retention and Turnover<br>
+              
+                Safety and incident  <br>
+                
+            .columns.large-6
+              
+              %h5
+                %b.secondary-text
+                  Positions we excel at
+              %p
+                Assembly<br>
+              
+                Forklift Operators<br>
+              
+                Machine Operators<br>
+              
+                Maintenance<br>
+              
+                Management &#47; Supervisor Technicians  <br>
+                
+                Quality Control &#47; Quality Assurance <br>
+                
+                Welders
+      .pageright
+        .row
+          .columns.large-9.large-offset-1
+            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            
+        
+        .form-section.no-spacing.mb--
+          .row
+            .columns.large-9.large-offset-1
+              %fieldset.mb--
+                = render 'contact/form'          
+        
+   
+      

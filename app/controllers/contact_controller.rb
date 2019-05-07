@@ -15,7 +15,7 @@ class ContactController < ApplicationController
     message = params[:message] || ''
 
     ContactMailer.contact_email(first_name, last_name, email, subject, phone, message).deliver
-    redirect_to contact_index_path, notice: "Your message was sent, we'll be in touch soon"
+    redirect_to request.referrer, notice: "Your message was sent, we'll be in touch soon"
   end
   
   private

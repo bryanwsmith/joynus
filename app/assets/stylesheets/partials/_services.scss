@@ -233,8 +233,9 @@
     height:250px;
     width:auto;
     padding-left:30%;
+   }
    
-} 
+   
    
    p{font-size:20px;}
    h2{font-size: $h2-font-size;}
@@ -466,6 +467,28 @@
 .activate, .dot2:hover {
   background-color: #717171;
 }
+
+.wrap {
+    width: 100%;
+    overflow:auto;
+    display:flex;
+    
+}
+
+.pageleft {
+    float:none; 
+    width: 60%;
+}
+
+
+
+.pageright {
+    float:right;
+    width: 40%;
+}
+
+
+
 
   }
 }
