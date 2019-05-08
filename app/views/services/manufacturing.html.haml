@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
 %head
   %title Joynus Staffing | Services | We provide best solutions
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
@@ -9,15 +12,102 @@
         .feature-text
           %h1.text-center.animated.fadeInDown
             Right People Right Now
-            /Right talents equal to the growth of company
-            / Don’t find fault. Find a remedy
-            / People expect good service but few are willing to give it
-            / Our service is rated by your profit
-            / We listen to our customers deeply, or we will have none
+            
 
         
   
   %section
-    %h2.secondary-text.text-center
-      Our specialized staffing services 
-  
+    .wrap
+      
+              
+                
+      .pageleft
+        .row        
+          .columns.large-12
+      
+            %h2.secondary-text.text-center
+              Manufacturing
+            %p
+              As technology advances, manufacturing operations have evolved and it requires evolved set of talent than past decades. 
+              Today’s workers must be skilled in sophisticated processes and systems to meet your demands for ongoing innovations, safety 
+              and quality
+            
+           
+            
+            .columns.large-6
+             
+              %h5
+                %b.secondary-text
+                  Top five issues we focus on
+              %p
+                Production demand<br>
+              
+                Quality<br>
+              
+                Attendance<br>
+              
+                Retention and Turnover<br>
+              
+                Safety and incident  <br>
+                
+        .row        
+          .columns.large-12
+      
+            
+           
+            
+            .columns.large-6
+             
+              %h5
+                %b.secondary-text
+                  Positions we excel at
+          .columns.large-12
+            .columns.large-6
+              
+              %p
+                Assembly<br>
+                Material Handler<br>
+                Packer<br>
+                Sorter<br>
+                Forklift Operator<br>
+                Lift Truck Operator <br>
+                Production Associate <br>
+                Baler <br>
+                Picker <br>
+                Warper <br>
+                Creeler <br>
+                Tufting Machine Operator<br>
+                Runner<br>
+                
+            .columns.large-6
+              %p    
+                Table Runner<br>
+                Cutter<br>
+                Samples<br>
+                Yarn Sorter<br>
+                Injection Molding<br>
+                Extrusion Operator<br>
+                Hopper Operator <br>
+                Dyer<br>
+                Quality Control<br>
+                PLC Technician<br>
+                Winder<br>
+                Cavers<br>
+                Repairer  
+        
+     
+                
+      .pageright
+        .row
+          .columns.large-10.large-offset-2
+            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            
+        
+        .form-section.no-spacing.mb--
+          .row
+            .columns.large-10.large-offset-2
+              %fieldset.mb--
+                = render 'contact/form'          
+        
+   
+      

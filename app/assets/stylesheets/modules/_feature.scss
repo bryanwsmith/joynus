@@ -104,8 +104,6 @@
         position:relative;
         display:block;
         float:none;
-        
-        
       }
     }
     
@@ -113,10 +111,8 @@
       img{
         width:50%;
         height:50%;
-        
         position:relative;
         margin:auto;
-        
         display:block;
         float:none;
       }
@@ -137,9 +133,10 @@
   #staff .feature-container { padding-bottom: 47.85%; }
   #recruit .feature-container { padding-bottom: 47.85%; }
   #services .feature-container { padding-bottom: 52%; }
-  #posts .feature-container { padding-bottom: 50%; }
-  #about{ .feature-container { padding-bottom: 50%; }  } 
-  #contact{ .feature-container {padding-bottom: 50%;}  }
+    
+  #posts .feature-container { padding-bottom: 52%; }
+  #about{ .feature-container { padding-bottom: 52%; }  } 
+  #contact{ .feature-container {padding-bottom: 52%;}  }
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }

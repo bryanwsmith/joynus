@@ -19,36 +19,42 @@
   
   %section
     %h2.secondary-text.text-center
-      Our specialized staffing services 
+      Our Specialized Staffing Services 
   
     .industry-grid-container
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}  
-        = image_tag 'Icon Automotive.png', :alt => 'Automotive', :class => "img8"
+        %a{:href => "services/automotive"}
+          = image_tag 'Icon Automotive.png', :alt => 'Automotive', :class => "img8"
         %p
           %b
             Automotive
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        = image_tag 'Icon Finance.png', :alt => 'Accounting & Finance', :class => "img8"
+        %a{:href => "services/accounting"}
+          = image_tag 'Icon Finance.png', :alt => 'Accounting & Finance', :class => "img8"
         %p
           %b
             Accounting & Finance
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
-        = image_tag 'Icon Healthcare.png', :alt => 'Healthcare', :class => "img8"
+        %a{:href => "services/healthcare"}
+          = image_tag 'Icon Healthcare.png', :alt => 'Healthcare', :class => "img8"
         %p
           %b
             Healthcare
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
-        = image_tag 'Icon Manufacturing.png', :alt => 'Manufacturing', :class => "img8"
+        %a{:href => "services/manufacturing"}
+          = image_tag 'Icon Manufacturing.png', :alt => 'Manufacturing', :class => "img8"
         %p
           %b
             Manufacturing
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        = image_tag 'Icon Office.png', :alt => 'Office & Administrative', :class => "img8"
+        %a{:href => "services/office"}
+          = image_tag 'Icon Office.png', :alt => 'Office & Administrative', :class => "img8"
         %p
           %b
             Office & Administrative
       .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
-        = image_tag 'IT Icon.png', :alt => 'IT', :class => "img8"
+        %a{:href => "services/it"}  
+          = image_tag 'IT Icon.png', :alt => 'IT', :class => "img8"
         %p
           %b
             Information Technology
@@ -81,7 +87,7 @@
           %a{:href => "#directhire"}
             = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img000"
         .columns.large-8
-          %h2.secondary-text Direct hire    
+          %h2.secondary-text Direct Hire    
           %p
             We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges. Then we carefully select potential candidates for you to choose.
             When you make the decision, the candidate becomes permanent employee of your organization<br>
@@ -136,7 +142,7 @@
   .row        
     .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
       
-      %h2.text-center.secondary-text What we do
+      %h2.text-center.secondary-text What We Do
       %p
         %b Temp -
         We are your on demand staffing, whenever you need workforce, we have them standby
@@ -211,7 +217,7 @@
   .row#staffing_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
     .columns.large-12
       %h2.text-center.secondary-text
-        Staffing process
+        Staffing Process
       %p
         First, we want to know the details of how your business works; more I know about 
         you better I can do my job. Then we will use our proprietary system to have right 
@@ -229,7 +235,7 @@
         .columns.large-6
           = image_tag 'hr-management.png', :class => "imgg"
         .columns.large-6
-          %h2.secondary-text Employee management
+          %h2.secondary-text Employee Management
           %p
             Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
             <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
@@ -298,7 +304,7 @@
         = image_tag 'Rains Money.jpg', :class => "imgg" 
     
       .columns.large-7
-        %h2.secondary-text.text-center#retention Employee retention
+        %h2.secondary-text.text-center#retention Employee Retention
         %p.text-center Good talent is hard to find thus we want to keep them
         .columns.large-4.text-center.large-offset-1
           %p
@@ -331,7 +337,7 @@
         = image_tag 'payroll.jpg', :class => "imgg" 
     
       .columns.large-6.large-pull-6.text-center 
-        %h2.secondary-text Employee payroll
+        %h2.secondary-text Employee Payroll
         .columns.large-10.large-offset-1
           %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
         .columns.large-12
@@ -346,7 +352,7 @@
             
             
   %section#directhire
-    %h2.text-center.secondary-text Direct hire
+    %h2.text-center.secondary-text Direct Hire
     .row
       
       .box
@@ -365,7 +371,7 @@
     .row        
       .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
         
-        %h2.text-center.secondary-text What we do
+        %h2.text-center.secondary-text What We Do
         %p
           %b  Contingency recruitment:
           We source, screen and interview candidates. 
@@ -382,11 +388,11 @@
 
 
     
-  %section#directhire_process    
-    .row{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+     
+    .row#directhire_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
       .columns.large-12
         %h2.text-center.secondary-text.m-top3
-          Direct hire process
+          Direct Hire Process
         %p
           Hire into your organization as your own permanent employee. We send you resumes, you interview and make decision. Upon the first day of employment you pay us agreed fee
         %p

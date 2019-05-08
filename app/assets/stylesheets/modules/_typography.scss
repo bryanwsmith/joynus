@@ -137,7 +137,16 @@ h2 {
     height:250px;
     width:auto;
     padding-left:30%;
+    
+}
+
+.img000:hover{
+	-webkit-filter: drop-shadow(8px 8px 10px #5bd5b8);
+	filter: drop-shadow(8px 8px 10px #5bd5b8);    
    
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
 }
 
 .img0000{

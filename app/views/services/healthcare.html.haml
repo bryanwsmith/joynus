@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
 %head
   %title Joynus Staffing | Services | We provide best solutions
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
@@ -9,15 +12,78 @@
         .feature-text
           %h1.text-center.animated.fadeInDown
             Right People Right Now
-            /Right talents equal to the growth of company
-            / Don’t find fault. Find a remedy
-            / People expect good service but few are willing to give it
-            / Our service is rated by your profit
-            / We listen to our customers deeply, or we will have none
+            
 
         
   
   %section
-    %h2.secondary-text.text-center
-      Our specialized staffing services 
-  
+    .wrap
+      
+              
+                
+      .pageleft
+        .row        
+          .columns.large-12
+      
+            %h2.secondary-text.text-center
+              Healthcare
+            %p
+              Lifestyle and demographic changes, funding gaps and workforce shortages, ever changing political and regulatory 
+              developments plays a large role in healthcare industry. With focus on Patient Centered Care at the center, customized 
+              consumer demand, new technology products and controlling cost are shaping healthcare.
+           
+            
+            .columns.large-12
+             
+              %h5
+                %b.secondary-text
+                  Positions we excel at<br>
+            
+              .columns.large-6
+                %p
+                  Registered Nurse
+                .columns.large-12   
+                  %ul
+                  
+                    %li Travel Nurse
+                      
+                    %li Per-diem Nurse
+                    
+                    %li Locum Tenens Nurse
+                %p
+                  Physical Therapist<br>
+                
+                  Occupational Therapist<br>
+                
+                  Speech-Language pathologist<br>
+                  
+                  Assembly<br>
+                
+                  Forklift Operators<br>
+                
+                  Machine Operators<br>
+                
+                  Maintenance<br>
+                
+                  Management &#47; Supervisor Technicians  <br>
+                  
+                  Quality Control &#47; Quality Assurance <br>
+                  
+                  Welders
+                
+                
+              
+      .pageright
+        .row
+          .columns.large-10.large-offset-2
+            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            
+        
+        .form-section.no-spacing.mb--
+          .row
+            .columns.large-10.large-offset-2
+              %fieldset.mb--
+                = render 'contact/form'          
+        
+   
+      

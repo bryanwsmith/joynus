@@ -1,3 +1,6 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
 %head
   %title Joynus Staffing | Services | We provide best solutions
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
@@ -9,15 +12,55 @@
         .feature-text
           %h1.text-center.animated.fadeInDown
             Right People Right Now
-            /Right talents equal to the growth of company
-            / Don’t find fault. Find a remedy
-            / People expect good service but few are willing to give it
-            / Our service is rated by your profit
-            / We listen to our customers deeply, or we will have none
+            
 
         
   
   %section
-    %h2.secondary-text.text-center
-      Our specialized staffing services 
-  
+    .wrap
+      
+              
+                
+      .pageleft
+        .row        
+          .columns.large-12
+      
+            %h2.secondary-text.text-center
+              Information Technology
+            
+           
+            
+            .columns.large-12
+             
+              %h5
+                %b.secondary-text
+                  Positions we excel at<br>
+            
+              .columns.large-6
+                %p
+                  Business Analyst<br>
+                  Database Administrator<br>
+                  Web Developer<br>
+                  UI/UX Designer<br>
+                  IT Help Desk Technician and Support<br>
+                  System Administrator<br>
+                  Project Manager<br>
+                  Quality Assurance Analyst
+                  
+                  
+                
+              
+      .pageright
+        .row
+          .columns.large-10.large-offset-2
+            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            
+        
+        .form-section.no-spacing.mb--
+          .row
+            .columns.large-10.large-offset-2
+              %fieldset.mb--
+                = render 'contact/form'          
+        
+   
+      
