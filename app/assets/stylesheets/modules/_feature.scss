@@ -14,7 +14,15 @@
       overflow: hidden;
       position: relative;
       height: auto;
-
+      .feature-container2 {
+        background-color: $white;
+        padding-bottom: 5%;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+       }
+      
       .feature-container {
         background-color: $white;
         padding-bottom: 115%;
@@ -22,7 +30,10 @@
         height: 0;
         overflow: hidden;
         position: relative;
-
+      
+     
+      
+      
         img {
           position: absolute;
           top: 0;
@@ -31,6 +42,8 @@
           height: 100%;
         }
       }
+      
+         
 
       .feature-text {
         position: absolute;
