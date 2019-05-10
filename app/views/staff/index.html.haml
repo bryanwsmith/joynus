@@ -8,152 +8,147 @@
         %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
-            Right talents equal to the growth of company
+            Right People, Right Now
   
           
-          
-  %section.m-top3
-    .row#process{"data-aos" => "zoom-out-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .columns.large-12
-        %h2.text-center.secondary-text
-          Staffing process       
-          
-  
-    .slideshow-container{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .mySlides.fade
-        .numbertext
-          %h2 Discovery
-        = image_tag 'discovery.jpg', :alt => 'Discovery', :style => "width:100%"  
-        
-        .stext
-          %p
-            The discovery stage is beginning the process of getting to know you and
-            letting you know more about us. More importantly, we want to know if we are able to provide a solution for your business. Questions??
-            %b
-              %a{:alt => "contact", :href => "/contact"} Contact Us
-      .mySlides.fade
-        .numbertext
-          %h2 Assessment
-        = image_tag 'assessment.jpg', :alt => 'Assessment', :style => "width:100%"   
-        
-        .stext
-          %p
-            After getting acquainted, we may prepare one or a few different options that may be a good fit for you. We discuss some of the areas we fill
-            would be beneficial and other areas that may be helpful down the line
-      .mySlides.fade
-        .numbertext
-          %h2 Preparation
-        = image_tag 'preparation.jpg', :alt => 'preparation', :style => "width:100%" 
-        
-        .stext
-          %p
-            Staffing is an ongoing process. We consistently post jobs on our social media, job boards, and coordinate with the city to schedule job fairs
-            so that we are able to consistently provide you with the workforce 
-      .mySlides.fade
-        .numbertext
-          %h2 Orientation
-        = image_tag 'orientation.jpg', :alt => 'orientation', :style => "width:100%"   
-        
-        .stext
-          %p
-            Joynus sends in the right talent to your business. This is where orientation comes in.<br>
-            We educate our applicants on our rules and regulations<br>
-            %b
-              %a{:href => "/staff#compliance"} Learn more
-           
-      .mySlides.fade
-        .numbertext
-          %h2 Stand-by
-        = image_tag 'standby.jpg', :alt => 'Stand-by', :style => "width:100%" 
-        
-        .stext
-          %p
-            Once we completed orientation, we place all eligible candidates on stand-by. Stand-by is a list of candidates that meet the requirements to work on-site
-            that we fill would be the ideal employee for you long term
-      %a.prev{:onclick => "plusSlides(-1)"} ❮
-      %a.next{:onclick => "plusSlides(1)"} ❯
-    %br/
-    %div{:style => "text-align:center"}
-      %span.dot{:onclick => "currentSlide(1)"}
-      %span.dot{:onclick => "currentSlide(2)"}
-      %span.dot{:onclick => "currentSlide(3)"}
-      %span.dot{:onclick => "currentSlide(4)"}
-      %span.dot{:onclick => "currentSlide(5)"}
+  .row#staffing
+    .box
       
-
-
-      
-%section.m-top2
-  .row        
-    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
-      
-      %h2.text-center.secondary-text What are Temp, Temp to hire &amp; Short term?
-      %p
-        %b Temp -
-        Temporary employment is an ideal solution for unpredictable workloads, project work, seasonal peaks, and other limited-term needs, such as a leave of absence. Temp positions typically have a set timeframe. Through all assignments, the talent is employed by the staffing firm
-      %p
-        %b Temp to hire -
-        Temp-to-hire is a working arrangement in which a worker is hired first on a temporary basis – usually through a temporary staffing agency – with the possibility of the position becoming full-time
-      %p
-        %b Short term -
-        short-term employment are workers who hold explicit or implicit contracts of employment which are expected to last longer than the period used to define casual workers, but shorter than the one
-        used to define regular employees. These workers may be classified as employees or own- account workers according to the specific characteristics of the employment contract      
-      
-%section.m-top6
-  .row{"data-aos" => "zoom-in","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-    .box    
-      .columns.large-6
-        = image_tag 'hr-management.png', :class => "imgg"
-      .columns.large-6
-        %h2.secondary-text Employee management
+      .columns.large-6.large-push-5
+        %h2.text-center.secondary-text Staffing
         %p
-          Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
-          <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
-        
-#id02.w3-modal
-  .w3-modal-content.w3-card-4.w3-animate-zoom
-    %header.w3-container.w3-blue
-      %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id02').style.display='none'"} ×
-      %h2.w3-text-white Safety Training 
-    .w3-bar.w3-border-bottom
-      %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Video')"} Safety
-      
-      
-    #Video.w3-container.city.video-responsive
-      %h2.primary-text Safety Video
-      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :width => "100%", :height => "70%", :src => "https://www.youtube.com/embed/XGNKbCtZ6vY?rel=0"}
+          We provide a complete range of job placements with the appropriate skillsets our clients require.
+          You will operate on your schedule so that you may be at ease with a pleasant overall experience.
+          We are dedicated team of professionals who love their work and because of this,
+          we repeatedly exceed our customer's expectations for every single one of our clients.<br>
+      .columns.large-5.large-pull-6
+        %a{:href => "#staffing_process"}
+          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"    
+              
     
+  .row        
+    .columns.large-12.div
+      
+      %h2.text-center.secondary-text What We Do
+      %p
+        %b Temp <br>
+        We are your on demand staffing, whenever you need workforce, we have them standby
+      %p
+        %b Temp to hire <br>
+        After having temporary workforce work for you a while, you decide who is good fit for your organization and hire them on to your organization as a full time employee
+      %p  
+        %b Retention Program <br>
+        Depending on your industry and business, we will recommend appropriate programs. Retention programs are created with performance recognition, relationship with supervisor, gratitude, communication. 
+      %p
+        %b On Site Management<br>
+      
+        i.	Success of your business largely depend on your workforce. Especially if you have a 
+        high-volume temporary workforce, having Joynus on-site management is a huge plus. <br>
+        ii.	On-site manager will integrate into you culture. In a way the On-site Manager 
+        is part of your team sharing your concerns and joys together. <br>
+        iii.	On-site Management Service is ideal in manufacturing and distribution facility 
+        where you have a large space and the workforce is spread out. It could also be in a large
+        corporate campus with different levels and categories of workforce. <br>
+        iv.	On-site Management Service leaves you stress free and pays attention to minor details 
+        that you may miss such as ID badges, Protective Wear, time clock correction, etc. <br>
+        v.	Here are top benefits
+        
 
+   
+  .row
+    .columns.large-2.text-center
+      .srvIco2
+        %i
+          = image_tag 'Icon_Engagement.png', :class => 'img-onsite'
+    .columns.large-4
+      %h4.secondary-text.text-center
+        Engagement
+      %p
+        The workforce may not show up to work or late, On-Site Manager will engage and 
+        determine whether to call someone new to show up to work from the standby list with 
+        minutes of notice.       
+    .columns.large-2.text-center
+      .srvIco2
+        %i
+          = image_tag 'Icon_Impact.png', :alt => "Impact", :class => 'img-onsite'
+    .columns.large-4
+      %h4.secondary-text.text-center
+        Impact
+      %p
+        When there is a turnover, our On-site Manager will work with Shift supervisor 
+        and train them on job basics and monitor the quality to ensure no disruption
+        to production and no damage to quality
+    
+  .row     
+    .columns.large-2.text-center
+      .srvIco2
+        %i
+          = image_tag 'Icon_Stewardship.png', :alt=>"Stewardship", :class => 'img-onsite'
+    .columns.large-4
+      %h4.secondary-text.text-center
+        Stewardship
+      %p
+        Our workforce are not commodity. They’re our employees. Our On-Site Manager knows 
+        their name, converse with them and become their supervisor and mentor. 
+        Tender Loving Care works.    
+    .columns.large-2.text-center
+      .srvIco2
+        %i
+          = image_tag 'Icon_Innovation.png', :alt=>"Innovation",  :class => 'img-onsite'
+    .columns.large-4
+      %h4.secondary-text.text-center
+        Innovation
+      %p
+        We continuously work to improve our systems and processes. 
+        Or, you may make changes that need implemented correctly. 
+        Either way, the On-Site Manager trains, monitors and assure the changes are implemented.    
+%section
+  .row#staffing_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+    .columns.large-12
+      %h2.text-center.secondary-text
+        Staffing Process
+      %p
+        First, we want to know the details of how your business works; more I know about 
+        you better I can do my job. Then we will use our proprietary system to have right 
+        people ready. We will have a list of standby temporary associates so whenever 
+        you request, we send you employees right away. Right people, right now. 
+        As they work we will shift our focus on retention and management
+      %p
+        We provide a complete range of job placements with the appropriate skillsets our clients require. 
+    .columns.large-12.m-top5
+      %img{ data: { interchange:"[#{asset_path('Staffing_process_ver.png')}, (small)], [#{asset_path('Staffing_process_ver.png')}, (medium)], [#{asset_path('Staffing_process_hor.png')}, (large)]" } }  
+      
+  
+    .row{"data-aos" => "zoom-in","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+      .box    
+        .columns.large-6
+          = image_tag 'hr-management.png', :class => "imgg"
+        .columns.large-6
+          %h2.secondary-text Employee Management
+          %p
+            Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
+            <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
+          
+  #id02.w3-modal
+    .w3-modal-content.w3-card-4.w3-animate-zoom
+      %header.w3-container.w3-blue
+        %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id02').style.display='none'"} ×
+        %h2.w3-text-white Safety Training 
+      .w3-bar.w3-border-bottom
+        %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Video')"} Safety
+        
+        
+      #Video.w3-container.city.video-responsive
+        %h2.primary-text Safety Video
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :width => "100%", :height => "70%", :src => "https://www.youtube.com/embed/XGNKbCtZ6vY?rel=0"}
+    
 
 
                
     
-    :javascript
-      document.getElementsByClassName("tablink")[0].click();
-      
-      function openCity(evt, cityName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].classList.remove("w3-light-grey");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.classList.add("w3-light-grey");
-      }
-      var modal = document.getElementById('id02');
-  
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }
-%section#compliance
-  .row{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+    
+
+  .row#compliance{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
     .box
       
       .columns.large-6.large-push-6
@@ -191,14 +186,14 @@
       
       
         
-%section.m-top5{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}        
-  .row#retention
+
+  .row#retention{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}        
     .box
       .columns.large-6
         = image_tag 'Rains Money.jpg', :class => "imgg" 
     
       .columns.large-7
-        %h2.secondary-text.text-center#retention Employee retention
+        %h2.secondary-text.text-center#retention Employee Retention
         %p.text-center Good talent is hard to find thus we want to keep them
         .columns.large-4.text-center.large-offset-1
           %p
@@ -224,14 +219,14 @@
        
       
       
-%section{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
-  .row
+
+  .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
     .box
       .columns.large-6.large-push-6.m-top3
         = image_tag 'payroll.jpg', :class => "imgg" 
     
       .columns.large-6.large-pull-6.text-center 
-        %h2.secondary-text Employee payroll
+        %h2.secondary-text Employee Payroll
         .columns.large-10.large-offset-1
           %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
         .columns.large-12
@@ -240,9 +235,7 @@
           %p
             %b Paper checks<br>
           %p
-            %b Pay cards
-        
-      
+            %b Pay cards       
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'

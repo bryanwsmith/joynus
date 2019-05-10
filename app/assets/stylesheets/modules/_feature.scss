@@ -16,7 +16,7 @@
       height: auto;
       .feature-container2 {
         background-color: $white;
-        padding-bottom: 5%;
+        padding-bottom: 7%;
         position: relative;
         height: 0;
         overflow: hidden;
@@ -48,7 +48,7 @@
       .feature-text {
         position: absolute;
         left: 50%;
-        bottom: 25%;
+        bottom: 35%;
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
@@ -107,6 +107,11 @@
 }
 
 @media only screen and (min-width:320px) {
+   .feature-text {
+        
+        bottom: 55%;
+        
+   }
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
   #services{
     #staffing_process{
@@ -143,9 +148,11 @@
 @media only screen and (min-width:768px) {
   #home .feature-container { padding-bottom: 39.85%; }
   #employers .feature-container { padding-bottom: 50%; }
-  #staff .feature-container { padding-bottom: 47.85%; }
-  #recruit .feature-container { padding-bottom: 47.85%; }
+  #staff .feature-container { padding-bottom: 52%; }
+  #directhire .feature-container { padding-bottom: 52%; }
   #services .feature-container { padding-bottom: 52%; }
+  #bpo .feature-container { padding-bottom: 52%; }
+  #consultation .feature-container { padding-bottom: 52%; }
     
   #posts .feature-container { padding-bottom: 52%; }
   #about{ .feature-container { padding-bottom: 52%; }  } 
@@ -153,6 +160,7 @@
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }
+   
     position: absolute;
     left: 50%;
     bottom: 50%;

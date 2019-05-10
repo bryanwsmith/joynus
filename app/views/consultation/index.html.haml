@@ -1,0 +1,71 @@
+%head
+  %title Joynus Staffing | Staffing process
+  %meta{:content => "Why are we different? check out our staffing process", :name => "Description"}/
+%body
+  %section.feature-section.no-spacing
+    .feature.animated.fadeIn
+      .feature-container
+        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
+        .feature-text
+          %h1.text-center.animated.fadeInDown
+            Need a copy
+
+
+  %section#consultation
+    .row
+      .columns.large-12
+        %h2.secondary-text.text-center Consultation
+        .box
+          .columns.large-4.large-offset-1
+            =image_tag 'Consulting.png', :class => "img6", :style => "width:100%"  
+          .columns.large-6
+            %p
+              %b
+                New to the area or industry?
+              %br
+              We have connections with firms of all sizes and industries and a range of diverse talent nation wide
+              to provide insight into industry standards, including compensation information
+          
+            
+        .columns.large-12
+          %p
+            Our trained team will utilize strategic marketing tools, including mass communication compaigns and job boards, and connections within
+            our extensive network to target the talent pool that would be the best fit for your next hire
+  %section
+    .row
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Targeted advertising 
+        .srvIco2
+          %i
+            = image_tag 'TargetedAd.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Localized demographic
+        .srvIco2
+          %i
+            = image_tag 'LocalDemograph.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Hiring foreign nationals
+        .srvIco2
+          %i
+            = image_tag 'InternationalHiring.png', :class => 'img4'
+    .row.m-top3
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Competitor analysis
+        .srvIco2
+          %i
+            = image_tag 'CompetitorAnalysis.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Outsourcing
+        .srvIco2
+          %i
+            = image_tag 'Outsourcing.png', :class => 'img4'
+      .columns.large-4.text-center
+        %h4.secondary-text.text-center Strategic marketing
+        .srvIco2
+          %i
+            = image_tag 'StrategicMarketing.png', :class => 'img4'
+
+.button-container.text-center
+  %h3{:style => "margin:30px"}
+    = t 'about.content-callout'
+  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'

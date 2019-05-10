@@ -17,7 +17,9 @@ en:
     apply: "Apply"
     sign: "Sign In"
     staff: "Staffing"
-    recruit: "Direct hire"
+    recruit: "Direct Hire"
+    bpo: "BPO"
+    consult: "Consultation"
     
   footer:
     rights-reserved: "All Rights Reserved"

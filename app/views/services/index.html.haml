@@ -20,57 +20,66 @@
   %section
     %h2.secondary-text.text-center
       Our Specialized Staffing Services 
-  
-    .industry-grid-container
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}  
-        %a{:href => "services/automotive"}
-          = image_tag 'Icon Automotive.png', :alt => 'Automotive', :class => "img8"
-        %p
-          %b
-            Automotive
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        %a{:href => "services/accounting"}
-          = image_tag 'Icon Finance.png', :alt => 'Accounting & Finance', :class => "img8"
-        %p
-          %b
-            Accounting & Finance
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
-        %a{:href => "services/healthcare"}
-          = image_tag 'Icon Healthcare.png', :alt => 'Healthcare', :class => "img8"
-        %p
-          %b
-            Healthcare
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
-        %a{:href => "services/manufacturing"}
-          = image_tag 'Icon Manufacturing.png', :alt => 'Manufacturing', :class => "img8"
-        %p
-          %b
-            Manufacturing
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        %a{:href => "services/office"}
-          = image_tag 'Icon Office.png', :alt => 'Office & Administrative', :class => "img8"
-        %p
-          %b
-            Office & Administrative
-      .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
-        %a{:href => "services/it"}  
-          = image_tag 'IT Icon.png', :alt => 'IT', :class => "img8"
-        %p
-          %b
-            Information Technology
+    
+    .row
+      .columns.large-12
+        .columns.large-4
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}  
+            %a{:href => "services/automotive"}
+              = image_tag 'Icon Automotive.png', :alt => 'Automotive', :class => "img8"
+            %p
+              %b
+                Automotive   
+        .columns.large-4       
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
+            %a{:href => "services/accounting"}
+              = image_tag 'Icon Finance.png', :alt => 'Accounting & Finance', :class => "img8"
+            %p
+              %b
+                Accounting & Finance
+        .columns.large-4        
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
+            %a{:href => "services/healthcare"}
+              = image_tag 'Icon Healthcare.png', :alt => 'Healthcare', :class => "img8"
+            %p
+              %b
+                Healthcare
+          
+    .row.m-top5
+      .columns.large-12
+        .columns.large-4
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
+            %a{:href => "services/manufacturing"}
+              = image_tag 'Icon Manufacturing.png', :alt => 'Manufacturing', :class => "img8"
+            %p
+              %b
+                Manufacturing
+        .columns.large-4        
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
+            %a{:href => "services/office"}
+              = image_tag 'Icon Office.png', :alt => 'Office & Administrative', :class => "img8"
+            %p
+              %b
+                Office & Administrative
+        .columns.large-4        
+          .text-center{"data-aos" => "zoom-in","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
+            %a{:href => "services/it"}  
+              = image_tag 'IT Icon.png', :alt => 'IT', :class => "img8"
+            %p
+              %b
+                Information Technology
 
-
+                
+    
 
 
   .row#industry.content-section
-    .columns.xlarge-12
-      %h2.text-center.secondary-text
-        Services
+    
     
     .row
       .box
         .columns.large-4
-          %a{:href => "#staffing"}
+          %a{:href => "/staff"}
             = image_tag 'staffing.png', :alt => 'Staffing', :class => "img000"
       
         .columns.large-8
@@ -79,25 +88,25 @@
             Flexible, fast and convenient way to add workforce per your immediate need. 
             During your peak season leverage temporary workforce <br>
             %b
-              %a{:href => "#staffing"} Learn More 
+              %a{:href => "/staff"} Learn More 
           
     .row
       .box
         .columns.large-4
-          %a{:href => "#directhire"}
-            = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "img000"
+          %a{:href => "/directhire"}
+            = image_tag 'recruiting.png', :alt => 'Direct Hire', :class => "img000"
         .columns.large-8
           %h2.secondary-text Direct Hire    
           %p
             We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges. Then we carefully select potential candidates for you to choose.
             When you make the decision, the candidate becomes permanent employee of your organization<br>
             %b
-              %a{:href => "#directhire"} Learn More
+              %a{:href => "/directhire"} Learn More
               
     .row
       .box
         .columns.large-4
-          %a{:href => "#bpo"}
+          %a{:href => "/bpo"}
             =image_tag 'bpo1.png', :class => "img000", :alt => 'BPO'
         .columns.large-8
           %h2.secondary-text BPO  
@@ -105,11 +114,11 @@
             Smart companies focus on their core business functions. Rather than focusing on cost reduction, companies strengthen the competitiveness by outsourcing things that are not in their core business,
             so you can maximize your core business output. <br>
             %b   
-              %a{:href => "#bpo"} Learn More    
+              %a{:href => "/bpo"} Learn More    
     .row
       .box
         .columns.large-4
-          %a{:href => "#consultation"}    
+          %a{:href => "/consultation"}    
             =image_tag 'Consulting.png', :alt => "Consultation", :class => "img000"  
         .columns.large-8
           %h2.secondary-text Consultation
@@ -117,494 +126,8 @@
             New to the area or industry?  We have connections with firms of all sizes and industries and a range of diverse talent nationwide to provide insight into industry standards,
             including compensation info.  <br>
             %b   
-              %a{:href => "/services#consultation"} Learn More         
-      
-  
-  
-    
- 
-    
-    .row#staffing
-      .box
-        
-        .columns.large-6.large-push-5
-          %h2.text-center.secondary-text Staffing
-          %p
-            We provide a complete range of job placements with the appropriate skillsets our clients require.
-            You will operate on your schedule so that you may be at ease with a pleasant overall experience.
-            We are dedicated team of professionals who love their work and because of this,
-            we repeatedly exceed our customer's expectations for every single one of our clients.<br>
-        .columns.large-5.large-pull-6
-          %a{:href => "#staffing_process"}
-            = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"    
-              
-    
-  .row        
-    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
-      
-      %h2.text-center.secondary-text What We Do
-      %p
-        %b Temp -
-        We are your on demand staffing, whenever you need workforce, we have them standby
-      %p
-        %b Temp to hire -
-        After having temporary workforce work for you a while, you decide who is good fit for your organization and hire them on to your organization as a full time employee
-      %p  
-        %b Retention Program - 
-      
-      %p
-        %b On Site Management<br>
-      
-        i.	Success of your business largely depend on your workforce. Especially if you have a 
-        high-volume temporary workforce, having Joynus on-site management is a huge plus. <br>
-        ii.	On-site manager will integrate into you culture. In a way the On-site Manager 
-        is part of your team sharing your concerns and joys together. <br>
-        iii.	On-site Management Service is ideal in manufacturing and distribution facility 
-        where you have a large space and the workforce is spread out. It could also be in a large
-        corporate campus with different levels and categories of workforce. <br>
-        iv.	On-site Management Service leaves you stress free and pays attention to minor details 
-        that you may miss such as ID badges, Protective Wear, time clock correction, etc. <br>
-        v.	Here are top benefits
-        
-  .row
-    .columns.large-12.boxx{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
-      .columns.large-2
-        
-        = image_tag 'Icon_Engagement.png', :alt => 'Engagement',  :class => "img-onsite"  
-      .columns.large-5
-        %h4.secondary-text.text-center
-          Engagement
-        %p
-          The workforce may not show up to work or late, On-Site Manager will engage and 
-          determine whether to call someone new to show up to work from the standby list with 
-          minutes of notice. 
-      .columns.large-2
-        
-        = image_tag 'Icon_Impact.png', :alt => "Impact", :class => "img-onsite "
-      .columns.large-5
-        %h4.secondary-text.text-center
-          Impact
-        %p
-          When there is a turnover, our On-site Manager will work with Shift supervisor 
-          and train them on job basics and monitor the quality to ensure there is no disruption
-          to production and no damage to quality
-  .row
-    .columns.large-12.boxx{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1000"}
-      .columns.large-2
-        
-        = image_tag 'Icon_Stewardship.png', :alt=>"Stewardship", :class => "img-onsite "  
-      .columns.large-5
-        %h4.secondary-text.text-center
-          Stewardship
-        %p
-          Our workforce are not commodity. They’re our employees. Our On-Site Manager knows 
-          their name, converse with them and become their supervisor and mentor. 
-          Tender Loving Care works. 
-      .columns.large-2
-        
-        = image_tag 'Icon_Innovation.png', :alt=>"Innovation", :class => "img-onsite "
-      .columns.large-5
-        %h4.secondary-text.text-center
-          Innovation
-        %p
-          We continuously work to improve our systems and processes. 
-          Or, you may make changes that need implemented correctly. 
-          Either way, the On-Site Manager trains, monitors and assure the changes are implemented.    
-   
-      
-  
-  
-  .row#staffing_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-    .columns.large-12
-      %h2.text-center.secondary-text
-        Staffing Process
-      %p
-        First, we want to know the details of how your business works; more I know about 
-        you better I can do my job. Then we will use our proprietary system to have right 
-        people ready. We will have a list of standby temporary associates so whenever 
-        you request, we send you employees right away. Right people, right now. 
-        As they work we will shift our focus on retention and management
-      %p
-        We provide a complete range of job placements with the appropriate skillsets our clients require. 
-    .columns.large-12
-      %img{ data: { interchange:"[#{asset_path('Staffing_process_ver.png')}, (small)], [#{asset_path('Staffing_process_ver.png')}, (medium)], [#{asset_path('Staffing_process_hor.png')}, (large)]" } }  
-      
-  
-    .row{"data-aos" => "zoom-in","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .box    
-        .columns.large-6
-          = image_tag 'hr-management.png', :class => "imgg"
-        .columns.large-6
-          %h2.secondary-text Employee Management
-          %p
-            Our pool of qualified candidates are assigned to a qualified job. Our work doesn't end here. 
-            <br>We ensure that our people do their daily activity. We also manage their attendance, performance and continued training
-          
-  #id02.w3-modal
-    .w3-modal-content.w3-card-4.w3-animate-zoom
-      %header.w3-container.w3-blue
-        %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id02').style.display='none'"} ×
-        %h2.w3-text-white Safety Training 
-      .w3-bar.w3-border-bottom
-        %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Video')"} Safety
-        
-        
-      #Video.w3-container.city.video-responsive
-        %h2.primary-text Safety Video
-        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :width => "100%", :height => "70%", :src => "https://www.youtube.com/embed/XGNKbCtZ6vY?rel=0"}
-    
+              %a{:href => "/consultation"} Learn More         
 
-
-               
-    
-    
-
-  .row#compliance{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-    .box
-      
-      .columns.large-6.large-push-6
-        = image_tag 'compliance.jpg', :class => "imgg" 
-    
-      .columns.large-6.large-pull-6
-        %h2.secondary-text.text-center Compliance
-        %p.text-center Joynus conducts safe work practices, pre-interview, background test, and drug test. We even evaluate them on their past work performances and prior incidents to protect businesses
-        .columns.large-6.text-center
-          %a{:onclick => "document.getElementById('id02').style.display='block'"}
-            %p
-              %b Safety
-          %p.text-thin{:style=>'line-height:normal;'}
-            %b Drug screen <br>
-          
-            10 panel drug screen<br>
-          
-          %p{:style=>'line-height:normal;'}
-            %b Criminal history <br>
-          
-            Nation, state & county
-            
-          
-        .columns.large-6.text-center 
-          %p
-            %b Education verification
-          
-          %p{:style=>'line-height:normal;'}
-            %b I-9 & E-verify <br>
-          
-            Identity verification
-          
-          %p
-            %b Reference verification
-      
-      
-        
-
-  .row#retention{"data-aos" => "zoom-in-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}        
-    .box
-      .columns.large-6
-        = image_tag 'Rains Money.jpg', :class => "imgg" 
-    
-      .columns.large-7
-        %h2.secondary-text.text-center#retention Employee Retention
-        %p.text-center Good talent is hard to find thus we want to keep them
-        .columns.large-4.text-center.large-offset-1
-          %p
-            %b Enjoy the tour
-          %p
-            %b Holiday referral
-          %p
-            %b Raffle Ticket
-          %p
-            %b Joynus board
-          
-        .columns.large-7.text-center
-          
-          %p
-            %b Employee wellness analysis
-          %p
-            %b Performance evaluations  
-          %p
-            %b Employee of the month  
-          %p
-            %b Perfect performance bonus
-            
-       
-      
-      
-
-  .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
-    .box
-      .columns.large-6.large-push-6.m-top3
-        = image_tag 'payroll.jpg', :class => "imgg" 
-    
-      .columns.large-6.large-pull-6.text-center 
-        %h2.secondary-text Employee Payroll
-        .columns.large-10.large-offset-1
-          %p  We take care of employees' payroll, thus our clients don't have to worry or spend time on it
-        .columns.large-12
-          %p
-            %b Direct deposit<br>
-          %p
-            %b Paper checks<br>
-          %p
-            %b Pay cards       
-            
-            
-            
-            
-  %section#directhire
-    %h2.text-center.secondary-text Direct Hire
-    .row
-      
-      .box
-        .columns.large-5
-          
-          %a{:href => "#directhire_process"}
-            = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
-  
-        .columns.large-6
-          
-          %p
-            We devote extensive time and resources to understand your organization’s unique culture,
-            environment, leadership style and business goals and challenges. Then we carefully select 
-            potential candidates for you to choose. When you make the decision, the candidate becomes permanent employee of your organization
-    
-    .row        
-      .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
-        
-        %h2.text-center.secondary-text What We Do
-        %p
-          %b  Contingency recruitment:
-          We source, screen and interview candidates. 
-          We do not disclose your organization’s name until client has agreed to 
-          interview the candidate. When you make the hiring decision and the when candidate 
-          shows up for the first day, we send the invoice
-        %p
-          %b Retainer recruitment:
-          For difficult to find positions, skills specific candidates, we recommend Retainer option.
-          Dedicated recruiter will focus on headhunting. We will disclose your organization’s name.
-          This requires $5,000 - $10,000 no refundable deposit
-       
-
-
-
-    
-     
-    .row#directhire_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .columns.large-12
-        %h2.text-center.secondary-text.m-top3
-          Direct Hire Process
-        %p
-          Hire into your organization as your own permanent employee. We send you resumes, you interview and make decision. Upon the first day of employment you pay us agreed fee
-        %p
-          Locating the right resumes on your hand is a form of art. You can run many tests, algorithms but human element is necessary. We are Picasso of finding talents
-      .columns.large-12
-        %img{ data: { interchange:"[#{asset_path('Directhire_process_ver.png')}, (small)], [#{asset_path('Directhire_process_ver.png')}, (medium)], [#{asset_path('Directhire_process_hor.png')}, (large)]" } }  
-        
-
-
-  .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
-    .box  
-      .columns.large-6.text-center 
-        %h2.secondary-text Job Offer Coordination
-        %p  
-          Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
-          an acceptance of an offer that both parties will be happy to sign on to
-        
-        %p
-          %b Hiring process<br>
-        %p
-          %a{:href => "/employers#selectivescreening"}  
-            %b Selective screening
-       
-      
-      .columns.large-7.m-top3
-        = image_tag 'coordination.jpg', :class => "imgg"          
-              
-    
-  
-              
-              
-            
-  
-  %section.wwdContent3.m-top1#bpo
-    .row
-      .columns.large-12
-        %h2.text-center.secondary-text
-          Business Process Outsourcing
-      .box
-        .columns.large-4.large-offset-1
-          .specialcontainer
-            =image_tag 'bpo1.png', :class => "img6", :style => "width:100%"
-        .columns.large-5
-        
-          .row
-            
-            .columns.large-12
-              %p 
-                Smart companies focus on their core business functions. 
-                Rather than focusing on cost reduction, companies strengthen the competitiveness 
-                by outsourcing things that are not in their core business, so you can maximize your 
-                core business output
-                %b #{link_to 'Contact us', contact_index_path}
-     
-    
-  
-    .row
-      .columns.large-12
-        .columns.large-6
-          %h2.text-center.secondary-text What is BPO?
-          %p Rather than focusing on cost reduction, strengthen the competitiveness, competencies thus growth of core business
-          %p Provide benefits and solutions to customers by taking on operation and responsibility of their business related process
-        .columns.large-6
-          %h2.text-center.secondary-text Why use BPO?
-          %p With high uncertainty and a rapidly changing world outsourcing is survival strategy to stay competitive and maintain competitive advantage
-          %p Joynus BPO is the key to your outsource contract management so you can maximize your core business output
-          %p Utilizing outsourcing service is proven to be more beneficial than using temporary, short-term, repetitive subcontracting
-
-  %section.wwdContent3
-  
-    .row
-      .columns.large-12
-        %h2.text-center.secondary-text
-          How it works
-        %p.text-center 
-          Outsourcing business area selection <br>
-          
-  
-    
-    .row.m-top3
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
-        %h4.secondary-text 1. Personnel management
-        .specialcontainer1
-          = image_tag 'personnel.png', :alt => 'Personnel', :class => "imagee"
-            
-          .middle1
-            %p.text1
-              
-              Human resource <br>
-              Payroll<br>
-              DOL related<br>
-              Benefit
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1000"}
-        %h4.secondary-text 2. Business management
-        .specialcontainer1
-          = image_tag 'business.png', :alt => 'Business', :class => "imagee"
-          .middle1
-            %p.text1
-              
-              Placement <br>
-              Assignment<br>
-              Work schedule<br>
-              Job training
-                
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        %h4.secondary-text 3. Process management
-        .specialcontainer1
-          = image_tag 'process.png', :alt => 'Process', :class => "imagee"
-          .middle1
-            %p.text1 
-              
-              Raw material purchase<br>
-              Material<br>
-              Product<br>
-              Inventory
-    .row
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
-        %h4.secondary-text 4. Facility management
-        .specialcontainer1
-          = image_tag 'facility.png', :alt => 'Facility', :class => "imagee"
-          
-          .middle1
-            %p.text1
-              
-              Equipment maintenance<br>
-              Troubleshooting<br>
-              Preventive maintenance<br>
-              Regular repairs
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1000"}
-        %h4.secondary-text 5. Production management
-        .specialcontainer1
-          = image_tag 'production.png', :alt => 'Production', :class => "imagee"
-          .middle1
-            %p.text1
-              
-              Quality control<br>
-              Production planning<br>
-              Inventory planning<br>
-              Supply chain management
-      .columns.large-4.text-center{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
-        %h4.secondary-text 6. Organization management
-        .specialcontainer1
-          = image_tag 'organization.png', :alt => 'Organization', :class => "imagee"
-          .middle1
-            %p.text1 
-              
-              HR & general affairs<br>
-              Sales & planning<br>
-              Maintenance<br>
-              Production & Logistics
-        
- 
-
-
-  %section#consultation
-    .row
-      .columns.large-12
-        %h2.secondary-text.text-center Consultation
-        .box
-          .columns.large-4.large-offset-1
-            =image_tag 'Consulting.png', :class => "img6", :style => "width:100%"  
-          .columns.large-6
-            %p
-              %b
-                New to the area or industry?
-              %br
-              We have connections with firms of all sizes and industries and a range of diverse talent nation wide
-              to provide insight into industry standards, including compensation information
-          
-            
-        .columns.large-12
-          %p
-            Our trained team will utilize strategic marketing tools, including mass communication compaigns and job boards, and connections within
-            our extensive network to target the talent pool that would be the best fit for your next hire
-  %section
-    .row
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Targeted advertising 
-        .srvIco2
-          %i
-            = image_tag 'TargetedAd.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Localized demographic
-        .srvIco2
-          %i
-            = image_tag 'LocalDemograph.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Hiring foreign nationals
-        .srvIco2
-          %i
-            = image_tag 'InternationalHiring.png', :class => 'img4'
-    .row.m-top3
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Competitor analysis
-        .srvIco2
-          %i
-            = image_tag 'CompetitorAnalysis.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Outsourcing
-        .srvIco2
-          %i
-            = image_tag 'Outsourcing.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Strategic marketing
-        .srvIco2
-          %i
-            = image_tag 'StrategicMarketing.png', :class => 'img4'
-          
-          
-
-
-            
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'
