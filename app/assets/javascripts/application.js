@@ -25,7 +25,9 @@
 //= require app
 //= require services/JobsService
 //= require controllers/JobsController
-
+ function RN() {
+    document.getElementById("RN").innerHTML = "Travel Nurse<br> Per-diem Nurse<br> Locum Tenens Nurse";
+  }  
 $(document).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');

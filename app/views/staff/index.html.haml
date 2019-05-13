@@ -8,22 +8,19 @@
         %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
-            Right People, Right Now
+            Right People,<br> Right Now
   
           
   .row#staffing
     .box
-      
-      .columns.large-6.large-push-5
-        %h2.text-center.secondary-text Staffing
-        %p
-          We provide a complete range of job placements with the appropriate skillsets our clients require.
-          You will operate on your schedule so that you may be at ease with a pleasant overall experience.
-          We are dedicated team of professionals who love their work and because of this,
-          we repeatedly exceed our customer's expectations for every single one of our clients.<br>
-      .columns.large-5.large-pull-6
+      .columns.large-4
         %a{:href => "#staffing_process"}
-          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"    
+          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"  
+      .columns.large-8
+        %h2.secondary-text Staffing
+        %p
+          Flexible, Fast and convenient way to add workforce per your immediate need. During your peak season leverage temporary workforce
+        
               
     
   .row        
@@ -31,27 +28,28 @@
       
       %h2.text-center.secondary-text What We Do
       %p
-        %b Temp <br>
-        We are your on demand staffing, whenever you need workforce, we have them standby
+        %b.secondary-text Temp <br>
+        Utilize Joynus workforce to manage costs and have the flexibility. Take advantage of Joynus standby workforce. On demand staffing is perfect for the peak season
       %p
-        %b Temp to hire <br>
-        After having temporary workforce work for you a while, you decide who is good fit for your organization and hire them on to your organization as a full time employee
+        %b.secondary-text Temp to hire <br>
+        b.	Temporary to hire: After having temporary workforce work for you awhile, you decide who is good fit for your organization and hire them on to your organization
+        as a full time employee. It’s a trial before commitment
       %p  
-        %b Retention Program <br>
+        %b.secondary-text Retention Program <br>
         Depending on your industry and business, we will recommend appropriate programs. Retention programs are created with performance recognition, relationship with supervisor, gratitude, communication. 
       %p
-        %b On Site Management<br>
+        %b.secondary-text On Site Management<br>
       
-        i.	Success of your business largely depend on your workforce. Especially if you have a 
-        high-volume temporary workforce, having Joynus on-site management is a huge plus. <br>
-        ii.	On-site manager will integrate into you culture. In a way the On-site Manager 
+        i.	On-site manager is your partner and extension of your management team who is 
+        integrated into your culture sharing your concerns and joys <br>
+        ii.	On-site Manager offers you the peace of mind as a single point of contact, 
+        maintains daily communication and able to resolve issues immediately
         is part of your team sharing your concerns and joys together. <br>
-        iii.	On-site Management Service is ideal in manufacturing and distribution facility 
-        where you have a large space and the workforce is spread out. It could also be in a large
-        corporate campus with different levels and categories of workforce. <br>
-        iv.	On-site Management Service leaves you stress free and pays attention to minor details 
-        that you may miss such as ID badges, Protective Wear, time clock correction, etc. <br>
-        v.	Here are top benefits
+        iii. On Site Management is ideal for high-volume workforce, managing different 
+        levels and categories in a large area. Ensures consistent attendance, compliance and 
+        single point of contact <br>
+        
+        iv.	Why choose on-site management
         
 
    
@@ -61,19 +59,20 @@
         %i
           = image_tag 'Icon_Engagement.png', :class => 'img-onsite'
     .columns.large-4
-      %h4.secondary-text.text-center
-        Engagement
+      %h5.text-center
+        %b.secondary-text
+        
+          Productivity
       %p
-        The workforce may not show up to work or late, On-Site Manager will engage and 
-        determine whether to call someone new to show up to work from the standby list with 
-        minutes of notice.       
+        The On-Site Manager’s goals are tied to the client’s goals.  The On-Site manager is empowered to make decisions on performance and attendance and ensures productivity remains high.       
     .columns.large-2.text-center
       .srvIco2
         %i
           = image_tag 'Icon_Impact.png', :alt => "Impact", :class => 'img-onsite'
     .columns.large-4
-      %h4.secondary-text.text-center
-        Impact
+      %h5.text-center.secondary-text
+        %b
+          Impact
       %p
         When there is a turnover, our On-site Manager will work with Shift supervisor 
         and train them on job basics and monitor the quality to ensure no disruption
@@ -85,19 +84,20 @@
         %i
           = image_tag 'Icon_Stewardship.png', :alt=>"Stewardship", :class => 'img-onsite'
     .columns.large-4
-      %h4.secondary-text.text-center
-        Stewardship
+      %h5.text-center
+        %b.secondary-text
+          Leadership
       %p
-        Our workforce are not commodity. They’re our employees. Our On-Site Manager knows 
-        their name, converse with them and become their supervisor and mentor. 
-        Tender Loving Care works.    
+        The On-Site Manager is a direct communication line to the workforce. 
+        On-Site Manager knows their name, and builds relationships with them and manages any disputes, concerns, issues and focus    
     .columns.large-2.text-center
       .srvIco2
         %i
           = image_tag 'Icon_Innovation.png', :alt=>"Innovation",  :class => 'img-onsite'
     .columns.large-4
-      %h4.secondary-text.text-center
-        Innovation
+      %h5.text-center
+        %b.secondary-text
+          Innovation
       %p
         We continuously work to improve our systems and processes. 
         Or, you may make changes that need implemented correctly. 

@@ -1,4 +1,4 @@
-
+@media only screen {
 .primary-text { color: $primary-color !important; }
 .primary2-text { color: #166b83 !important;}
 .secondary-text { color: $secondary-color !important; }
@@ -114,7 +114,7 @@ h2 {
 }
 
 .imggg{
-   height:400px;
+   height:300px;
    width:auto;
    padding:1em;
    border-radius:50px;
@@ -456,18 +456,28 @@ h2 {
   z-index:0;
 }
 
-
-@media all and (max-width:1024px) {
+}
+@media all and (max-width:1920px) {
     .img5{
     height:auto;
-    width:150px;
+    width:200px;
 }
    .img2 {display:block; margin:auto; float:none; margin-top:25px;}
-   
+   .imggg{
+   height:300px;
+   width:auto;
+   padding:1em;
+   border-radius:50px;
+   margin:auto;
+}
 }    
 
 
-
+@media all and (max-width:768px){
+    .imggg{
+        height:250px;
+    }
+}
 
 
 @media all and (max-width:480px) {
@@ -491,7 +501,7 @@ h2 {
     
     .imgg{height:300px;}
  
-    .imggg{height:300px;}
+    .imggg{height:300px; margin:auto;}
     
     .wwdContent5{	min-height: 400px;}
  

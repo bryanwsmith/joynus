@@ -112,6 +112,15 @@
         bottom: 55%;
         
    }
+   #services{
+   .feature {
+      .feature-container2 {
+      
+        padding-bottom: 25%;
+      
+       }
+   }
+   }
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
   #services{
     #staffing_process{
@@ -146,17 +155,28 @@
 }
 
 @media only screen and (min-width:768px) {
+  
   #home .feature-container { padding-bottom: 39.85%; }
-  #employers .feature-container { padding-bottom: 50%; }
-  #staff .feature-container { padding-bottom: 52%; }
-  #directhire .feature-container { padding-bottom: 52%; }
-  #services .feature-container { padding-bottom: 52%; }
-  #bpo .feature-container { padding-bottom: 52%; }
-  #consultation .feature-container { padding-bottom: 52%; }
+  #employers .feature-container { padding-bottom: 50%; } 
+  #staff{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+  #directhire{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+  #services{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}
     
-  #posts .feature-container { padding-bottom: 52%; }
-  #about{ .feature-container { padding-bottom: 52%; }  } 
-  #contact{ .feature-container {padding-bottom: 52%;}  }
+   .feature {
+      .feature-container2 {
+      
+        padding-bottom: 13%;
+      
+       }
+   }
+   
+  }
+  #bpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+  #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+    
+  #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
+  #about{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}} 
+  #contact{ .feature-container {padding-bottom: 52%;}  .feature-text {bottom: 35%;}}
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }
@@ -197,6 +217,17 @@
 }
 
 @media only screen and (min-width:1024px) {
+  #staff{  .feature-text {bottom: 45%;}}
+  #directhire{  .feature-text {bottom: 45%;}}
+  #services{  .feature-text {bottom: 45%;}}
+  
+  #consultation{  .feature-text {bottom: 45%;}}
+    
+  #posts{ .feature-text {bottom: 45%;}}
+  #about{   .feature-text {bottom: 45%;}} 
+  #contact{ .feature-text {bottom: 45%;}}
+  
+  
   .feature-section .feature-container .feature-text h1 { font-size: rem-calc(85); }
 position: absolute;
     left: 50%;

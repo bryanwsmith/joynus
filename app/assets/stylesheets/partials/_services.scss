@@ -1,5 +1,14 @@
 @media only screen {
   #services {
+    
+    #something {
+  display: none;
+}
+
+#something:active {
+  display: block;
+}
+    
     .home-section-img {
       width: calc(100% + 30px);
       position: relative !important;
@@ -222,6 +231,7 @@
 // Medium screens
 @media only screen and (min-width: rem-calc(768)) {
   #services {
+    
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
     .specialcontainer {
@@ -469,7 +479,7 @@
 }
 
 .wrap {
-    width: 80%;
+    width: 100%;
     overflow:auto;
     display:flex;
     margin:auto;
@@ -478,14 +488,16 @@
 
 .pageleft {
     float:none; 
-    width: 60%;
+    width: 55%;
 }
 
 
 
 .pageright {
     float:right;
-    width: 40%;
+    width:45%;
+   
+  
 }
 
 
@@ -497,6 +509,30 @@
 
 @media only screen and (min-width: rem-calc(1200)) {
 #services{
+ .wrap {
+    width: 80%;
+    overflow:auto;
+    display:flex;
+    margin:auto;
+    
+}
+
+.pageleft {
+    float:none; 
+    width: 55%;
+}
+
+
+
+.pageright {
+    float:right;
+    width:45%;
+   
+  
+}  
+  
+  
+  
 .industry-grid-container {
     font-size: 30px;
     min-height: 300px;
@@ -539,9 +575,14 @@
 
 
 // Large screens
+
+
 @media only screen and (min-width: 64.063em) {}
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  
+  
+}
 
 // XLarge screens
 @media only screen and (min-width: 90.063em) {}

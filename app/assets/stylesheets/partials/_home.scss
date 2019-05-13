@@ -102,7 +102,10 @@
     p { font-size: 20px;}
     
     h2{font-size: $h2-font-size;}
-    
+    .centered >h1{
+    font-size:65px;
+    display:inline-block;
+  }
     
     .wwdContent2:before{
      width:100%;
@@ -184,21 +187,14 @@
         }
       }
     }
+    .centered >h1{
+    font-size:80px;
+    display:inline-block;
+  }
+
   }
 }
 
-// Large screens
-@media only screen and (min-width: 64.063em) {}
- 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) {}
- 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
- 
-// XXLarge screens
-@media only screen and (min-width: 120.063em) {}
 
 
 
@@ -266,11 +262,10 @@
 
 
 
-
 @media all and (max-width:480px) {
   
   .centered >h1{
-    font-size:37px;
+    font-size:35px;
     display:inline-block;
   }
   
@@ -365,3 +360,15 @@
   
   
 }
+// Large screens
+@media only screen and (min-width: 64.063em) {}
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {}
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+ 
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {}

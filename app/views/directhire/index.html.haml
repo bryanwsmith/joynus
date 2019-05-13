@@ -11,145 +11,149 @@
       %img{ data: { interchange:"[#{asset_path('recruit-bg22-mobile.jpg')}, (small)], [#{asset_path('recruit-bg22-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg2.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown
-          Right People, Right Now
+          Right People,<br> Right Now
           /Great vision without great people is irrelevant
         
-  %section#directhire
-    %h2.text-center.secondary-text Direct Hire
-    .row
+%section#directhire
+  
+  .row
+    
+    .box
+      .columns.large-4
+        
+        %a{:href => "#directhire_process"}
+          = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
+
+      .columns.large-8
+        %h2.secondary-text Direct Hire
+        %p
+          We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style, goals and challenges.
+  
+  .row        
+    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
       
-      .box
-        .columns.large-5
-          
-          %a{:href => "#directhire_process"}
-            = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
-  
-        .columns.large-6
-          
-          %p
-            We devote extensive time and resources to understand your organization’s unique culture,
-            environment, leadership style and business goals and challenges. Then we carefully select 
-            potential candidates for you to choose. When you make the decision, the candidate becomes permanent employee of your organization
-    
-    .row        
-      .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
-        
-        %h2.text-center.secondary-text What We Do
-        %p
-          %b  Contingency recruitment<br>
-          We source, screen and interview candidates. 
-          We do not disclose your organization’s name until client has agreed to 
-          interview the candidate. When you make the hiring decision and the when candidate 
-          shows up for the first day, we send the invoice
-        %p
-          %b Retainer recruitment<br>
-          For difficult to find positions, skills specific candidates, we recommend Retainer option.
-          Dedicated recruiter will focus on headhunting. We will disclose your organization’s name.
-          This requires $5,000 - $10,000 no refundable deposit
-       
+      %h2.text-center.secondary-text What We Do
+      %p
+        %b.secondary-text  Contingency recruitment<br>
+        Ideal for early and mid-career professional positions. We research, source, screen 
+        and interview candidates within a 25 mile radius of the client office and provide the 
+        client with a slate of highly qualified candidates within 8 to 12 days. 
+        The client is invoiced a fee only after a placement is made. 
+        Contingency search yields high volume of resumes presented to the client
+      %p
+        %b.secondary-text Retainer recruitment<br>
+        Ideal for leadership roles, critical, rare, in-demand talent that require extensive 
+        market research and headhunting to attract. Hiring the best requires in-depth planning,
+        researching, networking and carefully interviewing and vetting candidates to discover 
+        the best blend of skills and personal traits suited for the client. 
+        Relocation and sign-in bonuses are often required. 
+        A performance retainer is an active partnership with Joynus Search to exclusively 
+        market and elevate the importance of a critical role
+     
 
 
 
     
-  .w3-container   
-    .row#directhire_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-      .columns.large-12
-        %h2.text-center.secondary-text.m-top3
-          Direct Hire Process
-        %p
-          Hire into your organization as your own permanent employee. We send you resumes, you interview and make decision. Upon the first day of employment you pay us agreed fee
-        %p
-          Locating the right resumes on your hand is a form of art. You can run many tests, algorithms but human element is necessary. We are Picasso of finding talents
-      .columns.large-12
-        %img{ data: { interchange:"[#{asset_path('Directhire_process_ver.png')}, (small)], [#{asset_path('Directhire_process_ver.png')}, (medium)], [#{asset_path('Directhire_process_hor.png')}, (large)]" } }  
-        
-
   
-    .row{"data-aos" => "zoom-in-up","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}    
-      .box     
-         
-        .columns.large-6.large-push-6
-          = image_tag 'coordination.jpg', :class => "imgg"     
-        
-        .columns.large-6.large-pull-6
-          
-          %h2.secondary-text Job Offer Coordination
-          %p  
-            Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
-            an acceptance of an offer that both parties will be happy to sign on to
-          
-          %p
-            %b Hiring process<br>
-          %p
-            %a{:onclick => "document.getElementById('id01').style.display='block'"} Learn more
-    #id01.w3-modal
-      .w3-modal-content.w3-card-4.w3-animate-zoom
-        %header.w3-container.w3-blue
-          %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id01').style.display='none'"} ×
-          %h2.w3-text-white Selective Screening
-        .w3-bar.w3-border-bottom
-          %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Sourcing')"} Sourcing
-          %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Identification')"} Identification
-          %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Strategy')"} Strategy
-          
-        #Sourcing.w3-container.city
-          %h2.primary-text Sourcing
-          %p 
-            World Wide Web has unlimited potential, yet it is ever so large and constantly growing. Not only through our own website, 
-            we keep up to date on numerous places on the web for sourcing candidates and constantly update and look for better sourcing sites
-          
-        #Identification.w3-container.city
-          %h2.primary-text Identification
-          %p We have database of industry specific top candidates. It is more than search by keywords. With our expertise, we measure candidates characters, personality and work ethics
-         
-        #Strategy.w3-container.city
-          %h2.primary-text Strategy
-          %p
-            %b.secondary-text A. Investigation<br>
-            Based on the industry, pay scale, location, we implement in depth screening process so that the candidate we present aligns with your requirements
-          %p
-            %b.secondary-text B. Headhunting<br>
-            Most often top candidates are already working. This is where the challenge begins. Numerous phone calls and exchanges of email; sifting through resumes and key words, and comparing
-            our scores at a high volume. It's a matter of becoming the best liaison and put the hiring company and candidate to talk to each other while we do all the difficult talk in the middle1
-          %p
-            %b.secondary-text C. Assessment & Evaluation<br>
-            We provide our feedback to clients about prescreen, qualification, education, certification, personality, depth of skill level, speciality; developing a comprehensive comparison matrix and analysis
-          %p
-            %b.secondary-text D. Acceptance<br>
-            Our work doesn't end at arranging the interview. We ensure and help offer letter is appropriate and candidate feels gratitude to be hired, ensure all process and obstacles
-            including relocation, immigration status, compensation, are handled until the first day of employment
-          %p
-            %b.secondary-text E. Employment<br>
-            After 3 months, we follow up on candidate's performance with client. We feel responsible for our actions. We feel that it is our civic duty to ensure client satisfaction as hiring a right individual can shape a future of a company
+  .row#directhire_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+    .columns.large-12
+      %h2.text-center.secondary-text.m-top3
+        Direct Hire Process
+      %p
+        Hire into your organization as your own permanent employee. We send you resumes, you interview and make decision. Upon the first day of employment you pay us agreed fee
+      %p
+        Locating the right resumes on your hand is a form of art. You can run many tests, algorithms but human element is necessary. We are Picasso of finding talents
+    .columns.large-12
+      %img{ data: { interchange:"[#{asset_path('Directhire_process_ver.png')}, (small)], [#{asset_path('Directhire_process_ver.png')}, (medium)], [#{asset_path('Directhire_process_hor.png')}, (large)]" } }  
+  
+  .row
+    .box#selectivescreening
+      .columns.large-6.large-push-6.div{"data-aos" => "fade-up-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
+        =image_tag 'coordination.jpg', :class => "imgg"
+      .columns.large-6.large-pull-6.div{"data-aos" => "fade-down-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}  
+        .w3-container
+          .row
+            %h2.secondary-text Job Offer Coordination
             
-          %br/
-        .w3-container.w3-light-grey.w3-padding
-          %button.w3-button.w3-right.w3-white.w3-border{:onclick => "document.getElementById('id01').style.display='none'"} Close
-  :javascript
-    document.getElementsByClassName("tablink")[0].click();
-    
-    function openCity(evt, cityName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].classList.remove("w3-light-grey");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.classList.add("w3-light-grey");
-    }
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+            %p  
+              Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
+              an acceptance of an offer that both parties will be happy to sign on to
+            
+            %p
+              %b 	Hiring Process<br>
+            %p
+              %b
+                %a{:onclick => "document.getElementById('id01').style.display='block'"} Selective Screening
+      #id01.w3-modal
+        .w3-modal-content.w3-card-4.w3-animate-zoom
+          %header.w3-container.w3-blue
+            %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id01').style.display='none'"} ×
+            %h2.w3-text-white Selective Screening
+          .w3-bar.w3-border-bottom
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Sourcing')"} Sourcing
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Identification')"} Identification
+            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Strategy')"} Strategy
+            
+          #Sourcing.w3-container.city
+            %h2.primary-text Sourcing
+            %p 
+              World Wide Web has unlimited potential, yet it is ever so large and constantly growing. Not only through our own website, 
+              we keep up to date on numerous places on the web for sourcing candidates and constantly update and look for better sourcing sites
+            
+          #Identification.w3-container.city
+            %h2.primary-text Identification
+            %p We have database of industry specific top candidates. It is more than search by keywords. With our expertise, we measure candidates characters, personality and work ethics
+           
+          #Strategy.w3-container.city
+            %h2.primary-text Strategy
+            %p
+              %b.secondary-text A. Investigation<br>
+              Based on the industry, pay scale, location, we implement in depth screening process so that the candidate we present aligns with your requirements
+            %p
+              %b.secondary-text B. Headhunting<br>
+              Most often top candidates are already working. This is where the challenge begins. Numerous phone calls and exchanges of email; sifting through resumes and key words, and comparing
+              our scores at a high volume. It's a matter of becoming the best liaison and put the hiring company and candidate to talk to each other while we do all the difficult talk in the middle1
+            %p
+              %b.secondary-text C. Assessment & Evaluation<br>
+              We provide our feedback to clients about prescreen, qualification, education, certification, personality, depth of skill level, speciality; developing a comprehensive comparison matrix and analysis
+            %p
+              %b.secondary-text D. Acceptance<br>
+              Our work doesn't end at arranging the interview. We ensure and help offer letter is appropriate and candidate feels gratitude to be hired, ensure all process and obstacles
+              including relocation, immigration status, compensation, are handled until the first day of employment
+            %p
+              %b.secondary-text E. Employment<br>
+              After 3 months, we follow up on candidate's performance with client. We feel responsible for our actions. We feel that it is our civic duty to ensure client satisfaction as hiring a right individual can shape a future of a company
+              
+            %br/
+          .w3-container.w3-light-grey.w3-padding
+            %button.w3-button.w3-right.w3-white.w3-border{:onclick => "document.getElementById('id01').style.display='none'"} Close
+    :javascript
+      document.getElementsByClassName("tablink")[0].click();
+      
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
         }
-    }
-         
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+      var modal = document.getElementById('id01');
+  
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }    
+
+
+  
           
               
 .button-container.text-center

@@ -9,7 +9,6 @@
     .feature.animated.fadeIn
       .feature-container2
        
-            
 
         
   
@@ -34,19 +33,9 @@
              
               %h5
                 %b.secondary-text
-                  Positions we excel at<br>
-            
+                  Positions we excel at
+                  %br/
               .columns.large-6
-                %p
-                  Registered Nurse
-                .columns.large-12   
-                  %ul
-                  
-                    %li Travel Nurse
-                      
-                    %li Per-diem Nurse
-                    
-                    %li Locum Tenens Nurse
                 %p
                   Physical Therapist<br>
                 
@@ -54,33 +43,55 @@
                 
                   Speech-Language pathologist<br>
                   
-                  Assembly<br>
-                
-                  Forklift Operators<br>
-                
-                  Machine Operators<br>
-                
-                  Maintenance<br>
-                
-                  Management &#47; Supervisor Technicians  <br>
+                  Case Manager <br>
                   
-                  Quality Control &#47; Quality Assurance <br>
+                  Master of Social Work <br>
                   
-                  Welders
-                
+                  Certified Nurse Aide
+              .columns.large-6
+                %p
+                  Personal Care Assistant<br>
+                  Biller<br>
+             
+                  Registered Nurse
+                  %a{:onclick => "myFunction() "}
+                    
+                    %i.icon-plus#iconchange
+                  %a{:onclick => "myFun() "}
+                    %i.icon-minus
+                 
+                  %p#demo
+                 
+                  
+                  :javascript
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Travel Nurse <br> Per-diem Nurse <br> Locum Tenens Nurse";
+                      
+                    }
+                    function myFun() {
+                      document.getElementById("demo").innerHTML = "";
+                      
+                    }
+               
+               
+                  
+
+   
                 
               
       .pageright
         .row
-          .columns.large-10.large-offset-2
+          .columns.large-10.large-offset-1
             %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
             
         
         .form-section.no-spacing.mb--
           .row
-            .columns.large-10.large-offset-2
+            .columns.large-10.large-offset-1
               %fieldset.mb--
                 = render 'contact/form'          
         
    
+
+           
       
