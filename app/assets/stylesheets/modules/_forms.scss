@@ -58,7 +58,8 @@
     }
 
     textarea { resize: none; }
-    select { color: $primary-color; }
+    select { //color: $primary-color; 
+               color: #404042;}
 
     .input-prepend {
       position: relative;
@@ -86,27 +87,31 @@
   }
 
   ::-webkit-input-placeholder {
-     color: $primary-color;
+     color:#2a2a2b;
+     //color: $primary-color;
      font-size: $small-font-size;
-     opacity: 0.4;
+     opacity: 0.8;
   }
 
   :-moz-placeholder {
-     color: $primary-color;
+    color:#2a2a2b;
+     //color: $primary-color;
      font-size: $small-font-size;
-     opacity: 0.4;
+     opacity: 0.8;
   }
 
   ::-moz-placeholder {
-     color: $primary-color;
+     color:#2a2a2b;
+     //color: $primary-color;
      font-size: $small-font-size;
-     opacity: 0.4;
+     opacity: 0.8;
   }
 
   :-ms-input-placeholder {
-     color: $primary-color;
+     color:#2a2a2b;
+     //color: $primary-color;
      font-size: $small-font-size;
-     opacity: 0.4;
+     opacity: 0.8;
   }
 }
 
