@@ -1,162 +1,227 @@
 %head
-  %title Joynus Staffing | Direct hiring process
-  %meta{:content => "Why are we different? check out our Direct hire process", :name => "Description"}/
+  %title Joynus Staffing | Staffing process
+  %meta{:content => "Why are we different? check out our staffing process", :name => "Description"}/
   = stylesheet_link_tag 'application', media: 'all'  
 
-  
-  
-%section.feature-section.no-spacing
-  .feature.animated.fadeIn
-    .feature-container
-      %img{ data: { interchange:"[#{asset_path('recruit-bg22-mobile.jpg')}, (small)], [#{asset_path('recruit-bg22-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg2.jpg')}, (large)]" } }
-      .feature-text
-        %h1.text-center.animated.fadeInDown
-          Right People,<br> Right Now
-          /Great vision without great people is irrelevant
-        
-%section#directhire
-  
-  .row
+  %section.feature-section.no-spacing
+    .feature.animated.fadeIn
+      .feature-container
+        %img{ data: { interchange:"[#{asset_path('recruit-bg-mobile.jpg')}, (small)], [#{asset_path('recruit-bg-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg.jpg')}, (large)]" } }
+        .feature-text
+          %h1.text-center.animated.fadeInDown
+            Direct Hire
+            %h5 
+              We devote extensive time and resources to understand your organization’s unique <br>culture, environment, leadership style, goals and challenges
+  %section        
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Temp.png', :alt => 'Temp', :class => "img55"  
+        .columns.large-8
+          %h2
+            Contingency Search Option
+          %p
+            Ideal for early and mid-career professional positions. We research, source, 
+            screen and interview candidates within a 25 mile radius of the client office
+            and provide the client with a slate of highly qualified candidates within 8 to 12
+            days. The client is invoiced a fee only after a placement is made. Contingency 
+            search yields high volume of resumes presented to the client
+            
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Temp_To_Perm.png', :alt => 'Temp_To_Perm', :class => "img55"  
+        .columns.large-8
+          %h2
+            Retainer Search Option
+          %p
+            Ideal for leadership roles, critical, rare, in-demand talent that require 
+            extensive market research and headhunting to attract. Hiring the best requires 
+            in-depth planning, researching, networking and carefully interviewing and vetting
+            candidates to discover the best blend of skills and personal traits suited for 
+            the client. Relocation and sign-in bonuses are often required. A performance 
+            retainer is an active partnership with Joynus Search to exclusively market and 
+            elevate the importance of a critical role
+  %section
+    %hr    
     
-    .box
-      .columns.large-4
-        
-        %a{:href => "#directhire_process"}
-          = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
-
-      .columns.large-8
-        %h2.secondary-text Direct Hire
-        %p
-          We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style, goals and challenges.
-  
-  .row        
-    .columns.large-12.div{"data-aos" => "fade-zoom-in", "data-aos-easing" => "ease-in-sine", "data-aos-delay" => "500", "data-aos-offset"=>"0"}
-      
-      %h2.text-center.secondary-text What We Do
-      %p
-        %b.secondary-text  Contingency recruitment<br>
-        Ideal for early and mid-career professional positions. We research, source, screen 
-        and interview candidates within a 25 mile radius of the client office and provide the 
-        client with a slate of highly qualified candidates within 8 to 12 days. 
-        The client is invoiced a fee only after a placement is made. 
-        Contingency search yields high volume of resumes presented to the client
-      %p
-        %b.secondary-text Retainer recruitment<br>
-        Ideal for leadership roles, critical, rare, in-demand talent that require extensive 
-        market research and headhunting to attract. Hiring the best requires in-depth planning,
-        researching, networking and carefully interviewing and vetting candidates to discover 
-        the best blend of skills and personal traits suited for the client. 
-        Relocation and sign-in bonuses are often required. 
-        A performance retainer is an active partnership with Joynus Search to exclusively 
-        market and elevate the importance of a critical role
-     
-
-
-
-    
-  
-  .row#directhire_process{"data-aos" => "zoom-in-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-    .columns.large-12
-      %h2.text-center.secondary-text.m-top3
-        Direct Hire Process
-      %p
-        Hire into your organization as your own permanent employee. We send you resumes, you interview and make decision. Upon the first day of employment you pay us agreed fee
-      %p
-        Locating the right resumes on your hand is a form of art. You can run many tests, algorithms but human element is necessary. We are Picasso of finding talents
-    .columns.large-12
-      %img{ data: { interchange:"[#{asset_path('Directhire_process_ver.png')}, (small)], [#{asset_path('Directhire_process_ver.png')}, (medium)], [#{asset_path('Directhire_process_hor.png')}, (large)]" } }  
-  
-  .row
-    .box#selectivescreening
-      .columns.large-6.large-push-6.div{"data-aos" => "fade-up-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
-        =image_tag 'coordination.jpg', :class => "imgg"
-      .columns.large-6.large-pull-6.div{"data-aos" => "fade-down-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}  
-        .w3-container
-          .row
-            %h2.secondary-text Job Offer Coordination
-            
-            %p  
-              Joynus understands our talent and your needs and will act as a bridge to clearly communicate expectations all the way to the offer stage to secure
-              an acceptance of an offer that both parties will be happy to sign on to
-            
-            %p
-              %b 	Hiring Process<br>
-            %p
-              %b
-                %a{:onclick => "document.getElementById('id01').style.display='block'"} Selective Screening
-      #id01.w3-modal
-        .w3-modal-content.w3-card-4.w3-animate-zoom
-          %header.w3-container.w3-blue
-            %span.w3-button.w3-blue.w3-xlarge.w3-display-topright{:onclick => "document.getElementById('id01').style.display='none'"} ×
-            %h2.w3-text-white Selective Screening
-          .w3-bar.w3-border-bottom
-            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Sourcing')"} Sourcing
-            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Identification')"} Identification
-            %button.tablink.w3-bar-item.w3-button{:onclick => "openCity(event, 'Strategy')"} Strategy
-            
-          #Sourcing.w3-container.city
-            %h2.primary-text Sourcing
-            %p 
-              World Wide Web has unlimited potential, yet it is ever so large and constantly growing. Not only through our own website, 
-              we keep up to date on numerous places on the web for sourcing candidates and constantly update and look for better sourcing sites
-            
-          #Identification.w3-container.city
-            %h2.primary-text Identification
-            %p We have database of industry specific top candidates. It is more than search by keywords. With our expertise, we measure candidates characters, personality and work ethics
-           
-          #Strategy.w3-container.city
-            %h2.primary-text Strategy
-            %p
-              %b.secondary-text A. Investigation<br>
-              Based on the industry, pay scale, location, we implement in depth screening process so that the candidate we present aligns with your requirements
-            %p
-              %b.secondary-text B. Headhunting<br>
-              Most often top candidates are already working. This is where the challenge begins. Numerous phone calls and exchanges of email; sifting through resumes and key words, and comparing
-              our scores at a high volume. It's a matter of becoming the best liaison and put the hiring company and candidate to talk to each other while we do all the difficult talk in the middle1
-            %p
-              %b.secondary-text C. Assessment & Evaluation<br>
-              We provide our feedback to clients about prescreen, qualification, education, certification, personality, depth of skill level, speciality; developing a comprehensive comparison matrix and analysis
-            %p
-              %b.secondary-text D. Acceptance<br>
-              Our work doesn't end at arranging the interview. We ensure and help offer letter is appropriate and candidate feels gratitude to be hired, ensure all process and obstacles
-              including relocation, immigration status, compensation, are handled until the first day of employment
-            %p
-              %b.secondary-text E. Employment<br>
-              After 3 months, we follow up on candidate's performance with client. We feel responsible for our actions. We feel that it is our civic duty to ensure client satisfaction as hiring a right individual can shape a future of a company
-              
-            %br/
-          .w3-container.w3-light-grey.w3-padding
-            %button.w3-button.w3-right.w3-white.w3-border{:onclick => "document.getElementById('id01').style.display='none'"} Close
-    :javascript
-      document.getElementsByClassName("tablink")[0].click();
-      
-      function openCity(evt, cityName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].classList.remove("w3-light-grey");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.classList.add("w3-light-grey");
-      }
-      var modal = document.getElementById('id01');
-  
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }    
-
-
-  
+  %section
+    .row
+      .text-center
+        %h2
+          Contingency Search Process
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Discovery.png', :alt => "Discovery", :class => 'img55' 
+        .columns.large-8
+          %p
+            Intake and discovery call
           
-              
-.button-container.text-center
-  %h3{:style => "margin:30px"}
-    = t 'about.content-callout'
-  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Assessment.png', :alt => "Assessment", :class => 'img55' 
+        .columns.large-8
+          %p
+            Research companies within 25 miles of client location
+            
+    
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Orientation.png', :alt => "Orientation", :class => 'img55' 
+        .columns.large-8
+          %p
+            Identify potential candidates
+          
+            
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Placement.png', :alt => "Placement", :class => 'img55' 
+        .columns.large-8
+          %p
+            Create unique marketing script designed to attract candidates (socials, LinkedIn, cold calling, networking)      
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'HighVolume.png', :alt => "HighVolume", :class => 'img55' 
+        .columns.large-8
+          %p
+            Within 8-12 business days from the intake call, present a slate of 3+ highly qualified candidates
+  
+  %section
+    %hr    
+    
+  %section
+   
+    .row
+      .text-center
+        %h2 Retainer Search Process
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Retention.png', :alt => "Retention", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Engagement Invoice
+          %p
+            $5,000 for domestic search or $5,000 for international search
+            
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Migration.png', :alt => "Migration", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Organizational Inquiry and Analysis
+          %p
+            Joynus devotes extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges.  
+          %p
+            Joynus conducts individual interviews with key personnel and stakeholders. 
+          %p  
+            Information is compiled into an attractive visual art marketing brochure
+
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'RPO.png', :alt => "RPO", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Advertising and Recruitment
+          %p
+            The search consultant and client work together to determine the best outlets to market the position
+          %p
+            Search consultant researches and identifies companies and potential candidates and proactively reaches out using the marketing brochure
+          %p
+            Networking
+          %p
+            Social Media outlets to include, Facebook, LinkedIn, Twitter and any other unique platform where our target prospect will likely visit
+          %p
+            Ongoing communication with applicants and prospects.  A significant amount of inquiries will be made, and it essential for Joynus to respond quickly, professionally with accurate and complete information in a warm and friendly manner. This approach creates a high-level of respect for your brand and leads to an outstanding candidate experience
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Initial Screening and Review
+          %p
+            Management of applications.  Handling the flow of resumes is an ongoing and significant process.  Joynus provides timely and personal responses to questions and inquires
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Evaluation and Presentation
+          %p
+            Evaluation of resumes.  Objective and Subjective analysis.  Objectively, do applicants meet the minimum and preferred required qualifications?  Subjectively, do they possess the management and leadership traits, do their past experiences and accomplishments fit within the culture of the organization?
+          %p
+            
+            Briefing and Presentation of Candidate Slate
+          %p
+            Joynus will provide the hiring leader and HR partner briefing of objective and subjective findings.  
+          	
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Interview Process
+          %p
+            Once the candidates have been selected, Joynus will coordinate all the interviews at a date and time convenient to your organization. Joynus will provide a sample list of questions focused on key traits and attributes
+          %p
+            Joynus will remain engaged throughout the process to ensure timely feedback and communication
+
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+        .columns.large-8
+          %h2
+            Negotiation Terms and Conditions
+          %p
+            Joynus strives to maintain candidate expectations in-line with client’s budget and vice-versa
+          %p
+            Prior to offer stage client and executive recruiter discuss potential offer parameters and other benefit details for candidates of interest.  Executive recruiter pre-closes candidates to ensure there are no surprises when the final offer is extended.  During a pre-close, if an issue arises, executive recruiter provides consultative solutions to all parties
+          %p
+            Transition Strategy. There are a variety of strategies and issues to manage between the acceptance date and start date.  Joynus will brief the client on recommendations and actions to take during the transition
+    .row
+      .box
+        .columns.large-4.text-center
+          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+        .columns.large-8
+          %h2
+            On-boarding Support
+          %p
+            Once the candidates have been selected, Joynus will coordinate all the interviews at a date and time convenient to your organization. Joynus will provide a sample list of questions focused on key traits and attributes
+          %p
+            Joynus will remain engaged throughout the process to ensure timely feedback and communication
+          
+          %p
+            Joynus will provide day 1, 15, 30, 60 and 90 follow up and feedback to ensure the candidate experience and client expectations are a match
+          
+            
+  .extra-navigation.m-top3    
+    %a{:href => "/staff"}
+      .item
+        = image_tag 'staffing.png', :alt => "Staffing", :class => 'img55' 
+        %h2
+          Staffing
+        %p{:style => "color:black"}
+          We devote extensive time and resources
+        %p
+          %b
+            %a{:href => "/staff"} Learn More  
+    %a{:href => "/bpo"}
+      .item
+        = image_tag 'bpo1.png', :alt => "BPO", :class => 'img55' 
+        %h2
+          BPO
+        %p{:style => "color:black"}
+          We devote extensive time and resources   
+        %p  
+          %b
+            %a{:href => "/bpo"} Learn More  
+      
