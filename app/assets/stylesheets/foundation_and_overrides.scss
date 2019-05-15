@@ -682,8 +682,8 @@ $include-html-global-classes: $include-html-classes;
 // $glowing-effect-color: $input-focus-border-color;
 
 // Select variables
-// $select-bg-color: $ghost;
-// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+   $select-bg-color: $white;
+   $select-hover-bg-color: scale-color($select-bg-color, $lightness: -15%);
 
 // 12. Icon Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -

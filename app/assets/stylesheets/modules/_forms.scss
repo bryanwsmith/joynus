@@ -1,7 +1,8 @@
 @media only screen {
   fieldset {
     border-radius: $global-radius;
-    background: $primary-color;
+    //background: $primary-color;
+    background: $white;
     margin-top: 0;
     margin-bottom: rem-calc(60);
     padding: rem-calc(20);
@@ -22,7 +23,9 @@
     }
 
     input[type='text'], textarea, select, input[type='password'],  input[type='email'] {
-      border: 3px solid $white;
+      //border: 3px solid $white;
+      border: 2px solid #cbcbcd;
+      //background:rgba(216, 216, 218,0.3);
       border-radius: $global-radius;
       min-height: rem-calc(50);
       margin-bottom: rem-calc(30);
@@ -59,7 +62,7 @@
 
     textarea { resize: none; }
     select { //color: $primary-color; 
-               color: #404042;}
+               color: #000000;}
 
     .input-prepend {
       position: relative;
@@ -88,6 +91,7 @@
 
   ::-webkit-input-placeholder {
      color:#2a2a2b;
+     
      //color: $primary-color;
      font-size: $small-font-size;
      opacity: 0.8;
