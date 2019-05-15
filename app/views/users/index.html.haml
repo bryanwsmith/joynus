@@ -1,6 +1,10 @@
 - if flash[:notice]
   = render 'shared/success_notice'
 
+%head
+  
+  = stylesheet_link_tag 'application', media: 'all'  
+
 %section.no-spacing
   .row
     .columns.large-8.large-offset-2

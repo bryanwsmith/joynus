@@ -74,14 +74,7 @@
    
    
   
-   .industry-grid-items{
-     background:transparent;
-      border-style: solid;
-      border-color:#d7dbd0;
-      
-      padding-top:5%;
-      
-   }
+   
    
  }
     
@@ -136,44 +129,9 @@
     width: 10px;
   }
   
-  .industry-grid-container {
-    font-size: 20px;
-    min-height: 130px;
-    width: 95%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
   
-    
-    
-    .img8{
-      height:70px;
-      width:auto;
-    }
-    
-    p{
-      font-size:15px;
-    }
-  }
   
-  .grid-container {
-    font-size: 20px;
-    min-height: 300px;
-    width: 95%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(130px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
   
-  .img7{
-    height:90px;
-    width:auto;
-  }
-  }
   
   .slideshow-container {
     max-width: 95%;
@@ -199,28 +157,8 @@
       &#right-job { padding-top: 0 !important; }
     }
     
-  .industry-grid-container {
-    p{
-      font-size:23px;
-    }  
-  }
+ 
   
-  .grid-container {
-    font-size: 20px;
-    min-height: 300px;
-    width: 95%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(260px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
-  
-  .img7{
-    height:200px;
-    width:auto;
-  }
-  }
   
   
   
@@ -253,23 +191,7 @@
    p{font-size:20px;}
    h2{font-size: $h2-font-size;}
   
-  .industry-grid-container {
-    font-size: 20px;
-    min-height: 200px;
-    width: 95%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(230px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 15px;
-    
-    
-    .img8{
-      height:150px;
-      width:auto;
-    }
-  } 
+   
   
 
   }
@@ -338,40 +260,7 @@
       }
     }
     
-    .industry-grid-container {
-    font-size: 30px;
-    min-height: 300px;
-    width: 90%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(210px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 45px;
-    
-    
-    .img8{
-      height:130px;
-      width:auto;
-    }
-  }
-  
-  .grid-container {
-    font-size: 40px;
-    min-height: 400px;
-    width: 70%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(350px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 15px;
-    
-  .img7{
-    height:250px;
-    width:auto;
-  }  
-}
+   
   /* Slideshow container */
 .slideshow-container {
   max-width: 65%;

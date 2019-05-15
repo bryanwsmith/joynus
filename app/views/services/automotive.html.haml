@@ -1,10 +1,13 @@
 - if flash[:notice]
   = render 'shared/success_notice'
-
+  
+  
 %head
-  %title Joynus Staffing | Services | We provide best solutions
+  %title Joynus Staffing | Automotive
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
-%body
+  = stylesheet_link_tag 'industry', media: 'all'
+  
+
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container2

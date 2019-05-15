@@ -1,6 +1,10 @@
 - if flash[:alert]
   = render 'shared/error_notice'
 
+%head
+  
+  = stylesheet_link_tag 'application', media: 'all'  
+
 - if current_user.admin?
   .row
     .columns.large-10.large-offset-1

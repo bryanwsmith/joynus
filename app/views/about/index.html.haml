@@ -1,11 +1,12 @@
 %head
   %title Joynus Staffing | About Joynus | Why we do What we do
   %meta{:content => "We believe doing what you like lead to happiness and growth", :name => "Description"}/
+  = stylesheet_link_tag 'application', media: 'all'  
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     .feature-container
       %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
-      .feature-text
+      .feature-text3
         %h1.text-center.animated.fadeInDown= t 'about.feature-header'
 %section.whywedowhatwedo.m-top3
   

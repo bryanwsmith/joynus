@@ -4,6 +4,9 @@
   = javascript_include_tag "http://w.sharethis.com/button/buttons.js"
   :javascript
     stLight.options({publisher: "89b810c0-d2c7-4a57-9d66-ad33235cac5b", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+%head
+  %title Joynus Staffing| News | Check out our news
+  = stylesheet_link_tag 'application', media: 'all'        
 - if flash[:notice]
   = render 'shared/success_notice'
 

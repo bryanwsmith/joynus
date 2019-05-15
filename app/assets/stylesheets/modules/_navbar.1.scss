@@ -1,60 +1,17 @@
 @media only screen {
   .home-mobile-link { display: none; }
-
-  
-  
-   nav.shrink{
-    height: rem-calc(75);
-    transition: all ease 1s;
-    background: $white;
-    position: fixed;
-    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
-    -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
-    box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
-    .img-logo{
-       
-        background: asset-url('Logo_Gray_text.png') no-repeat top left !important;
-         height:50px;
-         width:250px;
-         padding-right:5px;
-         padding-top:7px;
-         
-         position:absolute;
-         z-index: 3;
-     
-    }
-    
-    
-    ul.menu {
    
-
-      li.menu-item {
-       
-
-        a {
-          color: #4c4c4d;
-          
-        }
-      } 
-    }
-   }  
   nav {
-    //background-color: transparent;
     
-    //background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,40,40,1) 60%, rgba(45,45,45,0.9) 70%, rgba(50,50,50,0.8) 80%,rgba(40,40,40,0.7) 90%,transparent 100%);
-    //background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.1) 95%,transparent 100%);
-    //background: linear-gradient(180deg, rgba(50,50,50,1) 0%, rgba(50,50,50,0.7) 60%, rgba(50,50,50,0.5) 80%, rgba(50,50,50,0.4) 90%, rgba(50,50,50,0.1) 95%,transparent 100%);
-    background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(10,10,10,0.6)40%, rgba(10,10,10,0.4) 60%, rgba(10, 10, 10, 0.2) 80%, rgba(10, 10, 10, 0) 100%);
-    //background:transparent;
-    //background:$white;
+    background:$white;
     margin-bottom: 0;
     position: fixed;
     width: 100%;
-    height: rem-calc(85);
+    height: rem-calc(75);
     z-index: 1;
-    //-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
-    //-moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
-    //box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
+    -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
+    box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
     
     
     .navbar-container {
@@ -67,7 +24,7 @@
       display: inline-block;
       
       .img-logo{
-         background: asset-url('Logo_White_text.png') no-repeat top left;
+         background: asset-url('Logo_Gray_text.png') no-repeat top left;
          height:40px;
          width:250px;
          padding-right:5px;
@@ -104,7 +61,7 @@
         a {
           color:  $primary-color;
           display: block;
-          font-size: rem-calc(20);
+          font-size: rem-calc(22);
           padding-left: rem-calc(14);
           padding-right: rem-calc(14);
           
