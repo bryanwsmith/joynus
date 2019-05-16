@@ -183,11 +183,7 @@ h2 {
     width:auto;
 }
 
-.img5{
-    height:auto;
-    width:250px;
-    
-}
+
 
 .img55{
     height:230px;
@@ -195,7 +191,7 @@ h2 {
     
     padding:1em;
    
-   margin:auto;
+   margin: auto;
 }
 
 .img6{
@@ -300,41 +296,7 @@ h2 {
 }
 
 //logo
-.wwdContent2{
-    //background: ;
-    background-attachment: fixed;
-	background-position: center top;
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-height: 250px;
-	
-	
-	position:relative;
-}
 
-
-
-.wwdContent2:before{
-   //background: rgba(255, 192, 0, .85);
-    //background: rgba(97, 0, 77, 0.75); 
-    //background: rgba(83, 198, 140, 0.75);
-    //background: rgb(242, 250, 250);
-    //background: rgba(51, 51, 51, 0.8); //grey
-    //background: rgb(247, 249, 243); //original
-    //background: rgba(0, 204, 153,0.8);
-    
-    background-color: rgb(210, 237, 249);
-    content: "";
-    height: 80%;
-    position: absolute;
-    width: 80%;
-    margin:10%;
-    padding-right:15%;
-    left:0;
-	top:0;
-	z-index:0;
-	border-radius:30px;
-}
 .white-text{
     color:white;
 }
@@ -454,10 +416,7 @@ h2 {
 
 }
 @media all and (max-width:1920px) {
-    .img5{
-    height:auto;
-    width:200px;
-}
+    
    .img2 {display:block; margin:auto; float:none; margin-top:25px;}
    .imggg{
    height:300px;
@@ -496,7 +455,7 @@ h2 {
     .h1,.h2,.h3,.h4,.imgg,.img1 {display:block; margin:auto;}
     .img2 {display:block; margin:auto; float:none; margin-top:25px;}
     .img3 {display:block; margin:auto; height:80px; }
-    .img5 {margin-left:23%;}
+    
         .box{
             display:block;
         }    

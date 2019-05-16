@@ -81,52 +81,35 @@
         
 
 
-
-.wwdContent2.m-bottom2
-  
-  .columns.large-12.m-top1
-    %h2.h2-text.text-center
-      = t 'home.companies-tagline'
-  / Service
-  .row.m-bottom4
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
-        %i
-          = image_tag 'Samsung.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
-        %i
-          = image_tag 'Posco.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
-        %i
-          = image_tag 'LG.png', :class =>"img5"
-  .row    
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
-        %i
-          = image_tag 'Hyundai.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
-        %i
-          = image_tag 'KIA.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
-        %i
-          = image_tag 'Tesla.png', :class =>"img5"
-  .row.m-top4{:style => "padding-bottom:5%;"}
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1000"}
-        %i
-          = image_tag 'SK.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1200"}
-        %i
-          = image_tag 'Lotte.png', :class =>"img5"
-    .columns.large-4.text-center
-      .srvIco.div{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
-        %i
-          = image_tag 'Beaulieu.png', :class =>"img5"
+%section
+  .wwdContent2
+    .row.m-top2
+      .columns.large-12
+        %h2.h2-text.text-center
+          = t 'home.companies-tagline'
+    / Service
+    .row.m-bottom4
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "800"}
+        = image_tag 'Samsung.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
+        = image_tag 'Posco.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "2000"}
+        = image_tag 'LG.png', :class =>"img5"
+    .row    
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "800"}
+        = image_tag 'Hyundai.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
+        = image_tag 'KIA.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "2000"}
+        = image_tag 'Tesla.png', :class =>"img5"
+    .row
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "800"}
+      
+        = image_tag 'SK.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "1400"}
+        = image_tag 'Lotte.png', :class =>"img5"
+      .columns.small-4.text-center{"data-aos" => "flip-right", "data-aos-duration" => "2000"}
+        = image_tag 'Beaulieu.png', :class =>"img5"
 / What we do content
 %section#career.content-section.no-spacing
   .row
