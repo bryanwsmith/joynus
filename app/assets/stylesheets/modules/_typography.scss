@@ -227,7 +227,7 @@ h2 {
 
 
 
-/*
+/* Dropdown
 .dropbtn {
     //background-color: #4CAF50;
     background-color: #21a2c5;
@@ -466,6 +466,14 @@ h2 {
    border-radius:50px;
    margin:auto;
 }
+    .boxx {
+   display:flex;
+   align-items:center;
+   justify-content:center; 
+   padding:1em;
+   margin: 2% 0% 2% 0%;
+}
+
 }    
 
 
@@ -473,10 +481,17 @@ h2 {
     .imggg{
         height:250px;
     }
+    .img2 {display:block; margin:auto; float:none; margin-top:25px;}  
+    .boxx {
+   display:block;
+   position:relative;
+    }
+    
+    
 }
 
 
-@media all and (max-width:480px) {
+@media all and (max-width:500px) {
 
     .h1,.h2,.h3,.h4,.imgg,.img1 {display:block; margin:auto;}
     .img2 {display:block; margin:auto; float:none; margin-top:25px;}

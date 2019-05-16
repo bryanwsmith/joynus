@@ -6,23 +6,24 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.feature-section.no-spacing
-    .feature.animated.fadeIn
-      .feature-container2
-            
-
-        
-  
   %section
-    .wrap
+    .path
+      %a{:href => "/"}
+        .srvIco1
+          %i.icon-home
+      %a{:href => "/services"}
+        %h5 Services 
+      .srvIco11
+        %i.icon-right
+      %h5 Manufacturing
       
-              
+    .wrap          
                 
       .pageleft
         .row        
           .columns.large-12
       
-            %h2.secondary-text.text-center
+            %h2.text-center
               Manufacturing
             %p
               As technology advances, manufacturing operations have evolved and it requires evolved set of talent than past decades. 
@@ -34,7 +35,7 @@
             .columns.large-6
              
               %h5
-                %b.secondary-text
+                %b
                   Top five issues we focus on
               %p
                 Production demand<br>
@@ -56,7 +57,7 @@
             .columns.large-6
              
               %h5
-                %b.secondary-text
+                %b
                   Positions we excel at
           .columns.large-12
             .columns.large-6
@@ -97,7 +98,7 @@
       .pageright
         .row
           .columns.large-10.large-offset-1
-            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            %h2.text-center.no-margin-top= t 'contact.content-header'
             
         
         .form-section.no-spacing.mb--

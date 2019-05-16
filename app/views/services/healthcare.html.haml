@@ -6,23 +6,24 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.feature-section.no-spacing
-    .feature.animated.fadeIn
-      .feature-container2
-       
-
-        
-  
   %section
-    .wrap
+    .path
+      %a{:href => "/"}
+        .srvIco1
+          %i.icon-home
+      %a{:href => "/services"}
+        %h5 Services 
+      .srvIco11
+        %i.icon-right
+      %h5 Healthcare
       
-              
+    .wrap          
                 
       .pageleft
         .row        
           .columns.large-12
       
-            %h2.secondary-text.text-center
+            %h2.text-center
               Healthcare
             %p
               Lifestyle and demographic changes, funding gaps and workforce shortages, ever changing political and regulatory 
@@ -33,7 +34,7 @@
             .columns.large-12
              
               %h5
-                %b.secondary-text
+                %b
                   Positions we excel at
                   %br/
               .columns.large-6
@@ -83,7 +84,7 @@
       .pageright
         .row
           .columns.large-10.large-offset-1
-            %h2.text-center.secondary-text.no-margin-top= t 'contact.content-header'
+            %h2.text-center.no-margin-top= t 'contact.content-header'
             
         
         .form-section.no-spacing.mb--

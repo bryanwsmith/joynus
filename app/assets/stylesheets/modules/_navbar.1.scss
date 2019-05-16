@@ -22,6 +22,7 @@
 
     .navbar-header {
       display: inline-block;
+      position: relative;
       
       .img-logo{
          background: asset-url('Logo_Gray_text.png') no-repeat top left;
@@ -34,11 +35,13 @@
          z-index: 2;
          
       }
+      
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         line-height: rem-calc(70);
         margin: 0;
         display: inline-block;
+        position: relative;
       }
     }
 

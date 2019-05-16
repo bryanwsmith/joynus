@@ -71,21 +71,21 @@
         %h1.animated.fadeInDown Job Seeker
         %h3.animated.fadeInDown Right People
         %a.button.primary.radius.iprocess.icon-angle-double-right{:href => "https://app.employstream.com/jobs/joynus/search/"}  Jobs  
-        /= link_to "  Jobs  ", jobs_path, class: ' button secondary radius iprocess icon-angle-double-right'
+        
     .split.sright
       .centered
         
         %h1.animated.fadeInDown Employer
         %h3.animated.fadeInDown Right Now
         %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/employers"} Employer
-        /= link_to t('home.employer'), employers_path, class: 'button success radius iprocess icon-angle-double-right m-top4'
+        
 
 
 
 .wwdContent2.m-bottom2
   
   .columns.large-12.m-top1
-    %h2.secondary-text.text-center
+    %h2.h2-text.text-center
       = t 'home.companies-tagline'
   / Service
   .row.m-bottom4
@@ -162,7 +162,7 @@
         %p
           = t 'home.best-decision-content'
         
-        /= link_to t('home.best-decision-button'), jobs_path, class: 'button secondary radius small'
+        
 .primary-color-bg
   %section.content-section.x-small#employers.no-spacing
     .row
@@ -174,4 +174,4 @@
           %h2= t 'home.employers-header'
           %p= t 'home.employers-content'
         
-          /= link_to t('home.employers-button'), employers_path, class: 'button secondary radius small'
+          
