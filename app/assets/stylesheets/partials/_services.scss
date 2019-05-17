@@ -25,7 +25,7 @@
       .srvIco1 i {
         color: #5ECBEE;
         display: inline-block;
-        font-size:22px;
+        font-size:28px;
         position: relative fixed;
         vertical-align:middle;
         padding-top:3px;
@@ -36,7 +36,7 @@
       .srvIco11 i {
         color: #4C4C4D;
         display: inline-block;
-        font-size:22px;
+        font-size:28px;
         position: relative fixed;
         vertical-align:middle;
         padding-top:3px;
@@ -122,7 +122,7 @@
     
   }
 
-@media only screen and (min-width: rem-calc(360)){
+@media only screen and (min-width: rem-calc(320)){
   #services{
   .img000{
     height:auto;
@@ -130,8 +130,20 @@
     padding-left:10%;
    
     }
-  
-  
+  .path{
+      padding-top:17%;
+      h5{
+        font-size:18px;
+        vertical-align:middle;
+      }
+      .srvIco1 i {
+        font-size:20px;
+      }
+      
+      .srvIco11 i {
+        font-size:20px;
+      }
+    } 
   
 }
 }
@@ -161,7 +173,20 @@
 // Medium screens
 @media only screen and (min-width: rem-calc(768)) {
   #services {
-    
+    .path{
+      padding-top:4%;
+      h5{
+        font-size:20px;
+        vertical-align:middle;
+      }
+      .srvIco1 i {
+        font-size:25px;
+      }
+      
+      .srvIco11 i {
+        font-size:25px;
+      }
+    } 
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
     .specialcontainer {
@@ -196,6 +221,9 @@
 
 @media only screen and (min-width: rem-calc(1024)) {
   #services {
+    .path{
+      padding-top:2%;
+    }
     .home-section-img { display: none; }
     .specialcontainer {
     position: relative;
@@ -292,6 +320,9 @@
 
 @media only screen and (min-width: rem-calc(1200)) {
 #services{
+ .path{
+      padding-top:1%;
+    }
  .wrap {
     width: 80%;
     overflow:auto;
