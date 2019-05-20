@@ -126,6 +126,15 @@
 // Small screens
 @media only screen and (min-width: rem-calc(501)) {
   #home {
+    .centered {
+      h1{
+        font-size:60px;
+      }
+      h3{
+        font-size:35px;
+      }
+  }
+    
     .companies ul li { width: 33%; }
 
     section.content-section {

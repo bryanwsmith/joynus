@@ -1,5 +1,5 @@
 @media only screen {
-  #services {
+  #services, #staff {
     .path{
       padding-top:1%;
       padding-left:2%;
@@ -123,7 +123,7 @@
   }
 
 @media only screen and (min-width: rem-calc(320)){
-  #services{
+  #services, #staff{
   .img000{
     height:auto;
     width:90%;
@@ -149,22 +149,13 @@
 }
 // Small screens
 @media only screen and (min-width: rem-calc(480)) {
-  #services {
-    .companies ul li { width: 33%; }
-
-    section.content-section {
-
-      &.x-small, &.small {
-        padding-top: rem-calc(0);
-        padding-bottom: rem-calc(50);
-      }
-
-      &#career { padding-bottom: 0 !important; }
-      &#right-job { padding-top: 0 !important; }
-    }
-
+  #services, #staff{
+   
+    
+  .path{
+      padding-top:7%;
+  }    
   }
-  
 }
 
 
@@ -172,7 +163,7 @@
 
 // Medium screens
 @media only screen and (min-width: rem-calc(768)) {
-  #services {
+  #services, #staff {
     .path{
       padding-top:4%;
       h5{
@@ -220,7 +211,7 @@
 
 
 @media only screen and (min-width: rem-calc(1024)) {
-  #services {
+  #services, #staff {
     .path{
       padding-top:2%;
     }
@@ -319,7 +310,7 @@
 
 
 @media only screen and (min-width: rem-calc(1200)) {
-#services{
+#services, #staff{
  .path{
       padding-top:1%;
     }

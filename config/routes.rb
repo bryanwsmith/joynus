@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     get 'services/manufacturing'
     get 'services/office'
     get 'services/it'
+    get 'staff/highvolume'
+    get 'staff/onsite'
     
     resources :posts, path: 'blog'
     resources :sessions, only: [:new, :create, :destroy]

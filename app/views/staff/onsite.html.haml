@@ -1,0 +1,76 @@
+- if flash[:notice]
+  = render 'shared/success_notice'
+
+%head
+  %title Joynus Staffing | Information Technology
+  %meta{:content => "We have your best interest at heart", :name => "Description"}/
+  = stylesheet_link_tag 'industry', media: 'all'
+%body
+  %section
+    .path
+      %a{:href => "/"}
+        .srvIco1
+          %i.icon-home
+      %a{:href => "/staff"}
+        %h5 Staffing
+      .srvIco11
+        %i.icon-right
+      %h5 On-Site Management
+      
+    .wrap          
+                
+      .pageleft
+        .row        
+          .columns.large-12
+      
+            %h2.text-center
+              Productivity
+            %p
+              The On-Site Manager’s goals are tied to the client’s goals.  
+              The On-Site manager is empowered to make decisions on performance and 
+              attendance and ensures productivity remains high
+            
+            .columns.large-12
+             
+              %h5
+                %b
+                  Impact
+                %br/
+              %p
+                When there is a turnover, our On-site Manager will work with Shift 
+                supervisor and train them on job basics and monitor the quality to ensure 
+                there is no disruption to production and no damage to quality
+                
+              %h5
+                %b
+                  Leadership
+                %br/
+              %p
+                The On-Site Manager is a direct communication line to the workforce. 
+                On-Site Manager knows their name, and builds relationships with them and 
+                manages any disputes, concerns, issues and focus  
+                
+              %h5
+                %b
+                  Innovation
+                %br/
+              %p
+                We continuously work to improve our systems and processes. 
+                Or, you may make changes that need implemented correctly. 
+                Either way, the On-Site Manager trains, monitors, supervises or 
+                mentors to assure the changes are implemented
+              
+      .pageright
+        .row
+          .columns.large-10.large-offset-1
+            %h2.text-center.no-margin-top= t 'contact.content-header'
+            
+        
+        .form-section.no-spacing.mb--
+          .row
+            .columns.large-10.large-offset-1
+              %fieldset.mb--
+                = render 'contact/form'          
+        
+   
+      
