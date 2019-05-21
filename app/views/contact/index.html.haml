@@ -12,7 +12,17 @@
       %img{ data: { interchange:"[#{asset_path('contact-bg-mobile.jpg')}, (small)], [#{asset_path('contact-bg-mobile.jpg')}, (medium)], [#{asset_path('contact-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'contact.feature-header'
-
+.row
+  .columns.large-12.large-offset-1
+    .path
+      %a{:href => "/"}  
+        .srvIco1
+          %i.icon-home
+      %a{:href => "/"}
+        %h5 home    
+      .srvIco11
+        %i.icon-right  
+      %h5 Contact
 %section
   .row
     .columns.large-8.large-offset-2

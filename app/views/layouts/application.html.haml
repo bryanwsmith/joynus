@@ -16,9 +16,8 @@
     
     
     %link{:href => "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css", :rel => "stylesheet"}/
-    
+    = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'vendor/modernizr'
-    
     = favicon_link_tag 'favicon.ico'
     = yield :js_head
     = csrf_meta_tags
@@ -51,7 +50,7 @@
           %ul.menu
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url
-            %li.menu-item= active_link_to t('header.employers'), employers_path  
+            /%li.menu-item= active_link_to t('header.employers'), employers_path  
             %li.menu-item= active_link_to t('header.services'), services_path
            
             %li.menu-item= active_link_to t('header.news'), posts_path

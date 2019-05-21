@@ -1,7 +1,7 @@
 %head
   %title Joynus Staffing | Services | We provide best solutions
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
-  = stylesheet_link_tag 'application', media: 'all'  
+   
 %body
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
@@ -10,8 +10,18 @@
         .feature-text
           %h1.text-center.animated.fadeInDown
             WHAT WE DO
-            
-
+  .row
+    .columns.large-12.large-offset-1
+      .path
+        
+        %a{:href => "/"}  
+          .srvIco1
+            %i.icon-home
+        %a{:href => "/"}
+          %h5 home    
+        .srvIco11
+          %i.icon-right  
+        %h5 Services
         
   
   %section#industries

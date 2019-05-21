@@ -1,6 +1,6 @@
 %head
   %title Joynus Staffing| News | Check out our news
-  = stylesheet_link_tag 'application', media: 'all'    
+      
   
 - if flash[:notice]
   = render 'shared/success_notice'
@@ -11,7 +11,18 @@
       %img{ data: { interchange:"[#{asset_path('news-bg-mobile.jpg')}, (small)], [#{asset_path('news-bg.jpg')}, (medium)], [#{asset_path('news-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'blog.feature-header'
-
+.row
+  .columns.large-12.large-offset-1
+    .path
+      %a{:href => "/"}  
+        .srvIco1
+          %i.icon-home
+      %a{:href => "/"}
+        %h5 home    
+      .srvIco11
+        %i.icon-right  
+      %h5 News
+    
 - @posts.each do |post|
   .row
     .columns.large-8.large-offset-2

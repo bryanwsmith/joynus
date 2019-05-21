@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     resources :posts, path: 'blog'
     resources :sessions, only: [:new, :create, :destroy]
     resources :about, only: [:index]
-    resources :employers, only: [:index]
+    #resources :employers, only: [:index]
     resources :contact, only: [:index]
     resources :services, only: [:index]
     resources :staff, only: [:index]
