@@ -71,6 +71,7 @@ en:
     looking-for-job: "I'm looking for a job"
     an-employer: "I'm an employer"
     general-inquiry: "General inquiry"
+    
 
   jobs:
     feature-header: "Current openings"
@@ -118,7 +119,7 @@ en:
     phone: "Phone *"
     message: "Message..."
     button: "Submit"
-
+    company: "Company"
   views:
     pagination:
       previous: "Newer"

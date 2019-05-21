@@ -3,6 +3,8 @@
   %head
     %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport"}
   %body
+    %p= "Company: #{@company}"
     %p= "From: #{@first_name} #{@last_name}"
+    
     %p= simple_format @message
     %p= "#{@email} or by #{@phone}"

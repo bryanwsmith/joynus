@@ -7,14 +7,15 @@ class ContactController < ApplicationController
   end
 
   def send_mail
+    company = params[:company]
     first_name = params[:first_name]
     last_name = params[:last_name]
     email = params[:email]
     subject = params[:subject] || 'Contact Form'
     phone = params[:phone] || ''
     message = params[:message] || ''
-
-    ContactMailer.contact_email(first_name, last_name, email, subject, phone, message).deliver
+    
+    ContactMailer.contact_email(company,first_name, last_name, email,  subject, phone, message).deliver
     redirect_to request.referrer, notice: "Your message was sent, we'll be in touch soon"
   end
   
