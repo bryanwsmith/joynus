@@ -29,7 +29,7 @@ Rails.application.routes.draw do
     
     resources :directhire, only: [:index]
     resources :consultation, only: [:index]
-    resources :bpo, only: [:index]
+    resources :rpo, only: [:index]
   
     resources :unapproved_jobs
     resources :jobs do

@@ -4,9 +4,11 @@
   = stylesheet_link_tag 'application', media: 'all'  
 
 
+
+
 %section.feature-section.no-spacing.m-top-n
 
-  = video_tag "Videos.mp4", :width => "100%", :height =>"100%",   :autoplay => true, :loop => true, class: "video" "myVideo"
+  = video_tag "Videos.mp4", :width => "100%", :autoplay => true, :loop => true, class: "video" "myVideo"
   
   .content_on_BG.text-center.animated.fadeInDown
     %h1 We deliver more than you expected
@@ -15,12 +17,10 @@
 
 
 
-
-
    
 %section.m-top3
   .row
-    %h2.secondary-text.text-center Why Joynus?
+    %h2.text-center Why Joynus?
     .box  
       .columns.large-6.div{"data-aos" => "fade-down-right", "data-aos-duration" => "2000"}
         = image_tag 'Question.jpg', :class => "imggg"
@@ -94,7 +94,7 @@
       .columns.large-6.div{"data-aos" => "fade-down-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}
         = image_tag 'convenience.jpg', :class => "imgg"
       .columns.large-6.text-center.div{"data-aos" => "fade-up-right","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
-        %h2.secondary-text Convenience
+        %h2 Convenience
         /%p.text-center Stay in comfortable. Joynus will take care of all your needs
         
         
@@ -118,7 +118,7 @@
         = image_tag 'save.jpg', :class => "imgg" 
       
       .columns.large-6.large-pull-7.div{"data-aos" => "fade-down","data-aos-easing"=>"linear", "data-aos-duration" => "1200", "data-aos-anchor-placement"=>"top-bottom"}
-        %h2.secondary-text.text-center#retention Save Money
+        %h2.text-center#retention Save Money
         /%p.text-center Work with us and Save money
         .columns.large-6.text-center
           
@@ -144,7 +144,7 @@
         = image_tag 'responsive.jpg', :class => "imgg" 
         
       .columns.large-6.text-center.div{"data-aos" => "fade-down","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"} 
-        %h2.secondary-text Responsive
+        %h2 Responsive
         %p  Clients don't have to call our main number, you will have a direct access to account manager
         
         %p
@@ -165,7 +165,7 @@
       .columns.large-6.large-pull-6.div{"data-aos" => "fade-down-right","data-aos-easing"=>"ease-in-sine", "data-aos-duration" => "800"}  
         .w3-container
           .row.text-center
-            %h2.secondary-text Selective Screening
+            %h2 Selective Screening
             
             %p
               %b Sourcing
@@ -202,21 +202,21 @@
           #Strategy.w3-container.city
             %h2.primary-text Strategy
             %p
-              %b.secondary-text A. Investigation<br>
+              %b A. Investigation<br>
               Based on the industry, pay scale, location, we implement in depth screening process so that the candidate we present aligns with your requirements
             %p
-              %b.secondary-text B. Headhunting<br>
+              %b B. Headhunting<br>
               Most often top candidates are already working. This is where the challenge begins. Numerous phone calls and exchanges of email; sifting through resumes and key words, and comparing
               our scores at a high volume. It's a matter of becoming the best liaison and put the hiring company and candidate to talk to each other while we do all the difficult talk in the middle1
             %p
-              %b.secondary-text C. Assessment & Evaluation<br>
+              %b C. Assessment & Evaluation<br>
               We provide our feedback to clients about prescreen, qualification, education, certification, personality, depth of skill level, speciality; developing a comprehensive comparison matrix and analysis
             %p
-              %b.secondary-text D. Acceptance<br>
+              %b D. Acceptance<br>
               Our work doesn't end at arranging the interview. We ensure and help offer letter is appropriate and candidate feels gratitude to be hired, ensure all process and obstacles
               including relocation, immigration status, compensation, are handled until the first day of employment
             %p
-              %b.secondary-text E. Employment<br>
+              %b E. Employment<br>
               After 3 months, we follow up on candidate's performance with client. We feel responsible for our actions. We feel that it is our civic duty to ensure client satisfaction as hiring a right individual can shape a future of a company
               
             %br/
@@ -249,7 +249,7 @@
           
   .row#industry.content-section
     .columns.xlarge-12
-      %h2.text-center.secondary-text
+      %h2.text-center
         Services
     .columns.xlarge-12.text-center
       %p
@@ -279,40 +279,4 @@
           
           
           
-          
-
-/  .row#industry.content-section
-/    .columns.xlarge-12
-/      %h2.text-center.secondary-text
-/        Services
-/    .columns.xlarge-12
-/      %p
-/        Our clients stay with us and come back to us for the quality of the services offered at Joynus. 
-/        We have our own guidelines on what Quality means.
-/        We strive to satisfy them by employing qualified associates to ensure our customers' needs are met
-/        %b
-/          %a{:alt => "services", :href => "/services"} Learn more
-/  .row
-/    .box.m-top3  
-/      .columns.large-6.text-center
-/        
-/        %h2.secondary-text Staffing
-/        %a{:href => "/staff"}
-/          = image_tag 'staffing.png', :alt => 'Staffing', :class => "imggg"
-/         
-/        %p
-/          We provide a complete range of job placements <br>
-/          %b.text-center
-/            %a{:href => "/staff"} Learn More
-/              
-/      .columns.large-6.text-center    
-/        %h2.secondary-text Direct hire
-/        %a{:href => "/recruit"}
-/          = image_tag 'recruiting.png', :alt => 'Recruiting', :class => "imggg"
-/        
-/        %p
-/          We present you with potential candidates<br>
-/          %b.text-center
-/            %a{:href => "/recruit"} Learn More
-           
- 
+  

@@ -3,7 +3,7 @@
     position: relative;
     z-index: 0;
 
-    h1, h3, p,h5  {
+    h1, h3, p,h5,h4  {
       color: $white;
       text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
     }
@@ -171,7 +171,7 @@
    }
    
   }
-  #bpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+  #rpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
   #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
     
   #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
@@ -262,6 +262,7 @@ position: absolute;
 
 @media only screen and (min-width:1280px) {
     #staff{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
+    #rpo{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #directhire{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #services{
     #staffing_process{

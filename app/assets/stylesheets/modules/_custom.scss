@@ -270,34 +270,6 @@ h2 {
 
 
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content_on_BG {
-  position: absolute;
-  top:1%;
-  margin:auto;
-  background: rgba(64, 64, 64, 0.2);
-  
-  color: #f1f1f1;
-  width: 100%;
-  height: 95%;
-}
-
-.content_on_BG >h1 {
-  
-  padding:20% 0 20% 0;
-  margin:auto;
-  text-shadow: 2px 2px 1px #000000;
-  
-  color: #f1f1f1;
-  
-}
 
 
 #myBtn {
@@ -315,22 +287,7 @@ h2 {
   color: black;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:500px;
-}
-.video-responsive{
-  
- .iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
- }  
-}
+
 
 
 

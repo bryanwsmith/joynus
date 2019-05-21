@@ -1,39 +1,52 @@
-.hero-employers {
-  background: asset-url('employers-bg.jpg') no-repeat center bottom fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 0 400%;
-  margin-bottom: rem-calc(60);
-
-  .hero-container .hero-text {
-    vertical-align: middle !important;
-  }
-}
-
-.grid-container {
-    font-size: 40px;
-    min-height: 400px;
-    width: 70%;
-    margin:auto;
-    
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(500px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 15px;
-    
-    
-}
-
-.grid-items{
-  background:#f7f9f3;
-  
-}
 
 
 @media only screen {
   #employers {
+    #myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 700ox;
+}
+
+.content_on_BG {
+  position: absolute;
+  top:1%;
+  margin:auto;
+  background: rgba(64, 64, 64, 0.2);
+  
+  color: #f1f1f1;
+  width: 100%;
+  height: 700px;
+}
+
+.content_on_BG >h1 {
+  
+  padding:20% 0 20% 0;
+  margin:auto;
+  text-shadow: 2px 2px 1px #000000;
+  
+  color: #f1f1f1;
+  
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:500px;
+}
+.video-responsive{
+  
+ .iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+ }  
+}
+    
     .employer-section-img {
       width: calc(100% + 30px);
       position: relative !important;
