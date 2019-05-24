@@ -13,7 +13,6 @@
   .row
     .columns.large-12.large-offset-1
       .path
-        
         %a{:href => "/"}  
           .srvIco1
             %i.icon-home
@@ -26,7 +25,8 @@
   
   %section#industries
     %h2.text-center
-      Our Specialized Staffing Services 
+      %b
+        SPECIALIZATION
     
     .row
       .columns.small-12
@@ -75,121 +75,76 @@
           %p
             %b
               Information Technology
-    .row
-      .columns.small-12
-        .columns.small-4.text-center 
-        
-          %a{:href => "services/automotive"}
-            = image_tag 'Automotive.png', :alt => 'Automotive', :class => 'img8'
-          %p
-            %b
-              Automotive   
-        .columns.small-4.text-center        
-          
-          %a{:href => "services/accounting"}
-            = image_tag 'Accounting.png', :alt => 'Accounting & Finance', :class => 'img8'
-          %p
-            %b
-              Accounting & Finance
-        .columns.small-4.text-center         
-        
-          %a{:href => "services/healthcare"}
-            = image_tag 'Healthcare.png', :alt => 'Healthcare', :class => 'img8'
-          %p
-            %b
-              Healthcare
-          
-    .row.m-top5
-      .columns.small-12
-        .columns.small-4.text-center
-          
-          %a{:href => "services/manufacturing"}
-            = image_tag 'Manufacturing.png', :alt => 'Manufacturing', :class => 'img8'
-          %p
-            %b
-              Manufacturing
-        .columns.small-4.text-center        
-        
-          %a{:href => "services/office"}
-            = image_tag 'Office.png', :alt => 'Office & Administrative', :class => 'img8'
-          %p
-            %b
-              Office & Administrative
-        .columns.small-4.text-center      
-          
-          %a{:href => "services/it"}  
-            = image_tag 'IT.png', :alt => 'IT', :class => 'img8'
-          %p
-            %b
-              Information Technology
 
-                
+  .row
+    .box
+      .columns.large-4
+        %a{:href => "/staff"}
+          //= image_tag 'staffing.png', :alt => 'Staffing', :class => "img000"
+          = image_tag 'Staffing_Service.png', :alt => 'Staffing', :class => "img000"
     
-
-
-  .row#industry.content-section
-    
-    
-    .row
-      .box
-        .columns.large-4
-          %a{:href => "/staff"}
-            //= image_tag 'staffing.png', :alt => 'Staffing', :class => "img000"
-            = image_tag 'Staffing_Service.png', :alt => 'Staffing', :class => "img000"
-      
-        .columns.large-8
-          %a{:href => "/staff"}
-            %h2 Staffing  
-          %p
-            Flexible, fast and convenient way to add workforce per your immediate need. 
-            During your peak season leverage temporary workforce <br>
-            %b
-              %a{:href => "/staff"} Learn More 
+      .columns.large-8
+        %a{:href => "/staff"}
+          %h3 
+            %b STAFFING 
+        %p
+          Flexible, fast and convenient way to add workforce per your immediate need. 
+          During your peak season leverage temporary workforce <br>
+          %b
+            %a{:href => "/staff"} Learn More 
+        
+  .row
+    .box
+      .columns.large-4
+        %a{:href => "/directhire"}
+          //= image_tag 'recruiting.png', :alt => 'Direct Hire', :class => "img000"
+          = image_tag 'DirectHire_Service.png', :alt => 'Direct Hire', :class => "img000"
           
-    .row
-      .box
-        .columns.large-4
-          %a{:href => "/directhire"}
-            //= image_tag 'recruiting.png', :alt => 'Direct Hire', :class => "img000"
-            = image_tag 'DirectHire_Service.png', :alt => 'Direct Hire', :class => "img000"
+      .columns.large-8
+        %a{:href => "/directhire"}
+          %h3
+            %b DIRECT HIRE    
+        %p
+          We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges. Then we carefully select potential candidates for you to choose.
+          When you make the decision, the candidate becomes permanent employee of your organization<br>
+          %b
+            %a{:href => "/directhire"} Learn More
             
-        .columns.large-8
-          %a{:href => "/directhire"}
-            %h2 Direct Hire    
-          %p
-            We devote extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges. Then we carefully select potential candidates for you to choose.
-            When you make the decision, the candidate becomes permanent employee of your organization<br>
+  .row
+    .box
+      .columns.large-4
+        %a{:href => "/rpo"}
+          =image_tag 'RPO1.png', :class => "img000", :alt => 'RPO'
+      .columns.large-8
+        %a{:href => "/rpo"}  
+          %h3
             %b
-              %a{:href => "/directhire"} Learn More
-              
-    .row
-      .box
-        .columns.large-4
-          %a{:href => "/rpo"}
-            =image_tag 'RPO.png', :class => "img000", :alt => 'RPO'
-        .columns.large-8
-          %a{:href => "/rpo"}  
-            %h2 RPO  
-          %p 
-            Smart companies focus on their core business functions. Rather than focusing on cost reduction, companies strengthen the competitiveness by outsourcing things that are not in their core business,
-            so you can maximize your core business output. <br>
-            %b   
-              %a{:href => "/rpo"} Learn More    
-    .row
-      .box
-        .columns.large-4
-          %a{:href => "/consultation"}    
-            =image_tag 'Consulting.png', :alt => "Consultation", :class => "img000"  
-        .columns.large-8
-          %a{:href => "/rpo"}
-            %h2 Consultation
-          %p
-            New to the area or industry?  We have connections with firms of all sizes and industries and a range of diverse talent nationwide to provide insight into industry standards,
-            including compensation info.  <br>
-            %b   
-              %a{:href => "/consultation"} Learn More         
+              RPO  
+        %p 
+          Smart companies focus on their core business functions. Rather than focusing on cost reduction, companies strengthen the competitiveness by outsourcing things that are not in their core business,
+          so you can maximize your core business output. <br>
+          %b   
+            %a{:href => "/rpo"} Learn More    
+  .row
+    .box
+      .columns.large-4
+        %a{:href => "/consultation"}    
+          =image_tag 'Consulting.png', :alt => "Consultation", :class => "img000"  
+      .columns.large-8
+        %a{:href => "/rpo"}
+          %h3 
+            %b
+              CONSULTATION
+        %p
+          New to the area or industry?  We have connections with firms of all sizes and industries and a range of diverse talent nationwide to provide insight into industry standards,
+          including compensation info.  <br>
+          %b   
+            %a{:href => "/consultation"} Learn More         
 
 .button-container.text-center
   %h3{:style => "margin:30px"}
     = t 'about.content-callout'
   = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+
+
+  

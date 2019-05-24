@@ -104,8 +104,8 @@
    
    h2{font-size:30px;}
     
-  .wwdContent2{
-   
+  
+  .wwdContent4{min-height: 350px;} 
 	.img5{
     height:auto;
     width:250px;
@@ -114,27 +114,14 @@
   h2{
     padding-top:1em;
   }
-}
-.wwdContent2:before{
-   
-    width: 100%;
-    margin: 10% 0 10% 0;
-}
+
+
  }
 } 
 
 // Small screens
 @media only screen and (min-width: rem-calc(501)) {
   #home {
-    .centered {
-      h1{
-        font-size:60px;
-      }
-      h3{
-        font-size:35px;
-      }
-  }
-    
     .companies ul li { width: 33%; }
 
     section.content-section {
@@ -177,8 +164,9 @@
     p { font-size: 20px;}
     
     h2{font-size: $h2-font-size;}
+    h3{font-size: 32px;}
     .centered >h1{
-    font-size:65px;
+    font-size:55px;
     display:inline-block;
   }
     
@@ -190,7 +178,7 @@
   #home {
     .home-section-img { display: none; }
     
-    
+    .wwdContent4{min-height: 750px;}
     
     
     section.content-section {
@@ -314,9 +302,11 @@
 
 
 @media all and (max-width:500px) {
-  
+  #home{
+  h2{font-size:21px;  }  
+  p{font-size:15px;}
   .centered >h1{
-    font-size:35px;
+    font-size:28px;
     display:inline-block;
   }
   
@@ -363,7 +353,7 @@
   
   
   
-  
+  }
 }
 // Large screens
 @media only screen and (min-width: 64.063em) {}
@@ -387,28 +377,24 @@
     height:auto;
     width:250px;
     padding: 0;
-    
-    display: inline-block;
-   
-    position: relative fixed;
-   
 }
 }
 
 
 
 .wwdContent2:before{
-   height: 1200px;
+   
+    background-color: rgb(210, 237, 249);
+    content: "";
+    height: 90%;
     position: absolute;
-    width: 95%;
-    margin: 10% 0 0 2.5%;
+    width: 90%;
+    margin: 10% 0 0 5%;
     padding-right:15%;
     left:0;
 	top:0;
 	z-index:0;
 	border-radius:30px;
-	display: block;   
-  flex-wrap: none;
 }
 }
 }

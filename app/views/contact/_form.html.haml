@@ -1,8 +1,6 @@
 = form_tag(send_mail_path) do |f|
   = invisible_captcha
-  .row
-    .columns.large-12
-      = text_field_tag 'company', nil,  placeholder: t('contact-form.company')
+  
   
   .row
     .columns.large-6
@@ -18,7 +16,9 @@
     .columns.large-12
       = text_field_tag 'phone', nil, 'required' => '', placeholder: t('contact-form.phone')
   
-  
+  .row
+    .columns.large-12
+      = text_field_tag 'company', nil,  placeholder: t('contact-form.company')
   
   
   .row

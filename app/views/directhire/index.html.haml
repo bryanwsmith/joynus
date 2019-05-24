@@ -9,32 +9,35 @@
         %img{ data: { interchange:"[#{asset_path('recruit-bg-mobile.jpg')}, (small)], [#{asset_path('recruit-bg-mobile.jpg')}, (medium)], [#{asset_path('recruit-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
-            Direct Hire
+            DIRECT HIRE
             %h5 
               We devote extensive time and resources to understand your organization’s unique <br>culture, environment, leadership style, goals and challenges
   .row
     .columns.large-12.large-offset-1 
       .path
-        %a{:href => "/"}  
+        %a{:href => "/" , :style=>"letter-spacing:-5px;"}  
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home   
+          %h5 Home    
         .srvIco11
           %i.icon-right  
         %a{:href => "/services"}
           %h5 Services 
         .srvIco11
           %i.icon-right    
-        %h5 Direct Hire
+        %h5 DirectHire
   %section        
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Temp.png', :alt => 'Temp', :class => "img55"  
+          %a{:href => "#contingencysearch"}
+            = image_tag 'a.png', :alt => 'a', :class => "img55"  
         .columns.large-8
-          %h2
-            Contingency Search Option
+          %a{:href => "#contingencysearch"}
+            %h2
+              %b
+                CONTINGENCY SEARCH 
           %p
             Ideal for early and mid-career professional positions. We research, source, screen and interview candidates within a 25 mile radius of the client office 
             and provide the client with a slate of 3-5 highly qualified candidates within 8 to 12 days. The client is invoiced a fee only after a placement is made. 
@@ -42,10 +45,13 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Temp_To_Perm.png', :alt => 'Temp_To_Perm', :class => "img55"  
+          %a{:href => "#retainersearch"}
+            = image_tag 'a.png', :alt => 'a', :class => "img55"  
         .columns.large-8
-          %h2
-            Retainer Search Option
+          %a{:href => "#retainersearch"}
+            %h2
+              %b
+                RETAINER SEARCH 
           %p
             Ideal for leadership roles, critical, rare, in-demand talent that require extensive market research and headhunting to attract. 
             Hiring the best requires in-depth planning, researching, networking and carefully interviewing and vetting candidates to discover 
@@ -54,37 +60,41 @@
   %section
     %hr    
     
-  %section
+  %section#contingencysearch
     .row
       .text-center
         %h2
-          Contingency Search Process
+          %b
+            CONTINGENCY PROCESS
       .box
         .columns.large-4.text-center
-          = image_tag 'Discovery.png', :alt => "Discovery Call", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Intake and Discovery Call
+          %h3
+            %b  
+              INTAKE AND DISCOVERY CALL
           %p
             The hiring manager and key stakeholders provide insight and details to ensure the search consultant effectively market the opportunity.
           
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Assessment.png', :alt => "Assessment", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Research Companies 
+          %h3
+            %b
+              RESEARCH COMPANIES 
           %p
             Using the latest databases and proprietary technology, Joynus identifies companies and candidates to headhunt within 25 miles of client location.
     
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Orientation.png', :alt => "Orientation", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Marketing and Advertising
+          %h3
+            %b
+              MARKETING AND ADVERTISING
           %p  
             Joynus creates a unique script designed to attract candidates through cold calling and “headhunting” from target market.  We place ads on social media to encourage networking.
             
@@ -92,47 +102,53 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'HighVolume.png', :alt => "HighVolume", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Candidate presentation
+          %h3
+            %b
+              CANDIDATE PRESENTATION
           %p
             Within 8 - 12 business days from the intake call, Joynus will provide a slate of 3 - 5 highly qualified candidates and provide the client a market review and analysis. 
             
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'HighVolume.png', :alt => "HighVolume", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Invoice
+          %h3
+            %b
+              INVOICE
           %p
             Client is invoiced the fee after a placement is made.
   
   %section
     %hr    
     
-  %section
+  %section#retainersearch
    
     .row
       .text-center
-        %h2 Retainer Search Process
+        %h2 
+          %b
+            RETAINER PROCESS
       .box
         .columns.large-4.text-center
-          = image_tag 'Retention.png', :alt => "Retention", :class => 'img55' 
+          = image_tag 'Engagement.png', :alt => "Engagement", :class => 'img55' 
         .columns.large-8
-          %h2
-            Engagement Invoice
+          %h3
+            %b
+              ENGAGEMENT PROCESS
           %p
             Deposit required to initiate any domestic or international search: $5,000.
             
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Migration.png', :alt => "Migration", :class => 'img55' 
+          = image_tag 'Analysis.png', :alt => "Analysis", :class => 'img55' 
         .columns.large-8
-          %h2
-            Organizational Inquiry and Analysis
+          %h3
+            %b
+              ORGANIZATIONAL INQUIRY AND ANALYSIS
           %p
             Joynus devotes extensive time and resources to understand your organization’s unique culture, environment, leadership style and business goals and challenges. 
             The search consultant conducts individual interviews with key personnel and stakeholders and compiles the information into an attractive visual art marketing brochure.
@@ -141,10 +157,11 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'BPO.png', :alt => "RPO", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Advertising and Recruitment
+          %h3
+            %b
+              ADVERTISING AND RECRUITMENT
           %p
             The search consultant and client work together to determine the best social media outlets to market the position.  
             A significant amount of inquiries will be made, and it essential for Joynus to respond quickly, professionally with accurate
@@ -153,20 +170,22 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+          = image_tag 'a.png', :alt => "a", :class => 'img55' 
         .columns.large-8
-          %h2
-            Screening and Review
+          %h3
+            %b
+              SCREENING AND REVIEW
           %p
             Management of applications and handling the flow of resumes is an ongoing and significant process. 
             Joynus provides timely and personal responses to questions and inquires.
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+          = image_tag 'Evaluation.png', :alt => "Evaluation", :class => 'img55' 
         .columns.large-8
-          %h2
-            Evaluation and Presentation
+          %h3
+            %b
+              EVALUATION AND PRESENTATION
           %p
             Evaluation of resumes is objective and subjective. Objectively, do applicants meet the minimum and preferred required qualifications? 
             Subjectively, do they possess the management and leadership traits, do their past experiences and accomplishments fit within the culture of the organization? 
@@ -176,10 +195,11 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+          = image_tag 'InterviewProcess.png', :alt => "InterviewProcess", :class => 'img55' 
         .columns.large-8
-          %h2
-            Interview Process
+          %h3
+            %b
+              INTERVIEW PROCESS
           %p
             Once the candidates have been selected, Joynus will coordinate all the interviews at a date and time convenient to your organization. 
             Joynus will provide a sample list of questions focused on key traits and attributes and remain engaged throughout the process to ensure 
@@ -188,10 +208,11 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+          = image_tag 'Negotiation.png', :alt => "Negotiation", :class => 'img55' 
         .columns.large-8
-          %h2
-            Negotiation Terms and Conditions
+          %h3
+            %b
+              NEGOTIATION TERMS AND CONDITIONS
           %p
             Joynus strives to maintain candidate expectations in-line with client’s budget and vice-versa.  Prior to offer stage client and search consultant 
             discuss potential offer parameters and other benefit details for candidates of interest.  Joynus pre-closes candidates to ensure there are no surprises 
@@ -199,10 +220,11 @@
     .row
       .box
         .columns.large-4.text-center
-          = image_tag 'Onsite_Manage.png', :alt => "Onsite_Management", :class => 'img55' 
+          = image_tag 'OnboardingSupport.png', :alt => "OnboardingSupport", :class => 'img55' 
         .columns.large-8
-          %h2
-            On-boarding Support
+          %h3
+            %b
+              ON-BOARDING SUPPORT
           %p
             There are a variety of strategies and issues to manage between the acceptance date and start date. 
             Joynus will brief the client on recommendations and actions to take during the transition. We provide day 1, 15, 30, 60 and 90 
@@ -212,9 +234,10 @@
   .extra-navigation.m-top3    
     %a{:href => "/staff"}
       .item
-        = image_tag 'Staffing.png', :alt => "Staffing", :class => 'img55' 
+        = image_tag 'Staffing.png', :alt => "Staffing", :class => 'img56' 
         %h2
-          Staffing
+          %b
+            STAFFING
         %p{:style => "color:black"}
           We devote extensive time and resources
         %p
@@ -222,9 +245,10 @@
             %a{:href => "/staff"} Learn More  
     %a{:href => "/rpo"}
       .item
-        = image_tag 'BPO.png', :alt => "RPO", :class => 'img55' 
+        = image_tag 'RPO.png', :alt => "RPO", :class => 'img56' 
         %h2
-          RPO
+          %b
+            RPO
         %p{:style => "color:black"}
           We devote extensive time and resources   
         %p  

@@ -16,14 +16,14 @@
     .split.sleft
       .centered
         
-        %h1.animated.fadeInDown Job Seeker
+        %h1.animated.fadeInDown JOB SEEKER
         %h3.animated.fadeInDown Right People
         %a.button.primary.radius.iprocess.icon-angle-double-right{:href => "https://app.employstream.com/jobs/joynus/search/"}  Jobs  
         
     .split.sright
       .centered
         
-        %h1.animated.fadeInDown Employer
+        %h1.animated.fadeInDown EMPLOYER
         %h3.animated.fadeInDown Right Now
         %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/employers"} Employer
         
@@ -32,7 +32,7 @@
     
     .row
       .columns.large-12.m-top3
-        %h2.text-center Trusted by these companies
+        %h2.text-center TRUSTED BY THESE COMPANIES
     .row    
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco3
@@ -84,14 +84,16 @@
 
 %section#career.content-section.no-spacing
   .row
-    .columns.xlarge-6
-      .home-section-img.mb-
-        = image_tag 'section-1.jpg'
+    .columns.xlarge-7
       .animated-text
         %h2
           = t 'home.career-header'
         %p
           = t 'home.career-content'
+    .columns.xlarge-5
+      .home-section-img.mb-
+        = image_tag 'section-1.jpg'
+    
 %section#right-job.content-section
   .row
     .columns.xlarge-5

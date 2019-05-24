@@ -57,9 +57,9 @@
             %li.menu-item= active_link_to t('header.about'), about_index_path
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
             
-            %li.menu-item= link_to "Jobs", "https://app.employstream.com/jobs/joynus/search/", target: '_blank', class: 'button primary radius'
+            %li.menu-item= link_to t('header.job'), "https://app.employstream.com/jobs/joynus/search/", target: '_blank', class: 'button primary radius'
             
-            %li.menu-item= link_to t('header.Apply'), "https://app.employstream.com/profile/#/joynus/login?signup=true", target: '_blank', class: 'button secondary radius'
+            %li.menu-item= link_to t('header.apply'), "https://app.employstream.com/profile/#/joynus/login?signup=true", target: '_blank', class: 'button secondary radius'
             /%li.menu-item= link_to t('header.find-a-job'), "https://joy.aviontego.com/portals/main.aspx?App=1&Companyid=JoynusStaffing&Lang=Spanish", class: 'button secondary radius'
             
 
@@ -93,10 +93,10 @@
                 %a.fa.fa-facebook{href: 'https://facebook.com/joynusstaffing', target: '_blank'}
               %li
                 %a.fa.fa-twitter{href: 'https://twitter.com/joynusstaffing', target: '_blank'}
-              %li
-                %a.fa.fa-instagram{href: 'https://instagram.com/joynusstaffing', target: '_blank'}
+              
               %li
                 %a.fa.fa-linkedin{href: 'https://www.linkedin.com/company/3499330?trk=vsrp_jobs_res_name&trkInfo=VSRPsearchId%3A2080338161420490145807%2CVSRPtargetId%3A38262556%2CVSRPcmpt%3Aprimary', target: '_blank'}
+              
         .columns.large-7.large-pull-5
           %small &#169; Joynus #{Time.now.year}. #{t('footer.rights-reserved')}.
 
