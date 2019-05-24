@@ -8,7 +8,10 @@
       %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
       .feature-text
         %h1.text-center.animated.fadeInDown= t 'about.feature-header'
-.row
+        %a.circle.animated.fadeInDown{href: '#aboutpath'}
+          %span.icon-sort-down
+
+.row#aboutpath
   .columns.large-12
     .path
       %a{:href => "/"}  

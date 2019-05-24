@@ -65,8 +65,8 @@
         }
 
         .circle {
-          background: $white;
-          border: 2px solid $primary-color;
+          background: transparent;
+          //border: 2px solid $primary-color;
           border-radius: 100%;
           display: inline-block;
           margin: 0 auto;
@@ -75,13 +75,17 @@
           width: rem-calc(40);
 
           span {
-            color: $primary-color;
-            font-size: rem-calc(12);
+            color: $white;
+            font-size: rem-calc(63);
             position: absolute;
-            top: 50%;
-            margin-top: -3px;
-            left: 50%;
-            margin-left: -13px;
+            top: -55%;
+            
+            left: -65%;
+            
+          }
+          
+          span:hover{
+            color: $primary-color;
           }
           i{
             color: $primary-color;
@@ -110,8 +114,13 @@
    .feature-text {
         
         bottom: 55%;
-        
+   .circle {
+    span{
+      display:none;
+    } 
+   }        
    }
+   
    #services{
    .feature {
       .feature-container2 {
@@ -261,6 +270,15 @@ position: absolute;
 @media only screen and (min-width:1140px) {}
 
 @media only screen and (min-width:1280px) {
+    .feature-text {
+    
+   .circle {
+    span{
+      display:inline-block;
+    } 
+   }        
+   }
+    
     #staff{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #rpo{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #consultation{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}

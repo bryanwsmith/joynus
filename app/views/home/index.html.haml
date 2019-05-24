@@ -32,7 +32,8 @@
     
     .row
       .columns.large-12.m-top3
-        %h2.text-center TRUSTED BY THESE COMPANIES
+        %h2.text-center 
+          %b  TRUSTED BY THESE COMPANIES
     .row    
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco3
@@ -86,8 +87,8 @@
   .row
     .columns.xlarge-7
       .animated-text
-        %h2
-          = t 'home.career-header'
+        %h3
+          %b= t 'home.career-header'
         %p
           = t 'home.career-content'
     .columns.xlarge-5
@@ -103,8 +104,8 @@
         
     .columns.xlarge-7.xlarge-offset-6
       .animated-text
-        %h2
-          = t 'home.right-job-header'
+        %h3
+          %b= t 'home.right-job-header'
         %p
           = t 'home.right-job-content'
 %section#best-decision.content-section.xxlarge.no-spacing
@@ -113,8 +114,8 @@
       .home-section-img.mb-
         = image_tag('section-3.jpg')
       .animated-text
-        %h2
-          = t 'home.best-decision-header'
+        %h3
+          %b= t 'home.best-decision-header'
         %p
           = t 'home.best-decision-content'
         
@@ -127,7 +128,8 @@
           
           = image_tag('section-4.jpg')
         .animated-text
-          %h2= t 'home.employers-header'
+          %h3{:style=>"color:white;"}
+            = t 'home.employers-header'
           %p= t 'home.employers-content'
         
           
