@@ -1,4 +1,47 @@
 @media only screen {
+ .subpage-cover {
+        background-color: #e6e6e6;
+        padding-bottom: 40%;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+  
+   img {
+          position: absolute;
+          top: 15%;
+          left: 55%;
+          width: 32%;
+          height: 72%;
+        }      
+        
+  .subpage-text {
+        position: absolute;
+        left: 35%;
+        bottom: 35%;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 25%;
+        height: auto;
+        text-align: center;
+
+        h1 { font-size: rem-calc(65);
+             color: black;
+             text-shadow:0px;
+        }
+        
+        h3 {
+          font-size: rem-calc(20);
+          margin-bottom: rem-calc(22);
+        } 
+        p {
+          color: #4b4d49;
+          text-shadow:0px;
+        }
+ }
+ } 
   .wwdContent2{
     //background: ;
   background-attachment: fixed;

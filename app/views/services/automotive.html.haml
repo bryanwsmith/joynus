@@ -7,23 +7,35 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
   
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "Automotive.png", :alt => "Automotive"  
+      .subpage-text
+        %h1.text-center
+          %b
+            AUTOMOTIVE
+        %p
+          
+          With technological advancement, automotive manufacturing is rapidly adapting 
+          to advanced manufacturing technology, yielding higher efficiency through automation. 
+            
   
         
-  %section
-    .path
-      
-      %a{:href => "/"}  
-        .srvIco1
-          %i.icon-home
-      %a{:href => "/"}
-        %h5 home    
-      .srvIco11
-        %i.icon-right  
-      %a{:href => "/services"}
-        %h5 Services 
-      .srvIco11
-        %i.icon-right
-      %h5 Automotive
+    .columns.large-12.large-offset-1
+      .path
+        
+        %a{:href => "/"}  
+          .srvIco1
+            %i.icon-home
+        %a{:href => "/"}
+          %h5 home    
+        .srvIco11
+          %i.icon-right  
+        %a{:href => "/services"}
+          %h5 Services 
+        .srvIco11
+          %i.icon-right
+        %h5 Automotive
         
   
   %section

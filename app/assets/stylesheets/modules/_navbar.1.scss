@@ -1,17 +1,25 @@
 @media only screen {
   .home-mobile-link { display: none; }
-   
+  nav.shrink{
+    height: rem-calc(75);
+    transition: all ease 0.3s;
+    background: $white;
+    position: fixed;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
+    -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
+    box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
+  }  
   nav {
     
-    background:$white;
+    background:transparent;
     margin-bottom: 0;
     position: fixed;
     width: 100%;
     height: rem-calc(75);
     z-index: 1;
-    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
-    -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
-    box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
+    //-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .10);
+    //-moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
+    //box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
     
     
     .navbar-container {

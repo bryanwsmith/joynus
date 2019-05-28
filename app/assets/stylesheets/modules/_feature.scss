@@ -14,14 +14,7 @@
       overflow: hidden;
       position: relative;
       height: auto;
-      .feature-container2 {
-        background-color: $white;
-        padding-bottom: 3%;
-        position: relative;
-        height: 0;
-        overflow: hidden;
-        position: relative;
-       }
+      
       
       .feature-container {
         background-color: $white;
@@ -121,15 +114,7 @@
    }        
    }
    
-   #services{
-   .feature {
-      .feature-container2 {
-      
-        padding-bottom: 25%;
-      
-       }
-   }
-   }
+  
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
   #services{
     #staffing_process{
@@ -171,13 +156,9 @@
   #directhire{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
   #services{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}
     
-   .feature {
-      .feature-container2 {
-      
-        padding-bottom: 13%;
-      
-       }
-   }
+   
+   
+   
    
   }
   #rpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
@@ -229,12 +210,7 @@
   #staff{.feature-container { padding-bottom: 52%; }   .feature-text {bottom: 35%;}}
   #directhire{  feature-container { padding-bottom: 52%; }   .feature-text {bottom: 35%;}}
   #services{  .feature-text {bottom: 45%;}
-  .feature{  
-    .feature-container2 {
-        background-color: $white;
-        padding-bottom: 7%;
-  }
-  }
+  
   }
   #consultation{  .feature-text {bottom: 45%;}}
     
