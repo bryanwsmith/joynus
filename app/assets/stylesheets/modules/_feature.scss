@@ -114,34 +114,12 @@
    }        
    }
    
-  
+  #consultation{  .feature-text {h1{font-size:40px;}}}
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
-  #services{
-    #staffing_process{
-      img{
-        width:50%;
-        height:50%;
-        margin:auto;
-        position:relative;
-        display:block;
-        float:none;
-      }
-    }
-    
-    #directhire_process{
-      img{
-        width:50%;
-        height:50%;
-        position:relative;
-        margin:auto;
-        display:block;
-        float:none;
-      }
-    }
-    
+  
   }
-  }
-@media only screen and (min-width:480px) {
+@media only screen and (min-width:500px) {
+  #consultation{ .feature-container { padding-bottom: 52%; }}
   .feature-section .feature .feature-container {
     padding-bottom: 40%;
     h1 { font-size: rem-calc(25); }
@@ -162,7 +140,7 @@
    
   }
   #rpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
-  #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
+  #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%; h1{font-size:80px;}}}
     
   #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
   #about{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}} 

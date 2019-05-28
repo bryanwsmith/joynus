@@ -9,8 +9,9 @@
         %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staffing-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
-            Need a copy
-      
+            CONSULTATION
+          %h5
+            New to the area or industry?
   .row
     .columns.large-12.large-offset-1
       .path
@@ -30,43 +31,51 @@
 
   %section#consultation
     .row
-      .columns.large-12
+      
+        
+
+      .columns.xlarge-7.vr 
+        
         %h2.text-center 
           %b
             CONSULTATION
-        .box
-          .columns.large-4
-            =image_tag 'Consulting.png', :class => "img7", :style => "width:100%"  
-          .columns.large-6
-            %p
-              New to the area or industry?
-            %p
-              We have connections with firms of all sizes and industries and a range of diverse talent nation wide
-              to provide insight into industry standards, including compensation information
-          
-    .row
-      .columns.large-12.large-offset-2
-        
-        
-        %h5
-          %b
-            TOP SIX ISSUES WE FOCUS ON
-        
+            
         %p
-          Targeted advertising <br>
+          We have connections with firms of all sizes and industries and a range of diverse talent nation wide
+          to provide insight into industry standards, including compensation information
         
-          Localized demographic<br>
+      
+      .columns.xlarge-4
         
-          Hiring foreign nationals<br>
         
-          Competitor analysis<br>
+        %ul.checklist
         
-          Outsourcing  <br>
-          
-          Strategic marketing
+          %li
+            %i.icon-check 
+            Targeted advertising 
+        %ul.checklist
+          %li
+            %i.icon-check 
+            Localized demographic
+        %ul.checklist
+          %li
+            %i.icon-check 
+            Hiring foreign nationals<br>
+        %ul.checklist  
+          %li
+            %i.icon-check 
+            Competitor analysis<br>
+        %ul.checklist
+          %li
+            %i.icon-check 
+            Outsourcing  <br>
+        %ul.checklist
+          %li
+            %i.icon-check 
+            Strategic marketing
+      
 
-  
-                
+              
   
   
  

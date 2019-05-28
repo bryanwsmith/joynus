@@ -1,6 +1,6 @@
 @media only screen {
   * { margin: 0; }
-  html, body { height: auto; }
+  html, body { height: auto; width:100%; }
   body.logged-in header nav { margin-top: rem-calc(32) !important; }
   body.logged-in main { padding-top: rem-calc(102); }
 
