@@ -94,10 +94,10 @@
       .srvIco1 i {
         color: #5ECBEE;
         display: inline-block;
-        font-size:28px;
+        font-size:22px;
         position: relative fixed;
         vertical-align:middle;
-        padding-top:3px;
+        
       }
       .srvIco1 i:hover {
         color: #0f6b8a;
@@ -105,10 +105,10 @@
       .srvIco11 i {
         color: #4C4C4D;
         display: inline-block;
-        font-size:28px;
+        font-size:22px;
         position: relative fixed;
         vertical-align:middle;
-        padding-top:3px;
+        
       }
     } 
     
@@ -244,15 +244,15 @@
     .path{
       padding-top:4%;
       h5{
-        font-size:20px;
+        font-size:16px;
         vertical-align:middle;
       }
       .srvIco1 i {
-        font-size:25px;
+        font-size:22px;
       }
       
       .srvIco11 i {
-        font-size:25px;
+        font-size:22px;
       }
     } 
     .companies ul li { width: 20%; }
@@ -364,7 +364,7 @@
     width: 80%;
     overflow:auto;
     display:flex;
-    margin:auto;
+    margin-top:3%;
     
 }
 
