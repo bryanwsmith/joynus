@@ -6,7 +6,20 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "Healthcare.png", :alt => "Healthcare"  
+      .subpage-text
+        %h1
+          %b
+            HEALTHCARE
+        %p
+          
+          Lifestyle and demographic changes, funding gaps and workforce shortages, ever changing political and regulatory 
+          developments plays a large role in healthcare industry. With focus on Patient Centered Care at the center, customized 
+          consumer demand, new technology products and controlling cost are shaping healthcare.
+
+  .columns.large-12.large-offset-1
     .path
       %a{:href => "/"}
         .srvIco1

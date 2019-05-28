@@ -6,20 +6,34 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section
-    .path
-      %a{:href => "/"}
-        .srvIco1
-          %i.icon-home
-      %a{:href => "/"}
-        %h5 home    
-      .srvIco11
-        %i.icon-right     
-      %a{:href => "/services"}
-        %h5 Services 
-      .srvIco11
-        %i.icon-right
-      %h5 Office & Administrative
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "Office.png", :alt => "Office"  
+      .subpage-text
+        %h1
+          %b
+            OFFICE & ADMINISTRATIVE
+        %p
+          
+          The office personnel increases productivity and keep your business operating at top capacity, 
+          across a wide scope of office disciplines, positions and industries. 
+            
+  
+        
+    .columns.large-12.large-offset-1
+      .path
+        %a{:href => "/"}
+          .srvIco1
+            %i.icon-home
+        %a{:href => "/"}
+          %h5 home    
+        .srvIco11
+          %i.icon-right     
+        %a{:href => "/services"}
+          %h5 Services 
+        .srvIco11
+          %i.icon-right
+        %h5 Office & Administrative
   %section
     .wrap
       

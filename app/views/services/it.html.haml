@@ -6,20 +6,35 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section
-    .path
-      %a{:href => "/"}
-        .srvIco1
-          %i.icon-home
-      %a{:href => "/"}
-        %h5 home    
-      .srvIco11
-        %i.icon-right     
-      %a{:href => "/services"}
-        %h5 Services 
-      .srvIco11
-        %i.icon-right
-      %h5 Information Technology
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "Automotive.png", :alt => "Automotive"  
+      .subpage-text
+        %h1
+          %b
+            INFORMATION TECHNOLOGY
+        %p
+          Today in some shape or form, most companies are a tech company. 
+          Today’s world runs on information technology. Our businesses, culture, lives 
+          have been transformed by it. Technological innovation is expanding all sectors of industries. It’s likely that in order to take the next step you need, you need to ramp up your IT team. Let us hear what you want to accomplish 
+         
+            
+  
+        
+    .columns.large-12.large-offset-1
+      .path
+        %a{:href => "/"}
+          .srvIco1
+            %i.icon-home
+        %a{:href => "/"}
+          %h5 home    
+        .srvIco11
+          %i.icon-right     
+        %a{:href => "/services"}
+          %h5 Services 
+        .srvIco11
+          %i.icon-right
+        %h5 Information Technology
   %section  
     .wrap          
                 

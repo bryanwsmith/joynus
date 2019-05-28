@@ -6,20 +6,32 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section
-    .path
-      %a{:href => "/"}
-        .srvIco1
-          %i.icon-home
-      %a{:href => "/"}
-        %h5 home    
-      .srvIco11
-        %i.icon-right       
-      %a{:href => "/services"}
-        %h5 Services 
-      .srvIco11
-        %i.icon-right
-      %h5 Manufacturing
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "Manufacturing.png", :alt => "Manufacturing"  
+      .subpage-text
+        %h1
+          %b
+            MANUFACTURING
+        %p
+          
+          As technology advances, manufacturing operations have evolved and it requires evolved set of talent than past decades. 
+          Today’s workers must be skilled in sophisticated processes and systems to meet your demands for ongoing innovations, safety 
+          and quality
+    .columns.large-12.large-offset-1
+      .path
+        %a{:href => "/"}
+          .srvIco1
+            %i.icon-home
+        %a{:href => "/"}
+          %h5 home    
+        .srvIco11
+          %i.icon-right       
+        %a{:href => "/services"}
+          %h5 Services 
+        .srvIco11
+          %i.icon-right
+        %h5 Manufacturing
   %section    
     .wrap          
                 
