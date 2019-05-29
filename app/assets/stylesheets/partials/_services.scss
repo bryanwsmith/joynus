@@ -68,14 +68,14 @@
   }
     .path{
       padding-top:1%;
-      padding-left:2%;
+      padding-left:7%;
       position: relative;
       overflow: hidden;
       display:flex;
       h5{
         color: #4C4C4D;
-        margin-left:10px;
-        margin-right:10px;
+        
+        
         font-size:22px;
         vertical-align:middle;
       }
@@ -105,7 +105,8 @@
         font-size:22px;
         position: relative fixed;
         vertical-align:middle;
-        
+        margin-left:5px;
+        margin-right:5px;
       }
     } 
     
@@ -222,7 +223,7 @@
   .path{
       padding-top:12%;
       padding-bottom:5%;
-      
+      padding-left:1%;
       h5{
         font-size:14px;
         vertical-align:middle;
@@ -305,15 +306,15 @@
     .path{
       padding-top:4%;
       h5{
-        font-size:16px;
+        font-size:18px;
         vertical-align:middle;
       }
       .srvIco1 i {
-        font-size:22px;
+        font-size:24px;
       }
       
       .srvIco11 i {
-        font-size:22px;
+        font-size:24px;
       }
     } 
     .companies ul li { width: 20%; }
@@ -365,11 +366,12 @@
         
  }
  } 
-  
-  #services{
-    .path{
+  .path{
       padding-top:2%;
+      padding-left:5%;
     }
+  #services{
+    
     .home-section-img { display: none; }
     .specialcontainer {
     position: relative;
@@ -495,7 +497,7 @@
   
   
  .path{
-      padding-top:1%;
+      padding-top:5%;
     }
  .wrap {
     width: 80%;

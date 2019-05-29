@@ -6,25 +6,25 @@
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container
-        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff-bg.jpg')}, (large)]" } }
+        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('staff2-bg.jpg')}, (large)]" } }
         .feature-text
           %h1.text-center.animated.fadeInDown
             WHAT WE DO
             
           %a.circle.animated.fadeInDown{href: '#servicepath'}
             %span.icon-sort-down
-            
-  .row#servicepath
-    .columns.large-12.large-offset-1
-      .path
-        %a{:href => "/"}  
-          .srvIco1
-            %i.icon-home
-        %a{:href => "/"}
-          %h5 home    
-        .srvIco11
-          %i.icon-right  
-        %h5 Services
+              
+    .row#servicepath
+      .columns.large-12
+        .path
+          %a{:href => "/"}  
+            .srvIco1
+              %i.icon-home
+          %a{:href => "/"}
+            %h5 Home    
+          .srvIco11
+            %i.icon-right  
+          %h5 Services
         
   
   %section#industries
