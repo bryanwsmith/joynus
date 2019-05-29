@@ -192,11 +192,17 @@ h2 {
 .img55{
     height:250px;
     width:auto;
-    
     padding:1em;
-   
-   margin: auto;
+    margin: auto;
 }
+
+.img555{
+    height:250px;
+    width:auto;
+    padding:1em;
+    margin: auto;
+}
+.img555:hover{transform: scale(1.1); }
 
 .img56{
     height:280px;
@@ -468,6 +474,12 @@ h2 {
     
     
 }
+
+@media all and (max-width:1024px){
+    .box {   display:block;
+}
+}
+
 
 
 @media all and (max-width:500px) {
