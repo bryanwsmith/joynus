@@ -200,17 +200,22 @@
       }
 
       &#career {
-        background: asset-url('career-img.jpg') no-repeat top right;
+        //background: asset-url('career-img.jpg') no-repeat top right;
+        background: asset-url('LandingA.png') no-repeat top right;
         padding-top: rem-calc(150) !important;
         padding-bottom: rem-calc(150) !important;
       }
 
       &#best-decision {
-        background: asset-url('best-decision-img.jpg') no-repeat top right;
+        //background: asset-url('best-decision-img.jpg') no-repeat top right;
+        background: asset-url('LandingC.png') no-repeat top right;
         background-size: auto 100%;
       }
 
-      &#employers { background: asset-url('employer_homepage.jpg') no-repeat top left; }
+      &#employers { 
+        //background: asset-url('employer_homepage.jpg') no-repeat top left; 
+        background: asset-url('LandingD.png') no-repeat top left; 
+      }
 
       &#right-job {
         padding-top: rem-calc(150) !important;

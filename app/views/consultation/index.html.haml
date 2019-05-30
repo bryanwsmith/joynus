@@ -32,10 +32,7 @@
 
   %section#consultation
     .row
-      
-        
-
-      .columns.xlarge-7.vr 
+      .columns.large-7.vr{:style => "margin-bottom:0"}
         
         %h2.text-center 
           %b
@@ -46,45 +43,38 @@
           to provide insight into industry standards, including compensation information
         
       
-      .columns.xlarge-4
+      .columns.large-4
         
         
         %ul.checklist
-        
-          %li
-            %i.icon-check 
-            Targeted advertising 
-        %ul.checklist
-          %li
-            %i.icon-check 
-            Localized demographic
-        %ul.checklist
-          %li
-            %i.icon-check 
-            Hiring foreign nationals<br>
-        %ul.checklist  
           %li
             %i.icon-check 
             Competitor analysis<br>
-        %ul.checklist
+          %li
+            %i.icon-check 
+            Hiring foreign nationals<br>
+          %li
+            %i.icon-check 
+            Localized demographic
           %li
             %i.icon-check 
             Outsourcing  <br>
-        %ul.checklist
           %li
             %i.icon-check 
             Strategic marketing
-      
+          %li
+            %i.icon-check 
+            Targeted advertising 
 
               
   
   
  
-
-.button-container.text-center
-  %h3{:style => "margin:30px"}
-    = t 'about.content-callout'
-  = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+/
+  .button-container.text-center
+    %h3{:style => "margin:30px"}
+      = t 'about.content-callout'
+    = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
   
   
 /

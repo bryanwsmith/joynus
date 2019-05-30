@@ -85,6 +85,68 @@
 
     %footer
       .row
+        .columns.large-3
+          %h3
+            %b
+              %a{:href => "/services"}SERVICES
+          %ul.links
+            
+            %li 
+              %a{:href => "/staff"} Staffing
+          
+            %li
+              %a{:href => "/directhire"} Direct Hire
+          
+            %li
+              %a{:href => "/rpo"} RPO
+          
+            %li{:style => "margin-bottom:30px"}
+              %a{:href => "/consultation"} Consultation
+            
+        .columns.large-3
+          %h3
+            %b
+              %a{:href => "/services"} SPECIALIZATION
+          %ul.links
+            %li 
+              %a{:href => "/services/automotive"}Automotive
+            %li
+              %a{:href => "/services/accounting"}Accounting & Finance
+            %li
+              %a{:href => "/services/healthcare"} Healthcare
+            %li
+              %a{:href => "/services/manufacturing"}Manufacturing
+            %li 
+              %a{:href => "/services/office"}Office & Administrative
+            %li{:style => "margin-bottom:30px"}
+              %a{:href => "/services/it"}Information Technology
+            
+        .columns.large-3
+          %h3{:style => "margin-bottom:45px"}
+            %b
+              %a{:href => "/about"}ABOUT
+          %h3{:style => "margin-bottom:45px"}
+            %b
+              %a{:href => "/blog"}NEWS
+              
+        .columns.large-3
+          %h3
+            %b
+              %a{:href => "/contact"}Contact
+          %p
+            contact@joynus.com<br>
+          
+            (888) 338-7832
+            
+          .button-container
+            = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'  
+          
+      .row
+        %hr  
+          
+      
+      
+      .row
         .columns.large-5.large-push-7
           %div.social-icons-container
             %ul.inline-list.social-icons

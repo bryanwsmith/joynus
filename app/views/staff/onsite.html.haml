@@ -5,8 +5,15 @@
   %title Joynus Staffing | Information Technology
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
-%body
-  %section
+
+  %section.no-spacing
+    .subpage-cover
+      = image_tag "OnsiteManagement.png", :alt => "On-site"  
+      .subpage-text
+        %h1{:style => "margin-left:-5%"}
+          %b
+            ON-SITE<br>MANAGEMENT
+    
     .path
       %a{:href => "/"}
         .srvIco1
@@ -16,15 +23,11 @@
       .srvIco11
         %i.icon-right
       %h5 On-Site Management
-  %section    
+     
     .wrap          
       .pageleft
         .row        
           .columns.large-12
-      
-            %h2.text-center
-              %b
-                ON-SITE MANAGEMENT
             %p
               On-site manager is your partner and extension of your management team who is 
               integrated into your culture sharing your concerns and joys.  The purpose is to 
@@ -33,59 +36,60 @@
             %p
               On Site Management is ideal for high-volume workforce, managing different levels and 
               categories in a large area. Ensures consistent attendance, compliance and single point of contact.
-        .row
-          .columns.xlarge-12.text-center
-            %h3
-              %b
-                WHY CHOOSE ON-SITE MANAGEMENT?
-          .box
-            .columns.xlarge-3.text-center
-              = image_tag 'Icon_Production_manage.png', :alt => "Productivity", :class => 'img44' 
-            .columns.xlarge-9
-              %h4
+        %section
+          .row
+            .columns.xlarge-12.text-center
+              %h3
                 %b
-                  PRODUCTIVITY
-              %p
-                The On-Site Manager’s goals are tied to the client’s goals.  
-                The On-Site manager is empowered to make decisions on performance and 
-                attendance and ensures productivity remains high. 
-        
-          .box
-            .columns.xlarge-3.text-center
-              = image_tag 'Icon_Impact.png', :alt => "Impact", :class => 'img44' 
-            .columns.xlarge-9
-              %h4
-                %b
-                  IMPACT
-              %p
-                When there is a turnover, our On-site Manager will work with Shift 
-                supervisor and train them on job basics and monitor the quality to ensure 
-                there is no disruption to production and no damage to quality
-        
-          .box
-            .columns.xlarge-3.text-center
-              = image_tag 'Icon_Leadership.png', :alt => "Leadership", :class => 'img44' 
-            .columns.xlarge-9
-              %h4
-                %b
-                  LEADERSHIP
-              %p
-                The On-Site Manager is a direct communication line to the workforce.
-                On-Site Manager knows their name, and builds relationships with them and 
-                manages any disputes, concerns, issues and focus
-        
-          .box
-            .columns.xlarge-3.text-center
-              = image_tag 'Icon_Innovation.png', :alt => "Innovation", :class => 'img44' 
-            .columns.xlarge-9
-              %h4
-                %b
-                  INNOVATION
-              %p
-                We continuously work to improve our systems and processes. 
-                Or, you may make changes that need implemented correctly. 
-                Either way, the On-Site Manager trains, monitors, supervises or 
-                mentors to assure the changes are implemented   
+                  WHY CHOOSE ON-SITE MANAGEMENT?
+            .box
+              .columns.xlarge-3.text-center
+                = image_tag 'Icon_Production_manage.png', :alt => "Productivity", :class => 'img44' 
+              .columns.xlarge-9
+                %h4
+                  %b
+                    PRODUCTIVITY
+                %p
+                  The On-Site Manager’s goals are tied to the client’s goals.  
+                  The On-Site manager is empowered to make decisions on performance and 
+                  attendance and ensures productivity remains high. 
+          
+            .box
+              .columns.xlarge-3.text-center
+                = image_tag 'Icon_Impact.png', :alt => "Impact", :class => 'img44' 
+              .columns.xlarge-9
+                %h4
+                  %b
+                    IMPACT
+                %p
+                  When there is a turnover, our On-site Manager will work with Shift 
+                  supervisor and train them on job basics and monitor the quality to ensure 
+                  there is no disruption to production and no damage to quality
+          
+            .box
+              .columns.xlarge-3.text-center
+                = image_tag 'Icon_Leadership.png', :alt => "Leadership", :class => 'img44' 
+              .columns.xlarge-9
+                %h4
+                  %b
+                    LEADERSHIP
+                %p
+                  The On-Site Manager is a direct communication line to the workforce.
+                  On-Site Manager knows their name, and builds relationships with them and 
+                  manages any disputes, concerns, issues and focus
+          
+            .box
+              .columns.xlarge-3.text-center
+                = image_tag 'Icon_Innovation.png', :alt => "Innovation", :class => 'img44' 
+              .columns.xlarge-9
+                %h4
+                  %b
+                    INNOVATION
+                %p
+                  We continuously work to improve our systems and processes. 
+                  Or, you may make changes that need implemented correctly. 
+                  Either way, the On-Site Manager trains, monitors, supervises or 
+                  mentors to assure the changes are implemented   
      
         
       .pageright

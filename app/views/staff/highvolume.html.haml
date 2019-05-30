@@ -6,7 +6,15 @@
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section
+  %section.no-spacing 
+    .subpage-cover
+      = image_tag "HighVolume.png", :alt => "Highvolume"  
+      .subpage-text
+        %h1{:style => "margin-left:-5%"}
+          %b
+            HIGH VOLUME
+  
+  
     .path
       %a{:href => "/"}
         .srvIco1
@@ -16,7 +24,7 @@
       .srvIco11
         %i.icon-right
       %h5 High Volume
-  %section    
+     
     .wrap          
                 
       .pageleft
@@ -24,14 +32,12 @@
           .columns.large-12
       
             %h2.text-center
-              %b
-                HIGH VOLUME
             %p
               Having large number of associates working in one location is our expertise. 
               No matter what, we ensure your production doesn’t stop. It entails safety, 
               attendance, retention, training, communication and no excuse attitude. 
-              
-            
+        %section        
+          .row    
             .columns.large-12
              
               %h3
@@ -55,7 +61,7 @@
                 we follow up on their job training and measure performance. 
               %p
                 Onsite will ensure PPE is practiced properly daily and communicate with you with any new updates. 
-
+  
                 
               %h3
                 %b

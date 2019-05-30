@@ -16,14 +16,14 @@
     .split.sleft
       .centered
         
-        %h1.animated.fadeInDown JOB SEEKER
+        %h1.animated.fadeInDown Job Seeker
         %h3.animated.fadeInDown Right People
         %a.button.primary.radius.iprocess.icon-angle-double-right{:href => "https://app.employstream.com/jobs/joynus/search/"}  Jobs  
         
     .split.sright
       .centered
         
-        %h1.animated.fadeInDown EMPLOYER
+        %h1.animated.fadeInDown Employer
         %h3.animated.fadeInDown Right Now
         %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/employers"} Employer
         
@@ -38,34 +38,41 @@
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco3
           %i
-            = image_tag 'Samsung.png', :class => 'img3'
+            = image_tag 'Tesla.png', :class => 'img3'
+            
           
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
         .srvIco3
           %i
-            = image_tag 'Posco.png', :class => 'img3'
+            = image_tag 'Samsung.png', :class => 'img3'
+            
           
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
         .srvIco3
           %i
-            = image_tag 'LG.png', :class => 'img3'
+            = image_tag 'Hyundai.png', :class => 'img3'
+            
             
     .row
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco3
           %i
-            = image_tag 'Hyundai.png', :class => 'img3'
+            = image_tag 'LG.png', :class => 'img3'
+            
+            
            
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
         .srvIco3
           %i
             = image_tag 'KIA.png', :class => 'img3'
             
+            
+            
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
         .srvIco3
           %i
-            = image_tag 'Tesla.png', :class => 'img3'
-          
+            = image_tag 'Beaulieu.png', :class => 'img3'
+            
     .row
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco3
@@ -75,12 +82,13 @@
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "1500"}
         .srvIco3
           %i
-            = image_tag 'Lotte.png', :class => 'img3'
+            = image_tag 'Posco.png', :class => 'img3'
            
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "2500"}
         .srvIco3
           %i
-            = image_tag 'Beaulieu.png', :class => 'img3'
+            = image_tag 'Lotte.png', :class => 'img3'
+            
           
 
 %section#career.content-section.no-spacing
@@ -93,13 +101,15 @@
           = t 'home.career-content'
     .columns.xlarge-5
       .home-section-img.mb-
-        = image_tag 'section-1.jpg'
+        = image_tag 'LandingA.png'
+        /= image_tag 'section-1.jpg'
     
 %section#right-job.content-section
   .row
     .columns.xlarge-5
       .right-job-img
-        = image_tag 'right-job-img.jpg', :alt => 'Right Job'
+        = image_tag 'LandingB.png', :alt => 'Right Job'
+        /= image_tag 'right-job-img.jpg', :alt => 'Right Job'
         
         
     .columns.xlarge-7.xlarge-offset-6
@@ -110,9 +120,10 @@
           = t 'home.right-job-content'
 %section#best-decision.content-section.xxlarge.no-spacing
   .row
-    .columns.xlarge-7
+    .columns.xlarge-6
       .home-section-img.mb-
-        = image_tag('section-3.jpg')
+        =image_tag "LandingC.png", :alt => "Best Decision"
+        /= image_tag('section-3.jpg')
       .animated-text
         %h3
           %b= t 'home.best-decision-header'
@@ -125,8 +136,8 @@
     .row
       .columns.xlarge-6.xlarge-offset-6
         .home-section-img.mb-
-          
-          = image_tag('section-4.jpg')
+          =image_tag "LandingD.png", :alt => "Employer"
+          /= image_tag('section-4.jpg')
         .animated-text
           %h3{:style=>"color:white;"}
             = t 'home.employers-header'
