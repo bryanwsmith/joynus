@@ -12,18 +12,13 @@
     -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
     box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
     .img-logo{
-       
-        background: asset-url('Logo_Black_162x30.png') no-repeat top left !important;
-         height:50px;
-         width:250px;
-         padding-right:5px;
-         padding-top:7px;
-         
-         position:absolute;
-         z-index: 3;
-     
+       height:30px;
+         width:30px;
     }
-    
+    h2{
+      color:#4C4C4D !important;
+      
+    }
     
     ul.menu {
    
@@ -37,7 +32,8 @@
         }
       } 
     }
-   }  
+   }
+  
   nav {
     background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(10,10,10,0.6)40%, rgba(10,10,10,0.4) 60%, rgba(10, 10, 10, 0.2) 80%, rgba(10, 10, 10, 0) 100%);
     margin-bottom: 0;
@@ -59,22 +55,20 @@
       display: inline-block;
       
       .img-logo{
-         background: asset-url('Logo_White_text.png') no-repeat top left;
-         height:40px;
-         width:250px;
-         padding-right:5px;
-         padding-top:7px;
-         margin-top:5px;
-         position:absolute;
-         z-index: 2;
+         
+         height:30px;
+         width:30px;
+         
          
       }
-      h2 {
-        font-size: 1.8rem;
-        line-height: rem-calc(70);
-        margin: 0;
-        display: inline-block;
-      }
+    h2 {
+        font-size: 2.2rem;
+        color:$white;
+        position:relative;
+        margin:-6% 0 0 5%;
+        letter-spacing: -1.5px;
+        font-weight:545;
+      }  
     }
 
     li > a {

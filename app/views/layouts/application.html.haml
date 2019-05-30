@@ -45,8 +45,10 @@
       %nav(role='navigation')
         .navbar-container
           .navbar-header
-            %a.img-logo{:href => '/'}
-            
+            %a{:href => '/', :style => "display:flex; padding-top:15%"}
+              =image_tag "Logo_30x30.png", :alt => "Joynus" ,:class => "img-logo"
+              %h2
+                JOYNUS
           %ul.menu
             .hide-for-large-up
               %li.menu-item= active_link_to t('header.home'), root_url
@@ -90,16 +92,12 @@
             %b
               %a{:href => "/services"}SERVICES
           %ul.links
-            
             %li 
               %a{:href => "/staff"} Staffing
-          
             %li
               %a{:href => "/directhire"} Direct Hire
-          
             %li
               %a{:href => "/rpo"} RPO
-          
             %li{:style => "margin-bottom:30px"}
               %a{:href => "/consultation"} Consultation
             
