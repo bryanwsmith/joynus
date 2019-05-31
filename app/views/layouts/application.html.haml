@@ -100,6 +100,16 @@
               %a{:href => "/rpo"} RPO
             %li{:style => "margin-bottom:30px"}
               %a{:href => "/consultation"} Consultation
+          
+          %h3
+            %b
+              %a{:href => "staff"} STAFFING
+          %ul.links
+            %li 
+              %a{:href => "/staff/onsite"} On-Site Management
+            
+            %li 
+              %a{:href => "/staff/highvolume"}High Volume
             
         .columns.large-3
           %h3
@@ -120,12 +130,18 @@
               %a{:href => "/services/it"}Information Technology
             
         .columns.large-3
-          %h3{:style => "margin-bottom:45px"}
+          %h3
             %b
               %a{:href => "/about"}ABOUT
+          
+          %ul.links
+            %li{:style => "margin-bottom:30px"}
+              %a{:href => "/about#corevalue"}Core Value
+              
           %h3{:style => "margin-bottom:45px"}
             %b
               %a{:href => "/blog"}NEWS
+              
               
         .columns.large-3
           %h3
@@ -138,6 +154,8 @@
             
           .button-container
             = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'  
+      
+      
           
       .row
         %hr  

@@ -121,61 +121,7 @@
   display: block;
 }
     
-    .home-section-img {
-      width: calc(100% + 30px);
-      position: relative !important;
-      left: -15px;
-    }
-
-    .content-section {
-      h2 { margin-top: rem-calc(30); }
-      p, .button { margin-bottom: rem-calc(30); }
-    }
-
-    .companies {
-      position: relative;
-      top: -1px;
-      padding-top: rem-calc(24);
-      padding-right: rem-calc(64);
-      padding-bottom: rem-calc(24);
-      padding-left: rem-calc(64);
-
-      h3 {
-        color: $white;
-        margin-bottom: rem-calc(24);
-      }
-
-      ul {
-        max-width: rem-calc(900);
-        margin: 0 auto;
-
-        li {
-          width: 50%;
-          float: right;
-          list-style-type: none;
-          text-align: center;
-
-          span {
-            color: #fff;
-            font-size: rem-calc(50);
-            opacity: 0.6;
-            width: 100%;
-            text-align: center;
-
-            &.icon-posco-logo {
-              position: relative;
-              top: 14px;
-              font-size: rem-calc(30);
-            }
-          }
-        }
-      }
-    }
-
-    #career {
-      position: relative;
-      top: -1px;
-    }
+    
     
   
    p{font-size:17px;}
@@ -216,8 +162,9 @@
  
   .img000{
     height:auto;
-    width:83%;
-    padding-left:15%;
+    width:80%;
+    padding-left:20%;
+    padding-bottom:10%;
    
     }
   .path{
@@ -395,6 +342,7 @@
     height:auto;
     width:80%;
     padding-left:20%;
+    padding-bottom:0;
    }
    
    .feature-text{

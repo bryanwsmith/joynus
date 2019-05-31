@@ -7,7 +7,9 @@
       .feature-container
         %img{ data: { interchange:"[#{asset_path('about-bg-mobile.jpg')}, (small)], [#{asset_path('about-bg.jpg')}, (medium)], [#{asset_path('about-bg.jpg')}, (large)]" } }
         .feature-text
-          %h1.text-center.animated.fadeInDown= t 'about.feature-header'
+          %h1.text-center.animated.fadeInDown
+            WHY WE DO <br>
+            WHAT WE DO
           %a.circle.animated.fadeInDown{href: '#aboutpath'}
             %span.icon-sort-down
   
@@ -27,14 +29,12 @@
   %section
     .row
       .columns.xlarge-12
-        %h2
-          %b
-            WHY WE DO WHAT WE DO
+        
         %p
           Our experience tells us that growth is crucial to the survival of a business.
           We believe that hiring the right people is the first ingredient for growth. We are the catalyst in helping companies
           grow by hiring the right people and helping people find the right company
-  %section      
+       
     .row
       .columns.xlarge-12
         %h2
@@ -45,7 +45,7 @@
           
           Recruiting people for a job and career is an art, but there is a science behind the art of recruiting. We utilize an array of tests and analyses to find successful matches for our clients
     
-%section        
+%section#corevalue
   .wwdContent
     .row
       .columns.xlarge-12

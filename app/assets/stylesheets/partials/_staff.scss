@@ -94,15 +94,18 @@ img {vertical-align: middle;}
 
   .extra-navigation {
     display:block;
+    
     .item{
       border-top:1px solid #cccccc;
+      padding: 45px 15px 33px;
       p{
       width:70%;
       margin-left:15%;
+      margin-top:-5%;
       }
       
-      .img55{
-        height:160px;
+      .img56{
+        height:220px;
         width:auto;
       }
     }
