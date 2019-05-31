@@ -22,6 +22,15 @@
 }
 }
 
+.landingsection{
+  
+  display:flex;
+   align-items:center;
+   justify-content:center; 
+   padding:1em;
+   margin:5% 0 5% 0 ;
+}
+
 
 
 .wwdContent2:before{
@@ -100,11 +109,20 @@
 
 @media only screen and (min-width: rem-calc(360)) {
  #home{
+   .landingsection{
+       display:block;
+       align-items:center;
+       justify-content:center; 
+       padding:1em;
+    
+     
+   }
+   
    p{font-size:17px; }
    
    h2{font-size:30px;}
     
-  
+   h3{font-size:20px;}
   .wwdContent4{min-height: 350px;} 
 	.img5{
     height:auto;
@@ -176,6 +194,14 @@
 
 @media only screen and (min-width: rem-calc(1024)) {
   #home {
+    .landingsection{
+       display:flex;
+       align-items:center;
+       justify-content:center; 
+       padding:1em;
+       
+     
+    }
     .home-section-img { display: none; }
     
     .wwdContent4{min-height: 750px;}

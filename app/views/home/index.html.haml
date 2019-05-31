@@ -89,59 +89,45 @@
           %i
             = image_tag 'Lotte.png', :class => 'img3'
             
+%section  
+  .landingsection 
+    
+    .columns.xlarge-6.xlarge-offset-2{"data-aos" => "fade-in","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
+      %h3
+        %b= t 'home.career-header'
+      %p
+        = t 'home.career-content'
+    .columns.xlarge-6
+      = image_tag 'LandingA.png' 
+
+  .landingsection 
+    
+    .columns.xlarge-6.xlarge-offset-2{"data-aos" => "fade-in","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
+      %h3
+        %b= t 'home.right-job-header'
+      %p
+        = t 'home.right-job-content'
+    .columns.xlarge-6
+      = image_tag 'LandingB.png'
+           
+  .landingsection 
+    
+    .columns.xlarge-6.xlarge-offset-2{"data-aos" => "fade-in","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
+      %h3
+        %b= t 'home.best-decision-header'
+      %p
+        = t 'home.best-decision-content'
+    .columns.xlarge-6
+      = image_tag 'LandingC.png'
+      
+  .landingsection 
+    
+    .columns.xlarge-6.xlarge-offset-2{"data-aos" => "fade-in","data-aos-easing"=>"linear", "data-aos-duration" => "800", "data-aos-anchor-placement"=>"top-bottom"}
+      %h3
+        %b= t 'home.employers-header'
+      %p= t 'home.employers-content'
+    .columns.xlarge-6
+      = image_tag 'LandingD.png'    
           
 
-%section#career.content-section.no-spacing
-  .row
-    .columns.xlarge-6
-      .home-section-img.mb-
-        /= image_tag 'section-1.jpg'
-        = image_tag 'LandingA.png'
-      .animated-text
-        %h3
-          %b= t 'home.career-header'
-        %p
-          = t 'home.career-content'
-    
-        
-    
-%section#right-job.content-section
-  .row
-    .columns.xlarge-5
-      .right-job-img
-        = image_tag 'LandingB.png', :alt => 'Right Job'
-        /= image_tag 'right-job-img.jpg', :alt => 'Right Job'
-        
-        
-    .columns.xlarge-7.xlarge-offset-6
-      .animated-text
-        %h3
-          %b= t 'home.right-job-header'
-        %p
-          = t 'home.right-job-content'
-%section#best-decision.content-section.xxlarge.no-spacing
-  .row
-    .columns.xlarge-6
-      .home-section-img.mb-
-        =image_tag "LandingC.png", :alt => "Best Decision"
-        /= image_tag('section-3.jpg')
-      .animated-text
-        %h3
-          %b= t 'home.best-decision-header'
-        %p
-          = t 'home.best-decision-content'
-        
-        
-.primary-color-bg
-  %section.content-section.x-small#employers.no-spacing
-    .row
-      .columns.xlarge-6.xlarge-offset-6
-        .home-section-img.mb-
-          =image_tag "LandingD.png", :alt => "Employer"
-          /= image_tag('section-4.jpg')
-        .animated-text
-          %h3{:style=>"color:white;"}
-            = t 'home.employers-header'
-          %p= t 'home.employers-content'
-        
-          
+  
