@@ -1,6 +1,23 @@
 @media only screen  {
   #rpo{
-  
+  ul.checklist {
+    list-style-type: none;
+    
+        li{
+            color:#4b4d49;
+            font-size:18px;
+            position: relative;
+            margin-bottom: 10px;
+            margin-left:-20px;
+            
+            i{
+               color: #00BC8A; 
+               padding-right:5px;
+               
+               
+            }
+        }
+    }
   table{
       width:80%;
   }
