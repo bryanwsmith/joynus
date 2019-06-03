@@ -17,7 +17,7 @@
     }
     h2{
       color:#4C4C4D !important;
-      font-family:Myriad Pro;
+      font-family:lato;
       font-weight:0;
     }
     
@@ -69,7 +69,7 @@
         position:relative;
         margin:0;
         
-        font-family:Myriad Pro;
+        font-family:lato;
       }  
     }
 
@@ -153,8 +153,9 @@
          margin-top:3%;
       }
     h2 {
-        font-size: 1.9rem;
-        margin:-1% 0 1% 5px;
+        font-size: 1.8rem;
+        margin:-4% 0 1% 5px;
+        letter-spacing: -1.5px;
         
       }  
     }
@@ -179,11 +180,11 @@
       }
     h2 {
          
-        font-size: 2.4rem;
+        font-size: 2.3rem;
         color:$white;
         position:relative;
-        margin:-5% 0 0 5%;
-        letter-spacing: -0.5px;
+        margin:-7% 0 0 5%;
+        letter-spacing: -1.5px;
         
       }  
     }

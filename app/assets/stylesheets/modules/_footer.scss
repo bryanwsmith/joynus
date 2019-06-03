@@ -112,6 +112,12 @@
       margin-left: 30% ;
       
     }
+    hr{
+      margin-top: 7%;
+      margin-bottom:2%;
+    border-top: 1px solid #4b4d49;
+    width:80%;
+    }
   }
 }
 
@@ -130,6 +136,11 @@
     small {
       display: inline;
       text-align: left;
+    }
+    
+    hr{
+    
+    width:95%;
     }
   }
 }
