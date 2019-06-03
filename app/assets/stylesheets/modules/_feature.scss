@@ -155,7 +155,22 @@
   #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%; h1{font-size:80px;}}}
     
   #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
-  #about{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 15%;}} 
+  #about{ .feature-container { padding-bottom: 52%; }  
+    .feature-text {
+      bottom: 15%;}
+    .circle {
+          span {
+            color: #333333;
+          }
+          
+          span:hover{
+            color: $primary-color;
+          }
+          i{
+            color: $primary-color;
+          }
+        }
+  } 
   #contact{ .feature-container {padding-bottom: 52%;}  .feature-text {bottom: 35%;}}
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
