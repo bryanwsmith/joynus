@@ -132,13 +132,25 @@
   #employers .feature-container { padding-bottom: 50%; } 
   #staff{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
   #directhire{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
-  #services{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}
-    
-   
-   
-   
-   
-  }
+  #services{ .feature-container { padding-bottom: 52%; } 
+  
+    .feature-text {
+      bottom: 35%;
+        .circle {
+          span {
+            color: #333333;
+          }
+          
+          span:hover{
+            color: $primary-color;
+          }
+          i{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
   #rpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%;}}
   #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%; h1{font-size:80px;}}}
     
@@ -153,11 +165,7 @@
     left: 50%;
     bottom: 50%;
   }
-  #services{
-   
-    
-    
-  }
+  
 }
 
 @media only screen and (min-width:1024px) {
