@@ -2,18 +2,13 @@
   #consultation{
     ul.checklist {
     list-style-type: none;
-    
+    list-style-image: url('Checkbox_Blue.jpg');
         li{
             font-size:20px;
             position: relative;
-            margin-bottom: 18px;
+            margin-bottom: 13px;
             
-            i{
-               color: #00BC8A; 
-               padding-right:15px;
-               
-               
-            }
+            
         }
     }
    
@@ -33,7 +28,9 @@
    #consultation{
     .vr{
         border-right: none 0px;
-        height:250px;
+        border-bottom: solid 2px #cccccc;
+        height:200px;
+        
     }
    }    
 }
@@ -42,8 +39,8 @@
     #consultation{
     .vr {
     border-right: solid 2px #cccccc;
-    
-    height:300px;
+    border-bottom: none 0px;
+    height:250px;
     }
 }
 }

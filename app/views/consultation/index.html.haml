@@ -6,11 +6,11 @@
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
       .feature-container
-        %img{ data: { interchange:"[#{asset_path('staff-bg-mobile.jpg')}, (small)], [#{asset_path('staff-bg-mobile.jpg')}, (medium)], [#{asset_path('test.jpg')}, (large)]" } }
+        %img{ data: { interchange:"[#{asset_path('Consultation_M.jpg')}, (small)], [#{asset_path('Consultation_M.jpg')}, (medium)], [#{asset_path('Consultation.jpg')}, (large)]" } }
         .feature-text
-          %h1.text-center.animated.fadeInDown
+          %h1.text-center.animated.fadeInDown{:style => "color:#333333"}
             CONSULTATION
-          %h5
+          %h5{:style => "color:#333333"}
             New to the area or industry?
   
     .row
@@ -30,84 +30,41 @@
           %h5 Consult  
         
 
-  %section#consultation
-    .row
-      .columns.large-7.vr{:style => "margin-bottom:0"}
-        
-        %h2.text-center 
-          %b
-            CONSULTATION
-            
-        %p
-          We have connections with firms of all sizes and industries and a range of diverse talent nation wide
-          to provide insight into industry standards, including compensation information
-        
+
+  .row#consultation
+    .columns.xlarge-7.vr{:style => "margin-bottom:25px"}
       
-      .columns.large-4
-        
-        
-        %ul.checklist
-          %li
-            %i.icon-check 
-            Competitor analysis<br>
-          %li
-            %i.icon-check 
-            Hiring foreign nationals<br>
-          %li
-            %i.icon-check 
-            Localized demographic
-          %li
-            %i.icon-check 
-            Outsourcing  <br>
-          %li
-            %i.icon-check 
-            Strategic marketing
-          %li
-            %i.icon-check 
-            Targeted advertising 
+     
+          
+          
+      %p{:style =>"padding-top:7%"}
+        We have connections with firms of all sizes and industries and a range of diverse talent nation wide
+        to provide insight into industry standards, including compensation information.
+      
+    
+    .columns.xlarge-4
+      
+      
+      %ul.checklist
+        %li
+           
+          Competitor analysis
+        %li
+           
+          Hiring foreign nationals
+        %li
+           
+          Localized demographic
+        %li
+           
+          Outsourcing
+        %li
+           
+          Strategic marketing
+        %li
+           
+          Targeted advertising 
 
               
   
   
- 
-/
-  .button-container.text-center
-    %h3{:style => "margin:30px"}
-      = t 'about.content-callout'
-    = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
-  
-  
-/
-  %section
-    .row
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Targeted advertising 
-        .srvIco2
-          %i
-            = image_tag 'TargetedAd.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Localized demographic
-        .srvIco2
-          %i
-            = image_tag 'LocalDemograph.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Hiring foreign nationals
-        .srvIco2
-          %i
-            = image_tag 'InternationalHiring.png', :class => 'img4'
-    .row.m-top3
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Competitor analysis
-        .srvIco2
-          %i
-            = image_tag 'CompetitorAnalysis.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Outsourcing
-        .srvIco2
-          %i
-            = image_tag 'Outsourcing.png', :class => 'img4'
-      .columns.large-4.text-center
-        %h4.secondary-text.text-center Strategic marketing
-        .srvIco2
-          %i
-            = image_tag 'StrategicMarketing.png', :class => 'img4'
