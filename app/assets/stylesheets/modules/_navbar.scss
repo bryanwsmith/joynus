@@ -12,8 +12,14 @@
     -moz-box-shadow:    0 0 0 1px rgba(0, 0, 0, .10);
     box-shadow:         0 0 0 1px rgba(0, 0, 0, .10);
     .img-logo{
-       height:30px;
-         width:30px;
+       background: asset-url('Logo_Gray_text.png') no-repeat top left !important;
+      height:40px;
+         width:218px;
+         padding-right:5px;
+         padding-top:7px;
+         margin-top:5px;
+         position:absolute;
+         z-index: 3;  
     }
     h2{
       color:#4C4C4D !important;
@@ -57,10 +63,14 @@
       display: inline-block;
       
       .img-logo{
-         
-         height:30px;
-         width:30px;
-         
+         background: asset-url('Logo_White_text.png') no-repeat top left;
+         height:40px;
+         width:218px;
+         padding-right:5px;
+         padding-top:7px;
+         margin-top:5px;
+         position:absolute;
+         z-index: 2;
          
       }
     h2 {
@@ -145,25 +155,21 @@
 }
 
 @media only screen and (min-width:320px) {
-  nav {
-    .navbar-header {
-      .img-logo{
-         height:25px;
-         width:25px;
-         margin-top:3%;
-      }
-    h2 {
-        font-size: 1.8rem;
-        margin:-4% 0 1% 5px;
-        letter-spacing: -1.5px;
-        
-      }  
+  nav.shrink{
+    .img-logo{
+      height:30px;
+         width:163px;
     }
-
-
-   
   }
   
+  nav {
+   .navbar-header {
+     .img-logo{
+         height:30px;
+         width:163px;
+      }
+   }
+  }
 }
 
 @media only screen and (min-width:480px) {}
@@ -171,27 +177,7 @@
 @media only screen and (min-width:768px) {}
 
 @media only screen and (min-width:1024px) {
-   nav {
-    .navbar-header {
-      .img-logo{
-         height:30px;
-         width:30px;
-         margin-top:0;
-      }
-    h2 {
-         
-        font-size: 2.3rem;
-        color:$white;
-        position:relative;
-        margin:-7% 0 0 5%;
-        letter-spacing: -1.5px;
-        
-      }  
-    }
-
-
    
-  }
 }
 
 @media only screen and (min-width:1140px) {}

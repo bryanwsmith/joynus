@@ -45,10 +45,9 @@
       %nav(role='navigation')
         .navbar-container
           .navbar-header
-            %a{:href => '/', :style => "display:flex; padding-top:15%"}
-              =image_tag "Logo_30x30.png", :alt => "Joynus" ,:class => "img-logo"
-              %h2
-                JOYNUS
+            %a.img-logo{:href => '/'}
+              
+              
           %ul.menu
             .hide-for-large-up
             %li.menu-item= active_link_to t('header.home'), root_url

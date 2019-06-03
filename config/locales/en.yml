@@ -46,7 +46,7 @@ en:
     content-text: "List current openings here and find the right person for your business needs or contact us for our recruitment services."
     
   blog:
-    feature-header: "News"
+    feature-header: "NEWS"
 
   about:
     feature-header: "OUR VISION IS YOUR FUTURE"
@@ -58,7 +58,7 @@ en:
     businesses-button: "Businesses"
 
   contact:
-    feature-header: "Let's talk"
+    feature-header: "LET'S TALK"
     content-header: "WE'RE LISTENING"
     content-text: "Questions, comments, or just want to say hello, drop us a line and we’ll get back to you as soon as we can."
     fax-label: "Fax"
