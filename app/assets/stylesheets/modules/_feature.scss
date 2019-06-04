@@ -106,8 +106,8 @@
 @media only screen and (min-width:320px) {
    #posts{.feature-text {bottom: 40%;}}
    #directhire{.feature-text {bottom:45%;}}   
-        
-   
+   #contact{.feature-text h1{font-size:40px;}}      
+   #about{.feature-text {bottom: 25%;}}
    .feature-text {
         
         bottom: 55%;
@@ -118,7 +118,11 @@
    }        
    }
    
-  #consultation{  .feature-text {h1{font-size:40px;}}}
+  #consultation{  .feature-text {
+      bottom:45%;
+      h1{font-size:40px;}
+      
+  }}
   #employers .feature-section .feature .feature-container {  padding-bottom: 2%;}
   
   }
@@ -160,7 +164,7 @@
     
   #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
   #about{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 15%;}} 
-  #contact{ .feature-container {padding-bottom: 52%;}  .feature-text {bottom: 35%;}}
+  #contact{ .feature-container {padding-bottom: 40%;}  .feature-text {bottom: 35%; h1{font-size:55px;}}}
   .feature-section .feature-container .feature-text {
     h1 { font-size: rem-calc(55); margin-top: 20px; }
     h3 { font-size: $h3-font-size; }
@@ -175,15 +179,13 @@
 @media only screen and (min-width:1024px) {
   #staff{.feature-container { padding-bottom: 52%; }   .feature-text {bottom: 35%;}}
   #directhire{  feature-container { padding-bottom: 52%; }   .feature-text {bottom: 35%;}}
-  #services{  .feature-text {bottom: 45%;}
-  
-  }
+  #services{  .feature-text {bottom: 45%;}  }
   #consultation{  .feature-text {bottom: 45%;}}
     
   #posts{ .feature-text {bottom: 45%;}}
   #about{   .feature-text {bottom: 45%;}} 
-  #contact{ .feature-text {bottom: 45%;}}
-  
+  #contact{ .feature-text {bottom: 45%; h1{font-size:80px;}}}
+    
   
   .feature-section .feature-container .feature-text h1 { font-size: rem-calc(85); }
 position: absolute;
@@ -235,7 +237,7 @@ position: absolute;
     #staff{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #rpo{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #consultation{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 32%;}}
-
+    #contact{.feature-container {padding-bottom: 30%; } .feature-text{bottom: 32%;}}
     #directhire{.feature-container { padding-bottom: 30%; }   .feature-text {bottom: 35%;}}
     #services{
     #staffing_process{
