@@ -2,7 +2,7 @@
 - if flash[:notice]
   = render 'shared/success_notice'
 %head
-  %title Joynus Staffing | Staffing & Recruiting solution | Joynus.com
+  %title Joynus Staffing | Staffing & Recruiting solution 
   %meta{:content => "Joynus helps people finding jobs and provides quality service to clients", :name => "Description"}/
   
 
@@ -16,17 +16,15 @@
     .split.sleft
       .centered
         
-        %h1.animated.fadeInDown 
-          %a{:href => "services"}Job Seeker
-        %h3.animated.fadeInDown Right People
-        %a.button.primary.radius.iprocess.icon-angle-double-right  Jobs  
+        %h1.animated.fadeInDown Right People
+        
+        %a.button.primary.radius.iprocess.icon-angle-double-right{:href => "https://app.employstream.com/jobs/joynus/search/"}  Jobs  
         
     .split.sright
       .centered
         
         %h1.animated.fadeInDown
-          %a{:href => "/services"}Employer
-        %h3.animated.fadeInDown Right Now
+          %a{:href => "/services"}Right Now
         %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/services"} Employer
         
 %section
@@ -34,8 +32,7 @@
     
     .row
       .columns.large-12.m-top3
-        %h2.text-center 
-          %b  TRUSTED BY THESE COMPANIES
+        %h2
     .row    
       .columns.small-4.text-center.div{"data-aos" => "flip-down","data-aos-easing"=>"ease-out-cubic", "data-aos-duration" => "500"}
         .srvIco4
