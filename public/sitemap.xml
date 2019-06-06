@@ -9,143 +9,93 @@
 
 <url>
   <loc>https://www.joynus.com/</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/employers</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/services</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.joynus.com/blog</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.joynus.com/about</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.joynus.com/contact</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/en</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/staff</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/kr</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/directhire</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/es</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/rpo</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/jobs</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/consultation</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.joynus.com/en/employers</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
+  <loc>https://www.joynus.com/staff/onsite</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/staff/highvolume</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/automotive</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/accounting</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/healthcare</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/manufacturing</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/office</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/services/it</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.joynus.com/blog/1</loc>
+  <lastmod>2019-06-06T20:01:41+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/employers</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/employers</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/en/blog</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/blog</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/blog</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/blog/79</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/en/about</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/about</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/about</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/en/contact</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/contact</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/contact</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/jobs</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/jobs</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/en/jobs</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/kr/blog/79</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/es/blog/79</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.joynus.com/en/blog/79</loc>
-  <lastmod>2018-08-27T13:28:57+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 
