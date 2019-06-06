@@ -71,6 +71,13 @@ en:
     looking-for-job: "I'm looking for a job"
     an-employer: "I'm an employer"
     general-inquiry: "General inquiry"
+    branch-norcross: "Norcross, GA"
+    branch-dalton: "Dalton, GA"
+    branch-lagrange: "Lagrange, GA"
+    branch-opelika: "Opelika, AL"
+    branch-greenville: "Greenville, AL"
+    branch-manteca: "Manteca, CA"
+    branch-others: "Others"
     
 
   jobs:
@@ -120,6 +127,8 @@ en:
     message: "Message..."
     button: "Submit"
     company: "Company"
+    branch: "Branch "
+    
   views:
     pagination:
       previous: "Newer"

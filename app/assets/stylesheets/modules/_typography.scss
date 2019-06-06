@@ -472,7 +472,9 @@ h2 {
    display:block;
    position:relative;
     }
-    
+    .img3{
+        height:85px;
+    }
     
 }
 
@@ -484,13 +486,7 @@ h2 {
 
 
 @media all and (max-width:500px) {
-    .wwdContent4{
-    
-   margin-top:15%;
-	min-height: 500px;
-	
-	
-}
+   
     .h1,.h2,.h3,.h4,.imgg,.img1 {display:block; margin:auto;}
     .img2 {width:160px;display:block; margin:auto; float:none; margin-top:15px; margin-bottom:15px;}
     .img3 {display:block; margin:auto; height:50px; }

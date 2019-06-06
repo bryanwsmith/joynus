@@ -24,7 +24,8 @@
   
     .columns.large-12
       = select_tag 'subject', options_for_select(Contact::SUBJECTS, ''), include_blank: t('contact-form.subject ')
-
+    .columns.large-12
+      = select_tag 'branch', options_for_select(Contact::BRANCHES, ''), include_blank: t('contact-form.branch ')
   
     .columns.large-12
       = text_area_tag 'message', nil, placeholder: t('contact-form.message'), rows: 8
