@@ -26,7 +26,7 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 3840px){
-  #staff{
+  #staffing{
    p{font-size:20px;}
    h2{font-size: $h2-font-size;}
    
@@ -87,7 +87,7 @@ img {vertical-align: middle;}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 500px) {
-  #staff,#directhire,#rpo{
+  #staffing,#directhire,#rpo{
    p{font-size:16px;}
    h5{font-size:15px;}
    h2{font-size:30px;}

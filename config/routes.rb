@@ -16,16 +16,16 @@ Rails.application.routes.draw do
     get 'services/manufacturing'
     get 'services/office'
     get 'services/it'
-    get 'staff/highvolume'
-    get 'staff/onsite'
+    get 'staffing/highvolume'
+    get 'staffing/onsite'
     
-    resources :posts, path: 'blog'
+    resources :posts, path: 'news'
     resources :sessions, only: [:new, :create, :destroy]
     resources :about, only: [:index]
     #resources :employers, only: [:index]
     resources :contact, only: [:index]
     resources :services, only: [:index]
-    resources :staff, only: [:index]
+    resources :staffing, only: [:index]
     
     resources :directhire, only: [:index]
     resources :consultation, only: [:index]

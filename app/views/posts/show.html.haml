@@ -15,7 +15,7 @@
     .breadcrumb
       = link_to posts_path do
         %i.fa.fa-angle-left
-        Blog
+        News
       - if current_user
         .right
           = link_to 'Delete Post', post_path(@post), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }

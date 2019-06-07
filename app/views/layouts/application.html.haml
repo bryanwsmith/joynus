@@ -51,12 +51,12 @@
           %ul.menu
             .hide-for-large-up
             %li.menu-item= active_link_to t('header.home'), root_url
-            
+            %li.menu-item= active_link_to t('header.about'), about_index_path
             /%li.menu-item= active_link_to t('header.employers'), employers_path  
             %li.menu-item= active_link_to t('header.services'), services_path
            
             %li.menu-item= active_link_to t('header.news'), posts_path
-            %li.menu-item= active_link_to t('header.about'), about_index_path
+            
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
             
             %li.menu-item= link_to t('header.job'), "https://app.employstream.com/jobs/joynus/search/", target: '_blank', class: 'button primary radius'
@@ -93,7 +93,7 @@
               %a{:href => "/services"}SERVICES
           %ul.links
             %li 
-              %a{:href => "/staff"} Staffing
+              %a{:href => "/staffing"} Staffing
             %li
               %a{:href => "/directhire"} Direct Hire
             %li
@@ -106,10 +106,10 @@
               %a{:href => "staff"} STAFFING
           %ul.links
             %li 
-              %a{:href => "/staff/onsite"} On-Site Management
+              %a{:href => "/staffing/onsite"} On-Site Management
             
             %li{:style => "margin-bottom:45px"} 
-              %a{:href => "/staff/highvolume"}High Volume
+              %a{:href => "/staffing/highvolume"}High Volume
             
         .columns.xlarge-3
           %h3

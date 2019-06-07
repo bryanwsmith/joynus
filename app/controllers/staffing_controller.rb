@@ -1,4 +1,4 @@
-class StaffController < ApplicationController
+class StaffingController < ApplicationController
   def index
   end
   
