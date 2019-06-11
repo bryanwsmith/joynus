@@ -49,6 +49,7 @@
         width: 75%;
         height: auto;
         text-align: center;
+        display:block;
 
         h1 { font-size: rem-calc(45);}
         
@@ -56,6 +57,11 @@
           font-size: rem-calc(20);
           margin-bottom: rem-calc(22);
         }
+        
+        .button{
+          margin:3% 5%;
+        }
+        
 
         .circle {
           background: transparent;
@@ -94,16 +100,12 @@
     }
   }
 
-  #home .feature-container {
-    padding-bottom: 106.66666%;
-
-    .feature-text {
-      bottom: rem-calc(40);
-    }
-  }
+  
 }
 
 @media only screen and (min-width:320px) {
+   
+   #home {.feature-container{padding-bottom:120%;} .feature-text{ bottom:35%; h1{font-size:35px;} .button{font-size:15px; }}}
    #posts{.feature-text {bottom: 40%;}}
    #directhire{.feature-text {bottom:45%;}}   
    #contact{.feature-text h1{font-size:40px;}}      
@@ -136,7 +138,7 @@
 
 @media only screen and (min-width:768px) {
   
-  #home .feature-container { padding-bottom: 39.85%; }
+  #home {.feature-container { padding-bottom: 52%; } .feature-text{ bottom:30%; h1{font-size:45px;} .button{font-size:15px; margin:3% 2%;}}}
   #employers .feature-container { padding-bottom: 50%; } 
   #staffing{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
   #directhire{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
@@ -183,7 +185,7 @@
   #consultation{  .feature-text {bottom: 45%;}}
     
   #posts{ .feature-text {bottom: 45%;}}
-  #about{   .feature-text {bottom: 45%;}} 
+  #about{   .feature-text {bottom: 35%;}} 
   #contact{ .feature-text {bottom: 45%; h1{font-size:80px;}}}
     
   
@@ -212,6 +214,7 @@ position: absolute;
 
 
 @media only screen and (min-width:1140px) {
+  #home {.feature-container { padding-bottom: 52%; } .feature-text{ bottom:40%; h1{font-size:75px;} .button{font-size:30px;}}}
   #consultation{.feature-container { padding-bottom: 30%; }   
   .feature-text {
     bottom: 30%;

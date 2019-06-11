@@ -11,7 +11,7 @@
   = render 'shared/success_notice'
 
 .row
-  .columns.large-10.large-offset-1
+  .columns.large-10
     .breadcrumb
       = link_to posts_path do
         %i.fa.fa-angle-left
@@ -22,13 +22,13 @@
           = link_to 'Edit Post', edit_post_path, class: 'button tiny radius ml'
 
 .row
-  .columns.large-10.large-offset-1
+  .columns.large-10
 
     %h3= @post.title
     %p= l @post.created_at.to_date, format: :long
     %p= @post.raw_post
     .row.shareable.hide-mobile
-
+    /
       .columns.large-12
         .button.secondary.radius.js-toggle-social.share-now.btn-share
           .fa.fa-share-alt

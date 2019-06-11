@@ -6,30 +6,25 @@
   %meta{:content => "Joynus helps people finding jobs and provides quality service to clients", :name => "Description"}/
   
 
-
-  
-
-%section.feature-section
-  
-  .feature-container
-    
-    .split.sleft
-      .centered
+%section.feature-section.no-spacing
+  .feature.animated.fadeIn
+    .feature-container
+      %img{ data: { interchange:"[#{asset_path('Landing_M.jpg')}, (small)], [#{asset_path('Landing_M.jpg')}, (medium)], [#{asset_path('Landing.jpg')}, (large)]" } }
+      
+      .feature-text
+        %h1.animated.fadeInDown
+          %b
+            Right People, Right Now
         
-        %h2.animated.fadeInDown Right People
-        %h3.animated.fadeInDown 
         %a.button.primary.radius.iprocess.icon-angle-double-right{:href => "https://app.employstream.com/jobs/joynus/search/"}
-          Look For Work
-        
-    .split.sright
-      .centered
-        
-        %h2.animated.fadeInDown Right Now
+          Look For Work 
         
         %a.button.secondary.radius.iprocess.icon-angle-double-right{:href => "/services"}
           Look For Talent
+       
+
         
-%section
+%section#homepath
   .wwdContent4
     .row
       .columns.small-12.text-center.m-top3

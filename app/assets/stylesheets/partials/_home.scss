@@ -3,25 +3,7 @@
 @media only screen {
   #home {
     h2{color:$white;}
-    .wwdContent2{
-    //background: ;
-    background-attachment: fixed;
-	background-position: center top;
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-height: 90%;
-	 display: -webkit-flex; /* Safari */
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-  display: flex;   
-  flex-wrap: wrap;
-	
-	position:relative;
-	.img5{
-    height:auto;
-    width:250px;
-    padding: 2em;
-}
-}
+   
 
 .landingsection{
   
@@ -35,20 +17,7 @@
 
 
 
-.wwdContent2:before{
-   
-    background-color: rgb(210, 237, 249);
-    content: "";
-    height: 90%;
-    position: absolute;
-    width: 90%;
-    margin: 10% 0 0 5%;
-    padding-right:15%;
-    left:0;
-	top:0;
-	z-index:0;
-	border-radius:30px;
-}
+
     
     .home-section-img {
       width: calc(100% + 30px);
@@ -130,7 +99,7 @@
     
    h3{font-size:20px;}
   .wwdContent4{min-height: 230px;
-    margin: 0 0 -5% 0;
+    margin: -5% 0 -5% 0;
   } 
 	.img5{
     height:auto;
@@ -160,22 +129,7 @@
       &#career { padding-bottom: 0 !important; }
       &#right-job { padding-top: 0 !important; }
     }
-  .wwdContent2{
-   
-	.img5{
-    height:auto;
-    width:250px;
-    padding: 2em;
-}
-  h2{
-    padding-top:0;
-  }
-}
-.wwdContent2:before{
-   
-    width: 95%;
-    margin: 5% 0 0 2.5%;
-}   
+  
     
     
     
@@ -191,10 +145,7 @@
     
     h2{font-size: $h2-font-size;}
     h3{font-size: 42px;}
-    .centered >h2{
-    font-size:55px;
-    
-  }
+   
     
    .landingsection{
        display:block;
@@ -282,10 +233,7 @@
         }
       }
     }
-    .centered >h2{
-    font-size:70px;
     
-  }
 
   }
 }
@@ -293,81 +241,9 @@
 
 
 
-.split {
-    height: 110%;
-    width: 50%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 15px;
-    
-}
-
-.sleft {
-    left: 0;
-    background: image-url("jobseeker.jpg") no-repeat;
-    background-size:cover;
-}
 
 
 
-.sleft:before {
-  background: rgba(64, 64, 64, 0.6);
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 100%;
-	left:0;
-	top:0;
-	z-index:0;
-}
-
-.sright {
-    right: 0;
-    
-    background: image-url('employer.jpg') no-repeat; 
-    background-size:cover;
-}
-
-.sright:before{
-  background: rgba(26, 51, 101, 0.6);
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 100%;
-	left:0;
-	top:0;
-	z-index:0;
-}
-.slogun {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width:100%;
-    z-index:3;
-}    
-
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width:100%;
-    
-
-  a{
-    color:$white;
-  }
-  
-  
-  
-  
-}
 @media only screen and (min-width: rem-calc(1440)) {
   #home {
     .landingsection{
@@ -377,7 +253,7 @@
        padding:2em 0 0 20em;
     }
       .wwdContent4{min-height: 630px;
-      margin:0 0 -4% 0;
+      margin:-3% 0 -4% 0;
     }
   }
 }
@@ -386,28 +262,10 @@
   #home{
   h2{font-size:21px;  }  
   p{font-size:15px;}
-  .slogun >h1 {
-    font-size:25px;
-    
-}  
   
   
-  .centered >h2{
-    font-size:32px;
-    display:block;
-    margin-bottom:10%;
-    
-  }
   
-  .centered >h3{
-    font-size:17px;
-    position: relative;
-  }
   
-  .centered >h4{
-    font-size:17px;
-    position: relative;
-  }
   
   .iprocess {
     color: #ffffff;
@@ -418,17 +276,7 @@
   }
   
   
-  .sleft {
-    left: 0;
-    background: asset-url("jobseeker-mobile.jpg");
-    background-size: cover;
-  }
-  
-  .sright {
-      right: 0;
-      background: asset-url("employer-mobile2.jpg") ;
-      background-size:cover;
-  }
+ 
   
   
   
@@ -455,35 +303,7 @@
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {}
  
 // XXLarge screens
-@media only screen and (min-width: 120.063em) {
-  
-   #home {
-    .wwdContent2{
-   
-	min-height: 90%;
-	 
-	.img5{
-    height:auto;
-    width:250px;
-    padding: 0;
-}
-}
+@media only screen and (min-width: 120.063em) {}
 
 
 
-.wwdContent2:before{
-   
-    background-color: rgb(210, 237, 249);
-    content: "";
-    height: 90%;
-    position: absolute;
-    width: 90%;
-    margin: 10% 0 0 5%;
-    padding-right:15%;
-    left:0;
-	top:0;
-	z-index:0;
-	border-radius:30px;
-}
-}
-}

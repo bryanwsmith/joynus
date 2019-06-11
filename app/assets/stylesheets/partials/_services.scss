@@ -38,34 +38,11 @@
         }
  }
  } 
-  .wwdContent2{
-    //background: ;
-  background-attachment: fixed;
-	background-position: center top;
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-height: 90%;
-	 display: -webkit-flex; /* Safari */
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-  display: flex;   
-  flex-wrap: wrap;
-  position:relative;
-}
 
 
 
-  .wwdContent2:before{
-   
-    background-color: rgb(230, 247, 255);
-    content: "";
-    height: 90%;
-    position: absolute;
-    width: 100%;
-    left:0;
-  	top:0;
-  	z-index:0;
-  	border-radius:30px;
-  }
+
+
     .path{
       padding-top:1%;
       padding-left:7%;
