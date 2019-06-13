@@ -9,8 +9,8 @@
 user = User.create(
   first_name: 'Admin',
   last_name: 'Istrator',
-  email: 'chisung@joynus.com',
-  password: 'Joynus123!',
-  password_confirmation: 'Joynus123!',
+  email: ENV['GMAIL_PASSWORD']
+  password: ENV['GMAIL_PASSWORD']
+  password_confirmation: ENV['GMAIL_PASSWORD']
   admin: true
 )
