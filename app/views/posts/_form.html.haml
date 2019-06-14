@@ -3,4 +3,4 @@
     = form.text_field :title, placeholder: 'Blog Title *'
 .row
   .columns.large-12
-    = form.text_area :contents, placeholder: 'Blog content', rows: 28, id: 'blog-textarea'
+    = form.cktext_area :contents, placeholder: 'Blog content', cols: 40, class: 'ckeditor'

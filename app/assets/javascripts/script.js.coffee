@@ -46,17 +46,9 @@ joynuss = ->
      $(':checkbox').each ->
         $(this).prop('checked', false)
 
-  # Wysiwyg editor for blog
-  $('#blog-textarea').wysihtml5({
-    "size": 'tiny',
-    "font-styles": true,
-    "emphasis": true,
-    "lists": true,
-    "html": true,
-    "link": true,
-    "image": true,
-    "color": true
-  })
+  $('.ckeditor').each ->
+    CKEDITOR.replace($(this).attr('id'))
+
 
   # Clickable Table Rows
   $('table.clickable-row tr').click ->
