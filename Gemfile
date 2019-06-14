@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '2.3.6'
+
+gem 'dotenv-rails'
 gem 'fontello_rails_converter'
 gem 'rails', '4.1.8'
 gem 'pg', '~> 0.17.1'
@@ -23,6 +26,8 @@ gem 'shareable'
 gem 'orm_adapter'
 gem 'ckeditor', '~> 4.3.0'
 gem 'dragonfly'
+gem 'dragonfly-s3_data_store'
+
 
 
 gem 'spring',        group: :development
