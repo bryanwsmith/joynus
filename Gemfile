@@ -11,17 +11,23 @@ gem 'foundation-rails'
 gem 'font-awesome-rails'
 gem 'rails_12factor'
 gem 'bcrypt-ruby'
-gem 'foundation-wysihtml5-rails'
 gem 'redcarpet'
 gem 'active_link_to'
 gem 'kaminari'
 gem 'jquery-rails'
-gem 'turbolinks'
+# gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'newrelic_rpm'
 gem 'shareable'
+gem 'orm_adapter'
+gem 'ckeditor', '~> 4.3.0'
+gem 'dragonfly'
 
 
 gem 'spring',        group: :development
 gem 'invisible_captcha'
+
+group :devleopment do
+  gem 'thin'
+end
