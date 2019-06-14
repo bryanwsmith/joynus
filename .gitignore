@@ -20,3 +20,4 @@ db/schema.rb
 dragonfly.log
 public/uploads
 database.yml
+/.env.development

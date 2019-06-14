@@ -9,9 +9,17 @@ Dragonfly.app.configure do
 
   url_format '/media/:job/:name'
 
-  datastore :file,
-    root_path: Rails.root.join('public', 'uploads', 'images', Rails.env),
-    server_root: Rails.root.join('public')
+  # datastore :file,
+  #   root_path: Rails.root.join('public', 'uploads', 'images', Rails.env),
+  #   server_root: Rails.root.join('public')
+  datastore :s3,
+    bucket_name: ENV['S3_BUCKET_NAME'],
+    access_key_id: ENV['S3_ACCESS_KEY'],
+    secret_access_key: ENV['S3_SECRET_ACCESS_KEY'],
+    region: ENV['S3_REGION'],
+    url_host: 's3.us-east-2.amazonaws.com',
+    url_scheme: 'https',
+    fog_storage_options: { path_style: true }
 end
 
 Dragonfly.app(:ckeditor).configure do
@@ -21,19 +29,20 @@ Dragonfly.app(:ckeditor).configure do
   # Store files in public/uploads/ckeditor. This is not
   # mandatory and the files don't even have to be stored under
   # public. See http://markevans.github.io/dragonfly/data-stores
-  datastore :file, root_path: Rails.root.join('public/uploads/ckeditor', Rails.env).to_s,
-                   server_root: 'public'
+  # datastore :file, root_path: Rails.root.join('public/uploads/ckeditor', Rails.env).to_s,
+  #                  server_root: 'public'
+  datastore :s3,
+    bucket_name: ENV['S3_BUCKET_NAME'],
+    access_key_id: ENV['S3_ACCESS_KEY'],
+    secret_access_key: ENV['S3_SECRET_ACCESS_KEY'],
+    region: ENV['S3_REGION'],
+    url_host: 's3.us-east-2.amazonaws.com',
+    url_scheme: 'https',
+    fog_storage_options: { path_style: true }
 
   # Accept asset requests on /ckeditor_assets. Again, this path is
   # not mandatory. Just be sure to include :job somewhere.
   url_format '/uploads/ckeditor/:job/:basename.:format'
-
-  case Rails.env
-  when 'development'
-    url_host 'http://localhost:3000'
-  when 'production'
-    # TODO: set host before going live on production
-  end
 end
 
 # Rails.application.middleware.use Dragonfly::Middleware, :ckeditor
