@@ -7,7 +7,7 @@ default: &default
   # to what you entered in the previous psql step.
   template: template0
   username: ubuntu
-  password: Faster1!
+  password: <%= ENV['YOUR_APP_NAME_DATABASE_PASSWORD'] %>
   
 development:
   <<: *default

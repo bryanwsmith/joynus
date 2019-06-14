@@ -7,21 +7,12 @@ config.action_mailer.smtp_settings = {
   :address => 'smtpout.secureserver.net',
   :domain  => 'www.example.com',
   :port      => 80,
-  :user_name => 'info@tidrainc.com',
-  :password => 'Faster1!',
+  :user_name =>  ENV['GMAIL_USERNAME'],
+  :password => ENV['GMAIL_PASSWORD'],
   :authentication => :plain
 }
 
 
-#  config.action_mailer.smtp_settings = {
-#      :address              => "smtp.gmail.com",
-#      :port                 => 587,
-#      :domain               => "gmail.com",
-#      :user_name            => "support@joynus.com",
-#      :password             => "R2D2Force1!",
-#      :authentication       => :plain,
-#      :enable_starttls_auto => true
-#  }
 
 
   # ActionMailer::Base.smtp_settings = {

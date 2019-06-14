@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require foundation
 //= require waypoints
-//= require foundation-wysihtml5
-//= require foundation-wysihtml5/locales
 //= require angular
 //= require angular-resource
 //= require angular-animate
@@ -25,24 +23,25 @@
 //= require app
 //= require services/JobsService
 //= require controllers/JobsController
- 
+
+//= require ckeditor/init
+//= require ckeditor/loader
+
 $(document).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
-    
-   
+
+
   } else {
     $('nav').removeClass('shrink');
-  
+
   }
 });
 
 
 $(function(){
   AOS.init ()
-});
 
-$(function(){
   $(document).foundation();
 
   function adjustPusher() {
