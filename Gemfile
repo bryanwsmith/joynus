@@ -21,7 +21,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'newrelic_rpm'
 gem 'shareable'
+gem 'ckeditor', '~> 4.3'
+gem 'dragonfly'
 
 
 gem 'spring',        group: :development
 gem 'invisible_captcha'
+
+group :devleopment do
+  gem 'thin'
+end

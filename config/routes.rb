@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   
 
+  mount Ckeditor::Engine => '/ckeditor'
   scope "(:locale)", locale: /en|es|kr/ do
     get 'login', to: 'sessions#new', as: 'login'
     get 'logout', to: 'sessions#destroy', as: 'logout'
