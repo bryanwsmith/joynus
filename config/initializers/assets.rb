@@ -8,4 +8,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( industry.css )
 Rails.application.config.assets.precompile += %w( ckeditor/config.js ckeditor/styles.js ckeditor/contents.css )
+Rails.application.config.assets.precompile += %w( ckeditor/* )
 Rails.application.config.assets.precompile += %w( ckeditor/filebrowser/images/*  )

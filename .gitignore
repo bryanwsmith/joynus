@@ -18,3 +18,4 @@
 db/schema.rb
 .idea
 dragonfly.log
+public/uploads

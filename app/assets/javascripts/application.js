@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require foundation
 //= require waypoints
-//= require foundation-wysihtml5
-//= require foundation-wysihtml5/locales
 //= require angular
 //= require angular-resource
 //= require angular-animate
@@ -26,6 +24,7 @@
 //= require services/JobsService
 //= require controllers/JobsController
 
+//= require ckeditor/init
 //= require ckeditor/loader
 
 $(document).scroll(function() {
@@ -42,9 +41,7 @@ $(document).scroll(function() {
 
 $(function(){
   AOS.init ()
-});
 
-$(function(){
   $(document).foundation();
 
   function adjustPusher() {

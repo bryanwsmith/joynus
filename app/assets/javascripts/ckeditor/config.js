@@ -1,3 +1,4 @@
+
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
@@ -25,11 +26,19 @@ CKEDITOR.editorConfig = function( config )
 
   // The location of a script that handles file uploads.
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
-
-  // config.allowedContent = true;
+  config.filebrowserUploadMethod  = "form";
 
   config.coreStyles_bold    = { element: 'strong', overrides: 'b' };
   config.coreStyles_italic  = { element: 'em',     overrides: 'i' };
+
+  config.toolbar = [
+    { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
+    { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Blockquote', 'Callouts' ] },
+    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Smallcaps', 'Superscript', '-', 'RemoveFormat' ] },
+    { name: 'links', items: [ 'Link', 'Unlink' ] },
+    { name: 'insert', items: [ 'Image', 'SpecialChar' ] },
+    { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source'] }
+  ];
 
   config.removePlugins     = "elementspath";
   config.disallowedContent = 'script; ';
