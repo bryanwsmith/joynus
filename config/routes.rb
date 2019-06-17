@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
 
-  scope "(:locale)", locale: /en|es|kr/ do
+  scope "(:locale)", locale: /en|es|kr/, defaults: {locale: "en"} do
     get 'login', to: 'sessions#new', as: 'login'
     get 'logout', to: 'sessions#destroy', as: 'logout'
     match '/send_mail', to: 'contact#send_mail', via: 'post'
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     get 'staffing/highvolume'
     get 'staffing/onsite'
 
-    resources :posts
+    resources :posts, path: 'news'
     resources :sessions, only: [:new, :create, :destroy]
     resources :about, only: [:index]
     #resources :employers, only: [:index]
