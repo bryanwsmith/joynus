@@ -5,7 +5,7 @@ Rails.application.configure do
       :address => 'smtpout.secureserver.net',
       :domain  => 'www.example.com',
       :port      => 80,
-      :user_name => ENV['GMAIL_PASSWORD'],
+      :user_name => ENV['GMAIL_USERNAME'],
       :password => ENV['GMAIL_PASSWORD'],
       :authentication => :plain
     }
