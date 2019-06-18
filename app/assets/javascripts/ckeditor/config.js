@@ -1,8 +1,7 @@
-
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
-  config.language = 'en';
+  // config.language = 'fr';
   // config.uiColor = '#AADC6E';
 
   /* Filebrowser routes */
@@ -22,24 +21,34 @@ CKEDITOR.editorConfig = function( config )
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
 
   // The location of a script that handles file uploads in the Image dialog.
-  config.filebrowserImageUploadUrl = "/ckeditor/pictures";
+  config.filebrowserImageUploadUrl = "/ckeditor/pictures?";
 
   // The location of a script that handles file uploads.
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
-  config.filebrowserUploadMethod  = "form";
 
-  config.coreStyles_bold    = { element: 'strong', overrides: 'b' };
-  config.coreStyles_italic  = { element: 'em',     overrides: 'i' };
+  config.allowedContent = true;
+  config.filebrowserUploadMethod = 'form';
 
+  // Toolbar groups configuration.
   config.toolbar = [
+    { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source'] },
     { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-    { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Blockquote', 'Callouts' ] },
-    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Smallcaps', 'Superscript', '-', 'RemoveFormat' ] },
-    { name: 'links', items: [ 'Link', 'Unlink' ] },
-    { name: 'insert', items: [ 'Image', 'SpecialChar' ] },
-    { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source'] }
+    { name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] },
+    { name: 'forms', items: [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField' ] },
+    { name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
+    { name: 'insert', items: [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'SpecialChar' ] },
+    { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+    '/',
+    { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
+    { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] }
   ];
 
-  config.removePlugins     = "elementspath";
-  config.disallowedContent = 'script; ';
+  config.toolbar_mini = [
+    { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+    { name: 'styles', items: [ 'Font', 'FontSize' ] },
+    { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
+    { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] }
+  ];
 };
