@@ -3,7 +3,7 @@ require 'dragonfly'
 
 Dragonfly.app(:ckeditor).configure do
   plugin :imagemagick
-  secret "c7312df1e51044ad6873f1ddb23d56362ebb83ef3f9b2d79c1f3c108cdaaeaa0"
+  secret "d0f348b7de649c4e3269f76406c1b29baa1b5601476ce25e79e4997b679bf147"
 
   # Store files in public/uploads/ckeditor. This is not
   # mandatory and the files don't even have to be stored under
