@@ -1,6 +1,32 @@
+- if form.object.errors.any?
+  %div{:id => "error_explanation"}
+    .col-sm-12
+      %h2
+        = pluralize(form.object.errors.count, "error")
+        prohibited this form.object from being saved:
+
+      %ul
+        - form.object.errors.full_messages.each do |message|
+          %li= message
+
 .row
   .columns.large-12
-    = form.text_field :title, placeholder: 'Blog Title *'
+    = form.text_field :title, placeholder: 'Blog Title'
+
+.row
+  .columns.large-12
+    = form.text_field :author, placeholder: 'Author'
+
+.row
+  .columns.large-12
+    = form.text_field :summary, placeholder: 'Preview Summary'
+
+.row
+  .columns.large-12
+    = form.label :preview_image_id do
+      Preview Image
+      = form.select :preview_image_id, options_for_select(preview_image_options, form.object.preview_image_id)
+
 
 .row
   .columns.large-12

@@ -10,7 +10,7 @@
           %b= t 'blog.feature-header'
 
 .row
-  .columns.large-12.large-offset-1
+  .columns.small-12
     .path
       %a{:href => "/"}
         .srvIco1
@@ -27,18 +27,35 @@
 - @posts.each do |post|
   .blog-posts
     .row
-      .columns.large-8.large-offset-2
-        %div{ id: dom_id(post), class: 'post' }
-          = link_to post_url(post) do
-            %h3.secondary-text= post.title
+      .columns.small-12
+        .row
+          %article{ id: dom_id(post), class: 'post entry-item clearfix' }
+            .columns.small-12.medium-2
+              .entry-thumbnail
+                = link_to post_path(post) do
+                  = image_tag post.preview_image.try(:data).try(:thumb, Post.preview_image_dimensions).try(:url), alt: post.preview_image&.data&.name
 
-          %p= l post.created_at.to_date, format: :long
+            .columns.small-12.medium-10
+              .entry-body
 
-          %p.post-content
-            =# truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
-            = post.raw_post
+                %h1.entry-heading
+                  = link_to post.title, post_url(post)
 
-          = link_to 'View More', post_url(post), class: 'secondary-text'
+                .entry-meta
+                  %strong
+                    = l post.created_at.to_date, format: :long
+
+                  %span.text-muted.text-thin
+                    by
+
+                  = link_to post.author&.titleize, ''
+
+
+                .entry-content
+                  %p.no-margin-bottom= post.summary
+                  = link_to 'Read More', post_path(post)
+
+
 
 = paginate @posts
 

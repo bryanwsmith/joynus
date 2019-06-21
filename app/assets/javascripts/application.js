@@ -26,6 +26,7 @@
 //= require services/JobsService
 //= require controllers/JobsController
 //= require posts
+//= require image-picker
 
 //= require ckeditor/init
 //= require ckeditor/loader

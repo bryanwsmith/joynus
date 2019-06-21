@@ -15,3 +15,6 @@ $(document).ready ->
 
     $('img', '.post').removeAttr('style').show()
     $(".post").fitVids()
+
+  if $('.posts.new').length >= 1 || $('.posts.edit').length >= 1 || $('.posts.update').length >= 1
+    $("select").imagepicker()

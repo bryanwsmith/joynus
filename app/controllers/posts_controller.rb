@@ -29,9 +29,11 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update_attributes(post_params)
-
-    redirect_to post_url(@post), notice: "#{@post.title} Updated"
+    if @post.update_attributes(post_params)
+      redirect_to post_url(@post), notice: "#{@post.title} Updated"
+    else
+      render 'edit'
+    end
   end
 
   def destroy
@@ -43,7 +45,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :contents, :author, :approved)
+    params.require(:post).permit(:title, :contents, :author, :approved, :summary, :preview_image_id)
   end
 
   def find_post

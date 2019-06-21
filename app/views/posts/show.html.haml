@@ -27,16 +27,34 @@
       - if current_user
         .right
           = link_to 'Delete Post', post_path(@post), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }
-          = link_to 'Edit Post', edit_post_path, class: 'button tiny radius ml'
+          = link_to 'Edit Post', edit_post_path(@post), class: 'button tiny radius ml'
 
 .row
   .columns.large-10
-    %div{ id: dom_id(@post), class: 'post' }
-      %h3= @post.title
+    %article{ id: dom_id(@post), class: 'post entry-item clearfix' }
+      .columns.small-12
+        .entry-thumbnail
+          = link_to post_path(@post) do
+            = image_tag @post.preview_image.try(:data).try(:url), alt: @post.preview_image&.data&.name
 
-      %p= l @post.created_at.to_date, format: :long
+        .entry-body
 
-      %p= @post.raw_post
+          %h1.entry-heading
+            = link_to @post.title, post_url(@post)
+
+          .entry-meta
+            %strong
+              = l @post.created_at.to_date, format: :long
+
+            %span.text-muted.text-thin
+              by
+
+            = link_to @post.author&.titleize, ''
+
+
+          .entry-content
+            %p.no-margin-bottom= @post.raw_post
+
 
       .row.shareable.hide-mobile
         .columns.large-12

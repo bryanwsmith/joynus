@@ -2,9 +2,14 @@ class Post < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged, :history]
 
+  belongs_to :preview_image, class_name: 'Ckeditor::Picture'
+
 ## Validations
   validates :contents, presence: true
   validates :title, presence: true
+  validates :summary, presence: true, length: 1..300
+  validates :preview_image_id, presence: true
+  validates :author, presence: true
 
 ## Instance Methods
   def slug_candidates
@@ -24,5 +29,13 @@ class Post < ActiveRecord::Base
 
   def raw_post
     self.contents.html_safe
+  end
+
+  def preview_image_thumb(dimensions = '100x')
+    preview_image.try(:data).try(:thumb, dimensions).try(:url)
+  end
+
+  def self.preview_image_dimensions
+    '350x'
   end
 end
