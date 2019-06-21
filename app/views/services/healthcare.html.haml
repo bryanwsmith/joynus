@@ -1,19 +1,18 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Healthcare
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.no-spacing 
+  %section.no-spacing
     .subpage-cover
-      = image_tag "Healthcare.png", :alt => "Healthcare"  
+      = image_tag "Healthcare.png", :alt => "Healthcare"
       .subpage-text
         %h1{:style => "margin:0 0 0 3%"}
           %b
             HEALTHCARE
-        
+
 
     .columns.large-12
       .path
@@ -21,28 +20,28 @@
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home  
+          %h5 Home
         .srvIco11
-          %i.icon-right     
+          %i.icon-right
         %a{:href => "/services"}
-          %h5 Services 
+          %h5 Services
         .srvIco11
           %i.icon-right
         %h5 Healthcare
-  %section    
-    .wrap          
+  %section
+    .wrap
       .pageleft
-        .row        
+        .row
           .columns.large-12
             %p
-              Lifestyle and demographic changes, funding gaps, and workforce shortages, ever changing political and regulatory 
-              developments play a large role in the healthcare industry. With a focus on Patient-Centered Care at the center, customized 
+              Lifestyle and demographic changes, funding gaps, and workforce shortages, ever changing political and regulatory
+              developments play a large role in the healthcare industry. With a focus on Patient-Centered Care at the center, customized
               consumer demand, new technology products and controlling cost are shaping healthcare.
-           
+
         %section
           .row
             .columns.large-12
-             
+
               %h5
                 %b
                   POSITIONS WE EXCEL AT
@@ -62,22 +61,21 @@
                 Physical Therapist<br>
                 Speech-Language Pathologist<br>
                 Travel Nurse
-              
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b
                 = t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
+                = render 'contact/form'
 
-           
-      
+
+
+

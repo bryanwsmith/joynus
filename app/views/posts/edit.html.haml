@@ -1,11 +1,9 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
-%head
-  %title Joynus Staffing| News | Check out our news
-      
+= content_for :title, "Joynus Staffing| News | Check out our news"
+
 .row
   .columns.large-12
     %fieldset.mb--
       = form_for @post do |form|
         = render form
+
         = form.submit "Submit", class: 'button small no-margin right submit radius'
