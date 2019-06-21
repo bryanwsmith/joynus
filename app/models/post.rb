@@ -8,7 +8,6 @@ class Post < ActiveRecord::Base
   validates :contents, presence: true
   validates :title, presence: true
   validates :summary, presence: true, length: 1..300
-  validates :preview_image_id, presence: true
   validates :author, presence: true
 
 ## Instance Methods
