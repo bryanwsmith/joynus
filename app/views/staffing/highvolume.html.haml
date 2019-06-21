@@ -1,99 +1,97 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Information Technology
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.no-spacing 
+  %section.no-spacing
     .subpage-cover
-      = image_tag "HighVolume.png", :alt => "Highvolume"  
+      = image_tag "HighVolume.png", :alt => "Highvolume"
       .subpage-text
         %h1{:style => "margin-left:3%"}
           %b
             HIGH VOLUME
-  
-  
+
+
     .path
       %a{:href => "/"}
         .srvIco1
           %i.icon-home
       .srvIco11
-        %i.icon-right    
+        %i.icon-right
       %a{:href => "/services"}
         %h5 Services
       .srvIco11
-        %i.icon-right     
+        %i.icon-right
       %a{:href => "/staffing"}
         %h5 Staffing
       .srvIco11
         %i.icon-right
       %h5 High Volume
-     
-    .wrap          
-                
+
+    .wrap
+
       .pageleft
-        .row        
+        .row
           .columns.large-12
-      
+
             %h2.text-center
             %p
-              Having a large number of associates working in one location is our expertise. 
-              No matter what, we ensure your production doesn’t stop. It entails safety, 
-              attendance, retention, training, communication and no excuse attitude. 
-        %section        
-          .row    
+              Having a large number of associates working in one location is our expertise.
+              No matter what, we ensure your production doesn’t stop. It entails safety,
+              attendance, retention, training, communication and no excuse attitude.
+        %section
+          .row
             .columns.large-12
-             
+
               %h3
                 %b
                   ATTENDENCE
-                
+
               %p
-                When a large number of people are working in the same place, keeping track of who clocked in/out can be payroll 
+                When a large number of people are working in the same place, keeping track of who clocked in/out can be payroll
                 and invoice nightmare. Joynus covers all loop holes for attendance. Pin or bio attendance machine synced with
                 mobile and web application makes attendance efficient, but even further, seamless integration with payroll and
-                billing mitigates error. Plus we have someone physically at the site. 
-                
+                billing mitigates error. Plus we have someone physically at the site.
+
               %h3
                 %b
                   TRAINING AND SAFETY
-                
+
               %p
-                
+
                 It’s not only a safety training but it’s training with safety in mind. <br>First, every one of Joynus associates
-                must know how and what to do on the job. Even further, we explain why. <br>Second, through our On-Site Program, 
-                we follow up on their job training and measure performance. 
+                must know how and what to do on the job. Even further, we explain why. <br>Second, through our On-Site Program,
+                we follow up on their job training and measure performance.
               %p
-                Onsite will ensure PPE is practiced properly daily and communicate with you with any new updates. 
-  
-                
+                Onsite will ensure PPE is practiced properly daily and communicate with you with any new updates.
+
+
               %h3
                 %b
                   NO DRAMA
-                
+
               %p
-                When you gather a large group of people, a bit of tick tack can happen. 
+                When you gather a large group of people, a bit of tick tack can happen.
                 Joynus On-Site manager maintains a professional working environment.
               %h3
                 %b
                   COMMUNICATION
               %p
                 Your direct contact at Joynus is available for you 24/7.
-              
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b= t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

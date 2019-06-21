@@ -1,41 +1,44 @@
-
-
-%head
-  %title Joynus Staffing| News | Check out our news
-      
-  
-- if flash[:notice]
-  = render 'shared/success_notice'
+= content_for :title, "Joynus Staffing| News | Check out our news"
 
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     .feature-container
       %img{ data: { interchange:"[#{asset_path('News_M.jpg')}, (small)], [#{asset_path('News_M.jpg')}, (medium)], [#{asset_path('News.jpg')}, (large)]" } }
+
       .feature-text
         %h1.text-center.animated.fadeInDown{:style => "color:#333333"}
           %b= t 'blog.feature-header'
+
 .row
   .columns.large-12.large-offset-1
     .path
-      %a{:href => "/"}  
+      %a{:href => "/"}
         .srvIco1
           %i.icon-home
+
       %a{:href => "/"}
-        %h5 Home    
+        %h5 Home
+
       .srvIco11
-        %i.icon-right  
+        %i.icon-right
+
       %h5 News
-    
+
 - @posts.each do |post|
-  .row
-    .columns.large-8.large-offset-2
-      .blog-posts
-        = link_to post_url(post) do
-          %h3.secondary-text= post.title
-        %p= l post.created_at.to_date, format: :long
+  .blog-posts
+    .row
+      .columns.large-8.large-offset-2
+        %div{ id: dom_id(post), class: 'post' }
+          = link_to post_url(post) do
+            %h3.secondary-text= post.title
 
-        %p.post-content= truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
+          %p= l post.created_at.to_date, format: :long
 
-        = link_to 'View More', post_url(post), class: 'secondary-text'
+          %p.post-content
+            =# truncate(post.raw_post, length: 1000, separator: ' ', escape: false)
+            = post.raw_post
+
+          = link_to 'View More', post_url(post), class: 'secondary-text'
 
 = paginate @posts
+

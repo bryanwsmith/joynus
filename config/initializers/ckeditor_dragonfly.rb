@@ -9,9 +9,6 @@ Dragonfly.app.configure do
 
   url_format '/media/:job/:name'
 
-  # datastore :file,
-  #   root_path: Rails.root.join('public', 'uploads', 'images', Rails.env),
-  #   server_root: Rails.root.join('public')
   datastore :s3,
     bucket_name: ENV['S3_BUCKET_NAME'],
     access_key_id: ENV['S3_ACCESS_KEY'],
@@ -51,7 +48,9 @@ end
 Dragonfly.logger = Rails.logger
 
 # Mount as middleware
+# Dragonfly app for other uploads
 Rails.application.middleware.use Dragonfly::Middleware
+# Dragonfly app for ckeditor asset uploads
 Rails.application.middleware.use Dragonfly::Middleware, :ckeditor
 
 # Add model functionality

@@ -4,6 +4,10 @@ CKEDITOR.editorConfig = function( config )
   // config.language = 'fr';
   // config.uiColor = '#AADC6E';
 
+  config.height = '60vh';
+
+  config.extraPlugins = 'uploadimage';
+
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
@@ -51,4 +55,7 @@ CKEDITOR.editorConfig = function( config )
     { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
     { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] }
   ];
+
+  config.disallowedContent = 'script; ';
+  config.removeDialogTabs = 'image:advanced;image:Upload;';
 };

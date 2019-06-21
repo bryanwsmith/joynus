@@ -6,6 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+if Rails.env.development?
+  require 'pry'
+  require 'pry-rails'
+end
+
 module Joynusstaffing
   class Application < Rails::Application
     config.serve_static_assets = true

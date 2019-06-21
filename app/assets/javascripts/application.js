@@ -19,10 +19,13 @@
 //= require angular-animate
 //= require angular-sanitize
 //= require masked-input
+//= require aos-2.1.1
 //= require script
+//= require jquery.fitvids
 //= require app
 //= require services/JobsService
 //= require controllers/JobsController
+//= require posts
 
 //= require ckeditor/init
 //= require ckeditor/loader
@@ -30,14 +33,10 @@
 $(document).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
-
-
   } else {
     $('nav').removeClass('shrink');
-
   }
 });
-
 
 $(function(){
   AOS.init ()
@@ -55,15 +54,3 @@ $(function(){
   adjustPusher();
   $(window).resize(adjustPusher);
 });
-
-
-
-
-
-
-
-
-
-
-
-

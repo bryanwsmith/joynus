@@ -1,8 +1,5 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
-%head
-  %title Joynus Staffing| News | Check out our news
-       
+= content_for :title, "Joynus Staffing| News | Check out our news"
+
 - if current_user.admin?
   .row
     .columns.large-12
