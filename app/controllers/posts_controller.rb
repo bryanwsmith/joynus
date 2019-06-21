@@ -1,12 +1,13 @@
 class PostsController < ApplicationController
   before_filter :authorize, only: [:edit, :update, :new, :create, :destroy]
+  before_filter :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
     @posts = Post.order("created_at DESC").page(params[:page]).per(5)
   end
 
   def show
-    @post = find_post
+
   end
 
   def new
@@ -19,32 +20,42 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to posts_url
     else
-      render 'New'
+      render 'new'
     end
   end
 
   def edit
-    @post = find_post
+
   end
 
   def update
-    @post = find_post
-    @post.update_attributes(post_params)
-    redirect_to post_url(@post), notice: "#{@post.title} Updated"
+    if @post.update_attributes(post_params)
+      redirect_to post_url(@post), notice: "#{@post.title} Updated"
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-    @post = find_post
     @post.destroy
+
     redirect_to posts_url, notice: "#{@post.title} Deleted"
   end
 
   private
+
   def post_params
-    params.require(:post).permit(:title, :contents, :author, :approved)
+    params.require(:post).permit(:title, :contents, :author, :approved, :summary, :preview_image_id)
   end
 
   def find_post
-    Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
+
+    # If an old id or a numeric id was used to find the record, then
+    # the request path will not match the post_path, and we should do
+    # a 301 redirect that uses the current friendly id.
+    if params[:action] == 'show' && request.path != post_path(@post)
+      return redirect_to @post, :status => :moved_permanently
+    end
   end
 end

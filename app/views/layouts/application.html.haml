@@ -1,41 +1,40 @@
 !!!
 %html{ 'ng-app' => 'Joynus' }
   %head
-    / Google Tag Manager
-    :javascript
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TQLDWLJ');
-    / End Google Tag Manager
+    - unless Rails.env.development?
+      / Google Tag Manager
+      :javascript
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TQLDWLJ');
+      / End Google Tag Manager
 
-    = yield :title
+    %title= yield :title
     %meta{ charset: 'utf-8'}
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
-    
-    / Global site tag (gtag.js) - Google Ads: 974726899
-    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=AW-974726899"}
-      :cdata
-        gtag('config', 'AW-974726899');
-    :javascript
-      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-974726899');
 
-    
-    
-    
-    %link{:href => "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css", :rel => "stylesheet"}/
+    - unless Rails.env.development?
+      / Global site tag (gtag.js) - Google Ads: 974726899
+      %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=AW-974726899"}
+        :cdata
+          gtag('config', 'AW-974726899');
+
+      :javascript
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-974726899');
+
     = stylesheet_link_tag 'application', media: 'all'
-    = javascript_include_tag 'vendor/modernizr'
     = favicon_link_tag 'favicon.ico'
     = yield :js_head
     = csrf_meta_tags
 
-  %body{ class: ('logged-in' if current_user) }
-    / Google Tag Manager (noscript)
-    %noscript
-      %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-TQLDWLJ", :style => "display:none;visibility:hidden", :width => "0"}
-    / End Google Tag Manager (noscript)
+  %body{ class: "#{'logged-in' if current_user} #{params[:controller]} #{params[:action]}" }
+    - unless Rails.env.development?
+      / Google Tag Manager (noscript)
+      %noscript
+        %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-TQLDWLJ", :style => "display:none;visibility:hidden", :width => "0"}
+      / End Google Tag Manager (noscript)
 
     - if current_user
       .user-nav
@@ -46,9 +45,12 @@
                 %span.m--r New Jobs
                 - if Job.unapproved.count > 0
                   %span.label.radius.alert= Job.unapproved.count
+
             %li= link_to 'Add Blog Post', new_post_path
             %li.hide-for-large-up= link_to 'Log Out', logout_path
+
           %a.button.dropdown.tiny.right.hide-for-small-only.hide-for-medium-only{ aria: { controls: 'drop1', expanded: false }, data: { dropdown: 'drop1' }, href: '#' }= current_user.email
+
           %ul#drop1.f-dropdown{ aria: { hidden: true }, data: { dropdown: { content: '' } }, tabindex: '-1' }
             %li= link_to 'Edit Profile', edit_user_path(current_user.id)
             - if current_user.admin?
@@ -60,24 +62,24 @@
         .navbar-container
           .navbar-header
             %a.img-logo{:href => '/'}
-              
-              
+
+
           %ul.menu
             .hide-for-large-up
             %li.menu-item= active_link_to t('header.home'), root_url
             %li.menu-item= active_link_to t('header.about'), about_index_path
-            /%li.menu-item= active_link_to t('header.employers'), employers_path  
+            /%li.menu-item= active_link_to t('header.employers'), employers_path
             %li.menu-item= active_link_to t('header.services'), services_path
-           
+
             %li.menu-item= active_link_to t('header.news'), posts_path
-            
+
             %li.menu-item= active_link_to t('header.contact-us'), contact_index_path
-            
+
             %li.menu-item= link_to t('header.job'), "https://app.employstream.com/jobs/joynus/search/", target: '_blank', class: 'button primary radius'
-            
+
             %li.menu-item= link_to t('header.apply'), "https://app.employstream.com/profile/#/joynus/login?signup=true", target: '_blank', class: 'button secondary radius'
             /%li.menu-item= link_to t('header.find-a-job'), "https://joy.aviontego.com/portals/main.aspx?App=1&Companyid=JoynusStaffing&Lang=Spanish", class: 'button secondary radius'
-            
+
 
             .menu-footer
 
@@ -86,7 +88,7 @@
                   %a.fa.fa-facebook{href: 'https://facebook.com/joynusstaffing'}
                 %li
                   %a.fa.fa-twitter{href: 'https://twitter.com/joynusstaffing'}
-                
+
                 %li
                   %a.fa.fa-linkedin{href: 'https://www.linkedin.com/company/3499330?trk=vsrp_jobs_res_name&trkInfo=VSRPsearchId%3A2080338161420490145807%2CVSRPtargetId%3A38262556%2CVSRPcmpt%3Aprimary'}
               .copyright
@@ -95,8 +97,11 @@
           %a.mobile-menu.fa-bars.fa{ href: '#', data: { action: 'toggleMenu' } }
 
     %main{ role: 'main', id: controller_name }
+      - if flash[:notice]
+        = render 'shared/success_notice'
+
       = yield
-    
+
     #pusher
 
     %footer
@@ -106,7 +111,7 @@
             %b
               %a{:href => "/services"}SERVICES
           %ul.links
-            %li 
+            %li
               %a{:href => "/staffing"} Staffing
             %li
               %a{:href => "/directhire"} Direct Hire
@@ -114,23 +119,23 @@
               %a{:href => "/rpo"} RPO
             %li{:style => "margin-bottom:30px"}
               %a{:href => "/consultation"} Consultation
-          
+
           %h3
             %b
               %a{:href => "staff"} STAFFING
           %ul.links
-            %li 
+            %li
               %a{:href => "/staffing/onsite"} On-Site Management
-            
-            %li{:style => "margin-bottom:45px"} 
+
+            %li{:style => "margin-bottom:45px"}
               %a{:href => "/staffing/highvolume"}High Volume
-            
+
         .columns.xlarge-3
           %h3
             %b
               %a{:href => "/services"} SPECIALIZATION
           %ul.links
-            %li 
+            %li
               %a{:href => "/services/automotive"}Automotive
             %li
               %a{:href => "/services/accounting"}Accounting & Finance
@@ -138,45 +143,45 @@
               %a{:href => "/services/healthcare"} Healthcare
             %li
               %a{:href => "/services/manufacturing"}Manufacturing
-            %li 
+            %li
               %a{:href => "/services/office"}Office & Administrative
             %li{:style => "margin-bottom:30px"}
               %a{:href => "/services/it"}Information Technology
-            
+
         .columns.xlarge-3
           %h3
             %b
-              %a{:href => "/about"}ABOUT
-          
+              %a{:href => "/about"} ABOUT
+
           %ul.links
             %li{:style => "margin-bottom:30px"}
               %a{:href => "/about#corevalue"}Core Value
-              
+
           %h3{:style => "margin-bottom:45px"}
             %b
-              %a{:href => "/news"}NEWS
-              
-              
+              %a{:href => "/news"} NEWS
+
+
         .columns.xlarge-3
           %h3
             %b
               %a{:href => "/contact"}Contact
           %p
             contact@joynus.com<br>
-          
+
             (888) 338-7832
-            
+
           .button-container
-            = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'  
-      
-      
-          
+            = link_to t('header.contact-us'), contact_index_path, class: 'button secondary radius small'
+
+
+
       .row
         .colums.large-12
-          %hr  
-          
-      
-      
+          %hr
+
+
+
       .row
         .columns.large-5.large-push-7
           %div.social-icons-container
@@ -185,24 +190,24 @@
                 %a.fa.fa-facebook{href: 'https://facebook.com/joynusstaffing', target: '_blank'}
               %li
                 %a.fa.fa-twitter{href: 'https://twitter.com/joynusstaffing', target: '_blank'}
-              
+
               %li
                 %a.fa.fa-linkedin{href: 'https://www.linkedin.com/company/3499330?trk=vsrp_jobs_res_name&trkInfo=VSRPsearchId%3A2080338161420490145807%2CVSRPtargetId%3A38262556%2CVSRPcmpt%3Aprimary', target: '_blank'}
-              
+
         .columns.large-7.large-pull-5
           %small &#169; Joynus #{Time.now.year}. #{t('footer.rights-reserved')}.
 
-    :javascript
-      _linkedin_partner_id = "483580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    :javascript
-      (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
-    %noscript
-      %img{:alt => "", :height => "1", :src => "https://dc.ads.linkedin.com/collect/?pid=483580&fmt=gif", :style => "display:none;", :width => "1"}/
+    - unless Rails.env.development?
+      :javascript
+        _linkedin_partner_id = "483580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);
 
+      :javascript
+        (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
 
-
+      %noscript
+        %img{:alt => "", :height => "1", :src => "https://dc.ads.linkedin.com/collect/?pid=483580&fmt=gif", :style => "display:none;", :width => "1"}/
 
     = render 'layouts/google'
     = javascript_include_tag 'application'
     = yield :js
-%script{:src => "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"}
+

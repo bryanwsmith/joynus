@@ -1,5 +1,3 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
 
 .row
   .columns.large-10.large-offset-1
@@ -7,6 +5,7 @@
       = link_to jobs_path do
         %i.fa.fa-angle-left
         Find a Job
+
       - if current_user
         .right
           = link_to 'Delete', job_path(@job), class: 'button tiny radius alert', action: 'destroy', method: :delete, data: { confirm: "Are you sure?" }

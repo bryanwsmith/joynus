@@ -1,10 +1,7 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
 
 %head
   %title Joynus Staffing | Contact | We are listening
   %meta{:content => "Questions, comments, or drop us a line", :name => "Description"}/
-    
 
   %section.feature-section.no-spacing
     .feature.animated.fadeIn
@@ -15,21 +12,19 @@
             %b= t 'contact.feature-header'
           %a.circle.animated.fadeInDown{href: '#contactpath'}
             %span.icon-sort-down
+
     .row#contactpath
       .columns.large-12
         .path
-          %a{:href => "/"}  
+          %a{:href => "/"}
             .srvIco1
               %i.icon-home
           %a{:href => "/"}
-            %h5 Home  
+            %h5 Home
           .srvIco11
-            %i.icon-right  
+            %i.icon-right
           %h5 Contact
-          
-          
-       
-          
+
   %section
     .row
       .columns.large-8.large-offset-2
@@ -37,24 +32,20 @@
           %b
             = t 'contact.content-header'
         %p.no-margin= t 'contact.content-text'
-  
-  
+
     .row
       .columns.large-8.large-offset-2
         %fieldset.mb--
           = render 'form'
-  
+
   %section.light-color-bg
     .row
       .columns.large-12
         %h2.text-center.primary-text.mb--
           %b= t 'contact.office-locations'
-  
-  
+
     #locations
       .row
-        
-            
         .columns.xlarge-2
           %h4.text-thin.primary-text Norcross
           %ul.no-bullet
@@ -73,12 +64,12 @@
             %li.small #{t('contact.fax-label')}: 706-443-5186
         .columns.xlarge-2
           %h4.text-thin.primary-text Dalton
-          %ul.no-bullet 
+          %ul.no-bullet
             %li.small 510 N Glenwood Ave.
             %li.small Dalton, GA 30721
             %li.small #{mail_to 'dalton@joynus.com'}
-            %li.small #{t('contact.phone-label')}: 706-529-6339 
-      
+            %li.small #{t('contact.phone-label')}: 706-529-6339
+
         .columns.xlarge-2
           %h4.text-thin.primary-text Opelika
           %ul.no-bullet
@@ -90,18 +81,18 @@
         .columns.xlarge-2
           %h4.text-thin.primary-text Greenville
           %ul.no-bullet
-            %li.small 125 W Commerce St. 
+            %li.small 125 W Commerce St.
             %li.small Greenville, AL 36037
             %li.small #{mail_to 'greenville@joynus.com'}
             %li.small #{t('contact.phone-label')}: 334-737-6551
-        
+
         .columns.xlarge-2
           %h4.text-thin.primary-text Manteca
-          %ul.no-bullet 
+          %ul.no-bullet
             %li.small 1439 Historical Plaza Way
             %li.small Manteca, CA 95336
             %li.small #{mail_to 'manteca@joynus.com'}
             %li.small #{t('contact.phone-label')}: 209-213-7803
-        
+
 
 
