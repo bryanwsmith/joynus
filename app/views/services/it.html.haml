@@ -1,52 +1,51 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Information Technology
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.no-spacing 
+  %section.no-spacing
     .subpage-cover
-      = image_tag "IT.png", :alt => "Information Technology"  
+      = image_tag "IT.png", :alt => "Information Technology"
       .subpage-text
         %h1
           %b
             INFORMATION<br>TECHNOLOGY
-        
-         
-            
-  
-        
+
+
+
+
+
     .columns.large-12
       .path
         %a{:href => "/"}
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home   
+          %h5 Home
         .srvIco11
-          %i.icon-right     
+          %i.icon-right
         %a{:href => "/services"}
-          %h5 Services 
+          %h5 Services
         .srvIco11
           %i.icon-right
         %h5 Information Technology
-  %section  
-    .wrap          
-                
+  %section
+    .wrap
+
       .pageleft
-        .row        
+        .row
           .columns.large-12
             %p
-              Today in some shape or form, most companies are a tech company. Today’s world runs on 
-              information technology. Our businesses, culture, lives have been transformed by it. 
-              Technological innovation is expanding all sectors of industries. It’s likely that in order to 
+              Today in some shape or form, most companies are a tech company. Today’s world runs on
+              information technology. Our businesses, culture, lives have been transformed by it.
+              Technological innovation is expanding all sectors of industries. It’s likely that in order to
               take the next step you need, you need to ramp up your IT team. Let us hear what you want to accomplish.
-        
-        %section    
+
+        %section
           .columns.large-12
-           
+
             %h5
               %b
                 POSITIONS WE EXCEL AT
@@ -61,8 +60,8 @@
               DevOps Engineer<br>
               Information Security Analyst<br>
               IT Help Desk Technician and Support
-              
-              
+
+
 
           .columns.large-6
             %p
@@ -74,22 +73,21 @@
               System Administrator<br>
               UI/UX Designer<br>
               Web Developer
-                
-                  
-                
-              
+
+
+
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b= t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

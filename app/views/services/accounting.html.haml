@@ -1,55 +1,54 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Accounting & Finance
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-   
-  %section.no-spacing 
+
+  %section.no-spacing
     .subpage-cover
-      = image_tag "Accounting.png", :alt => "Accounting"  
+      = image_tag "Accounting.png", :alt => "Accounting"
       .subpage-text
         %h1
           %b
             ACCOUNTING &<br> FINANCE
-  
+
   .columns.large-12
- 
-  
+
+
     .path
       %a{:href => "/"}
         .srvIco1
           %i.icon-home
       %a{:href => "/"}
-        %h5 Home    
+        %h5 Home
       .srvIco11
-        %i.icon-right     
+        %i.icon-right
       %a{:href => "/services"}
-        %h5 Services 
+        %h5 Services
       .srvIco11
         %i.icon-right
       %h5 Accounting
-  
+
   %section
     .wrap
       .pageleft
-        .row        
+        .row
           .columns.large-12
             %p
-              In accounting and finance, accuracy and precision are most important. 
-              They are critical to your business function and specialized talent is essential 
+              In accounting and finance, accuracy and precision are most important.
+              They are critical to your business function and specialized talent is essential
               to your productivity and bottom-line results.
-          
-        %section  
-          .row 
+
+        %section
+          .row
             .columns.large-12
               %h5
                 %b
                   POSITIONS WE EXCEL AT<br>
-                
-            
+
+
             .columns.large-6
               %p{:style => "margin-bottom:0"}
                 Accounts Payable <br>
@@ -57,8 +56,8 @@
                 Accountant <br>
                 Billing Specialist <br>
                 Bookkeeper <br>
-                CFO 
-                
+                CFO
+
             .columns.large-6
               %p
                 Claims Analyst <br>
@@ -66,24 +65,23 @@
                 Controller <br>
                 CPA <br>
                 Finance Specialist <br>
-                Financial Analyst 
-                
-               
-                  
-          
-         
+                Financial Analyst
+
+
+
+
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b= t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

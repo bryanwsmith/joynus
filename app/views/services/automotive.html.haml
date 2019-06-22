@@ -1,122 +1,120 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
-  
-  
+
+
+
 %head
   %title Joynus Staffing | Automotive
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
-  
-  %section.no-spacing 
+
+  %section.no-spacing
     .subpage-cover
-      = image_tag "Automotive.png", :alt => "Automotive"  
+      = image_tag "Automotive.png", :alt => "Automotive"
       .subpage-text
         %h1{:style => "margin-left:3%"}
           %b
             AUTOMOTIVE
-        
-            
-  
-        
+
+
+
+
     .columns.large-12
       .path
-        
-        %a{:href => "/"}  
+
+        %a{:href => "/"}
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home    
+          %h5 Home
         .srvIco11
-          %i.icon-right  
+          %i.icon-right
         %a{:href => "/services"}
-          %h5 Services 
+          %h5 Services
         .srvIco11
           %i.icon-right
         %h5 Automotive
-        
-  
+
+
   %section
     .wrap.m-top1
-      
-              
-                
+
+
+
       .pageleft
-        .row        
+        .row
           .columns.large-12
-      
+
             %p
-              50% of our portfolio is in Automotive due to its high volume demand. 
-              We have been placing our associates for Automotive over a decade. 
-              With technological advancement, the automotive manufacturing is rapidly adapting 
-              to advanced manufacturing technology, yielding higher efficiency through automation. 
+              50% of our portfolio is in Automotive due to its high volume demand.
+              We have been placing our associates for Automotive over a decade.
+              With technological advancement, the automotive manufacturing is rapidly adapting
+              to advanced manufacturing technology, yielding higher efficiency through automation.
               This fast paced automation requires a workforce that can work with new types of equipment.
               Needless to say, we know the top issues and know how to solve them.
-            
+
         %section
-          .row      
+          .row
             .columns.large-6
-              
+
               %h5
                 %b
                   POSITIONS WE EXCEL AT
               %p
                 Assembly<br>
-              
+
                 Forklift Operators<br>
-              
+
                 Machine Operators<br>
-              
+
                 Maintenance<br>
-              
+
                 Management &#47; Supervisor Technicians  <br>
-                
+
                 Quality Control &#47; Quality Assurance <br>
-                
+
                 Welders
-            
-            
-           
-            
+
+
+
+
             .columns.large-6
-             
+
               %h5
                 %b
-                  TOP FIVE ISSUES WE FOCUS ON 
+                  TOP FIVE ISSUES WE FOCUS ON
               %p
                 Attendance<br>
                 Production demand<br>
                 Quality<br>
                 Retention and Turnover<br>
-                Safety and incident  
-            
-                
+                Safety and incident
+
+
           .row
             .columns.large-12.text-center
               =image_tag "Automotive.jpg", :alt => "Aytinituve"
-          
+
           .row.m-top3
             .columns.large-12
               %h5.text-center
-                %b SEMI KNOCK DOWN (SKD)  
-              %p 
-                We completely take over the part of the manufacturing process and responsibility. 
-                We dismantle the received and assemble parts or we dismantle the received and pack them with other parts and send them to other assembly plants to be re-assembled. 
-                You don’t need to keep track of how many people are needed or deal with all the hassles that come with it. You just tell us how many and when.  
-              
-            
+                %b SEMI KNOCK DOWN (SKD)
+              %p
+                We completely take over the part of the manufacturing process and responsibility.
+                We dismantle the received and assemble parts or we dismantle the received and pack them with other parts and send them to other assembly plants to be re-assembled.
+                You don’t need to keep track of how many people are needed or deal with all the hassles that come with it. You just tell us how many and when.
+
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b
                 = t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

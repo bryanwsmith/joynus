@@ -21,3 +21,5 @@ dragonfly.log
 public/uploads
 database.yml
 /.env.development
+/vendor/gem_reference
+/.byebug_history

@@ -1,49 +1,48 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Manufacturing
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.no-spacing 
+  %section.no-spacing
     .subpage-cover
-      = image_tag "Manufacturing.png", :alt => "Manufacturing"  
+      = image_tag "Manufacturing.png", :alt => "Manufacturing"
       .subpage-text
         %h1{:style => "margin-left:-5%"}
           %b
             MANUFACTURING
-        
+
     .columns.large-12
       .path
         %a{:href => "/"}
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home   
+          %h5 Home
         .srvIco11
-          %i.icon-right       
+          %i.icon-right
         %a{:href => "/services"}
-          %h5 Services 
+          %h5 Services
         .srvIco11
           %i.icon-right
         %h5 Manufacturing
-  %section    
-    .wrap          
-                
+  %section
+    .wrap
+
       .pageleft
-        .row        
+        .row
           .columns.large-12
             %p
-              As technology advances, manufacturing operations have an evolved and it requires evolved set of talent than past decades. 
-              Today’s workers must be skilled in sophisticated processes and systems to meet your demands for ongoing innovations, safety, 
+              As technology advances, manufacturing operations have an evolved and it requires evolved set of talent than past decades.
+              Today’s workers must be skilled in sophisticated processes and systems to meet your demands for ongoing innovations, safety,
               and quality.
-            
-        
-        %section   
-          .row  
+
+
+        %section
+          .row
             .columns.large-12
-             
+
               %h5
                 %b
                   TOP FIVE ISSUES WE FOCUS ON
@@ -52,15 +51,15 @@
                 Production Demand<br>
                 Quality<br>
                 Retention and Turnover<br>
-                Safety and Incident  
-               
+                Safety and Incident
+
             .columns.large-12
               %h5
                 %b
                   POSITIONS WE EXCEL AT
-            
+
             .columns.large-6
-              
+
               %p{:style =>"margin-bottom:0"}
                 Assembly<br>
                 Baler<br>
@@ -75,11 +74,11 @@
                 Lift Truck Operator<br>
                 Material Handler<br>
                 Packer
-                
 
-                
+
+
             .columns.large-6
-              %p    
+              %p
                 Picker<br>
                 PLC Technician<br>
                 Production Associate<br>
@@ -96,31 +95,30 @@
           .row
             .columns.large-12.text-center
               =image_tag "Automotive.jpg", :alt => "Aytinituve"
-          
+
           .row.m-top3
             .columns.large-12
               %h5.text-center
-                %b SEMI KNOCK DOWN (SKD)  
-              %p 
-                
-                We completely take over the part of the manufacturing process and responsibility. 
-                We dismantle the received and assemble parts or we dismantle the received and pack them with other parts and send them to other assembly plants to be re-assembled. 
-                You don’t need to keep track of how many people are needed or deal with all the hassles that come with it. You just tell us how many and when.   
-     
-                
+                %b SEMI KNOCK DOWN (SKD)
+              %p
+
+                We completely take over the part of the manufacturing process and responsibility.
+                We dismantle the received and assemble parts or we dismantle the received and pack them with other parts and send them to other assembly plants to be re-assembled.
+                You don’t need to keep track of how many people are needed or deal with all the hassles that come with it. You just tell us how many and when.
+
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b
                 = t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

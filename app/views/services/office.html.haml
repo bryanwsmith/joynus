@@ -1,48 +1,47 @@
-- if flash[:notice]
-  = render 'shared/success_notice'
+
 
 %head
   %title Joynus Staffing | Office & Administrative
   %meta{:content => "We have your best interest at heart", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
-  %section.no-spacing 
+  %section.no-spacing
     .subpage-cover
-      = image_tag "Office.png", :alt => "Office"  
+      = image_tag "Office.png", :alt => "Office"
       .subpage-text
         %h1
           %b
             OFFICE &<br> ADMINISTRATIVE
-        
-            
-  
-        
+
+
+
+
     .columns.large-12
       .path
         %a{:href => "/"}
           .srvIco1
             %i.icon-home
         %a{:href => "/"}
-          %h5 Home   
+          %h5 Home
         .srvIco11
-          %i.icon-right     
+          %i.icon-right
         %a{:href => "/services"}
-          %h5 Services 
+          %h5 Services
         .srvIco11
           %i.icon-right
         %h5 Office & Administrative
- 
+
   %section
     .wrap
       .pageleft
-        .row        
+        .row
           .columns.large-12
             %p
-              The office personnel increases productivity and keep your business operating at top capacity, 
-              across a wide scope of office disciplines, positions, and industries. 
-        %section    
+              The office personnel increases productivity and keep your business operating at top capacity,
+              across a wide scope of office disciplines, positions, and industries.
+        %section
           .columns.large-12
-           
+
             %h5
               %b
                 POSITIONS WE EXCEL AT
@@ -55,7 +54,7 @@
               Executive Assistant<br>
               Human Resources Assistant<br>
               Insurance Claims Processor
-              
+
 
           .columns.large-6
             %p
@@ -64,21 +63,20 @@
               Medical Records Clerk<br>
               Office Manager<br>
               Receptionist
-      
-      
+
+
       .pageright
         .row
           .columns.large-10.large-offset-1
             %h2.text-center.no-margin-top
               %b
                 = t 'contact.content-header'
-            
-        
+
+
         .form-section.no-spacing.mb--
           .row
             .columns.large-10.large-offset-1
               %fieldset.mb--
-                = render 'contact/form'          
-        
-   
-      
+                = render 'contact/form'
+
+

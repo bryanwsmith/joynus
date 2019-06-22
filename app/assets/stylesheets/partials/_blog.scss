@@ -1,7 +1,7 @@
 .blog-posts {
-  border-bottom: 2px solid #b9e2eb;
-  padding-top: rem-calc(60);
-  padding-bottom: rem-calc(60);
+  // border-bottom: 2px solid #b9e2eb;
+  // padding-bottom: rem-calc(60);
+  // margin-bottom: rem-calc(60);
 }
 #blog{
 .prev-next-posts {
@@ -58,4 +58,8 @@
   &:hover{
     color: #0d2325 !important;
   }
+}
+
+.post img {
+  display: none;
 }

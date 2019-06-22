@@ -6,15 +6,15 @@
         height: 0;
         overflow: hidden;
         position: relative;
-  
+
    img {
           position: absolute;
           top: 15%;
           left: 45%;
           width: 32%;
           height: 72%;
-        }      
-        
+        }
+
   .subpage-text {
         position: absolute;
         left: 35%;
@@ -25,19 +25,19 @@
         transform: translateX(-50%);
         width: 25%;
         height: auto;
-        
+
         h1 { font-size: rem-calc(65);
              color: black;
              text-shadow:0px;
         }
-        
-        
+
+
         p {
           color: #4b4d49;
           text-shadow:0px;
         }
  }
- } 
+ }
 
 
 
@@ -45,33 +45,33 @@
 
     .path{
       padding-top:1%;
-      padding-left:7%;
+      // padding-left:7%;
       position: relative;
       overflow: hidden;
       display:flex;
       h5{
         color: #4C4C4D;
-        
-        
+
+
         font-size:22px;
         vertical-align:middle;
       }
-     
+
       a > h5{
         color:#5ecbee;
       }
-      
+
        a > h5:hover{
         color: #1190bb;
       }
-      
+
       .srvIco1 i {
         color: #5ECBEE;
         display: inline-block;
         font-size:22px;
         position: relative fixed;
         vertical-align:middle;
-        
+
       }
       .srvIco1 i:hover {
         color: #0f6b8a;
@@ -85,10 +85,10 @@
         margin-left:5px;
         margin-right:5px;
       }
-    } 
-    
-    
-    
+    }
+
+
+
   #something {
     display: none;
   }
@@ -97,34 +97,34 @@
 #something:active {
   display: block;
 }
-    
-    
-    
-  
+
+
+
+
    p{font-size:17px;}
    h2{font-size:30px;}
-   
-   
-  
-   
-   
+
+
+
+
+
  }
-    
+
 
 
 @media only screen and (min-width: rem-calc(320)){
   .subpage-cover {
         background-color: #f2f2f2;
         padding-bottom: 120%;
-        
-  
+
+
    img {
           top: 50%;
           left: 17%;
           width: 65%;
           height: 40%;
-        }      
-        
+        }
+
   .subpage-text {
         position: absolute;
         left: 67%;
@@ -133,16 +133,16 @@
         h1 { font-size: rem-calc(33);        }
         p {     color: #4b4d49;      }
  }
- } 
- 
- 
- 
+ }
+
+
+
   .img000{
     height:auto;
     width:80%;
     padding-left:20%;
     padding-bottom:10%;
-   
+
     }
   .path{
       padding-top:10%;
@@ -156,12 +156,12 @@
         font-size:15px;
         padding-bottom:1px;
       }
-      
+
       .srvIco11 i {
         font-size:16px;
-        
+
       }
-    } 
+    }
     #services{
     .feature-text{
       h1{
@@ -169,7 +169,7 @@
       }
     }
     }
-  
+
 }
 @media only screen and (min-width: rem-calc(425)){
   .subpage-cover{
@@ -178,24 +178,24 @@
         left: 72%;
         bottom: 53%;
         width: 100%;
-        
+
  }
   }
 }
 // Small screens
 @media only screen and (min-width: rem-calc(500)) {
   .subpage-cover {
-       
+
         padding-bottom: 100%;
-        
-  
+
+
    img {
           top: 47%;
           left: 27%;
           width: 45%;
           height: 50%;
-        }      
-        
+        }
+
   .subpage-text {
         position: absolute;
         left: 73%;
@@ -205,12 +205,12 @@
         p {     color: #4b4d49;      }
  }
  }
-   
-    
+
+
   .path{
       padding-top:7%;
-  }    
-  
+  }
+
 }
 
 
@@ -219,17 +219,17 @@
 // Medium screens
 @media only screen and (min-width: rem-calc(768)) {
   .subpage-cover {
-       
+
         padding-bottom: 45%;
-        
-  
+
+
    img {
           top: 27%;
           left: 58%;
           width: 37%;
           height: 50%;
-        }      
-        
+        }
+
   .subpage-text {
         position: absolute;
         left: 63%;
@@ -248,11 +248,11 @@
       .srvIco1 i {
         font-size:24px;
       }
-      
+
       .srvIco11 i {
         font-size:24px;
       }
-    } 
+    }
     .companies ul li { width: 20%; }
     .home-section-img img { width: 100%; }
     .specialcontainer {
@@ -260,74 +260,74 @@
     width: 230px;
     height: 230px;
     }
-   
-   
-   
-   
+
+
+
+
    p{font-size:20px;}
    h2{font-size: $h2-font-size;}
    .img8{
     height:130px;
     width:auto;
-    
-    }
-  
-   
-  
 
-  
-  
-}  
-  
+    }
+
+
+
+
+
+
+}
+
 
 
 @media only screen and (min-width: rem-calc(1024)) {
   .subpage-cover {
-        
+
         padding-bottom: 40%;
-       
+
    img {
           top: 15%;
           left: 52%;
           width: 35%;
           height: 72%;
-        }      
-        
+        }
+
   .subpage-text {
-        
+
         left: 35%;
         bottom: 33%;
         width: 40%;
       h1 { font-size: rem-calc(45);    }
-        
+
  }
- } 
+ }
   .path{
       padding-top:0;
-      padding-left:5%;
+      // padding-left:5%;
     }
   #services{
-    
+
     .home-section-img { display: none; }
     .specialcontainer {
     position: relative;
     width: 330px;
     height: 330px;
    }
-   
+
    .img000{
     height:auto;
     width:80%;
     padding-left:20%;
     padding-bottom:0;
    }
-   
+
    .feature-text{
       h1{
         font-size:80px;
       }
     }
-   
+
     section.content-section {
       padding-top: rem-calc(150);
       padding-bottom: rem-calc(150);
@@ -373,8 +373,8 @@
         }
       }
     }
-    
-   
+
+
 
 
 
@@ -387,11 +387,11 @@
     overflow:auto;
     display:flex;
     margin-top:3%;
-    
+
 }
 
 .pageleft {
-    float:none; 
+    float:none;
     width: 55%;
 }
 
@@ -400,40 +400,40 @@
 .pageright {
     float:right;
     width:50%;
-   
-  
-}
-
 
 
 }
-   
+
+
+
+}
+
 }
 
 
 @media only screen and (min-width: rem-calc(1200)) {
   .subpage-cover {
-        
+
         padding-bottom: 26%;
-       
+
    img {
           top: 20%;
           left: 50%;
           width: 22%;
           height: 70%;
-        }      
-        
+        }
+
   .subpage-text {
-        
+
         left: 40%;
         bottom: 33%;
         width: 35%;
       h1 { font-size: rem-calc(55);    }
-        
+
  }
- } 
-  
-  
+ }
+
+
  .path{
       padding-top:2%;
     }
@@ -442,11 +442,11 @@
     overflow:auto;
     display:flex;
     margin:auto;
-    
+
 }
 
 .pageleft {
-    float:none; 
+    float:none;
     width: 55%;
 }
 
@@ -455,9 +455,9 @@
 .pageright {
     float:right;
     width:45%;
-   
-  
-}  
+
+
+}
 
 
 
@@ -472,19 +472,19 @@
     width:220px;
 }
 
-  
+
   .srvIco1, .srvIco2{
     margin-bottom:10%;
   }
-  
+
   .img8{
     height:85px;
     width:auto;
   }
-  
+
   #industries{
    p{font-size:13px;}
   }
-  
-  
+
+
 }
