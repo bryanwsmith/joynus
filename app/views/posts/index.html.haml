@@ -1,5 +1,8 @@
-= content_for :title, "Joynus Staffing| News | Check out our news"
-
+- if flash[:notice]
+  = render 'shared/success_notice'
+%head
+  %title Joynus Staffing | News |
+  %meta{:content => "More information is always better than less. When people know the reason things are happening, they can adjust and react accordingly", :name => "Description"}/
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     .feature-container
@@ -8,21 +11,22 @@
       .feature-text
         %h1.text-center.animated.fadeInDown{:style => "color:#333333"}
           %b= t 'blog.feature-header'
-
-.row
-  .columns.small-12
-    .path
-      %a{:href => "/"}
-        .srvIco1
-          %i.icon-home
-
-      %a{:href => "/"}
-        %h5 Home
-
-      .srvIco11
-        %i.icon-right
-
-      %h5 News
+        %a.circle.animated.fadeInDown{href: '#newstpath'}
+          %span.icon-sort-down
+  .row#newstpath
+    .columns.small-12
+      .path
+        %a{:href => "/"}
+          .srvIco1
+            %i.icon-home
+  
+        %a{:href => "/"}
+          %h5 Home
+  
+        .srvIco11
+          %i.icon-right
+  
+        %h5 News
 
 - @posts.each do |post|
   .blog-posts
@@ -38,8 +42,9 @@
             .columns.small-12.medium-10
               .entry-body
 
-                %h2.entry-heading
-                  = link_to post.title, post_url(post)
+                %h3.entry-heading
+                  %b
+                    = link_to post.title, post_url(post)
 
                 .entry-meta
                   %strong
@@ -55,7 +60,7 @@
                   %p.no-margin-bottom= post.summary
                   = link_to 'Read More', post_path(post)
 
-
+    
 
 = paginate @posts
 

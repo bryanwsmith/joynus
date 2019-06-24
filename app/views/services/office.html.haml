@@ -1,8 +1,9 @@
-
+- if flash[:notice]
+  = render 'shared/success_notice'
 
 %head
   %title Joynus Staffing | Office & Administrative
-  %meta{:content => "We have your best interest at heart", :name => "Description"}/
+  %meta{:content => "Always render more and better service than is expected of you, no matter what your task may be", :name => "Description"}/
   = stylesheet_link_tag 'industry', media: 'all'
 %body
   %section.no-spacing

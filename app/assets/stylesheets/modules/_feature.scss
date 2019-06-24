@@ -164,7 +164,23 @@
   #rpo{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%; h1,h5{color:white;}}}
   #consultation{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 35%; h1{font-size:80px;}}}
     
-  #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}}
+  #posts{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 35%;}
+    .feature-text {
+      bottom: 35%;
+        .circle {
+          span {
+            color: #333333;
+          }
+          
+          span:hover{
+            color: $primary-color;
+          }
+          i{
+            color: $primary-color;
+          }
+        }
+      }
+  }
   #about{ .feature-container { padding-bottom: 52%; }  .feature-text {bottom: 15%;}} 
   #contact{ .feature-container {padding-bottom: 40%;}  .feature-text {bottom: 35%; h1{font-size:55px;}}}
   .feature-section .feature-container .feature-text {

@@ -15,8 +15,11 @@
   -# %script#signupScript{:async => "", :defer => "defer", :src => "//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js"}
   / End Constant Contact Active Forms
 
-= content_for :title, "Joynus Staffing| News | Check out our news"
-
+- if flash[:notice]
+  = render 'shared/success_notice'
+%head
+  %title Joynus Staffing | News |
+  %meta{:content => "More information is always better than less. When people know the reason things are happening, they can adjust and react accordingly", :name => "Description"}/
 .row
   .columns.large-10
     .breadcrumb
@@ -56,30 +59,4 @@
             %p.no-margin-bottom= @post.raw_post
 
 
-      .row.shareable.hide-mobile
-        .columns.large-12
-          .button.secondary.radius.js-toggle-social.share-now.btn-share
-            .fa.fa-share-alt
-            %span Share
-
-        .columns.large-12.js-social-icons.hidden
-          %span.st_facebook_hcount{:displayText => "Facebook"}
-          %span.st_twitter_hcount{:displayText => "Tweet"}
-          %span.st_googleplus_hcount{:displayText => "Google +"}
-          %span.st_linkedin_hcount{:displayText => "LinkedIn"}
-          %span.st_pinterest_hcount{:displayText => "Pinterest"}
-          %span.st_email_hcount{:displayText => "Email"}
-
-      .row.shareable.hide-desktop
-        .row.text-center
-          .button.secondary.radius.js-toggle-mobile-social.share-now.btn-share
-            .fa.fa-share-alt
-            %span Share
-
-        .columns.large-12.text-center.js-mobile-social-icons.hidden
-          .columns.large-2.st_facebook_hcount{:displayText => "Facebook"}
-          .columns.large-2.st_twitter_hcount{:displayText => "Tweet"}
-          .columns.large-2.st_googleplus_hcount{:displayText => "Google +"}
-          .columns.large-2.st_linkedin_hcount{:displayText => "LinkedIn"}
-          .columns.large-2.st_pinterest_hcount{:displayText => "Pinterest"}
-          .columns.large-2.st_email_hcount{:displayText => "Email"}
+     

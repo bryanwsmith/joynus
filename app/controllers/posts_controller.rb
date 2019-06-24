@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_filter :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
-    @posts = Post.order("created_at DESC").page(params[:page]).per(5)
+    @posts = Post.order("created_at DESC").page(params[:page]).per(7)
   end
 
   def show
