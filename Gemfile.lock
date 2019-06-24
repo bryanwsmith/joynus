@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:velocity-labs/ckeditor.git
+  remote: https://github.com/velocity-labs/ckeditor.git
   revision: fdedb62455425da9c2638df04b048fec8adf65ad
   branch: joynus-edits
   specs:
