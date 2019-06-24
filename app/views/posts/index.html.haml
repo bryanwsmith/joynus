@@ -19,13 +19,13 @@
         %a{:href => "/"}
           .srvIco1
             %i.icon-home
-  
+
         %a{:href => "/"}
           %h5 Home
-  
+
         .srvIco11
           %i.icon-right
-  
+
         %h5 News
 
 - @posts.each do |post|
@@ -50,17 +50,18 @@
                   %strong
                     = l post.created_at.to_date, format: :long
 
-                  %span.text-muted.text-thin
-                    by
+                  - if post.author.present?
+                    %span.text-muted.text-thin
+                      by
 
-                  = link_to post.author&.titleize, ''
+                    = link_to post.author_full_name&.titleize, ''
 
 
                 .entry-content
                   %p.no-margin-bottom= post.summary
                   = link_to 'Read More', post_path(post)
 
-    
+
 
 = paginate @posts
 
