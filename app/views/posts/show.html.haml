@@ -15,8 +15,11 @@
   -# %script#signupScript{:async => "", :defer => "defer", :src => "//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js"}
   / End Constant Contact Active Forms
 
-= content_for :title, "Joynus Staffing| News | Check out our news"
-
+- if flash[:notice]
+  = render 'shared/success_notice'
+%head
+  %title Joynus Staffing | News |
+  %meta{:content => "More information is always better than less. When people know the reason things are happening, they can adjust and react accordingly", :name => "Description"}/
 .row
   .columns.large-10
     .breadcrumb

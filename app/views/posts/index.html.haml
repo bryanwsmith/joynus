@@ -1,5 +1,8 @@
-= content_for :title, "Joynus Staffing| News | Check out our news"
-
+- if flash[:notice]
+  = render 'shared/success_notice'
+%head
+  %title Joynus Staffing | News |
+  %meta{:content => "More information is always better than less. When people know the reason things are happening, they can adjust and react accordingly", :name => "Description"}/
 %section.feature-section.no-spacing
   .feature.animated.fadeIn
     .feature-container
@@ -57,7 +60,7 @@
                   %p.no-margin-bottom= post.summary
                   = link_to 'Read More', post_path(post)
 
-
+    
 
 = paginate @posts
 
