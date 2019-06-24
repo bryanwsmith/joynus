@@ -3,12 +3,15 @@ class Post < ActiveRecord::Base
   friendly_id :slug_candidates, use: [:slugged, :history]
 
   belongs_to :preview_image, class_name: 'Ckeditor::Picture'
+  belongs_to :author, class_name: 'User'
 
 ## Validations
   validates :contents, presence: true
   validates :title, presence: true
   validates :summary, presence: true, length: 1..300
   validates :author, presence: true
+
+  delegate :full_name, to: :author, prefix: true, allow_nil: true
 
 ## Instance Methods
   def slug_candidates
