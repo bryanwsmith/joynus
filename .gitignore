@@ -19,6 +19,7 @@ db/schema.rb
 .idea
 dragonfly.log
 public/uploads
+public/assets
 database.yml
 /.env.development
 /vendor/gem_reference
