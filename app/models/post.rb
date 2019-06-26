@@ -9,9 +9,9 @@ class Post < ActiveRecord::Base
   validates :contents, presence: true
   validates :title, presence: true
   validates :summary, presence: true, length: 1..300
-  validates :author, presence: true
+  validates :author, presence: false
 
-  delegate :full_name, to: :author, prefix: true, allow_nil: true
+  delegate :full_name, to: :author, prefix: true, allow_nil: false
 
 ## Instance Methods
   def slug_candidates
