@@ -129,6 +129,7 @@
   
   }
 @media only screen and (min-width:500px) {
+  #home{.feature-text{width:60%;}}
   #consultation{ .feature-container { padding-bottom: 52%; }}
   .feature-section .feature .feature-container {
     padding-bottom: 40%;
@@ -138,7 +139,7 @@
 
 @media only screen and (min-width:768px) {
   
-  #home {.feature-container { padding-bottom: 52%; } .feature-text{ bottom:30%; h1{font-size:45px;} .button{font-size:15px; margin:3% 2%;}}}
+  #home {.feature-container { padding-bottom: 52%; } .feature-text{ bottom:30%; width:75%;h1{font-size:45px;} .button{font-size:15px; margin:3% 2%;}}}
   #employers .feature-container { padding-bottom: 50%; } 
   #staffing{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
   #directhire{ .feature-container { padding-bottom: 52%; } .feature-text {bottom: 25%;}}
